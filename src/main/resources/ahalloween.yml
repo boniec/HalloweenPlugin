@@ -1,1 +1,621 @@
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+# AHalloween — kolory: #FF7518 #9B30FF #35105E #FF36D1
+# Glify: ikony_lista.md (znaki w tytułach GUI / lore)
+
+event:
+  wlaczony: false
+  czas-sekund: 86400
+  bossbar: true
+  tytul-bossbar: "&8[&f丷&8] &#FF7518%czas% &8| &#9B30FFevent"
+  tytul-krol: "&8[&f子&8] &#FF7518krol dyni &8· &#35105Efaza %faza%"
+  max-cukierkow-na-gracza-na-minute: 40
+  # Cukierki na mapie: zbieranie tylko PPM (prawy) na glowke — bez auto-zbierania w poblizu.
+  klikniec-na-zbieranie: 20
+  odstep-klikniecia-ms: 120
+  # ArmorStand cukierka: marker=false = ma hitbox (wymagane do PPM). true = brak hitboxu.
+  cukierki-marker: false
+  cukierki-male: true
+  cukierki-gravity: false
+  cukierki-offset-y: 0.0
+  cukierki-zasieg-klikniecia: 4.5
+  swiaty: []
+
+# Losowe wydarzenia w trakcie /ahalloween start (czas rzeczywisty).
+dynamic-events:
+  nocne-fale:
+    enabled: true
+    co-minuty: 18
+    tylko-noc-minecraft: true
+    czas-trwania-sekundy: 180
+    moby-na-spawn: 2
+    typy-mobow:
+      - dynia
+      - duch
+      - szkielet
+      - nietoperz
+    mnoznik-drop-mob: 1.5
+    bossbar: true
+    tytul-bossbar: "&8[&f子&8] &#35105Enoc duchow &8| &#9B30FF%czas%"
+  mini-godzinny:
+    enabled: true
+    co-sekundy: 3600
+    czas-trwania-sekundy: 600
+    pierwszy-po-start-sekundy: 120
+    mnoznik-zebranych-cukierkow: 2.0
+    mnoznik-respawn-cukierkow: 0.5
+    bossbar: true
+    tytul-bossbar: "&8[&f丷&8] &#FF7518slodki szal &8| &#FF36D1x%mnoznik% &7%czas%"
+
+nexo:
+  worek: ""
+  glyphy:
+    menu: ""
+    worek: ""
+    misje: ""
+    ulepszenia: ""
+    sklep: ""
+    ranking: ""
+    boss: ""
+
+poziomy:
+  exp-na-poziom: 250
+  max-poziom: 50
+  exp-cukierek: 2
+  exp-mob: 8
+  exp-boss: 80
+  exp-misja: 25
+
+worek:
+  nazwa: "&f價 &#9B30FFworek na cukierki"
+  lore:
+    - "&8&m                    "
+    - "&f嗨 &7ppm &8· &#9B30FFmagazyn eventu"
+    - "&#35105E&7cukierki nie trafiaja do eq"
+    - "&8&m                    "
+  material: PLAYER_HEAD
+  texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+  pojemnosc-bazowa: 200
+
+candies:
+  zwykly:
+    enabled: true
+    display-name: "&#FF7518cukierek"
+    lore:
+      - "&7zwykly drop eventu"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    nexo: ""
+    interaction: RIGHT_CLICK
+    respawn-seconds: 25
+    amount-min: 1
+    amount-max: 2
+    rarity: COMMON
+    value: 1
+    weight: 50
+    max-active: 24
+    collect-radius: 1.6
+  dyniowy:
+    enabled: true
+    display-name: "&#FF7518cukierek dyniowy"
+    lore:
+      - "&7ppm &8· &#FF7518zbierz"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 35
+    amount-min: 1
+    amount-max: 3
+    rarity: UNCOMMON
+    value: 2
+    weight: 28
+    max-active: 16
+    collect-radius: 1.8
+  duchowy:
+    enabled: true
+    display-name: "&#9B30FFcukierek duchowy"
+    lore:
+      - "&7ppm &8· &#9B30FFzbierz"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 40
+    amount-min: 1
+    amount-max: 2
+    rarity: RARE
+    value: 4
+    weight: 14
+    max-active: 10
+    collect-radius: 1.8
+  magiczny:
+    enabled: true
+    display-name: "&#FF36D1cukierek magiczny"
+    lore:
+      - "&7ppm &8· &#FF36D1zbierz"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 50
+    amount-min: 1
+    amount-max: 2
+    rarity: EPIC
+    value: 8
+    weight: 6
+    max-active: 6
+    collect-radius: 1.8
+  przeklety:
+    enabled: true
+    display-name: "&#35105Eprzeklety cukierek"
+    lore:
+      - "&7ppm &8· &#35105Euwaga"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 70
+    amount-min: 1
+    amount-max: 1
+    rarity: EPIC
+    value: 12
+    weight: 3
+    max-active: 4
+    collect-radius: 1.8
+  legendarny:
+    enabled: true
+    display-name: "&#FFD700legendarny cukierek"
+    lore:
+      - "&7ppm &8· &#FFD700rzadki"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 120
+    amount-min: 1
+    amount-max: 1
+    rarity: LEGENDARY
+    value: 25
+    weight: 1
+    max-active: 2
+    collect-radius: 1.8
+  skrzynia:
+    enabled: true
+    display-name: "&f亃 &#FF7518skrzynka"
+    lore:
+      - "&f嗨 &7ppm &8· losowy cukierek"
+    texture: "http://textures.minecraft.net/texture/a1661645c4687214058e214db0749b5ecc299c5100a0362948b00be3ec2d3489"
+    interaction: RIGHT_CLICK
+    respawn-seconds: 90
+    amount-min: 2
+    amount-max: 5
+    rarity: EPIC
+    value: 6
+    weight: 0
+    max-active: 4
+    collect-radius: 1.8
+    crate: true
+
+# Punkty spawnu cukierkow i mobow NIE sa w tym pliku — zapisuje je plugin:
+#   plugins/Inventory/ahalloween-spawns.yml  (/ahalloween candy setspawn)
+# Opcjonalnie recznie (po reload wczyta sie do eventu):
+spawns:
+  candy: {}
+  mob: {}
+  # przyklad:
+  # candy:
+  #   spawn_s1:
+  #     type: any
+  #     world: world
+  #     x: 100.5
+  #     y: 64.0
+  #     z: 200.5
+
+# Moby eventu — spawn przez MythicMobs (ModelEngine 3D, pliki MythicMobs/mobs/halloween/)
+# Internal Name z MM, np. /mm m spawn DulahanDummyHead 1
+mobs:
+  vanilla-fallback: false
+  wylacz-pasek-przy-mythic-boss: true
+  # Po zabiciu Krola Dyni (Dulahan) — usuwa skrzynie z MythicMobs (~onDeath death-summon).
+  krol-usun-skrzynie-po-smierci: true
+  krol-promien-czyszczenia: 80
+  krol-mythic-do-usuniecia:
+    - DulahanChest
+    - DulahanTheHeadlessHorsemanDeathSummon
+  # Ranking dmg na scoreboardzie Krola: per_hit (kazde trafienie = X), final, raw
+  krol-obrazenia-ranking: per_hit
+  krol-obrazenia-na-uderzenie: 1
+  dynia:
+    enabled: true
+    mythic-mob: DulahanDummyHead
+    mythic-level: 1
+    override-hp: true
+    override-name: true
+    display-name: "&6Dyniowy potwor"
+    type: ZOMBIE
+    hp: 50
+    damage: 4
+    respawn-seconds: 90
+    max-alive: 8
+    candy-id: dyniowy
+    candy-min: 2
+    candy-max: 5
+    rare: false
+  duch:
+    enabled: true
+    mythic-mob: EliteMountVol16Ghostship
+    mythic-level: 1
+    override-hp: true
+    override-name: true
+    display-name: "&5Duch Halloweenowy"
+    type: VEX
+    hp: 50
+    damage: 3
+    respawn-seconds: 80
+    max-alive: 8
+    candy-id: duchowy
+    candy-min: 2
+    candy-max: 4
+    rare: false
+  szkielet:
+    enabled: true
+    mythic-mob: EliteMountVol16Skeleptor
+    mythic-level: 1
+    override-hp: true
+    override-name: true
+    display-name: "&fPrzeklety szkielet"
+    type: SKELETON
+    hp: 50
+    damage: 5
+    respawn-seconds: 100
+    max-alive: 6
+    candy-id: zwykly
+    candy-min: 2
+    candy-max: 6
+    rare: false
+  wiedzma:
+    enabled: true
+    mythic-mob: EliteMountVol16Watcher
+    mythic-level: 1
+    override-hp: true
+    override-name: true
+    display-name: "&5Wiedzma Halloweenowa"
+    type: WITCH
+    hp: 50
+    damage: 4
+    respawn-seconds: 110
+    max-alive: 4
+    candy-id: magiczny
+    candy-min: 1
+    candy-max: 3
+    rare: true
+  nietoperz:
+    enabled: true
+    mythic-mob: EliteMountVol16Broomstick
+    mythic-level: 1
+    override-hp: true
+    override-name: true
+    display-name: "&8Nietoperz cieni"
+    type: PHANTOM
+    hp: 50
+    damage: 2
+    respawn-seconds: 70
+    max-alive: 10
+    candy-id: zwykly
+    candy-min: 1
+    candy-max: 3
+    rare: false
+  krol:
+    enabled: true
+    mythic-mob: DulahanTheHeadlessHorseman
+    mythic-level: 1
+    override-hp: false
+    override-name: false
+    display-name: "&6&lKrol Dyni"
+    type: ZOMBIE
+    hp: 400
+    damage: 8
+    respawn-seconds: 900
+    max-alive: 1
+    candy-id: legendarny
+    candy-min: 4
+    candy-max: 8
+    rare: true
+    boss: true
+    miniony: [dynia, duch]
+
+missions:
+  zbierz_100:
+    typ: DAILY
+    nazwa: "&#FF7518slodki apetyt"
+    opis: "Zbierz 100 cukierkow."
+    cel: 100
+    stat: candies
+    nagroda-candy: zwykly
+    nagroda-ilosc: 20
+    exp: 40
+  zabij_15_duchow:
+    typ: DAILY
+    nazwa: "&#9B30FFlowca duchow"
+    opis: "Zabij 15 duchow."
+    cel: 15
+    stat: mob:duch
+    nagroda-candy: duchowy
+    nagroda-ilosc: 8
+    exp: 50
+  zabij_5_dyn:
+    typ: DAILY
+    nazwa: "&#FF7518rozgniec dynie"
+    opis: "Pokonaj 5 dyniowych potworow."
+    cel: 5
+    stat: mob:dynia
+    nagroda-candy: dyniowy
+    nagroda-ilosc: 10
+    exp: 40
+  magiczne_10:
+    typ: WEEKLY
+    nazwa: "&#FF36D1magiczna dziesiatka"
+    opis: "Zbierz 10 magicznych cukierkow."
+    cel: 10
+    stat: candy:magiczny
+    nagroda-candy: magiczny
+    nagroda-ilosc: 4
+    exp: 80
+  glowki_20:
+    typ: WEEKLY
+    nazwa: "&#9B30FFtajemnicze glowki"
+    opis: "Kliknij 20 obiektow (ppm)."
+    cel: 20
+    stat: clicks
+    nagroda-candy: przeklety
+    nagroda-ilosc: 2
+    exp: 70
+  boss:
+    typ: ONCE
+    nazwa: "&#FFD700upadek krola"
+    opis: "Pokonaj Krola Dyni."
+    cel: 1
+    stat: bosses
+    nagroda-candy: legendarny
+    nagroda-ilosc: 3
+    exp: 150
+  dzienny_limit:
+    typ: DAILY
+    nazwa: "&#FF7518nocny zbor"
+    opis: "Zdobadz 40 cukierkow dzisiaj."
+    cel: 40
+    stat: candies
+    nagroda-candy: dyniowy
+    nagroda-ilosc: 6
+    exp: 30
+  trickortreat_25:
+    typ: DAILY
+    nazwa: "&#9B30FFcukierek albo psikus"
+    opis: "Zapukaj do 25 domow eventowych (PPM na drzwi)."
+    cel: 25
+    stat: trickortreat
+    nagroda-candy: dyniowy
+    nagroda-ilosc: 12
+    exp: 55
+
+# Cukierek albo psikus — gracz PPM na zarejestrowane drzwi (admin: /ahalloween dom dodaj [nazwa])
+trick-or-treat:
+  wlaczone: true
+  # false = tylko drzwi dodane przez admina; true = kazde drzwi/falle na mapie eventu
+  wszystkie-drzwi: false
+  szansa-cukierka: 0.62
+  bonus-szczescie: true
+  cooldown-gracz-sekund: 30
+  cooldown-dom-sekund: 120
+  opoznienie-odpowiedzi-ticki: 14
+  cukierki-min: 1
+  cukierki-max: 3
+  trick:
+    czas-min-sekund: 4
+    czas-max-sekund: 7
+    efekty:
+      - SLOWNESS
+      - NAUSEA
+      - DARKNESS
+      - WEAKNESS
+
+upgrades:
+  magnes:
+    nazwa: "&#FF7518szybkosc zbierania"
+    opis: "Mniej klikniec ppm na jeden cukierek."
+    max: 5
+    koszty: [15, 30, 50, 80, 120]
+    bonus-na-poziom: 3
+  szczescie:
+    nazwa: "&#9B30FFszczescie"
+    opis: "Szansa na rzadszy cukierek."
+    max: 5
+    koszty: [20, 40, 70, 110, 160]
+    bonus-na-poziom: 0.04
+  worek:
+    nazwa: "&#FF7518wiekszy worek"
+    opis: "Wiecej miejsca w magazynie."
+    max: 5
+    koszty: [25, 45, 75, 120, 180]
+    bonus-na-poziom: 80
+  lowca:
+    nazwa: "&#35105Elowca"
+    opis: "Wiecej cukierkow z mobow."
+    max: 5
+    koszty: [20, 40, 65, 100, 150]
+    bonus-na-poziom: 0.12
+  pospiech:
+    nazwa: "&#FF36D1pospiech"
+    opis: "Bonus do ilosci przy zbieraniu."
+    max: 5
+    koszty: [20, 40, 70, 110, 160]
+    bonus-na-poziom: 0.08
+  dynia:
+    nazwa: "&#FFD700szczesliwa dynia"
+    opis: "Szansa na extra cukierek."
+    max: 5
+    koszty: [30, 55, 90, 140, 200]
+    bonus-na-poziom: 0.03
+
+# Sklep eventowy — normalne itemy (klucze, narzedzia, kosmetyki) za wartosc cukierkow w worku.
+# Cena = suma pol value cukierkow (nie liczba sztuk).
+#
+# STANDARD (klucz / item do eq):
+#   nazwa, material, amount, lore, cena, limit, slot
+#   → gracz dostaje ten przedmiot do inventory (chyba ze ustawisz daj-przedmiot: false).
+#
+# KLUCZ z pluginu skrzynek (tylko komenda, ikona w GUI):
+#   daj-przedmiot: false
+#   komendy:
+#     - "twojaKomenda key give %player% halloween 1"
+#
+# Item z Nexo: nexo: "id_z_nexo.yml"
+# Wiele itemow naraz: sekcja daj: { klucz1: { material: ... }, ... }
+#
+# Opcjonalnie (rzadko): grant: = cukierki do worka | crate: true = losowka cukierkow do worka
+shop:
+  klucz_halloween:
+    slot: 11
+    nazwa: "&#FF7518klucz halloween"
+    opis: "Otwiera skrzynke eventowa."
+    material: TRIPWIRE_HOOK
+    amount: 1
+    cena: 55
+    limit: 20
+    daj-przedmiot: false
+    komendy:
+      - "crates key give %player% halloween 1"
+  klucz_rzadki:
+    slot: 12
+    nazwa: "&#9B30FFklucz rzadki"
+    opis: "Lepsza skrzynka — podmien komende."
+    material: TRIPWIRE_HOOK
+    amount: 1
+    cena: 120
+    limit: 8
+    daj-przedmiot: false
+    komendy:
+      - "crates key give %player% halloween_rare 1"
+  glowa_dyni:
+    slot: 14
+    nazwa: "&fꔰ &#FF7518glowa dyni"
+    opis: "Item do eq — kolekcjonerska glowka."
+    material: JACK_O_LANTERN
+    amount: 1
+    cena: 160
+    limit: 3
+  tytul:
+    slot: 16
+    nazwa: "&#9B30FFtytul duch nocy"
+    opis: "Tylko komenda — bez itemu w eq."
+    material: NAME_TAG
+    amount: 1
+    cena: 320
+    limit: 1
+    daj-przedmiot: false
+    komendy:
+      - "lp user %player% meta set suffix &#9B30FF duch nocy"
+  # klucz jako fizyczny item (bez pluginu) — wystarczy material, bez komend:
+  # klucz_item:
+  #   slot: 20
+  #   nazwa: "&#FF7518klucz"
+  #   material: TRIPWIRE_HOOK
+  #   amount: 1
+  #   cena: 40
+  #   limit: 10
+  #   lore:
+  #     - "&7klik PPM na skrzynke"
+  #   enchanty:
+  #     unbreaking: 1
+  # miecz:
+  #   slot: 22
+  #   nazwa: "&#FF7518miecz dyni"
+  #   material: DIAMOND_SWORD
+  #   cena: 180
+  #   enchanty:
+  #     sharpness: 4
+
+# Scoreboard na czas walki z Krolem Dyni (jak KOTH — podmienia sidebar).
+# %nick_1..3%, %punkty_1..3% (obrazenia), %twoje_punkty%, %czas_linia% (%hp% / %hp_pct% w walce, %czas% po zabiciu).
+# KOTH ma pierwszenstwo, jesli trwa rownoczesnie.
+krol-scoreboard:
+  wlaczony: true
+  sekundy-po-zabiciu: 12
+  tytul: '&f子 &#9B30FF&lk&#35105E&lʀ&#FF7518&lᴏ&#FF36D1&lʟ &#35105E&lᴅʏɴɪ'
+  linie:
+    - ''
+    - '&fꕋ &f%nick_1% &8- &#FF7518%punkty_1% &7dmg'
+    - '&fꕌ &f%nick_2% &8- &#FF7518%punkty_2% &7dmg'
+    - '&fꕍ &f%nick_3% &8- &#FF7518%punkty_3% &7dmg'
+    - ' &7ty: &#FF7518%twoje_punkty% &7dmg'
+    - ''
+    - '%czas_linia%'
+    - ''
+    - '&f子 &#35105E&krol dyni &7na mapie'
+    - ' &7top dmg = &#FF7518cukierki &7do worka'
+    - ''
+  czas-trwa: '&#35105E&lhp &8| &#FF7518%hp% &8(&7%hp_pct%&8)'
+  czas-po: '&#FF7518&lpokonany! &7zniknie za &#9B30FF%czas%'
+  brak-gracza: '&8-'
+  nagrody:
+    wlaczone: true
+    top-1:
+      candy: legendarny
+      ilosc: 12
+    top-2:
+      candy: magiczny
+      ilosc: 8
+    top-3:
+      candy: dyniowy
+      ilosc: 6
+    ostatni-cios:
+      candy: przeklety
+      ilosc: 5
+
+gui:
+  menu-tytul: "&8「&f丷&8」 &#35105Eevent halloween"
+  worek-tytul: "&8「&f價&8」 &#35105Emagazyn"
+  misje-tytul: "&8「&f亄&8」 &#35105Emisje"
+  ulepszenia-tytul: "&8「&f亞&8」 &#35105Eulepszenia"
+  sklep-tytul: "&8「&f點&8」 &#35105Esklep"
+  ranking-tytul: "&8「&f澀&8」 &#35105Eranking"
+  stats-tytul: "&8「&f圍&8」 &#35105Estatystyki"
+
+wiadomosci:
+  prefix: "&8[&f丷&8] &6Halloween &8» &r"
+  brak-uprawnien: "&cNie masz uprawnien do tej komendy!"
+  tylko-gracz: "&cTa komenda jest tylko dla graczy!"
+  event-wylaczony: "&cEvent Halloween jest wylaczony!"
+  event-start: "&aEvent Halloween zostal &2wlaczony&a! &7Zbieraj cukierki do worka."
+  event-stop: "&cEvent Halloween zostal &4wylaczony&c."
+  zebrano: "&aZebrano &2+%ilosc% &7%nazwa% &8| &aIlosc cukierkow &8(&2%suma%&8/&4%max%&8)"
+  worek-pelny: "&cWorek jest pelny! &7Ulepsz pojemnosc w &e/ahalloween&7."
+  ulepszono: "&aUlepszono &e%nazwa% &8(&2poziom %poziom%&8)"
+  za-malo: "&cNie posiadasz tylu cukierkow &4%wymagane%"
+  posiadasz: "&aIlosc cukierkow &8(&2%cukierki%&8)"
+  kupiono: "&aKupiono &e%nazwa%"
+  misja-odebrana: "&aOdebrano nagrode misji &e%nazwa%"
+  boss-spawn: "&6&lKrol Dyni &epojawil sie na mapie!"
+  boss-kill: "&6&lKrol Dyni &azostal pokonany!"
+  boss-faza: "&6Krol Dyni &ewchodzi w &cfaze %faza%&e!"
+  boss-nagroda-top: "&aTOP &e%miejsce% &8| &a+%ilosc% &7%nazwa% &8(&7krol dyni&8)"
+  boss-nagroda-ostatni: "&aOstatni cios &8| &a+%ilosc% &7%nazwa% &8(&7krol dyni&8)"
+  spawn-ustawiony: "&aUstawiono punkt spawnu &8(&2%id%&8)"
+  spawn-event-off: "&7Zbieranie dziala po &e/ahalloween start&7. Cukierek juz postawiony w tym miejscu."
+  spawns-brak: "&cBrak punktow spawnu cukierkow."
+  spawns-naglowek: "&aPunkty spawnu cukierkow &8(&2%ilosc%&8):"
+  reload: "&aPrzeladowano konfiguracje AHalloween."
+  give: "&aNadano &e%item% &8x&2%ilosc% &agraczowi &f%gracz%"
+  set-worek: "&aZapisano szablon worka z przedmiotu w rece."
+  set-confirm: "&cWorek jest juz ustawiony! &7Wpisz &e/ahalloween set confirm"
+  limit: "&cOsiagnieto limit zbierania cukierkow w tej minucie!"
+  zbieranie-postep: "&7PPM &8| %pasek%"
+  fala-start: "&#35105E&lNoc duchow! &7Na spawnach mobow nadchodzi fala &8(&2%moby%&8)."
+  fala-koniec: "&7Noc duchow ustaje — spokojniejsza mapa."
+  mini-start: "&#FF7518&lSlodki szal! &7Przez &e%czas% &7x&6%mnoznik% &7cukierkow i szybszy respawn skrzynek."
+  mini-koniec: "&7Slodki szal dobiegl konca."
+  trick-dom-domyslny: "Dom"
+  trick-pukanie: "&#35105EPukasz do &f%dom%&7... cukierek albo psikus?"
+  trick-pukanie-action: "&#FF7518Puk, puk... &7%dom%"
+  trick-treat: "&#FF7518CUKIEREK! &7%dom% &8» &a+%ilosc% &7%nazwa%"
+  trick-trick: "&#9B30FFPSIKUS! &7%dom% &8» &c%efekt% &8(&7%czas%s&8)"
+  trick-cooldown: "&cPoczekaj jeszcze &e%czas%s &cprzed kolejnym pukaniem."
+  trick-cooldown-dom: "&cTen dom juz cie zna — wroc za &e%czas%s&c."
+  trick-brak-drzwi: "&cPatrz na drzwi (lub klapke) i sprobuj ponownie."
+  trick-dom-dodany: "&aDodano dom &f%nazwa% &8(&2%id%&8)"
+  trick-dom-usuniety: "&aUsunieto dom z listy trick-or-treat."
+  trick-dom-brak: "&cNie ma tu zarejestrowanego domu."
+  trick-dom-lista-pusta: "&cBrak domow — &e/ahalloween dom dodaj [nazwa]"
+  trick-dom-lista: "&aDomy trick-or-treat &8(&2%ilosc%&8):"
+  trick-dom-wyczyszczone: "&aUsunieto &2%ilosc% &adomow."
+  trick-event-wylaczony: "&cEvent Halloween jest wylaczony! &7Wlacz: &e/ahalloween start"
+  trick-wylaczone: "&cCukierek albo psikus jest wylaczone w &eahalloween.yml&c."
+  trick-zly-swiata: "&cTutaj nie dziala event Halloween &8(&7zly swiat&8)&c."
