@@ -4,6 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.command.PluginCommand;
+import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.TabCompleter;
 import org.bukkit.entity.Player;
 
@@ -18,6 +20,18 @@ public final class AHalloweenCommand implements CommandExecutor, TabCompleter {
 
     public AHalloweenCommand(AHalloweenManager manager) {
         this.manager = manager;
+    }
+
+    public void register(JavaPlugin plugin) {
+        for (String name : List.of("ahalloween", "kociol")) {
+            PluginCommand command = plugin.getCommand(name);
+            if (command == null) {
+                plugin.getLogger().severe("Brak komendy /" + name + " w plugin.yml. Wgraj kompletny JAR pluginu.");
+                continue;
+            }
+            command.setExecutor(this);
+            command.setTabCompleter(this);
+        }
     }
 
     @Override
