@@ -1,0 +1,67 @@
+transactions:
+- date: 1790363017111
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790362064941
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790197524770
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790197521020
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790197518120
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790197514670
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790197503470
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790197499720
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790196185870
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f實'
+  description: Zakup produktu
+  source: Flizx__
+  type: PURCHASE
+- date: 1790178599336
+  amount: 58.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790178593033
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

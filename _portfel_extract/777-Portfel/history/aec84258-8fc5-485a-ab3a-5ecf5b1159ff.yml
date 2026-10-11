@@ -1,0 +1,25 @@
+transactions:
+- date: 1790500485767
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: Ninjavvv
+  type: PURCHASE
+- date: 1790500189903
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790089619994
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: Ninjavvv
+  type: PURCHASE
+- date: 1790085846555
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

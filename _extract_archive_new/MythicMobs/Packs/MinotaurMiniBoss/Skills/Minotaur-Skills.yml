@@ -1,0 +1,409 @@
+
+
+
+CancelAttack:
+  Skills:
+  - CancelEvent
+
+attack_horns:
+  Cooldown: 5
+  Conditions:
+  - incombat true
+  - targetwithin{d=4} true
+  - hasaura{n=Minotaur_Impact} false
+  - hasaura{n=Throws_the_Ground} false
+  - hasaura{n=Double_Attack} false
+  - hasaura{n=Minotaur_Rush} false
+  - hasaura{n=Minotaur_Stun} false
+  - offgcd true
+  Skills:
+  - state{state=attack_horns;n=false;speed=1} @self 
+  - aura{auraName=Attack_Horns;duration=50} @self
+  - delay 13
+  - recoil{r=4;pitch=-1to1} @self
+  - skill{s=attack_horns_damage} @LivingInCone{a=90;r=3;rot=0.3}
+
+attack_horns_damage:
+  Skills:  
+  - damage{amount=15}
+  - throw{velocity=12}
+  - shieldbreak{duration=100}
+
+minotaur_impact:
+  Cooldown: 5
+  Conditions:
+  - incombat true
+  - targetwithin{d=5} true
+  - hasaura{n=Attack_Horns} false
+  - hasaura{n=Throws_the_Ground} false
+  - hasaura{n=Double_Attack} false
+  - hasaura{n=Minotaur_Rush} false
+  - hasaura{n=Minotaur_Stun} false
+  - offgcd true
+  Skills:
+  - setspeed{speed=0;type=WALKING} @self
+  - state{state=impact;n=false;speed=1} @self
+  - aura{auraName=Minotaur_Impact;duration=50} @self
+  - lockmodel{l=true} @self
+  - delay 10
+  - effect:sound{s=item.mace.smash_ground;v=2;p=10} @self
+  - particlering{p=block;radius=3;points=64;amount=5;hS=1;vS=0} @self
+  - damage{amount=10} @LivingInCone{a=360;r=5}
+  - throw{velocity=5;velocityY=5} @LivingInCone{a=360;r=5}  
+  - potion{type=SLOWNESS;duration=40;level=3;hasParticles=false} @LivingInCone{a=360;r=5} 
+  - recoil{r=3;pitch=-1to1} @self
+  - lockmodel{l=false} @self
+  - setspeed{speed=1.6;type=WALKING} @self
+
+throws_the_ground:
+  Cooldown: 20
+  Conditions:
+  - incombat true
+  - targetwithin{d=15} true 
+  - targetnotwithin{d=3} true
+  - hasaura{n=Attack_Horns} false
+  - hasaura{n=Minotaur_Impact} false
+  - hasaura{n=Double_Attack} false
+  - hasaura{n=Minotaur_Rush} false
+  - hasaura{n=Minotaur_Stun} false
+  - offgcd true
+  Skills:
+  - CancelEvent
+  - potion{type=SLOWNESS;duration=60;level=6;hasParticles=false} @self
+  - setspeed{speed=0;type=WALKING} @self
+  - setAI{ai=false} @self
+  - lockmodel{l=true} @self
+  - partvis{p=ground_with_roots;v=true} @self
+  - state{state=throws_the_ground;n=false;speed=1} @self
+  - aura{auraName=Throws_the_Ground;duration=100} @self
+  - setAI{ai=true} @self
+  - delay 50
+  - setspeed{speed=0;type=WALKING} @self
+  - lockmodel{l=false} @self
+  - delay 10
+  - projectile{bulletmatchdirection=true;g=0.4;bulletType=MOB;mob=Ground_with_Roots;oH=throws_the_ground_damage;onHitBlock=throws_the_ground_hitblock;v=20;mr=30;hnp=true;sE=true;sB=true;hs=false;syo=2;tyo=2} @target
+  - setspeed{speed=1.6;type=WALKING} @self
+  - delay 20
+  - partvis{p=ground_with_roots;v=false} @self
+
+throws_the_ground_damage:
+  Skills:
+  - damage{a=8;ia=true}
+  - throw{velocity=10}
+  - particles{p=block_crack;material=DIRT;a=100;hS=0.4;vS=0.2;speed=0.1;y=0.25}
+  - effect:sound{s=minecraft:minotaur.dirt_hit;v=1;p=1}
+  - potion{type=BLINDNESS;duration=60;hasParticles=false}
+
+throws_the_ground_hitblock:
+  Skills:
+  - particles{p=block_crack;material=DIRT;a=100;hS=0.4;vS=0.2;speed=0.1;y=0.25} @origin
+  - effect:sound{s=block.grass.break;v=1;p=0.8} @origin
+
+double_attack:
+  Cooldown: 5
+  Conditions:
+  - incombat true
+  - targetwithin{d=4} true
+  - hasaura{n=Attack_Horns} false
+  - hasaura{n=Minotaur_Impact} false
+  - hasaura{n=Throws_the_Ground} false
+  - hasaura{n=Minotaur_Rush} false
+  - hasaura{n=Minotaur_Stun} false
+  - offgcd true
+  Skills:
+  - state{state=double_attack;n=false;speed=1} @self 
+  - aura{auraName=Double_Attack;duration=50} @self
+  - delay 13
+  - damage{amount=10} @LivingInCone{a=120;r=3;rot=0.5}
+  - delay 13
+  - damage{amount=10} @LivingInCone{a=120;r=3;rot=0.5}
+
+minotaur_rush_supplement:
+  Skills:
+  - sound{sound=block.gravel.step;volume=0.55;pitch=0.8} @self
+  - particles{p=Campfire_Cosy_Smoke;amount=10;hS=0.3;vS=0.1;y=0.1;speed=0.04} @SelfLocation
+  - damage{amount=15} @LivingInCone{a=90;r=3;rot=0.3}
+  - shieldbreak{duration=250} @LivingInCone{a=90;r=3;rot=0.3} 
+
+minotaur_rush:
+  Cooldown: 25
+  Conditions:
+  - incombat true
+  - targetwithin{d=16} true
+  - targetnotwithin{d=6} true
+  - hasaura{n=Attack_Horns} false
+  - hasaura{n=Minotaur_Impact} false
+  - hasaura{n=Throws_the_Ground} false
+  - hasaura{n=Double_Attack} false
+  - offgcd true
+  - varequals{var=caster.rush;val=false} true
+  Skills:
+  - brightness{p=_light;b=15;s=15;em=false} @self
+  - state{state=minotaur_rush;n=false;speed=1} @self 
+  - aura{auraName=Minotaur_Rush;duration=100} @self
+  - BodyRotation{mh=0;mb=0;player=true} @self
+  - gcd{ticks=82}
+  - setspeed{speed=0;type=WALKING} @self
+  - delay 3
+  - effect:sound{s=minecraft:minotaur.roar;volume=3;pitch=1} @self
+  - delay 18
+  - setvar{var=caster.rush;val=true;type=STRING} @self 
+  - lockmodel{lock=true} @self
+  - skill{s=minotaur_acceleration} @TargetLocation @Forward{f=20;uel=true;rot=0}
+  - skill{s=minotaur_rush_supplement;repeat=7;repeatInterval=4} @self
+  - throw{velocity=5;velocityY=5;repeat=5;repeatInterval=5} @PIR{r=2} 
+  - delay 40
+  - setspeed{speed=0;type=WALKING} @self
+  - delay 22.6
+  - setvar{var=caster.rush;val=false;type=STRING} @self
+  - lockmodel{lock=false} @self
+  - setspeed{speed=1.6;type=WALKING} @self
+  
+minotaur_acceleration:
+  Skills:
+  - lunge{velocity=0.6;velocityY=-1;repeat=32;repeatInterval=1}
+
+minotaur_stun:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Attack_Horns} false
+  - hasaura{n=Minotaur_Impact} false
+  - hasaura{n=Throws_the_Ground} false
+  - hasaura{n=Double_Attack} false
+  - hasaura{n=Minotaur_Rush} true
+  - varequals{var=caster.rush;val=true} true
+  TargetConditions:
+  - blockType{type=WATER,
+                   AIR,
+                   WHITE_CARPET,
+                   ORANGE_CARPET,
+                   MAGENTA_CARPET,
+                   LIGHT_BLUE_CARPET,
+                   YELLOW_CARPET,
+                   LIME_CARPET,
+                   PINK_CARPET,
+                   GRAY_CARPET,
+                   LIGHT_GRAY_CARPET,
+                   CYAN_CARPET,
+                   PURPLE_CARPET,
+                   BLUE_CARPET,
+                   BROWN_CARPET,
+                   GREEN_CARPET,
+                   RED_CARPET,
+                   BLACK_CARPET,
+                   SHORT_GRASS,
+                   TALL_GRASS,
+                   SMALL_AMETHYST_BUD,
+                   MEDIUM_AMETHYST_BUD,
+                   LARGE_AMETHYST_BUD,
+                   BROWN_MUSHROOM,
+                   RED_MUSHROOM,
+                   CRIMSON_FUNGUS,
+                   WARPED_FUNGUS,
+                   FERN,
+                   DEAD_BUSH,
+                   DANDELION,
+                   POPPY,
+                   BLUE_ORCHID,
+                   ALLIUM,
+                   AZURE_BLUET,
+                   RED_TULIP,
+                   ORANGE_TULIP,
+                   WHITE_TULIP,
+                   PINK_TULIP,
+                   OXEYE_DAISY,
+                   CORNFLOWER,
+                   LILY_OF_THE_VALLEY,
+                   TORCHFLOWER,
+                   WITHER_ROSE,
+                   PINK_PETALS,
+                   SPORE_BLOSSOM,
+                   CRIMSON_ROOTS,
+                   WARPED_ROOTS,
+                   NETHER_SPROUTS,
+                   WEEPING_VINES,
+                   TWISTING_VINES,
+                   REDSTONE_WIRE,
+                   REDSTONE_TORCH,
+                   TORCH,
+                   TRIPWIRE,
+                   STONE_BUTTON,
+                   OAK_BUTTON,
+                   SPRUCE_BUTTON,
+                   BIRCH_BUTTON,
+                   JUNGLE_BUTTON,
+                   ACACIA_BUTTON,
+                   DARK_OAK_BUTTON,
+                   MANGROVE_BUTTON,
+                   CHERRY_BUTTON,
+                   BAMBOO_BUTTON,
+                   CRIMSON_BUTTON,
+                   WARPED_BUTTON,
+                   POLISHED_BLACKSTONE_BUTTON,
+                   SOUL_TORCH,
+                   FLOWER_POT,
+                   STONE_PRESSURE_PLATE,
+                   OAK_PRESSURE_PLATE,
+                   SPRUCE_PRESSURE_PLATE,
+                   BIRCH_PRESSURE_PLATE,
+                   JUNGLE_PRESSURE_PLATE,
+                   ACACIA_PRESSURE_PLATE,
+                   DARK_OAK_PRESSURE_PLATE,
+                   MANGROVE_PRESSURE_PLATE,
+                   CHERRY_PRESSURE_PLATE,
+                   BAMBOO_PRESSURE_PLATE,
+                   CRIMSON_PRESSURE_PLATE,
+                   WARPED_PRESSURE_PLATE,
+                   POLISHED_BLACKSTONE_PRESSURE_PLATE,
+                   HEAVY_WEIGHTED_PRESSURE_PLATE,
+                   LIGHT_WEIGHTED_PRESSURE_PLATE,
+                   MOSS_CARPET,
+                   WHITE_CANDLE,
+                   ORANGE_CANDLE,
+                   MAGENTA_CANDLE,
+                   LIGHT_BLUE_CANDLE,
+                   YELLOW_CANDLE,
+                   LIME_CANDLE,
+                   PINK_CANDLE,
+                   GRAY_CANDLE,
+                   LIGHT_GRAY_CANDLE,
+                   CYAN_CANDLE,
+                   PURPLE_CANDLE,
+                   BLUE_CANDLE,
+                   BROWN_CANDLE,
+                   GREEN_CANDLE,
+                   RED_CANDLE,
+                   BLACK_CANDLE,
+                   CANDLE,
+                   VINE,
+                   LARGE_FERN,
+                   SUNFLOWER,
+                   LILAC,
+                   ROSE_BUSH,
+                   PEONY,
+                   PITCHER_PLANT,
+                   SMALL_DRIPLEAF,
+                   GLOW_LICHEN,
+                   HANGING_ROOTS,
+                   SEAGRASS,
+                   SEA_PICKLE,
+                   COBWEB,
+                   WHEAT,
+                   BEETROOTS,
+                   CARROTS,
+                   POTATOES,
+                   NETHER_WART,
+                   SEAGRASS,
+                   LIGHT,
+                   RAIL,
+                   LAVA
+                   } false
+  Cooldown: 1
+  Skills:
+  - gcd{ticks=76}
+  - brightness{p=_light;b=15;s=15;em=true} @self
+  - state{state=stun;n=false;speed=1} @self
+  - effect:sound{s=minecraft:minotaur.minotaur_stun_wall;v=3;p=1} @self
+  - aura{auraName=Minotaur_Stun;duration=100} @self
+  - setvar{var=caster.rush;val=false;type=STRING} @self
+  - setspeed{speed=0;type=WALKING} @self
+  - setAI{ai=false} @self
+  - delay 76
+  - throw{velocity=7;velocityY=4} @LivingInCone{a=360;r=4}
+  - setAI{ai=true} @self
+  - setspeed{speed=1.6;type=WALKING} @self
+
+
+
+minotaur_awakening_recoil:
+  Skills:
+  - recoil{r=10;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=9;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=8;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=7;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=6;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=5;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=4;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=3;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=2;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=1;y=.1;pitch=.1}
+  - recoil{r=10;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=9;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=8;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=7;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=6;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=5;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=4;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=3;y=.1;pitch=.1}
+  - delay 1
+  - recoil{r=2;y=-.1;pitch=-.1}
+  - delay 1
+  - recoil{r=1;y=.1;pitch=.1}
+
+minotaur_awakening:
+  Cooldown: 200
+  Conditions:
+  - targetwithin{d=10} true
+  Skills:
+  - effect:sound{s=minecraft:minotaur.awakening;v=3;p=1} @self
+  - potion{type=SLOWNESS;duration=200;level=6;hasParticles=false} @PlayersNearOrigin{r=10} @target
+  - state{state=awakening;n=false;speed=1} @self
+  - delay 170
+  - skill{s=minotaur_awakening_recoil} @target
+  - delay 28
+  - throw{velocity=7;velocityY=7} @LivingInCone{a=360;r=3}
+  - summon{type=Minotaur} @origin 
+  - remove{} @self
+
+
+Minotaur_Walk:
+  Conditions:
+  - hasaura{n=Minotaur_Stun} false
+  - isMoving{true} @self
+  Skills:
+  - setSkillCooldown{skill=Minotaur_Run;seconds=0} @self
+  - defaultstate{t=walk;s=walk;li=5;lo=5} @self
+  - setspeed{speed=1.1;type=walking} @self
+  - setstance{stance=Walking;r=true;p=1} @self
+  - delay 10
+  - modstate{s=walk;r=true;p=1} @self
+
+Minotaur_Run:
+  Conditions:
+  - hasaura{n=Minotaur_Stun} false
+  Skills:
+  - setSkillCooldown{skill=Minotaur_Walk;seconds=0} @self
+  - defaultstate{t=walk;s=run;li=5;lo=5} @self
+  - setspeed{speed=1.6;type=walking} @self
+  - setstance{stance=Running;r=true;p=1} @self
+  - delay 10
+  - modstate{s=run;r=true;p=1} @self
+  
+minotaur_hurt_1:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - state{state=hurt_1;li=1;n=false;speed=1} @self  
+
+minotaur_hurt_2:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - state{state=hurt_2;li=1;n=false;speed=1} @self
+#M2NqVkbVp2RWdneaNlUFhneZhkYDZFWhJkT6JVba1WTwplaXN2a0R0cCFUS1NjZhdkQpJzN

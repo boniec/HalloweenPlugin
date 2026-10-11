@@ -1,0 +1,13 @@
+transactions:
+- date: 1789996711387
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Pseude_xisay
+  type: PURCHASE
+- date: 1789996655631
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

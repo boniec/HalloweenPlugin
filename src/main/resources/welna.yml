@@ -1,0 +1,32 @@
+# ==========================================================
+#   DROP Z WELNY (RED_WOOL / GREEN_WOOL / PURPLE_WOOL / WHITE_WOOL)
+#   Dropy ustawiasz komenda (permisja welna.admin):
+#     /awelna dodaj <red|green|purple|white> <szansa%>   - bierze przedmiot z reki (razem z iloscia i NBT)
+#     /awelna usun <welna> <numer>
+#     /awelna szansa <welna> <numer> <szansa%>
+#     /awelna lista [welna]
+#     /awelna reload
+#   Dane dropow trafiaja do welnadrop.yml (nie edytuj recznie, uzywaj komendy).
+#   Kazdy wpis jest losowany OSOBNO - jedno zniszczenie bloku moze dac kilka itemow albo zaden.
+# ==========================================================
+
+# Regiony WorldGuard, w ktorych welna daje dropy. Pusta lista = dziala wszedzie.
+# Przyklad: regiony: [kopalnia, welny]
+regiony: []
+
+# true = zwykly drop welny jest wylaczony (lecą tylko itemy z komendy)
+wylacz-zwykly-drop: true
+
+# true = itemy trafiaja prosto do ekwipunku (nadmiar spada pod nogi gracza)
+# false = itemy wypadaja w miejscu zniszczonego bloku
+do-ekwipunku: true
+
+# Dzwiek po wydobyciu itemu (pusty 'nazwa' = brak dzwieku)
+dzwiek:
+  nazwa: 'entity.experience_orb.pickup'
+  glosnosc: 1.0
+  ton: 1.2
+
+# Wiadomosc na czacie za KAZDY wydobyty item (pusta = brak)
+# Placeholdery: %item% %ilosc% %szansa%
+wiadomosc: '&8[&a+&8] &7Wydobyto: &f%item% &7x%ilosc% &8(&e%szansa%%&8)'

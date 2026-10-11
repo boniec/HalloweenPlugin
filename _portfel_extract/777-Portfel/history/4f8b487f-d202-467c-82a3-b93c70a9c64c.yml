@@ -1,0 +1,37 @@
+transactions:
+- date: 1790939046088
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: P0sterBoy
+  type: PURCHASE
+- date: 1790939031764
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790473305467
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: P0sterBoy
+  type: PURCHASE
+- date: 1790363929942
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: P0sterBoy
+  type: PURCHASE
+- date: 1790363912099
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: P0sterBoy
+  type: PURCHASE
+- date: 1790363898774
+  amount: 45.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

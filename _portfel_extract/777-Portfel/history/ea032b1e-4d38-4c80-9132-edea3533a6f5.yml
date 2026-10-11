@@ -1,0 +1,25 @@
+transactions:
+- date: 1789834183855
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Ziom_Koks
+  type: PURCHASE
+- date: 1789834179705
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Ziom_Koks
+  type: PURCHASE
+- date: 1789834152605
+  amount: 25.0
+  item: '&6ʀᴀɴɢᴀ &f賣'
+  description: Zakup produktu
+  source: Ziom_Koks
+  type: PURCHASE
+- date: 1789834134199
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

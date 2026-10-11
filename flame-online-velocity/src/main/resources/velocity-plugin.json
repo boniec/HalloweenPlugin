@@ -1,0 +1,7 @@
+{
+  "id": "flameonline",
+  "name": "FlameOnline",
+  "version": "1.0",
+  "authors": ["Boniec"],
+  "main": "boniec.online.velocity.FlameOnlineVelocity"
+}

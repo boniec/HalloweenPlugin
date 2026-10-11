@@ -1,0 +1,36 @@
+# Co sie dzieje po kliknieciu PPM w NPC.
+# Zmien linie "command{...}" na swoja komende (bez ukosnika).
+#   asTarget=true  -> komende wykonuje GRACZ ktory kliknal
+#   (bez asTarget) -> komende wykonuje KONSOLA; <target.name> = nick gracza
+# Cudzyslow " w komendzie jest zabroniony. Przyklady:
+#   - command{c="mistrzzadan";asTarget=true} @trigger
+#   - command{c="give <target.name> diamond 1"} @trigger
+
+hm5_click_king:
+  Cooldown: 2
+  Skills:
+  - message{m="<&e>Krol: <&f>Witaj, <target.name>!"} @trigger
+  - command{c="spawn";asTarget=true} @trigger
+
+hm5_click_knight:
+  Cooldown: 2
+  Skills:
+  - command{c="ulepsz";asTarget=true} @trigger
+
+hm5_click_jester:
+  Cooldown: 2
+  Skills:
+  - message{m="<&e>Blazen: <&f>Witaj, <target.name>!"} @trigger
+  - command{c="spawn";asTarget=true} @trigger
+
+hm5_click_enchantress:
+  Cooldown: 2
+  Skills:
+  - message{m="<&e>Czarodziejka: <&f>Witaj, <target.name>!"} @trigger
+  - command{c="spawn";asTarget=true} @trigger
+
+hm5_click_tavern:
+  Cooldown: 2
+  Skills:
+  - message{m="<&e>Karczmarz: <&f>Witaj, <target.name>!"} @trigger
+  - command{c="spawn";asTarget=true} @trigger

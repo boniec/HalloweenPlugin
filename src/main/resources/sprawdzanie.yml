@@ -1,0 +1,57 @@
+# =========================================================
+# SPRAWDZANIE GRACZY (/sprawdz)
+#  /sprawdz <gracz>                 - wzywa na sprawdzanie (zamrozenie, teleport)
+#  /sprawdz <gracz> czysty          - konczy sprawdzanie, gracz wraca
+#  /sprawdz <gracz> cheater         - komendy z wyniki.cheater
+#  /sprawdz <gracz> brakwspolpracy  - komendy z wyniki.brakwspolpracy
+#  /sprawdz <gracz> przyznanie      - komendy z wyniki.przyznanie
+#  /sprawdz ustaw | lista | reload
+#  Wylogowanie podczas sprawdzania = komendy z wyniki.wylogowanie
+#
+#  Komendy odpala KONSOLA (Twoj plugin banow: LiteBans, AdvancedBan itd.).
+#  Placeholdery: %gracz% %nick% %uuid% %admin% %powod% %wynik%
+# =========================================================
+lokacja: ""
+
+wyniki:
+  czysty:
+    komendy: []
+  cheater:
+    czas: 7d
+    powod: "Cheaty (sprawdzanie)"
+    komendy:
+      - "tempban %gracz% 7d %powod%"
+  brakwspolpracy:
+    czas: 14d
+    powod: "Brak wspolpracy podczas sprawdzania"
+    komendy:
+      - "tempban %gracz% 14d %powod%"
+  przyznanie:
+    czas: 3d
+    powod: "Przyznanie sie do cheatow"
+    komendy:
+      - "tempban %gracz% 3d %powod%"
+  wylogowanie:
+    powod: "Wylogowanie podczas sprawdzania"
+    komendy:
+      - "tempban %gracz% 14d %powod%"
+
+# Komendy, ktorych sprawdzany moze uzywac (reszta jest zablokowana).
+dozwolone-komendy:
+  - msg
+  - r
+  - w
+  - tell
+  - helpop
+
+wiadomosci:
+  title: "&c&lSPRAWDZANIE"
+  subtitle: "&7Nie wychodz z serwera! Wejdz na Discord."
+  start:
+    - "&8&m                                        "
+    - "&c&l  ZOSTALES WEZWANY NA SPRAWDZANIE"
+    - "&7  Sprawdza Cie: &f%admin%"
+    - "&7  Wejdz na nasz Discord i czekaj na instrukcje."
+    - "&7  Wylogowanie = &cban&7. Przyznanie sie = &ekrotszy ban&7."
+    - "&8&m                                        "
+  czysty: "&aSprawdzanie zakonczone - jestes czysty. Dziekujemy za wspolprace!"

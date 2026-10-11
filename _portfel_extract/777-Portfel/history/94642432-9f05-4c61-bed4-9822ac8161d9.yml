@@ -1,0 +1,14 @@
+transactions:
+- date: 1790431139335
+  amount: 60.0
+  item: '&#FFBC7C&lᴍ&#FFC282&lᴀ&#FFC789&lʟ&#FFCD8F&lʏ &#FFD99C&lᴘ&#FFDEA3&lᴀ&#FFE4A9&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: pawelzduniak_123
+  type: PURCHASE
+- date: 1790429944034
+  amount: 60.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

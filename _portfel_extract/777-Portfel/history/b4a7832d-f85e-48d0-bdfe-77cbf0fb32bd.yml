@@ -1,0 +1,19 @@
+transactions:
+- date: 1789932534489
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: x_K4M1L_x
+  type: PURCHASE
+- date: 1789932528096
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: x_K4M1L_x
+  type: PURCHASE
+- date: 1789932360559
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

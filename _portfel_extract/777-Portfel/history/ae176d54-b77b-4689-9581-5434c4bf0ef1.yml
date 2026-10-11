@@ -1,0 +1,19 @@
+transactions:
+- date: 1790003351386
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: debilku16
+  type: PURCHASE
+- date: 1790003332668
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: debilku16
+  type: PURCHASE
+- date: 1790003293050
+  amount: 60.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

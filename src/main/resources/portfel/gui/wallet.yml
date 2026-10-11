@@ -1,0 +1,65 @@
+title: '<shift:-8>&f当'
+size: 45
+
+items:
+  info:
+    material: BOOK
+    #custom-model-data: 1 - mozesz ustawic jesli chcesz ustawic custom texture
+    slot: 4
+    name: '&6Portfel'
+    lore:
+      - ''
+      - '&8▶ &eGdzie go doładujesz?'
+      - ' &fna discordzie serwerowym &bdc.gg/gzibmc'
+      - ' &fzrób ticket o kategori &a#zakup'
+      - ' '
+      - '&8▶ &eDarmowe vpln?'
+      - ' &fZa 200 wyświetleń pod tiktokiem otrzymujesz 1vPLN'
+      - ' &7Link: &adc.gg/gzibmc'
+      - ' '
+      - ' &8▸ &fTwój stan konta &8- &e{BALANCE} vPLN &8◂'
+      - ' '
+
+  daily_reward:
+    material: AIR
+    slot: 3
+    name: '&#FFD700&lᴄᴏᴅᴢɪᴇɴɴᴀ ɴᴀɢʀᴏᴅᴀ'
+    lore:
+      - ''
+      - ' &8» &7ᴋʟɪᴋɴɪᴊ ᴀʙʏ ᴏᴅᴇʙʀᴀᴄ'
+      - ' &8» &7ᴅᴢɪᴇɴɴᴀ ɴᴀɢʀᴏᴅᴇ'
+      - ' &8» &70.01 - 0.15 VPLN'
+      - ''
+    action: "NULL"
+
+  rangi:
+    material: WRITABLE_BOOK
+    slot: 40
+    name: '&e&lʀᴀɴɢɪ'
+    lore:
+      - ''
+      - ' &8» &aKliknij prawym aby przejść'
+      - ''
+    action: "CATEGORY:main"
+
+  klucze:
+    material: TRIPWIRE_HOOK
+    slot: 39
+    name: '&6&lᴋʟᴜᴄᴢᴇ'
+    lore:
+      - ''
+      - ' &8» &aKliknij prawym aby przejść'
+      - ''
+    action: "CATEGORY:klucze"
+
+  dodatki:
+    material: LIGHT_BLUE_DYE
+    slot: 41
+    name: '&b&lʀóżɴᴇ'
+    lore:
+      - ''
+      - ' &8» &aKliknij prawym aby przejść'
+      - ''
+    action: "CATEGORY:dodatki"
+
+ 

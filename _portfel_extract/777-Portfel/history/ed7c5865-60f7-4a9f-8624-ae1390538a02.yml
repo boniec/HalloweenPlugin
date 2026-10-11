@@ -1,0 +1,61 @@
+transactions:
+- date: 1790456594017
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790449124599
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790449105167
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790449051967
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790449047717
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790449026715
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: szakirek
+  type: ADD
+- date: 1790360529941
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790360393308
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790360262541
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: zieloniaczek2
+  type: PURCHASE
+- date: 1790360237952
+  amount: 75.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,25 @@
+transactions:
+- date: 1790862245438
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: myszozwierzak
+  type: PURCHASE
+- date: 1790446643717
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: myszozwierzak
+  type: PURCHASE
+- date: 1790446576667
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: myszozwierzak
+  type: PURCHASE
+- date: 1790446536768
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

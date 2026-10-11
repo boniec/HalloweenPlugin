@@ -1,0 +1,13 @@
+transactions:
+- date: 1790170567711
+  amount: 70.0
+  item: VPLN
+  description: Odjęcie środków
+  source: kebabdealer68
+  type: TAKE
+- date: 1790170563171
+  amount: 70.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

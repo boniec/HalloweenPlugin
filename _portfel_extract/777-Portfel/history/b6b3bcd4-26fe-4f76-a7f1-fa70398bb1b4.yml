@@ -1,0 +1,19 @@
+transactions:
+- date: 1790006770149
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: G0rLock11
+  type: PURCHASE
+- date: 1790006752637
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: G0rLock11
+  type: PURCHASE
+- date: 1790006698427
+  amount: 60.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

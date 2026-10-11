@@ -1,0 +1,13 @@
+transactions:
+- date: 1789997147386
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: Harek246
+  type: PURCHASE
+- date: 1789997141792
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,40 @@
+# Mnoznik TYLKO na licznik w MOTD/PAPI (10 graczy real = 30 na liscie). NIE zwieksza slotow serwera.
+# x3 tylko na trybach z mnoznik-na: true. Lobby bez mnoznika.
+mnoznik: 3
+
+# klucz placeholdera -> nazwa z velocity.toml [servers]
+serwery:
+  skypvp: skypvp
+  lobby: lobby
+
+mnoznik-na:
+  skypvp: true
+  lobby: false
+
+motd:
+  enabled: true
+  fake-count: true
+  fake-max: true
+  linia1: "&eSkyPvP &8| &f{online_all} &7graczy"
+  linia2: "&7Lobby 1:1 · tryb x{mnoznik}"
+
+ochrona:
+  anti-bot: true
+  # Pierwsze wejscie = kick z potwierdzeniem, drugie (po min..max sekundach) wpuszcza.
+  # Potem gracz (ten sam nick + IP) wchodzi normalnie przez weryfikacja-wazna-godzin.
+  podwojne-wejscie: true
+  podwojne-wejscie-min-sekund: 2
+  podwojne-wejscie-max-sekund: 300
+  weryfikacja-wazna-godzin: 24
+  kick-weryfikacja: "&aWeryfikacja anty-bot zaliczona!\n&7Wejdz na serwer &fjeszcze raz&7, aby zagrac."
+  kick-za-szybko: "&cOdczekaj chwile i wejdz ponownie."
+  max-kont-na-ip: 3
+  max-polaczen-na-10s: 4
+  nick-regex: "^[A-Za-z0-9_]{3,16}$"
+  kick-bot: "&cZa szybko. Sprobuj ponownie za chwile."
+  kick-nick: "&cNieprawidlowy nick."
+  kick-ip: "&cZa duzo kont z tego IP."
+  # Osoby z listy omijaja anti-bota. /flameonline whitelist add <nick> | whitelist ip <ip>
+  whitelist-nick:
+  whitelist-ip:
+    127.0.0.1: true

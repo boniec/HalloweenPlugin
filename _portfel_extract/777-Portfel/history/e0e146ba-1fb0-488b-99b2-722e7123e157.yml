@@ -1,0 +1,19 @@
+transactions:
+- date: 1790790623062
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: przychodzone2
+  type: PURCHASE
+- date: 1790705165799
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: przychodzone2
+  type: PURCHASE
+- date: 1790703812889
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

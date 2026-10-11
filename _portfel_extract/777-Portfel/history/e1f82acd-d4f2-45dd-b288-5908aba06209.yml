@@ -1,0 +1,175 @@
+transactions:
+- date: 1789239594018
+  amount: 25.0
+  item: '&6ʀᴀɴɢᴀ &f賣'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789239559620
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789138419766
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138374016
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138365916
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138342166
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138328266
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138325916
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138323966
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789138316016
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789071179667
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1789049220013
+  amount: 1000.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787841036768
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787841029969
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787582202062
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787582184762
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787582182462
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787582176853
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787581775162
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787581753848
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787176507157
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176505157
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176475657
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176472261
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176432907
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176430707
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176419607
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176413407
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787176356007
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

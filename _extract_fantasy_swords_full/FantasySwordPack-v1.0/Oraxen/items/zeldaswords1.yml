@@ -1,0 +1,96 @@
+# Zelda sword pack VOL 1
+# Made by SirValeron & Nyhus
+
+royalguardbroadsword:
+  displayname: <white> Royal Guard Broad Sword
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/royalguardbroadsword
+    textures:
+    - zeldaswords1textures/royalguardbroadswordtexture
+    custom_model_data: 1000
+
+royalbroadsword:
+  displayname: <white> Royal Broad Sword
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/royalbroadsword
+    textures:
+    - zeldaswords1textures/royalbroadswordtexture
+    custom_model_data: 1001
+
+royalguardclaymore:
+  displayname: <white> Royal Guard Claymore
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/royalguardclaymore
+    textures:
+    - zeldaswords1textures/royalguardclaymoretexture
+    custom_model_data: 1002
+
+royalclaymore:
+  displayname: <white> Royal Claymore
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/royalclaymore
+    textures:
+    - zeldaswords1textures/royalclaymoretexture
+    custom_model_data: 1003
+
+knightsbroadsword:
+  displayname: <white> Knights Broadsword
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/knightsbroadsword
+    textures:
+    - zeldaswords1textures/knightsbroadswordtexture
+    custom_model_data: 1004
+
+knightsclaymore:
+  displayname: <white> Knights Claymore
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/knightsclaymore
+    textures:
+    - zeldaswords1textures/knightsclaymoretexture
+    custom_model_data: 1005
+
+soldiersclaymore:
+  displayname: <white> Soldiers Claymore
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/soldiersclaymore
+    textures:
+    - zeldaswords1textures/soldierclaymoretexture
+    custom_model_data: 1006
+
+travellerssword2handed:
+  displayname: <white> Travellers Two Handed Sword
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/travellerssword2handed
+    textures:
+    - zeldaswords1textures/travellers2handedswordtexture
+    custom_model_data: 1007
+
+travellerssword:
+  displayname: <white> Travellers Sword
+  material: IRON_SWORD
+  Pack:
+    generate_model: true
+    parent_model: zeldaswords1/travellerssword
+    textures:
+    - zeldaswords1textures/travellerswordtexture
+    custom_model_data: 1008
+
+
+
+# 5428E490K9K875CZNFO8N0TOZ24

@@ -1,0 +1,13 @@
+transactions:
+- date: 1790358970392
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: xRayzenn
+  type: PURCHASE
+- date: 1790358875360
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

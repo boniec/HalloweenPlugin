@@ -1,0 +1,13 @@
+transactions:
+- date: 1790961202964
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: xlayooo
+  type: PURCHASE
+- date: 1790873191188
+  amount: 7.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

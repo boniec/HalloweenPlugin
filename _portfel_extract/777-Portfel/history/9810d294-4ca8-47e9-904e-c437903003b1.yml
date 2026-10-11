@@ -1,0 +1,19 @@
+transactions:
+- date: 1790937846038
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: Top1_Spell
+  type: PURCHASE
+- date: 1790937842688
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: Top1_Spell
+  type: PURCHASE
+- date: 1790937831791
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

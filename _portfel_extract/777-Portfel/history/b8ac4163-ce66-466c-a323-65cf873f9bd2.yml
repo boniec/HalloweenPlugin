@@ -1,0 +1,97 @@
+transactions:
+- date: 1790531128562
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1790103682630
+  amount: 16.0
+  item: '&b64x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1790097701378
+  amount: 17.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789930294396
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1789930268827
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787176400107
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176397158
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176394507
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176392207
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176388807
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176386407
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176376907
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1787176352640
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD
+- date: 1786910424850
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1786910421800
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: BejterNatoo
+  type: PURCHASE
+- date: 1786910298731
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

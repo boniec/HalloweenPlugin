@@ -1,0 +1,23 @@
+# BlackGold Crates (FairStudio) — klucze; skrzynie 3D = ModelEngine fairbg1/2/3
+# Paczka: BlackGold Crates.zip → _extract_packs/archive/
+
+blackkey1:
+  itemname: <bold><gradient:#650184:#FFB81D>Black Key 1
+  material: PAPER
+  Pack:
+    model: blackgold:blackgoldkey1
+    custom_model_data:
+
+blackkey2:
+  itemname: <bold><gradient:#650184:#FFB81D>Black Key 2
+  material: PAPER
+  Pack:
+    model: blackgold:blackgoldkey2
+    custom_model_data:
+
+blackkey3:
+  itemname: <bold><gradient:#650184:#FFB81D>Black Key 3
+  material: PAPER
+  Pack:
+    model: blackgold:blackgoldkey3
+    custom_model_data:

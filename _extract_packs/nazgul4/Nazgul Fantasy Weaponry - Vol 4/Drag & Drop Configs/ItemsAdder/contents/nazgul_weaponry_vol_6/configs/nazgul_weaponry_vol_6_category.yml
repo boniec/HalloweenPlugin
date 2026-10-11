@@ -1,0 +1,28 @@
+info:
+  namespace: nazgul_weaponry_vol_6
+categories:
+    nazgul_weaponry_vol_6:
+      enabled: true
+      skip_if_already: false
+      icon: nazgul_weaponry_vol_6:blood_sword
+      name: '&3Nazguls Weaponry Vol6'
+      permission: ia.menu
+      items:
+      - "nazgul_weaponry_vol_6:blood_sword"
+      - "nazgul_weaponry_vol_6:blood_sword_noanim"
+      - "nazgul_weaponry_vol_6:bloodhound"
+      - "nazgul_weaponry_vol_6:bloodhound_noanim"
+      - "nazgul_weaponry_vol_6:euphoria"
+      - "nazgul_weaponry_vol_6:euphoria_noanim"
+      - "nazgul_weaponry_vol_6:golem_greatbow"
+      - "nazgul_weaponry_vol_6:great_sword"
+      - "nazgul_weaponry_vol_6:great_sword_noanim"
+      - "nazgul_weaponry_vol_6:ice_axe"
+      - "nazgul_weaponry_vol_6:ice_axe_noanim"
+      - "nazgul_weaponry_vol_6:mohgwyn_spear"
+      - "nazgul_weaponry_vol_6:mohgwyn_spear_noanim"
+      - "nazgul_weaponry_vol_6:red_lightning"
+      - "nazgul_weaponry_vol_6:straight_sword"
+      - "nazgul_weaponry_vol_6:straight_sword_noanim"
+      - "nazgul_weaponry_vol_6:winged_scythe"
+      - "nazgul_weaponry_vol_6:winged_scythe_noanim"

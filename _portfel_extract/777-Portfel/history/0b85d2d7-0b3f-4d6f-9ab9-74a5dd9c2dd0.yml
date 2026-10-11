@@ -1,0 +1,33 @@
+transactions:
+- date: 1790708117286
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790705949762
+  amount: 20.0
+  item: '&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ
+    &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)'
+  description: Zakup produktu
+  source: SiwyRatatujb161
+  type: PURCHASE
+- date: 1790705938315
+  amount: 75.0
+  item: '&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ'
+  description: Zakup produktu
+  source: SiwyRatatujb161
+  type: PURCHASE
+- date: 1790705928370
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: SiwyRatatujb161
+  type: PURCHASE
+- date: 1790705897403
+  amount: 250.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

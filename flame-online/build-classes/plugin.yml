@@ -1,0 +1,14 @@
+name: FlameOnline
+version: "1.0"
+main: boniec.online.FlameOnlinePlugin
+api-version: "1.21"
+author: Boniec
+softdepend: [PlaceholderAPI]
+commands:
+  flameonline:
+    description: Przeladowanie FlameOnline.
+    usage: /flameonline reload
+    permission: flameonline.admin
+permissions:
+  flameonline.admin:
+    default: op

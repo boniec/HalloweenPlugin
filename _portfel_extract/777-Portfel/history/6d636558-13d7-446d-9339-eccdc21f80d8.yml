@@ -1,0 +1,25 @@
+transactions:
+- date: 1791037173121
+  amount: 30.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: _vdtm_
+  type: PURCHASE
+- date: 1791027568138
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790358629742
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: _vdtm_
+  type: PURCHASE
+- date: 1790358605067
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

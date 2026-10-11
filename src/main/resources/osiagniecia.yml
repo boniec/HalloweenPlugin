@@ -1,0 +1,102 @@
+# ════════════════════════════════════════════════════════════════════
+#  OSIĄGNIĘCIA
+# ════════════════════════════════════════════════════════════════════
+#  kategorie.<id>:
+#    klucz          - nazwa wewnetrzna (dane graczy, base_money, rewards).
+#                     NIE ZMIENIAJ jej po starcie serwera, bo gracze straca
+#                     informacje o odebranych nagrodach.
+#    nazwa          - nazwa wyswietlana w GUI
+#    ikona          - material w menu glownym
+#    slot           - slot w menu glownym (45 slotow, 0-44)
+#    zrodlo         - skad brac postep:
+#                     ZABOJSTWA, RANKING, WYKOPANE_BLOKI, POSTAWIONE_BLOKI,
+#                     CZAS_GRY (godziny), BOSS_DMG (obrazenia zadane bossom),
+#                     POZIOM (poziom z /poziom), STATYSTYKA (dowolna vanilla)
+#    statystyka     - nazwa statystyki Bukkit (tylko dla zrodlo: STATYSTYKA)
+#    dzielnik       - przez ile podzielic statystyke (np. 100000 = cm -> km)
+#    jednostka      - tekst po liczbie w opisie
+#    nagroda-bazowa - kasa za poziom = nagroda-bazowa * poziom
+#                     (wpis w base_money nadpisuje te wartosc)
+#    progi          - lista wymagan; kazdy element = kolejny poziom
+#    komendy.<poziom> - opcjonalne komendy z konsoli po odebraniu ({player})
+#
+#  Przedmioty-nagrody dodajesz w grze:
+#    /osiagniecia admin additem <kategoria> <poziom>
+# ════════════════════════════════════════════════════════════════════
+
+kategorie:
+  zabojstwa:
+    klucz: "Zabójstwa"
+    nazwa: "&c&lᴢᴀʙᴏᴊsᴛᴡᴀ"
+    ikona: DIAMOND_SWORD
+    slot: 10
+    zrodlo: ZABOJSTWA
+    jednostka: "zabójstw"
+    nagroda-bazowa: 0
+    progi: [10, 30, 60, 100, 150, 210, 280, 360, 450, 550, 660, 780, 910, 1050, 1200, 1360, 1530, 1710]
+
+  ranking:
+    klucz: "Tiery"
+    nazwa: "&e&lʀᴀɴᴋɪɴɢ"
+    ikona: NETHER_STAR
+    slot: 12
+    zrodlo: RANKING
+    jednostka: "punktów"
+    nagroda-bazowa: 0
+    progi: [1250, 1500, 1750, 2000, 2250, 2600, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6750, 7500, 8500, 9500, 11000]
+
+  wykopane_bloki:
+    klucz: "Wykopane Bloki"
+    nazwa: "&6&lᴡʏᴋᴏᴘᴀɴᴇ ʙʟᴏᴋɪ"
+    ikona: GOLDEN_PICKAXE
+    slot: 14
+    zrodlo: WYKOPANE_BLOKI
+    jednostka: "bloków"
+    nagroda-bazowa: 0
+    progi: [10000, 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000, 100000, 125000, 150000, 200000, 250000, 350000, 500000, 750000, 1000000]
+
+  czas_gry:
+    klucz: "Czas Gry"
+    nazwa: "&b&lᴄᴢᴀs ɢʀʏ"
+    ikona: CLOCK
+    slot: 16
+    zrodlo: CZAS_GRY
+    jednostka: "godzin"
+    nagroda-bazowa: 0
+    progi: [4, 8, 12, 16, 20, 24, 28, 32, 36, 48, 60, 75, 100, 125, 150, 200, 250, 300]
+
+  boss_dmg:
+    klucz: "boss_dmg"
+    nazwa: "&4&lᴅᴍɢ ᴢᴀᴅᴀɴʏ ʙᴏssᴏᴍ"
+    ikona: WITHER_SKELETON_SKULL
+    slot: 20
+    zrodlo: BOSS_DMG
+    jednostka: "obrażeń"
+    nagroda-bazowa: 200
+    progi: [100, 250, 500, 1000, 2000, 3500, 5000, 7500, 10000, 15000, 20000, 30000, 40000, 50000, 75000, 100000]
+
+  postawione_bloki:
+    klucz: "postawione_bloki"
+    nazwa: "&d&lᴘᴏsᴛᴀᴡɪᴏɴᴇ ʙʟᴏᴋɪ"
+    ikona: BRICKS
+    slot: 22
+    zrodlo: POSTAWIONE_BLOKI
+    jednostka: "bloków"
+    nagroda-bazowa: 150
+    progi: [500, 1000, 2500, 5000, 10000, 20000, 35000, 50000, 75000, 100000, 150000, 200000, 300000, 500000]
+
+  poziom:
+    klucz: "poziom"
+    nazwa: "&a&lᴘᴏᴢɪᴏᴍ ᴘᴏsᴛᴀᴄɪ"
+    ikona: EXPERIENCE_BOTTLE
+    slot: 24
+    zrodlo: POZIOM
+    jednostka: "poziom"
+    nagroda-bazowa: 1000
+    progi: [2, 3, 4, 5]
+
+powiadomienia:
+  # Co ile sekund sprawdzac, czy gracz ma cos do odebrania (0 = wylaczone)
+  co-ile-sekund: 60
+  wiadomosc: "&8» &a✔ &fᴏsɪᴀɢɴɪęᴄɪᴇ ɢᴏᴛᴏᴡᴇ: {nazwa} &f#{poziom} &8(&7/osiagniecia&8)"
+  wiele: "&8» &a✔ &fᴍᴀsᴢ &a{ilosc} &fᴏsɪᴀɢɴɪęć ᴅᴏ ᴏᴅᴇʙʀᴀɴɪᴀ &8(&7/osiagniecia&8)"

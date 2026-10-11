@@ -1,0 +1,32 @@
+# =========================================================
+#  Konfiguracja prywatnego TurboDropa (/freeturbo)
+#  Kolory tekstu: kod '&' (np. &a - zielony, &c - czerwony)
+#
+#  To jest PRYWATNY baf (widoczny tylko dla gracza, ktory go uzyl) -
+#  osobny od serwerowego /gornik turbodrop. Mnozy TYLKO cene ze
+#  sprzedazy bloku w /gornik dla tego jednego gracza.
+#
+#  Czas trwania liczy sie WYLACZNIE gdy gracz realnie kopie blok z cena
+#  (nie plynie w tle, gdy gracz stoi/AFK/walczy).
+# =========================================================
+
+settings:
+  # Mnoznik ceny bloku dla gracza z aktywnym FreeTurbo.
+  mnoznik: 2.0
+  # Czas trwania bafu w SEKUNDACH KOPANIA (nie realnego czasu) - domyslnie 15 minut.
+  czas-trwania-sekund: 900
+  # Cooldown miedzy uzyciami /freeturbo, w GODZINACH.
+  cooldown-godzin: 12
+
+bossbar:
+  kolor: YELLOW
+  styl: SOLID
+  # %x% = mnoznik, %czas% = pozostaly czas kopania (mm:ss)
+  tytul: '&6⛏ &8| &fᴘᴏsɪᴀᴅᴀsᴢ ᴅᴀʀᴍᴏᴡʏ &6ᴛᴜʀʙᴏᴅʀᴏᴘ &8(&ex%x%&8) &fɴᴀ &e%czas%'
+
+# Sekcja "cooldowny" jest zapisywana AUTOMATYCZNIE przez plugin (UUID gracza -> czas ostatniego uzycia).
+# Nie edytuj recznie, chyba ze chcesz zresetowac komus cooldown (usun jego linijke).
+cooldowny:
+  a8678f78-1d76-4310-a35c-2abbc7f3254f: 1790681961498
+  a2ece08a-e74f-4b6e-9aca-3f4eda49ef36: 1790787987612
+aktywne: {}

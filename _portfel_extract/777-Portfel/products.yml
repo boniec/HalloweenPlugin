@@ -1,0 +1,320 @@
+products:
+  pakiecik:
+    name: "&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ"
+    price: 100.0
+    material: "GOLD_BLOCK"
+    #custom-model-data: 1 - mozesz ustawic jesli chcesz ustawic custom texture
+    slot: 24
+    category: dodatki
+    lore:
+      - ""
+      - "&8▶ &7Pakiet zawiera:"
+      - " &8▸ &6Ranga &f實 &7(14dni)"
+      - " &8▸ &e8x LuckyBlock"
+      - " &8▸ &512x StarBox"
+      - " &8▸ &b24x EpicBock"
+      - ""
+      - " &8▸ &fKoszt produktu: &#FFD700{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lootbox give {PLAYER} luckyblock 8"
+      - "case give {PLAYER} starbox 12"
+      - "case give {PLAYER} epicbox 24"
+      - "lp user {PLAYER} parent addtemp gzib 14d"
+  
+  luckyblock:
+    name: "&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ"
+    price: 10.0
+    material: "SPONGE"
+    #custom-model-data: 1 - mozesz ustawic jesli chcesz ustawic custom texture
+    slot: 13
+    category: klucze
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &#FFD700{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} luckyblock 1"
+  vip:
+    name: "&2ʀᴀɴɢᴀ &f龜"
+    price: 10.0
+    material: "LEATHER_HELMET"
+    #custom-model-data: 1 - mozesz ustawic jesli chcesz ustawic custom texture
+    slot: 20
+    category: main
+    lore:
+      - ""
+      - " &8x &fRanga trwa &214d"
+      - ""
+      - " &8x &fKoszt rangi: &210,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lp user {PLAYER} parent addtemp vip 30d"
+
+  svip:
+    name: "&6ʀᴀɴɢᴀ &f賣"
+    price: 25.0
+    material: "GOLDEN_HELMET"
+    slot: 21
+    category: main
+    lore:
+      - ""
+      - " &8x &fRanga trwa &e30d"
+      - ""
+      - " &8x &fKoszt rangi: &e25,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lp user {PLAYER} parent addtemp svip 30d"
+
+  mvip:
+    name: "&6ʀᴀɴɢᴀ &f實"
+    price: 40.0
+    material: "DIAMOND_HELMET"
+    slot: 23
+    category: main
+    lore:
+      - ""
+      - " &8x &fRanga trwa &630d"
+      - ""
+      - " &8x &fKoszt rangi: &650,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lp user {PLAYER} parent addtemp gzib 30d"
+
+  worki:
+    name: "&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ"
+    price: 15.0
+    material: "PAPER"
+    custom-model-data: 105
+    slot: 24
+    category: main
+    lore:
+      - ""
+      - " &8x &fKoszt produktu: &615,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} patronevent 16"
+
+  prezent2:
+    name: "&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)"
+    price: 20.0
+    material: "RED_WOOL"
+    custom-model-data: 50
+    slot: 11
+    category: main
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &c{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} patronevent1 1"
+  srednipakiet:
+    name: "&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ &lᴏ&lɢ"
+    price: 150.0
+    material: "ORANGE_SHULKER_BOX"
+    slot: 15
+    category: main
+    lore:
+      - ""
+      - "&8▶ &7Pakiet zawiera produkty:"
+      - " &8▸ &c6x &lᴘʀᴇᴢᴇɴᴛ (ᴘᴏᴢ.2)"
+      - " &8▸ &680x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ"
+      - ""
+      - " &8▸ &fKoszt produktu: &6{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} patronevent1 6"
+      - "case give {PLAYER} patronevent 80"
+  malypakiet:
+    name: "&#FFBC7C&lᴍ&#FFC282&lᴀ&#FFC789&lʟ&#FFCD8F&lʏ &#FFD99C&lᴘ&#FFDEA3&lᴀ&#FFE4A9&lᴋ&lɪ&lᴇ&lᴛ &lᴏ&lɢ"
+    price: 60.0
+    material: "YELLOW_SHULKER_BOX"
+    slot: 14
+    category: main
+    lore:
+      - ""
+      - "&8▶ &7Pakiet zawiera produkty:"
+      - " &8▸ &c3x &lᴘʀᴇᴢᴇɴᴛ (ᴘᴏᴢ.2)"
+      - " &8▸ &630x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ"
+      - ""
+      - " &8▸ &fKoszt produktu: &6{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} patronevent1 3"
+      - "case give {PLAYER} patronevent 30"
+  rangakostka:
+    name: "&6ʀᴀɴɢᴀ &f腦"
+    price: 30.0
+    material: "GOLD_INGOT"
+    slot: 12
+    category: main
+    lore:
+      - ""
+      - " &8x &fCzas trwania: &67d"
+      - ""
+      - " &8x &fKoszt produktu: &630,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lp user {PLAYER} parent addtemp og 7d"
+  rangakostka1:
+    name: "&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ"
+    price: 60.0
+    material: "LEATHER_CHESTPLATE"
+    slot: 13
+    category: main
+    lore:
+      - ""
+      - "&8▶ &7Pakiet zawiera produkty:"
+      - " &8▸ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ"
+      - " &8▸ &6ʀᴀɴɢᴀ &f腦"
+      - ""
+      - " &8x &fKoszt produktu: &660,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "lp user {PLAYER} parent addtemp og 7d"
+      - "akostium {PLAYER} stivka"
+
+  star:
+    name: "&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx"
+    price: 2
+    material: "TRIPWIRE_HOOK"
+    custom-model-data: 1001
+    slot: 14
+    category: klucze
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} starbox 1"
+  epic:
+    name: "&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx"
+    price: 1
+    material: "TRIPWIRE_HOOK"
+    custom-model-data: 1000
+    slot: 12
+    category: klucze
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} epicbox 1"
+  odlamki1:
+    name: "&b64x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ"
+    price: 16
+    material: "PRISMARINE_SHARD"
+    custom-model-data: 1000
+    slot: 13
+    category: dodatki
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "adminpatron giveodlamek {PLAYER} 64"
+  odlamki2:
+    name: "&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ"
+    price: 8
+    material: "PRISMARINE_SHARD"
+    custom-model-data: 1000
+    slot: 12
+    category: dodatki
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "adminpatron giveodlamek {PLAYER} 32"
+  odlamki3:
+    name: "&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ"
+    price: 4
+    material: "PRISMARINE_SHARD"
+    custom-model-data: 1000
+    slot: 11
+    category: dodatki
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "adminpatron giveodlamek {PLAYER} 16"
+  odlamki5:
+    name: "&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ"
+    price: 75
+    material: "PRISMARINE_SHARD"
+    custom-model-data: 1000
+    slot: 15
+    category: dodatki
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "adminpatron giveodlamek {PLAYER} 300"
+  odlamki4:
+    name: "&b150x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ"
+    price: 37
+    material: "PRISMARINE_SHARD"
+    custom-model-data: 1000
+    slot: 14
+    category: dodatki
+    lore:
+      - ""
+      - " &8▸ &fKoszt produktu: &d{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "adminpatron giveodlamek {PLAYER} 150"
+  zestawgzib:
+    name: "&6&lᴢᴇꜱᴛᴀᴡ &f實"
+    price: 75
+    material: "DIAMOND_HELMET"
+    custom-model-data: 1000
+    slot: 23
+    category: dodatki
+    lore:
+      - ""
+      - "&8▶ &7Pakiet zawiera:"
+      - " &8▸ &6ʀᴀɴɢᴀ &f實 &7(30dni)"
+      - " &8▸ &e2x &6&lʟᴜᴄᴋʏʙʟᴏᴄᴋ"
+      - " &8▸ &56x &d&lꜱᴛᴀʀ&5&lʙᴏx"
+      - " &8▸ &b8x &9&lᴇᴘɪᴄʙᴏx"
+      - ""
+      - " &8▸ &fKoszt produktu: &e{PRICE} VPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "aszaman dajodlamek {PLAYER} 150"
+  bogacza:
+    name: "&#F8D438&lS&#F9D545&lK&#FAD653&lR&#FBD760&lZ&#FCD86E&lY&#FCD87B&lN&#FDD988&lI&#FEDA96&lA &#FFD58C&lB&#FFCF74&lO&#FFC95D&lG&#FFC246&lA&#FFBC2F&lC&#FFB617&lZ&#FFB000&lA"
+    price: 40.0
+    material: "YELLOW_CONCRETE_POWDER"
+    slot: 22
+    category: main
+    lore:
+      - ""
+      - " &8x &fKoszt klucza: &e40,0 vPLN"
+      - ""
+      - "&aKliknij, aby &2dokonać &azakupu"
+    commands:
+      - "case give {PLAYER} bogacza 1"
+
+ 

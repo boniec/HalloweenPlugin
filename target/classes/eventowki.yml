@@ -1,0 +1,649 @@
+# =========================================================
+#  EVENTOWKI.YML - Konfiguracja Event Items modułu PoleZamek
+#  
+#  Tutaj konfigurujemy wszystkie przedmioty eventowe:
+#  - Kokos, Lampion, Antycobweb, Olej, Moc Vadera, Moc Yody
+#  - Cukierki Luke Skywalkera, Jablko Jedi, Kamien Odrodzenia, Koza, Eventowka losowa
+#  - Sakiewka Mandalorianina (eventowka: drop PvP do shulkera)
+#  - Kosa Grabazy, Gwozdz Trumny (halloween)
+#
+#  CustomModelData: kazdy item ma <item>.custom-model-data (0 = brak, zwykly item).
+#  Zmiana dziala po /polezamekreload (itemy graczy odswieza sie same).
+#
+#  Kolory: & kod (np. &a = zielony, &c = czerwony, &x&R&R&G&G&B&B = RGB)
+#  Po zmianach: /polezamekreload
+# =========================================================
+
+# =========================================================
+# KOKOS - Moćny item leczniczy z efektami (jednorazowy)
+# =========================================================
+kokos:
+  # Nazwa przedmiotu (wyświetlana w ekwipunku)
+  name: "&fꕃ &f&lᴋᴏᴋᴏꜱ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 1001
+
+  # Efekty na jedzeniu
+  regen-amplifier: 1          # Amplifier regeneracji (0 = regen I, 1 = regen II, etc)
+  regen-duration-seconds: 5   # Czas trwania regeneracji
+
+  absorption-amplifier: 1     # Amplifier absorpcji (serca zł)
+  absorption-duration-seconds: 120  # Czas trwania absorpcji (2 minuty)
+
+  speed-amplifier: 0          # Amplifier szybkości (0 = speed I, etc)
+  speed-duration-seconds: 10  # Czas trwania szybkości
+
+  # Lore (opis przedmiotu - jeśli puste, użyje domyślnego)
+  lore:
+    - "&f"
+    - "&f ꕃ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&E&3&C&9&A&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&E&3&C&9&A&0ᴢᴊᴇꜱᴄ ᴋᴏᴋᴏꜱᴀ"
+    - "&f ꕣ &fꕩ &f互 ᴋᴛᴏʀʏ ᴅᴀ ᴄɪ &x&E&3&C&9&A&0ʀᴇɢᴇɴᴇʀᴀᴄᴊᴇ, ᴀʙꜱᴏʀᴘᴄᴊᴇ &fɪ ꜱᴢʏʙᴋᴏꜱᴄ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&E&3&C&9&A&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# LAMPION - Item leczniczy (wielorazowy) + regeneracja
+# =========================================================
+lampion:
+  # Nazwa przedmiotu
+  name: "&fꔯ &6&lʟᴀᴍᴘɪᴏɴ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 1
+
+  # Cooldown między użyciami (w sekundach)
+  cooldown-seconds: 60
+
+  # Efekty regeneracji
+  regen-amplifier: 3          # Regeneracja III
+  regen-duration-seconds: 5   # 5 sekund regeneracji
+
+  # Lore (opis przedmiotu)
+  lore:
+    - "&f"
+    - "&f ꔯ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&F&B&1&3&Bʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&F&B&1&3&Bᴢᴀᴘᴀʟɪᴄ ʟᴀᴍᴘɪᴏɴ"
+    - "&f ꕣ ᴋᴛᴏʀʏ ᴏᴅɴᴏᴡɪ ᴛᴡᴏᴊᴇ &x&F&F&B&1&3&Bᴢᴅʀᴏᴡɪᴇ &fᴅᴢɪᴇᴋɪ ʀᴇɢᴇɴᴇʀᴀᴄᴊɪ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&B&1&3&Bꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# ANTYCOBWEB - Usuwacz pajęczyn w pobliżu
+# =========================================================
+antycobweb:
+  # Nazwa przedmiotu
+  name: "&fꔱ &6Usuwacz pajęczyn"
+  # CustomModelData (0 = brak)
+  custom-model-data: 1001
+
+  # Cooldown między użyciami
+  cooldown-seconds: 10
+
+  # Promień działania (w blokach)
+  radius: 7
+
+  # Lore
+  lore:
+    - "&f"
+    - "&f ꔱ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&5&C&5&4&2ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&5&C&5&4&2ᴢɴɪꜱᴢᴄᴢʏᴄ ᴡꜱᴢʏꜱᴛᴋɪᴇ"
+    - "&f ᴘᴀᴊᴇᴄᴢʏɴʏ &x&F&5&C&5&4&2ᴡᴏᴋᴏʟ ᴄɪᴇʙɪᴇ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&5&C&5&4&2ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# OLEJ - Magiczny olej uzdrawiający (Premium event item)
+# =========================================================
+olej:
+  # Nazwa przedmiotu (ze specjalnym gradientem kolorów)
+  name: "&f亣 &x&6&0&E&5&B&2ᴏ&x&6&0&E&8&A&Dʟ&x&6&0&E&B&A&8ᴇ&x&6&0&E&E&A&2ⱼ &x&6&0&D&5&C&Cᴄ&x&6&0&D&8&C&6-&x&6&0&D&B&C&1&l3&x&6&0&D&E&B&Cᴘ&x&6&0&E&2&B&7ᴏ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 2001
+
+  # Cooldown między użyciami
+  cooldown-seconds: 60
+
+  # Efekty regeneracji
+  regen-amplifier: 5          # Regeneracja V (bardzo moc!)
+  regen-duration-seconds: 5   # 5 sekund intensywnego leczenia
+
+  # Lore
+  lore:
+    - "&f"
+    - "&f 亣 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&6&0&E&5&B&2ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&6&0&E&5&B&2ɴᴀꜱᴍᴀʀᴏᴡᴀᴄ ꜱɪᴇ ᴏʟᴇᴊᴇᴍ"
+    - "&f ꕣ ᴋᴛᴏʀʏ ᴘᴏᴢᴡᴏʟɪ ɴᴀ &x&6&0&E&5&B&2ꜱᴢʏʙꜱᴢᴀ ᴢᴅᴏʟɴᴏꜱᴄ ʟᴇᴄᴢᴇɴɪᴀ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&6&0&E&5&B&2ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# MOC VADERA - Siła mocy ciemnej (Premium PvP item)
+# =========================================================
+moc-vadera:
+  # Nazwa z gradient efektem (od jasno-czerwonego do ciemnego)
+  name: "&fꔪ &x&F&6&3&0&3&0&lᴍ&x&F&5&3&5&3&5&lᴏ&x&F&4&3&A&3&A&lᴄ &x&F&3&4&0&4&0&lᴅ&x&F&2&4&5&4&5&lᴀ&x&F&1&4&A&4&A&lʀ&x&F&0&5&0&5&0&lᴛ&x&E&F&5&5&5&5&lʜ&x&E&E&5&A&5&A&lᴀ &x&E&D&6&0&6&0&lᴠ&x&E&C&6&5&6&5&lᴀ&x&E&B&6&A&6&A&lᴅ&x&E&A&7&0&7&0&lᴇ&x&E&9&7&5&7&5&lʀ&x&E&8&7&A&7&A&lᴀ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 3001
+
+  # Cooldown między użyciami
+  cooldown-seconds: 60
+  duration-seconds: 10
+
+  # Lore
+  lore:
+    - "&f"
+    - "&f ꔪ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&6&3&0&3&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f 丱 ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&6&3&0&3&0ᴢᴀᴅᴀᴡᴀᴄ +10% ᴅᴀᴍᴀɢᴇ"
+    - "&f ᴘʀᴢᴇᴄɪᴡɴɪᴋᴏᴍ &fᴋᴛᴏʀᴢʏ &x&F&6&3&0&3&0ᴄɪᴇʙɪᴇ ᴀᴛᴀᴋᴜᴊᴀ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&6&3&0&3&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# MOC YODY - Mądrość i szczęście (Premium PvP item)
+# =========================================================
+moc-yody:
+  # Nazwa z gradient efektem (od jasno-zielonego do ciemnego)
+  name: "&f也 &x&6&0&E&5&B&2&lᴍ&x&6&8&E&5&8&0&lᴏ&x&7&1&E&5&7&A&lᴄ &x&8&1&E&5&7&0&lʏ&x&8&9&E&5&6&B&lᴏ&x&9&2&E&5&6&5&lᴅ&x&9&A&E&5&6&0&lʏ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 4001
+
+  # Cooldown między użyciami
+  cooldown-seconds: 60
+
+  # Efekt szczęścia (luck)
+  luck-duration-seconds: 10    # Ile sekund gracz ma szczęście
+
+  # Lore
+  lore:
+    - "&f"
+    - "&f 也 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&9&A&E&5&6&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f 予 ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&9&A&E&5&6&0ᴏᴛʀᴢʏᴍʏᴡᴀᴄ -15% ᴅᴀᴍᴀɢᴇ"
+    - "&f ᴏᴅ &x&9&A&E&5&6&0ᴘʀᴢᴇᴄɪᴡɴɪᴋᴏᴡ &fᴋᴛᴏʀᴢʏ &x&9&A&E&5&6&0ᴄɪᴇʙɪᴇ ᴜᴅᴇʀᴢᴀᴊᴀ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&9&A&E&5&6&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# CUKIERKI LUKE SKYWALKERA - Siła I na kilka sekund (jednorazowe)
+# =========================================================
+cukierki:
+  name: "&f乞 &x&F&F&8&A&D&8&lᴄ&x&F&F&8&6&D&6&lᴜ&x&F&F&8&3&D&3&lᴋ&x&F&F&7&F&D&1&lɪ&x&F&F&7&C&C&E&lᴇ&x&F&F&7&8&C&C&lʀ&x&F&F&7&5&C&9&lᴋ&x&F&F&7&1&C&7&lɪ &x&F&F&6&D&C&4&lʟ&x&F&F&6&A&C&2&lᴜ&x&F&F&6&6&B&F&lᴋ&x&F&F&6&3&B&D&lᴇ &x&F&F&5&F&B&A&lꜱ&x&F&F&5&C&B&8&lᴋ&x&F&F&5&8&B&5&lʏ&x&F&F&5&4&B&3&lᴡ&x&F&F&5&1&B&0&lᴀ&x&F&F&4&D&A&E&lʟ&x&F&F&4&A&A&B&lᴋ&x&F&F&4&6&A&9&lᴇ&x&F&F&4&3&A&6&lʀ&x&F&F&3&F&A&4&lᴀ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 5001
+  cooldown-seconds: 30
+  strength-duration-seconds: 5
+  strength-amplifier: 0       # 0 = Siła I, 1 = Siła II
+  lore:
+    - "&f"
+    - "&f 乞 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&F&5&F&B&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&F&5&F&B&0ᴘᴏᴄᴢᴜᴄ ᴍᴏᴄ ꜱᴋʏᴡᴀʟᴋᴇʀᴀ"
+    - "&f 亞 ᴋᴛᴏʀʏ ᴅᴀ ᴄɪ &x&F&F&5&F&B&0ꜱɪʟᴇ &fI ɴᴀ &x&F&F&5&F&B&05 ꜱᴇᴋᴜɴᴅ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&5&F&B&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# SMOCZA FAJERWERKA - nieskonczona (nie zuzywa sie), PPM odpal / boost elytry
+# =========================================================
+smocza-fajerwerka:
+  name: "&f丷 &x&C&0&2&F&D&4&lꜱ&x&B&0&4&8&D&8&lᴍ&x&A&0&6&2&D&C&lᴏ&x&9&0&7&B&E&0&lᴄ&x&8&0&9&4&E&4&lᴢ&x&7&0&A&E&E&8&lᴀ &x&5&0&D&0&F&0&lꜰ&x&4&0&E&0&F&4&lᴀ&x&3&8&E&8&F&8&lᴊ&x&3&1&E&A&F&C&lᴇʀᴡᴇʀᴋᴀ"
+  custom-model-data: 0
+  lore:
+    - "&f"
+    - "&f 丷 ᴅᴢɪᴇᴋɪ ᴛᴇᴊ &x&C&0&2&F&D&4ʟᴇɢᴇɴᴅᴀʀɴᴇᴊ &fꜰᴀᴊᴇʀᴡᴇʀᴄᴇ"
+    - "&f ᴏᴅᴘᴀʟᴀꜱᴢ &x&3&1&E&A&F&Cɢᴀʟᴀᴋᴛʏᴄᴢɴᴇ &fꜱᴀʟᴡʏ ꜱᴍᴏᴋᴀ"
+    - "&f 丽 ɴᴀ &x&C&0&2&F&D&4ᴇʟʏᴛʀᴢᴇ &fᴅᴀᴊᴇ ʙᴏᴏꜱᴛ ʙᴇᴢ ᴢᴜᴢʏᴄɪᴀ"
+    - "&f 乂 &x&3&1&E&A&F&Cɴɪᴇꜱᴋᴏɴᴄᴢᴏɴᴀ &f- ɴɪᴇ ᴢᴜᴢʏᴡᴀ ꜱɪᴇ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&C&0&2&F&D&4ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# JABLKO JEDI - nieskonczone zlote jablko (nie zuzywa sie)
+# 90% absorpcja I (2 serca), 10% absorpcja II (4 serca)
+# =========================================================
+jablko-jedi:
+  name: "&fꕃ &x&F&F&D&7&0&0&lᴊ&x&F&F&C&F&0&0&lᴀ&x&F&F&C&7&0&0&lʙ&x&F&F&B&F&0&0&lʟ&x&F&F&B&7&0&0&lᴋ&x&F&F&A&F&0&0&lᴏ &x&F&F&A&7&0&0&lᴊ&x&F&F&9&F&0&0&lᴇ&x&F&F&9&7&0&0&lᴅ&x&F&F&8&F&0&0&lɪ"
+  custom-model-data: 1002
+  regen-amplifier: 1
+  regen-duration-seconds: 5
+  absorption-amplifier: 0
+  absorption-duration-seconds: 120
+  bonus-chance: 0.10
+  bonus-absorption-amplifier: 1
+  lore:
+    - "&f"
+    - "&f ꕃ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&F&D&7&0&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴊᴀʙʟᴋᴜ"
+    - "&f ᴢʏꜱᴋᴜᴊᴇꜱᴢ &x&F&F&C&7&0&0ʀᴇɢᴇɴᴇʀᴀᴄᴊᴇ &fɪ &x&F&F&A&7&0&0ᴀʙꜱᴏʀᴘᴄᴊᴇ"
+    - "&f"
+    - "&f  &8» &x&F&F&D&7&0&0ᴀʙꜱᴏʀᴘᴄᴊᴀ I &7- 2 ꜱᴇʀᴄᴀ"
+    - "&f  &8» &x&F&F&B&7&0&0ʀᴇɢᴇɴᴇʀᴀᴄᴊᴀ II &7- 5 ꜱᴇᴋᴜɴᴅ"
+    - "&f  &8» &x&F&F&9&F&0&010% &7ꜱᴢᴀɴꜱʏ ɴᴀ &x&F&F&D&7&0&04 ꜱᴇʀᴄᴀ"
+    - "&f  &8» &x&F&F&8&F&0&0ɴɪᴇꜱᴋᴏɴᴄᴢᴏɴᴇ &7- ɴɪᴇ ᴢᴜᴢʏᴡᴀ ꜱɪᴇ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&C&7&0&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# KAMIEN ODRODZENIA - dodaje 4 serca (NIESKOŃCZONY, tylko cooldown) - magma cream
+# =========================================================
+kamien-odrodzenia:
+  name: "&fꕣ &x&F&F&7&A&9&3&lᴋ&x&F&F&7&5&8&E&lᴀ&x&F&F&7&0&8&A&lᴍ&x&F&F&6&B&8&5&lɪ&x&F&F&6&6&8&0&lᴇ&x&F&F&6&1&7&C&lɴ &x&F&F&5&C&7&7&lᴏ&x&F&F&5&7&7&2&lᴅ&x&F&F&5&1&6&E&lʀ&x&F&F&4&C&6&9&lᴏ&x&F&F&4&7&6&4&lᴅ&x&F&F&4&2&6&0&lᴢ&x&F&F&3&D&5&B&lᴇ&x&F&F&3&8&5&6&lɴ&x&F&F&3&3&5&2&lɪ&x&F&F&2&E&4&D&lᴀ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 6001
+  cooldown-seconds: 20
+  hearts: 4
+  lore:
+    - "&f"
+    - "&f ꕣ ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&F&4&D&6&Dʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&F&4&D&6&Dᴏᴅᴢʏꜱᴋᴀᴄ ꜱɪʟʏ ᴢʏᴄɪᴏᴡᴇ"
+    - "&f ꕣ &fꕩ ᴋᴛᴏʀʏ ᴅᴏᴅᴀ ᴄɪ &x&F&F&4&D&6&D4 ꜱᴇʀᴄᴀ"
+    - "&f 乂 &x&F&F&4&D&6&Dɴɪᴇꜱᴋᴏɴᴄᴢᴏɴʏ &f- ɴɪᴇ ᴢᴜᴢʏᴡᴀ ꜱɪᴇ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&4&D&6&Dꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# KOZA - prawy klik NA GRACZU: arena 15x15 dla dwóch osób na 10s (NIESKONCZONA, tylko cooldown)
+#  - ten sam gracz nie moze byc zamkniety ponownie przez 90s (cooldown-na-celu-seconds) - nie da sie przedluzyc areny
+#  - elytra jest zdejmowana (do EQ, a przy pełnym EQ na ziemię) przy próbie użycia na arenie
+# =========================================================
+koza:
+  name: "&f乤 &x&F&2&E&6&C&8&lᴋ&x&D&9&C&7&A&3&lᴏ&x&C&1&A&8&7&F&lᴢ&x&A&8&8&9&5&A&lᴀ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 7001
+  cooldown-seconds: 60
+  # Cooldown na GRACZU, na ktorym uzyto koze - w tym czasie nie da sie go zamknac na arenie ponownie (zadna koza)
+  cooldown-na-celu-seconds: 90
+  worldborder-duration-seconds: 10
+  # Szerokosc areny w kratkach (stawianie do krawedzi — border technicznie + place-extra)
+  worldborder-size: 15
+  # Vanilla WorldBorder odcina ~1 kratke przed linia; dodajemy do srednicy bordera (domyslnie 2)
+  worldborder-place-extra: 2
+  lore:
+    - "&f"
+    - "&f 乤 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&D&9&C&7&A&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&D&9&C&7&A&0ᴢᴀᴍᴋɴᴀᴄ ᴅᴡᴏᴄʜ ɢʀᴀᴄᴢʏ"
+    - "&f 丶 ɴᴀ &x&D&9&C&7&A&0ᴀʀᴇɴɪᴇ &f15x15 ɴᴀ &x&D&9&C&7&A&010 ꜱᴇᴋᴜɴᴅ"
+    - "&f 临 ɴɪᴋᴛ ᴘᴏᴢᴀ ɴɪᴍɪ &x&D&9&C&7&A&0ɪᴄʜ ɴɪᴇ ᴡɪᴅᴢɪ"
+    - "&f 与 &x&D&9&C&7&A&0ᴇʟʏᴛʀᴀ &fᴢᴏꜱᴛᴀɴɪᴇ &x&D&9&C&7&A&0ᴢᴅᴊᴇᴛᴀ &fᴘʀᴢʏ ᴘʀᴏʙɪᴇ ᴜᴢʏᴄɪᴀ"
+    - "&f"
+    - "&f 乁 ᴜᴢʏᴊ &x&D&9&C&7&A&0ᴘʀᴀᴡʏᴍ &fɴᴀ ɢʀᴀᴄᴢᴜ"
+    - "&f 乂 &x&D&9&C&7&A&0ɴɪᴇꜱᴋᴏɴᴄᴢᴏɴᴀ &f- ɴɪᴇ ᴢᴜᴢʏᴡᴀ ꜱɪᴇ"
+    - "&f ᴛᴇɢᴏ ꜱᴀᴍᴇɢᴏ ɢʀᴀᴄᴢᴀ ᴍᴏᴢᴇꜱᴢ ᴜᴅᴇʀᴢʏᴄ &x&D&9&C&7&A&0ᴄᴏ 90 ꜱᴇᴋᴜɴᴅ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&D&9&C&7&A&0ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# EVENTOWKA LOSOWA - losowy efekt na 3s (nazwa tymczasowa - do zmiany)
+# =========================================================
+eventowka-random:
+  name: "&f乴 &x&D&0&8&C&F&F&lᴇ&x&C&B&8&5&F&D&lᴠ&x&C&6&7&E&F&B&lᴇ&x&C&1&7&7&F&9&lɴ&x&B&C&7&0&F&7&lᴛ&x&B&7&6&9&F&5&lᴏ&x&B&2&6&2&F&3&lᴡ&x&A&D&5&C&F&0&lᴋ&x&A&8&5&5&E&E&lᴀ &x&A&3&4&E&E&C&lʟ&x&9&E&4&7&E&A&lᴏ&x&9&9&4&0&E&8&lꜱ&x&9&4&3&9&E&6&lᴏ&x&8&F&3&2&E&4&lᴡ&x&8&A&2&B&E&2&lᴀ"
+  # CustomModelData (0 = brak)
+  custom-model-data: 8001
+  cooldown-seconds: 45
+  effect-duration-seconds: 3
+  lore:
+    - "&f"
+    - "&f 乴 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&B&4&5&C&F&Fʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡɪ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&B&4&5&C&F&Fᴡʏʟᴏꜱᴏᴡᴀᴄ ᴇꜰᴇᴋᴛ"
+    - "&f 乳 ɴᴀ &x&B&4&5&C&F&F3 ꜱᴇᴋᴜɴᴅʏ &fᴍᴏᴢᴇ ᴛᴏ ʙʏᴄ:"
+    - "&8x &f亞 &x&B&4&5&C&F&Fꜱɪʟᴀ &fIII"
+    - "&8x &f亚 &x&B&4&5&C&F&Fᴏꜱʟᴀʙɪᴇɴɪᴇ &fI"
+    - "&8x &f亐 &x&B&4&5&C&F&Fᴛʀᴜᴄɪᴢɴᴀ &fIII"
+    - "&8x &f临 &x&B&4&5&C&F&Fᴏꜱʟᴇᴘɪᴇɴɪᴇ"
+    - "&8x &f互 &x&B&4&5&C&F&Fꜱᴘᴇᴇᴅ &fII"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&B&4&5&C&F&Fꜱᴘᴀᴡɴɪᴇ"
+    - ""
+
+# =========================================================
+# WIADOMOŚCI - Teksty wysyłane graczom
+# =========================================================
+messages:
+  prefix: "&8[&aEventowki&8] &r"
+
+  # Kokos
+  kokos-eaten: "&aOtrzymałeś &f&lᴋᴏᴋᴏꜱ&a!"
+  kokos-cooldown: "&cMusisz poczekać jeszcze &e{czas}s&c!"
+
+  # Lampion
+  lampion-cooldown: "&fꔯ &6&lʟᴀᴍᴘɪᴏɴ &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  lampion-activated: "&fꔯ &6&lʟᴀᴍᴘɪᴏɴ &8| &aLampion zaczął cię leczyć!"
+
+  # Antycobweb
+  antycobweb-cooldown: "&cMusisz poczekać jeszcze &e{czas}s &cprzed ponownym użyciem!"
+  antycobweb-removed: "&a&l✔ &aUsunięto &e{count} &apajęczyn w pobliżu!"
+  antycobweb-none: "&7Nie znaleziono żadnych pajęczyn w pobliżu!"
+
+  # Olej
+  olej-cooldown: "&f亣 &x&6&0&E&5&B&2Olej &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  olej-activated: "&f亣 &x&6&0&E&5&B&2Olej &8| &aOlej zaczął cię leczyć!"
+
+  # Moc Vadera
+  moc-vader-cooldown: "&fꔪ &x&F&6&3&0&3&0Moc Vadera &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  moc-vader-activated: "&fꔪ &x&F&6&3&0&3&0Moc Vadera &8| &aZa słabą mocę boli!"
+
+  # Moc Yody
+  moc-yody-cooldown: "&f也 &x&9&A&E&5&6&0Moc Yody &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  moc-yody-activated: "&f也 &x&9&A&E&5&6&0Moc Yody &8| &aMądrość chroni!"
+
+  # Cukierki Luke Skywalkera
+  cukierki-cooldown: "&f乞 &x&F&F&5&F&B&0Cukierki &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  cukierki-activated: "&f乞 &x&F&F&5&F&B&0Cukierki &8| &aPoczułeś moc Skywalkera! &7(Siła I)"
+
+  # Jablko Jedi (bez wiadomosci na czacie)
+
+  # Kamien Odrodzenia
+  kamien-odrodzenia-cooldown: "&fꕣ &x&F&F&4&D&6&DKamień Odrodzenia &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  kamien-odrodzenia-activated: "&fꕣ &x&F&F&4&D&6&DKamień Odrodzenia &8| &aOtrzymałeś &c4 serca&a!"
+
+  # Koza
+  koza-cooldown: "&f乤 &x&D&9&C&7&A&0Koza &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  koza-activated: "&f乤 &x&D&9&C&7&A&0Koza &8| &aZamknięto Cię na arenie z &e{gracz} &ana &e{czas}s&a!"
+  koza-too-far: "&f乤 &x&D&9&C&7&A&0Koza &8| &cTen gracz jest za daleko!"
+  koza-busy: "&f乤 &x&D&9&C&7&A&0Koza &8| &cJeden z graczy jest już na arenie!"
+  koza-elytra: "&f乤 &x&D&9&C&7&A&0Koza &8| &cElytra została zdjęta - nie możesz jej używać na arenie!"
+  koza-already-used: "&f乤 &x&D&9&C&7&A&0Koza &8| &cTen gracz był niedawno na arenie! Poczekaj jeszcze &e{czas}s&c."
+
+  # Eventowka losowa
+  eventowka-random-cooldown: "&f乴 &x&B&4&5&C&F&FEventówka &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  eventowka-random-activated: "&f乴 &x&B&4&5&C&F&FEventówka &8| &aWylosowano: {efekt}"
+
+  # Sakiewka Mandalorianina
+  sakiewka-received: "&f丮 &x&F&F&C&C&6&6ꜱᴀᴋɪᴇᴡᴋᴀ &8| &aOtrzymałeś sakiewkę z łupami od &f{gracz}&a!"
+  sakiewka-full: "&f丮 &x&F&F&C&C&6&6ꜱᴀᴋɪᴇᴡᴋᴀ &8| &eSakiewka pełna - reszta dropu wypadła na ziemię!"
+
+  # Kosa Grabazy
+  kosa-grabaza-cooldown: "&f乥 &x&F&F&6&B&1&Aᴋᴏꜱᴀ ɢʀᴀʙᴀᴢʏ &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  kosa-grabaza-hit: "&f乥 &x&F&F&6&B&1&Aᴋᴏꜱᴀ ɢʀᴀʙᴀᴢʏ &8| &aTrafiłeś &f{gracz}&a! &7(-3❤, oslabienie, glowing, blokada fajerwerk)"
+  kosa-grabaza-victim: "&f乥 &x&F&F&6&B&1&Aᴋᴏꜱᴀ ɢʀᴀʙᴀᴢʏ &8| &c{gracz} &7trafił Cię kosą! &c-3❤"
+  kosa-grabaza-fajerwerka: "&f乥 &x&F&F&6&B&1&Aᴋᴏꜱᴀ ɢʀᴀʙᴀᴢʏ &8| &cBlokada fajerwerki! Jeszcze &e{czas}s&c."
+
+  # Gwozdz Trumny
+  gwozdz-trumny-cooldown: "&f与 &x&C&4&A&5&7&4ɢᴡᴏᴢᴅᴢ ᴛʀᴜᴍɴʏ &8| &cMusisz odczekać jeszcze &e{czas}s&c!"
+  gwozdz-trumny-used: "&f与 &x&C&4&A&5&7&4ɢᴡᴏᴢᴅᴢ ᴛʀᴜᴍɴʏ &8| &aPrzebiłeś &f{gracz}&a! &7(freeze 2s, oslabienie II 6s)"
+  gwozdz-trumny-victim: "&f与 &x&C&4&A&5&7&4ɢᴡᴏᴢᴅᴢ ᴛʀᴜᴍɴʏ &8| &c{gracz} &7przebił Cię gwoździem!"
+
+  # GUI
+  gui-title: "&5&lEwentualne Itemy"
+  gui-received: "&aOtrzymałeś &f{item}&a!"
+
+# =========================================================
+# USTAWIENIA GLOBALNE EVENT ITEMÓW
+# =========================================================
+eventowe-przedmioty:
+  # Regiony WorldGuard gdzie event itemy są ZABLOKOWANE
+  # Nazwa regionu musi zawierać jedno z poniższych słów
+  blocked-region-keywords:
+    - "spawn"
+    - "bezpieczna"
+    - "lobby"
+
+  # Czy logować użycie event itemów w konsoli?
+  log-usage: false
+
+  # Czy pokazywać wiadomości w chacie przy użyciu?
+  show-messages: true
+
+
+# =========================================================
+# SAKIEWKA MANDALORIANINA - eventowka (shulker)
+#  Masz sakiewke w EQ -> po kazdym zabiciu gracza jego drop wpada do niej (wielorazowa, otwierasz PPM).
+#  Gdy sakiewka jest pelna, nadmiar dropu (oraz sakiewka ofiary) spada na ziemie — nie powstaje druga sakiewka.
+#  ikony jak reszta eventowek: 丮 drop, 丶 opis, 乁 uzycie, 亝 skrzynia
+#  material MUSI byc shulker boxem.
+#  lore = pusta (z /eventitems), lore-loot = po zabojstwie ({gracz}, {ilosc})
+# =========================================================
+sakiewka-mandalorianina:
+  enabled: true
+  material: BROWN_SHULKER_BOX
+  name: "&f丮 &x&F&F&C&C&6&6&lꜱ&x&F&C&C&8&6&0&lᴀ&x&F&9&C&4&5&A&lᴋ&x&F&6&C&0&5&4&lɪ&x&F&3&B&C&4&E&lᴇ&x&F&0&B&8&4&8&lᴡ&x&E&D&B&4&4&2&lᴋ&x&E&A&B&0&3&C&lᴀ &x&E&7&A&C&3&6&lᴍ&x&E&4&A&8&3&0&lᴀ&x&E&1&A&4&2&A&lɴ&x&D&E&A&0&2&4&lᴅ&x&D&B&9&C&1&E&lᴀ&x&D&8&9&8&1&8&lʟ&x&D&5&9&4&1&2&lᴏ&x&D&2&9&0&0&C&lʀ&x&C&F&8&C&0&6&lɪ&x&C&C&8&8&0&0&lᴀ&x&C&9&8&4&0&0&lɴ&x&C&6&8&0&0&0&lɪ&x&C&3&7&C&0&0&lɴ&x&C&0&7&8&0&0&lᴀ"
+  custom-model-data: 9001
+  lore:
+    - "&f"
+    - "&f 丮 ᴅᴢɪᴇᴋɪ ᴛᴇᴊ &x&F&F&C&C&6&6ʟᴇɢᴇɴᴅᴀʀɴᴇᴊ &fꜱᴀᴋɪᴇᴡᴄᴇ"
+    - "&f ᴊᴇꜱᴛᴇꜱ ᴡ ꜱᴛᴀɴɪᴇ &x&F&F&C&C&6&6ᴢᴇʙʀᴀᴄ ᴄᴀʟʏ ᴅʀᴏᴘ"
+    - "&f 丶 ᴘᴏ &x&F&F&C&C&6&6ᴢᴀʙᴏᴊꜱᴛᴡɪᴇ &fᴏꜰɪᴀʀʏ"
+    - "&f 乁 ꜱᴀᴋɪᴇᴡᴋᴀ &x&F&F&C&C&6&6ᴡʏᴘᴇʟɴɪ ꜱɪᴇ &fʟᴜᴘᴀᴍɪ"
+    - "&f 乂 &x&F&F&C&C&6&6ᴡɪᴇʟᴏʀᴀᴢᴏᴡᴀ &f- ᴋʟɪᴋɴɪᴊ ᴘᴘᴍ, ᴀʙʏ ᴏᴛᴡᴏʀᴢʏᴄ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ &x&3&1&E&A&F&C&lɢ&x&3&1&E&C&E&F&lᴀ&x&3&1&E&D&E&2&lʟ&x&3&1&E&F&D&5&lᴀ&x&3&1&F&1&C&8&lᴋ&x&3&1&F&2&B&B&lᴛ&x&3&1&F&4&A&D&lʏ&x&3&1&F&5&A&0&lᴄ&x&3&1&F&7&9&3&lᴢ&x&3&1&F&9&8&6&lɴ&x&3&1&F&A&7&9&lᴇ&x&3&1&F&C&6&C&lᴊ &fꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&C&C&6&6ꜱᴘᴀᴡɴɪᴇ"
+    - ""
+  lore-loot:
+    - "&f"
+    - "&f 丮 ᴅᴢɪᴇᴋɪ ᴛᴇᴊ &x&F&F&C&C&6&6ʟᴇɢᴇɴᴅᴀʀɴᴇᴊ &fꜱᴀᴋɪᴇᴡᴄᴇ"
+    - "&f ᴘᴏ ᴢᴀʙᴏᴊꜱᴛᴡɪᴇ &x&F&F&C&C&6&6ᴄᴀʟʏ ᴅʀᴏᴘ &fᴏꜰɪᴀʀʏ"
+    - "&f 丮 ᴛʀᴀꜰɪᴀ ᴘʀᴏꜱᴛᴏ &x&F&F&C&C&6&6ᴅᴏ ᴛᴡᴏᴊᴇᴊ ꜱᴀᴋɪᴇᴡᴋɪ"
+    - "&f"
+    - "&f 丶 ᴏꜰɪᴀʀᴀ: &x&F&F&C&C&6&6{gracz}"
+    - "&f 丮 ꜱʟᴏᴛʏ: &x&F&F&C&C&6&6{ilosc}"
+    - "&f"
+    - "&f 乁 ᴋʟɪᴋɴɪᴊ ᴘᴘᴍ, ᴀʙʏ &x&F&F&C&C&6&6ᴏᴛᴡᴏʀᴢʏᴄ &fɪ ᴢᴇʙʀᴀᴄ ʟᴜᴘʏ"
+    - ""
+
+# =========================================================
+# KOSA GRABAZY - netherytowa motyka (halloween)
+#  Hit: weakness+glow 5s, firework block 3s, +3 hearts, CD 120s
+# =========================================================
+kosa-grabaza:
+  name: "&f乥 &x&F&F&6&B&1&A&lᴋ&x&F&5&6&2&1&9&lᴏ&x&E&A&5&9&1&9&lꜱ&x&D&F&5&1&1&8&lᴀ&x&D&5&4&8&1&7&l &x&C&A&3&F&1&6&lɢ&x&C&0&3&6&1&6&lʀ&x&B&5&2&D&1&5&lᴀ&x&A&B&2&4&1&4&lʙ&x&A&0&1&C&1&3&lᴀ&x&9&6&1&3&1&3&lᴢ&x&8&B&0&A&1&2&lʏ"
+  custom-model-data: 1001
+  cooldown-seconds: 120
+  weakness-duration-seconds: 5
+  glowing-duration-seconds: 5
+  firework-block-seconds: 3
+  hearts: 3
+  lore:
+    - "&f"
+    - "&f 乥 ᴅᴢɪᴇᴋɪ ᴛᴇᴊ &x&F&F&6&B&1&Aʟᴇɢᴇɴᴅᴀʀɴᴇᴊ &fᴋᴏꜱɪᴇ"
+    - "&f ᴜᴅᴇʀᴢᴀꜱᴢ ɢʀᴀᴄᴢᴀ &x&F&F&6&B&1&Aᴋʟᴀᴛᴡᴀ ɢʀᴀʙᴀᴢʏ"
+    - "&f 亚 ᴏꜱʟᴀʙɪᴇɴɪᴇ &f+ ɢʟᴏᴡɪɴɢ ɴᴀ &x&F&F&6&B&1&A5 ꜱᴇᴋᴜɴᴅ"
+    - "&f 丷 ʙʟᴏᴋᴀᴅᴀ ꜰᴀᴊᴇʀᴡᴇʀᴋɪ ɴᴀ &x&F&F&6&B&1&A3 ꜱᴇᴋᴜɴᴅʏ"
+    - "&f ꕣ ᴢᴀᴅᴀᴊᴇ &x&F&F&6&B&1&A3 ꜱᴇʀᴄᴀ &fᴏʙʀᴀᴢᴇɴ"
+    - "&f 东 ᴄᴏᴏʟᴅᴏᴡɴ &x&F&F&6&B&1&A120 ꜱᴇᴋᴜɴᴅ"
+    - "&f"
+    - "&f 亝 ᴘʀᴢᴇᴅᴍɪᴏᴛ ᴍᴏᴢᴇꜱᴢ ᴡʏᴅʀᴏᴘɪᴄ"
+    - "&f ᴢ ɢᴀʟᴀᴋᴛʏᴄᴢɴᴇᴊ ꜱᴋʀᴢʏɴɪ ɴᴀ &x&F&F&6&B&1&Aꜱᴘᴀᴡɴɪᴇ"
+    - "&f"
+
+# =========================================================
+# GWOZDZ TRUMNY - jednorazowy (halloween)
+#  PPM: freeze 2s + weakness II 6s, CD 25s
+# =========================================================
+gwozdz-trumny:
+  name: "&f与 &x&E&8&D&5&B&0&lɢ&x&D&C&C&8&A&4&lᴡ&x&D&1&B&B&9&8&lᴏ&x&C&5&A&E&8&C&lᴢ&x&B&9&A&1&7&F&lᴅ&x&A&E&9&4&7&3&lᴢ&x&A&2&8&8&6&7&l &x&9&6&7&B&5&B&lᴛ&x&8&B&6&E&4&F&lʀ&x&7&F&6&1&4&3&lᴜ&x&7&3&5&4&3&6&lᴍ&x&6&8&4&7&2&A&lɴ&x&5&C&3&A&1&E&lʏ"
+  custom-model-data: 1001
+  cooldown-seconds: 25
+  freeze-seconds: 2
+  weakness-duration-seconds: 6
+  weakness-amplifier: 1
+  lore:
+    - "&f"
+    - "&f 与 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&C&4&A&5&7&4ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fɢᴡᴏᴢᴅᴢɪᴏᴡɪ"
+    - "&f ᴡʙɪᴊᴀꜱᴢ ᴄᴇʟ &x&C&4&A&5&7&4ᴡ ᴛʀᴜᴍɴᴇ"
+    - "&f 东 ꜰʀᴇᴇᴢᴇ ɴᴀ &x&C&4&A&5&7&42 ꜱᴇᴋᴜɴᴅʏ"
+    - "&f 亚 ᴏꜱʟᴀʙɪᴇɴɪᴇ II ɴᴀ &x&C&4&A&5&7&46 ꜱᴇᴋᴜɴᴅ"
+    - "&f jednorazowy - zuzywa sie"
+    - "&f 东 ᴄᴏᴏʟᴅᴏᴡɴ &x&C&4&A&5&7&425 ꜱᴇᴋᴜɴᴅ"
+    - "&f 乁 ᴋʟɪᴋɴɪᴊ &x&C&4&A&5&7&4ᴘᴘᴍ ɴᴀ ɢʀᴀᴄᴢᴀ"
+    - "&f"
+
+# =========================================================
+# MIECZ SAURONA - netherytowy miecz z enchantami NAJLEPSZEGO miecza z /ulepsz
+#  - po uderzeniu dostaje enchanty ostatniego poziomu kategorii miecza z /ulepsz
+#    (po aktualizacji /ulepsz, np. miecz 15, sam sie podciaga)
+#  - co X sekund gra dzwiek Withera, wlasciciel ma particle lawy
+#  - +10% obrazen, a osobom w promieniu spada poziom Sily o 1
+# =========================================================
+miecz-saurona:
+  name: "&f婊 &c&lᴍɪᴇᴄᴢ ꜱᴀᴜʀᴏɴᴀ"
+  # Nazwa kategorii z /aulepsz z mieczami (bez wzgledu na wielkosc liter).
+  # Jesli nie znajdzie - bierze pierwsza kategorie, ktorej nazwa zawiera "miecz" / "sword".
+  kategoria-ulepszen: "miecz"
+  # CustomModelData (0 = brak). Tekstura do paczki: textures/miecz_saurona.png
+  # W Nexo podmien model netherite_sword albo ustaw CMD.
+  custom-model-data: 0
+  # Mnoznik obrazen (1.10 = +10%)
+  mnoznik-obrazen: 1.10
+  # Promien (w kratkach), w ktorym osobom spada Sila
+  promien-oslabiania: 10.0
+  # O ile spada poziom Sily osobom w promieniu (1 = Sila 2 -> Sila 1, Sila 1 -> brak)
+  obnizenie-sily: 1
+  # Co ile sekund miecz gra dzwiek Withera
+  dzwiek-co-sekund: 15
+  lore:
+    - "&f"
+    - "&f 婊 ᴅᴢɪᴇᴋɪ ᴛᴇᴍᴜ &x&F&F&5&5&0&0ʟᴇɢᴇɴᴅᴀʀɴᴇᴍᴜ &fᴍɪᴇᴄᴢᴏᴡɪ"
+    - "&f ᴍᴀꜱᴢ ᴢᴀᴡꜱᴢᴇ &x&F&F&5&5&0&0ɴᴀᴊʟᴇᴘꜱᴢᴇ ᴇɴᴄʜᴀɴᴛʏ &fᴍɪᴇᴄᴢᴀ"
+    - "&f ᴢ &x&F&F&5&5&0&0/ᴜʟᴇᴘꜱᴢ"
+    - "&f"
+    - "&f 丷 ᴢᴀᴅᴀᴊᴇꜱᴢ &x&F&F&5&5&0&0+10% ᴅᴍɢ"
+    - "&f ꔸ ᴏꜱᴏʙᴏᴍ ᴡ ᴘʀᴏᴍɪᴇɴɪᴜ &x&F&F&5&5&0&010 ᴋʀᴀᴛᴇᴋ &fꜱᴘᴀᴅᴀ ꜱɪʟᴀ &x&F&F&5&5&0&0-1"
+    - "&f"
+
+# =========================================================
+# GLOWY SMOKOW (player heady z teksturami) - zakladane na glowe (prawy klik w powietrze lub w ekwipunku).
+# Kazda daje Fire Resistance. Enchanty = helmy z /ulepsz:
+#   Krolewski = najlepszy helm, Ognisty = 2. najlepszy, Mrozny = 3. najlepszy
+# Amplifier: -1 = brak efektu, 0 = poziom I, 1 = poziom II
+# =========================================================
+smocze-glowy:
+  # Nazwa kategorii z /aulepsz z helmami (jak wyzej; fallback: nazwa zawiera "helm")
+  kategoria-ulepszen: "helm"
+
+smok-krolewski:
+  name: "&f丽 &x&F&F&E&C&6&E&lɢ&x&F&F&E&8&6&9&lʟ&x&F&F&E&5&6&4&lᴏ&x&F&F&E&1&5&E&lᴡ&x&F&F&D&E&5&9&lᴀ &x&F&F&D&A&5&4&lꜱ&x&F&F&D&6&4&F&lᴍ&x&F&F&D&3&4&9&lᴏ&x&F&F&C&F&4&4&lᴋ&x&F&F&C&B&3&F&lᴀ &x&F&F&C&8&3&A&lᴋ&x&F&F&C&4&3&4&lʀ&x&F&F&C&1&2&F&lᴏ&x&F&F&B&D&2&A&lʟ&x&F&F&B&9&2&5&lᴇ&x&F&F&B&6&1&F&lᴡ&x&F&F&B&2&1&A&lꜱ&x&F&F&A&E&1&5&lᴋ&x&F&F&A&B&1&0&lɪ&x&F&F&A&7&0&A&lᴇ&x&F&F&A&4&0&5&lɢ&x&F&F&A&0&0&0&lᴏ"
+  # Player head - tekstura (Base64 "value"). CMD 0 = brak
+  texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTYxMjJjM2FjMTczNzgwM2NmNWVhZjI2NmNiMDU4MjNmZGJkZGFmNGUyNTkwOThlOTU1OTU5NTEzYzhkOTZmNiJ9fX0="
+  custom-model-data: 0
+  strength-amplifier: 1      # Sila II
+  resistance-amplifier: 0    # Resistance I
+  fire-resistance: true
+  lore:
+    - "&f"
+    - "&f 丽 &fɢʟᴏᴡᴀ ᴘᴏꜱɪᴀᴅᴀ &x&F&F&E&C&6&Eɴ&x&F&F&E&8&6&8ᴀ&x&F&F&E&3&6&1ꜱ&x&F&F&D&F&5&Bᴛ&x&F&F&D&A&5&4ᴇ&x&F&F&D&6&4&Eᴘ&x&F&F&D&1&4&7ᴜ&x&F&F&C&D&4&1ᴊ&x&F&F&C&8&3&Aᴀ&x&F&F&C&4&3&4ᴄ&x&F&F&B&F&2&Dᴇ &x&F&F&B&B&2&7ᴇ&x&F&F&B&6&2&0ꜰ&x&F&F&B&2&1&Aᴇ&x&F&F&A&D&1&3ᴋ&x&F&F&A&9&0&Dᴛ&x&F&F&A&4&0&6ʏ&x&F&F&A&0&0&0:"
+    - "&8x &f亞 &x&F&F&D&7&0&0ꜱɪʟᴀ &fII"
+    - "&8x &f予 &x&F&F&D&7&0&0ʀᴇꜱɪꜱᴛᴀɴᴄᴇ &fI"
+    - "&8x &f丷 &x&F&F&D&7&0&0ᴏᴄʜʀᴏɴᴀ ᴘʀᴢᴇᴅ ᴏɢɴɪᴇᴍ &fI"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&F&F&D&7&0&0ᴜʟᴇᴘꜱᴢᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&F&F&E&C&6&Eɴ&x&F&F&E&7&6&6ᴀ&x&F&F&E&1&5&Eᴊ&x&F&F&D&C&5&6ᴡ&x&F&F&D&6&4&Fʏ&x&F&F&D&1&4&7ᴢ&x&F&F&C&B&3&Fꜱ&x&F&F&C&6&3&7ᴢ&x&F&F&C&1&2&Fʏ &x&F&F&B&B&2&7ᴘ&x&F&F&B&6&1&Fᴏ&x&F&F&B&0&1&8ᴢ&x&F&F&A&B&1&0ɪ&x&F&F&A&5&0&8ᴏ&x&F&F&A&0&0&0ᴍ &fʜᴇʟᴍᴜ"
+    - "&f"
+
+smok-ognisty:
+  name: "&f丷 &x&F&F&9&6&2&8&lɢ&x&F&F&9&0&2&6&lʟ&x&F&F&8&A&2&4&lᴏ&x&F&F&8&4&2&1&lᴡ&x&F&F&7&E&1&F&lᴀ &x&F&F&7&7&1&D&lꜱ&x&F&F&7&1&1&B&lᴍ&x&F&F&6&B&1&8&lᴏ&x&F&F&6&5&1&6&lᴋ&x&F&F&5&F&1&4&lᴀ &x&F&F&5&9&1&2&lᴏ&x&F&F&5&3&1&0&lɢ&x&F&F&4&D&0&D&lɴ&x&F&F&4&7&0&B&lɪ&x&F&F&4&0&0&9&lꜱ&x&F&F&3&A&0&7&lᴛ&x&F&F&3&4&0&4&lᴇ&x&F&F&2&E&0&2&lɢ&x&F&F&2&8&0&0&lᴏ"
+  # Player head - tekstura (Base64 "value"). CMD 0 = brak
+  texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTdiZWMyOWZiOTBhYTRkOWIxMGQxNzZiYzY4MjI2MjhiMWY4ZWNhZTFlNTRhOWFhY2E5MTNkYjRhNjlhMmFhIn19fQ=="
+  custom-model-data: 0
+  strength-amplifier: 0      # Sila I
+  resistance-amplifier: 0    # Resistance I
+  fire-resistance: true
+  lore:
+    - "&f"
+    - "&f 丷 &fɢʟᴏᴡᴀ ᴘᴏꜱɪᴀᴅᴀ &x&F&F&9&6&2&8ɴ&x&F&F&9&0&2&6ᴀ&x&F&F&8&9&2&3ꜱ&x&F&F&8&3&2&1ᴛ&x&F&F&7&C&1&Fᴇ&x&F&F&7&6&1&Cᴘ&x&F&F&6&F&1&Aᴜ&x&F&F&6&9&1&8ᴊ&x&F&F&6&2&1&5ᴀ&x&F&F&5&C&1&3ᴄ&x&F&F&5&5&1&0ᴇ &x&F&F&4&F&0&Eᴇ&x&F&F&4&8&0&Cꜰ&x&F&F&4&2&0&9ᴇ&x&F&F&3&B&0&7ᴋ&x&F&F&3&5&0&5ᴛ&x&F&F&2&E&0&2ʏ&x&F&F&2&8&0&0:"
+    - "&8x &f亞 &x&F&F&5&5&0&0ꜱɪʟᴀ &fI"
+    - "&8x &f予 &x&F&F&5&5&0&0ʀᴇꜱɪꜱᴛᴀɴᴄᴇ &fI"
+    - "&8x &f丷 &x&F&F&5&5&0&0ᴏᴄʜʀᴏɴᴀ ᴘʀᴢᴇᴅ ᴏɢɴɪᴇᴍ &fI"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&F&F&5&5&0&0ᴜʟᴇᴘꜱᴢᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&F&F&9&6&2&8ᴅ&x&F&F&9&0&2&6ʀ&x&F&F&8&A&2&4ᴜ&x&F&F&8&5&2&2ɢ&x&F&F&7&F&2&0ɪ &x&F&F&7&9&1&Dɴ&x&F&F&7&3&1&Bᴀ&x&F&F&6&D&1&9ᴊ&x&F&F&6&8&1&7ᴡ&x&F&F&6&2&1&5ʏ&x&F&F&5&C&1&3ᴢ&x&F&F&5&6&1&1ꜱ&x&F&F&5&1&0&Fᴢ&x&F&F&4&B&0&Dʏ &x&F&F&4&5&0&Bᴘ&x&F&F&3&F&0&8ᴏ&x&F&F&3&9&0&6ᴢ&x&F&F&3&4&0&4ɪ&x&F&F&2&E&0&2ᴏ&x&F&F&2&8&0&0ᴍ &fʜᴇʟᴍᴜ"
+    - "&f"
+
+smok-mrozny:
+  name: "&fꕙ &x&A&A&F&5&F&F&lɢ&x&A&3&E&F&F&F&lʟ&x&9&C&E&9&F&F&lᴏ&x&9&5&E&2&F&F&lᴡ&x&8&E&D&C&F&F&lᴀ &x&8&7&D&6&F&F&lꜱ&x&8&0&D&0&F&F&lᴍ&x&7&9&C&A&F&F&lᴏ&x&7&2&C&4&F&F&lᴋ&x&6&A&B&D&F&F&lᴀ &x&6&3&B&7&F&F&lᴍ&x&5&C&B&1&F&F&lʀ&x&5&5&A&B&F&F&lᴏ&x&4&E&A&5&F&F&lᴢ&x&4&7&9&F&F&F&lɴ&x&4&0&9&8&F&F&lᴇ&x&3&9&9&2&F&F&lɢ&x&3&2&8&C&F&F&lᴏ"
+  # Player head - tekstura (Base64 "value"). CMD 0 = brak
+  texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjFmZmJkYTkyNDQyODczZDU0MDUxZTRlMTdlYTQ3Mjc4Y2IzYjc0N2Q3OTgwNzBiYTgzYmM0YTlkZTU4ZGQifX19"
+  custom-model-data: 0
+  strength-amplifier: -1     # brak Sily
+  resistance-amplifier: 0    # Resistance I
+  fire-resistance: true
+  lore:
+    - "&f"
+    - "&f ꕙ &fɢʟᴏᴡᴀ ᴘᴏꜱɪᴀᴅᴀ &x&A&A&F&5&F&Fɴ&x&A&3&E&F&F&Fᴀ&x&9&C&E&9&F&Fꜱ&x&9&5&E&2&F&Fᴛ&x&8&E&D&C&F&Fᴇ&x&8&7&D&6&F&Fᴘ&x&8&0&D&0&F&Fᴜ&x&7&9&C&A&F&Fᴊ&x&7&2&C&4&F&Fᴀ&x&6&A&B&D&F&Fᴄ&x&6&3&B&7&F&Fᴇ &x&5&C&B&1&F&Fᴇ&x&5&5&A&B&F&Fꜰ&x&4&E&A&5&F&Fᴇ&x&4&7&9&F&F&Fᴋ&x&4&0&9&8&F&Fᴛ&x&3&9&9&2&F&Fʏ&x&3&2&8&C&F&F:"
+    - "&8x &f予 &x&5&5&D&D&F&Fʀᴇꜱɪꜱᴛᴀɴᴄᴇ &fI"
+    - "&8x &f丷 &x&5&5&D&D&F&Fᴏᴄʜʀᴏɴᴀ ᴘʀᴢᴇᴅ ᴏɢɴɪᴇᴍ &fI"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&5&5&D&D&F&Fᴜʟᴇᴘꜱᴢᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&A&A&F&5&F&Fᴛ&x&A&4&F&0&F&Fʀ&x&9&E&E&A&F&Fᴢ&x&9&8&E&5&F&Fᴇ&x&9&2&E&0&F&Fᴄ&x&8&C&D&B&F&Fɪ &x&8&6&D&6&F&Fɴ&x&8&0&D&0&F&Fᴀ&x&7&A&C&B&F&Fᴊ&x&7&4&C&6&F&Fᴡ&x&6&E&C&0&F&Fʏ&x&6&8&B&B&F&Fᴢ&x&6&2&B&6&F&Fꜱ&x&5&C&B&1&F&Fᴢ&x&5&6&A&C&F&Fʏ &x&5&0&A&6&F&Fᴘ&x&4&A&A&1&F&Fᴏ&x&4&4&9&C&F&Fᴢ&x&3&E&9&6&F&Fɪ&x&3&8&9&1&F&Fᴏ&x&3&2&8&C&F&Fᴍ &fʜᴇʟᴍᴜ"
+    - "&f"
+
+
+# =========================================================
+# BUTY SMOKA - odpowiedniki butow z /ulepsz (rangi jak glowy):
+#   Krolewskie (netherite) = najlepsze buty, Ogniste (diament) = 2., Mrozne (zloto) = 3.
+# drop-multiplier  -> wiekszy drop z generatorow (wyplata za kopanie + dodatkowe itemy)
+# exp-multiplier   -> wiekszy exp
+# speed-amplifier: -1 = brak, 0 = Speed I, 1 = Speed II
+# =========================================================
+smocze-buty:
+  # Nazwa kategorii z /aulepsz z butami (fallback: nazwa zawiera "buty" / "boots")
+  kategoria-ulepszen: "buty"
+
+buty-krolewskie:
+  name: "&f互 &x&F&F&E&C&6&E&lʙ&x&F&F&E&8&6&8&lᴜ&x&F&F&E&4&6&3&lᴛ&x&F&F&E&1&5&E&lʏ &x&F&F&D&D&5&8&lꜱ&x&F&F&D&9&5&2&lᴍ&x&F&F&D&5&4&D&lᴏ&x&F&F&D&1&4&8&lᴋ&x&F&F&C&E&4&2&lᴀ &x&F&F&C&A&3&C&lᴋ&x&F&F&C&6&3&7&lʀ&x&F&F&C&2&3&1&lᴏ&x&F&F&B&E&2&C&lʟ&x&F&F&B&B&2&6&lᴇ&x&F&F&B&7&2&1&lᴡ&x&F&F&B&3&1&C&lꜱ&x&F&F&A&F&1&6&lᴋ&x&F&F&A&B&1&0&lɪ&x&F&F&A&8&0&B&lᴇ&x&F&F&A&4&0&6&lɢ&x&F&F&A&0&0&0&lᴏ"
+  custom-model-data: 0
+  speed-amplifier: 1
+  drop-multiplier: 1.5
+  exp-multiplier: 1.5
+  lore:
+    - "&f"
+    - "&f 互 &fʙᴜᴛʏ ᴘᴏꜱɪᴀᴅᴀᴊᴀ &x&F&F&E&C&6&Eɴ&x&F&F&E&8&6&8ᴀ&x&F&F&E&3&6&1ꜱ&x&F&F&D&F&5&Bᴛ&x&F&F&D&A&5&4ᴇ&x&F&F&D&6&4&Eᴘ&x&F&F&D&1&4&7ᴜ&x&F&F&C&D&4&1ᴊ&x&F&F&C&8&3&Aᴀ&x&F&F&C&4&3&4ᴄ&x&F&F&B&F&2&Dᴇ &x&F&F&B&B&2&7ᴇ&x&F&F&B&6&2&0ꜰ&x&F&F&B&2&1&Aᴇ&x&F&F&A&D&1&3ᴋ&x&F&F&A&9&0&Dᴛ&x&F&F&A&4&0&6ʏ&x&F&F&A&0&0&0:"
+    - "&8x &f互 &x&F&F&D&7&0&0ꜱᴘᴇᴇᴅ &fII"
+    - "&8x &f丮 &x&F&F&D&7&0&0ᴅʀᴏᴘ &fx1.5"
+    - "&8x &f乂 &x&F&F&D&7&0&0ᴇxᴘ &fx1.5"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&F&F&D&7&0&0ᴜʟᴇᴘꜱᴢᴀᴊᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&F&F&E&C&6&Eɴ&x&F&F&E&7&6&6ᴀ&x&F&F&E&1&5&Eᴊ&x&F&F&D&C&5&6ᴡ&x&F&F&D&6&4&Fʏ&x&F&F&D&1&4&7ᴢ&x&F&F&C&B&3&Fꜱ&x&F&F&C&6&3&7ᴢ&x&F&F&C&1&2&Fʏ &x&F&F&B&B&2&7ᴘ&x&F&F&B&6&1&Fᴏ&x&F&F&B&0&1&8ᴢ&x&F&F&A&B&1&0ɪ&x&F&F&A&5&0&8ᴏ&x&F&F&A&0&0&0ᴍ &fʙᴜᴛᴏᴡ"
+    - "&f"
+
+buty-ogniste:
+  name: "&f互 &x&F&F&9&6&2&8&lʙ&x&F&F&9&0&2&6&lᴜ&x&F&F&8&9&2&3&lᴛ&x&F&F&8&3&2&1&lʏ &x&F&F&7&C&1&F&lꜱ&x&F&F&7&6&1&C&lᴍ&x&F&F&6&F&1&A&lᴏ&x&F&F&6&9&1&8&lᴋ&x&F&F&6&2&1&5&lᴀ &x&F&F&5&C&1&3&lᴏ&x&F&F&5&5&1&0&lɢ&x&F&F&4&F&0&E&lɴ&x&F&F&4&8&0&C&lɪ&x&F&F&4&2&0&9&lꜱ&x&F&F&3&B&0&7&lᴛ&x&F&F&3&5&0&5&lᴇ&x&F&F&2&E&0&2&lɢ&x&F&F&2&8&0&0&lᴏ"
+  custom-model-data: 0
+  speed-amplifier: 0
+  drop-multiplier: 1.25
+  exp-multiplier: 1.25
+  lore:
+    - "&f"
+    - "&f 互 &fʙᴜᴛʏ ᴘᴏꜱɪᴀᴅᴀᴊᴀ &x&F&F&9&6&2&8ɴ&x&F&F&9&0&2&6ᴀ&x&F&F&8&9&2&3ꜱ&x&F&F&8&3&2&1ᴛ&x&F&F&7&C&1&Fᴇ&x&F&F&7&6&1&Cᴘ&x&F&F&6&F&1&Aᴜ&x&F&F&6&9&1&8ᴊ&x&F&F&6&2&1&5ᴀ&x&F&F&5&C&1&3ᴄ&x&F&F&5&5&1&0ᴇ &x&F&F&4&F&0&Eᴇ&x&F&F&4&8&0&Cꜰ&x&F&F&4&2&0&9ᴇ&x&F&F&3&B&0&7ᴋ&x&F&F&3&5&0&5ᴛ&x&F&F&2&E&0&2ʏ&x&F&F&2&8&0&0:"
+    - "&8x &f互 &x&F&F&5&5&0&0ꜱᴘᴇᴇᴅ &fI"
+    - "&8x &f丮 &x&F&F&5&5&0&0ᴅʀᴏᴘ &fx1.25"
+    - "&8x &f乂 &x&F&F&5&5&0&0ᴇxᴘ &fx1.25"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&F&F&5&5&0&0ᴜʟᴇᴘꜱᴢᴀᴊᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&F&F&9&6&2&8ᴅ&x&F&F&9&0&2&6ʀ&x&F&F&8&A&2&4ᴜ&x&F&F&8&5&2&2ɢ&x&F&F&7&F&2&0ɪ &x&F&F&7&9&1&Dɴ&x&F&F&7&3&1&Bᴀ&x&F&F&6&D&1&9ᴊ&x&F&F&6&8&1&7ᴡ&x&F&F&6&2&1&5ʏ&x&F&F&5&C&1&3ᴢ&x&F&F&5&6&1&1ꜱ&x&F&F&5&1&0&Fᴢ&x&F&F&4&B&0&Dʏ &x&F&F&4&5&0&Bᴘ&x&F&F&3&F&0&8ᴏ&x&F&F&3&9&0&6ᴢ&x&F&F&3&4&0&4ɪ&x&F&F&2&E&0&2ᴏ&x&F&F&2&8&0&0ᴍ &fʙᴜᴛᴏᴡ"
+    - "&f"
+
+buty-mrozne:
+  name: "&f互 &x&A&A&F&5&F&F&lʙ&x&A&2&E&E&F&F&lᴜ&x&9&B&E&8&F&F&lᴛ&x&9&4&E&1&F&F&lʏ &x&8&C&D&B&F&F&lꜱ&x&8&4&D&4&F&F&lᴍ&x&7&D&C&E&F&F&lᴏ&x&7&6&C&7&F&F&lᴋ&x&6&E&C&0&F&F&lᴀ &x&6&6&B&A&F&F&lᴍ&x&5&F&B&3&F&F&lʀ&x&5&8&A&D&F&F&lᴏ&x&5&0&A&6&F&F&lᴢ&x&4&8&A&0&F&F&lɴ&x&4&1&9&9&F&F&lᴇ&x&3&A&9&3&F&F&lɢ&x&3&2&8&C&F&F&lᴏ"
+  custom-model-data: 0
+  speed-amplifier: 0
+  drop-multiplier: 1.0
+  exp-multiplier: 1.0
+  lore:
+    - "&f"
+    - "&f 互 &fʙᴜᴛʏ ᴘᴏꜱɪᴀᴅᴀᴊᴀ &x&A&A&F&5&F&Fɴ&x&A&3&E&F&F&Fᴀ&x&9&C&E&9&F&Fꜱ&x&9&5&E&2&F&Fᴛ&x&8&E&D&C&F&Fᴇ&x&8&7&D&6&F&Fᴘ&x&8&0&D&0&F&Fᴜ&x&7&9&C&A&F&Fᴊ&x&7&2&C&4&F&Fᴀ&x&6&A&B&D&F&Fᴄ&x&6&3&B&7&F&Fᴇ &x&5&C&B&1&F&Fᴇ&x&5&5&A&B&F&Fꜰ&x&4&E&A&5&F&Fᴇ&x&4&7&9&F&F&Fᴋ&x&4&0&9&8&F&Fᴛ&x&3&9&9&2&F&Fʏ&x&3&2&8&C&F&F:"
+    - "&8x &f互 &x&5&5&D&D&F&Fꜱᴘᴇᴇᴅ &fI"
+    - ""
+    - "&fᴏʀᴀᴢ ᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &x&5&5&D&D&F&Fᴜʟᴇᴘꜱᴢᴀᴊᴀ"
+    - "&fꜱɪᴇ ɴᴀ &x&A&A&F&5&F&Fᴛ&x&A&4&F&0&F&Fʀ&x&9&E&E&A&F&Fᴢ&x&9&8&E&5&F&Fᴇ&x&9&2&E&0&F&Fᴄ&x&8&C&D&B&F&Fɪ &x&8&6&D&6&F&Fɴ&x&8&0&D&0&F&Fᴀ&x&7&A&C&B&F&Fᴊ&x&7&4&C&6&F&Fᴡ&x&6&E&C&0&F&Fʏ&x&6&8&B&B&F&Fᴢ&x&6&2&B&6&F&Fꜱ&x&5&C&B&1&F&Fᴢ&x&5&6&A&C&F&Fʏ &x&5&0&A&6&F&Fᴘ&x&4&A&A&1&F&Fᴏ&x&4&4&9&C&F&Fᴢ&x&3&E&9&6&F&Fɪ&x&3&8&9&1&F&Fᴏ&x&3&2&8&C&F&Fᴍ &fʙᴜᴛᴏᴡ"
+    - "&f"

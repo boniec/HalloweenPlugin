@@ -1,0 +1,25 @@
+transactions:
+- date: 1790978765117
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: KrzysiekJudo
+  type: PURCHASE
+- date: 1790976190164
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: KrzysiekJudo
+  type: PURCHASE
+- date: 1790975668665
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: KrzysiekJudo
+  type: PURCHASE
+- date: 1790975469148
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

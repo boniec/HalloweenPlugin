@@ -1,0 +1,203 @@
+# ======================================================================
+#  SKRZYNKI (/acase) - ustawienia GLOBALNE (plik tylko czytany - komentarze zostaja)
+#  Skrzynki (typ, klucz, lokalizacje, dropy) sa w skrzynki.yml.
+#
+#  KAZDY klucz stad mozna nadpisac dla jednej skrzynki w skrzynki.yml, np.:
+#    skrzynki:
+#      gzibbox:
+#        quickOpenCase: false
+#        spinData:
+#          title: "&8Gzibbox..."
+#          steps: 40
+#  Kolory: &a, &l oraz hex #RRGGBB (lub &#RRGGBB). Po zmianach: /acase reload
+#  Nazwy dzwiekow: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+#  Placeholdery w GUI: {skrzynka} {klucz} {status-klucza} {strona} {stron}
+#  Format przedmiotu: material, displayname, lore, amount, unbreakable, glow, modelData
+# ======================================================================
+
+# dzwiek, gdy gracz nie ma klucza
+noKeySound: "ENTITY_VILLAGER_NO"
+# dzwiek przy otwarciu podgladu
+previewCaseSound: "UI_BUTTON_CLICK"
+# dzwiek podczas animacji losowania (kazdy krok)
+spinSound: "UI_BUTTON_CLICK"
+# dzwiek po wylosowaniu nagrody
+winItemSound: "ENTITY_PLAYER_LEVELUP"
+
+# Shift + PPM (na skrzynce / z lootboxem w rece) = otwarcie od razu, bez animacji
+quickOpenCase: true
+# true = Shift + PPM otwiera od razu WSZYSTKIE klucze ze stacka (max quickOpenMax)
+quickOpenAll: false
+quickOpenMax: 64
+
+# false = kazde otwarcie jest natychmiastowe (bez animacji)
+animationEnabled: true
+
+# Ogloszenia na czacie po otwarciu: ALL (kazde) | MARKED (tylko dropy z ogloszeniem - edytor dropu: Shift+LPM) | NONE
+broadcast: ALL
+
+# Title po wygraniu (dotyczy tylko skrzynek typu SKRZYNIA - lootboxy nigdy nie pokazuja title)
+wygrana:
+  title: true
+  tytul: "&6&lWYGRANA!"
+  podtytul: "{przedmiot} &7x{ilosc}"
+
+# ---------------------------------------------------------------- ANIMACJA LOSOWANIA
+spinData:
+  size: 45
+  title: "&8Losowanie: {skrzynka}"
+  # sloty, przez ktore przewijaja sie przedmioty (wygrana zatrzymuje sie na srodkowym)
+  animationSlots: [20, 21, 22, 23, 24]
+  steps: 32          # ile razy przewinie sie pasek
+  delayStart: 1      # ticki miedzy krokami na poczatku
+  delayEnd: 7        # ticki miedzy krokami na koncu (zwalnianie)
+  closeAfter: 30     # ticki do zamkniecia okna po wylosowaniu
+  itemDecorations:
+  - item:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [0, 8, 36, 44]
+  - item:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [1, 7, 9, 17, 27, 35, 37, 43]
+  - item:
+      material: "WHITE_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [2, 3, 5, 6, 18, 26, 38, 39, 41, 42]
+  - item:
+      material: "HOPPER"
+      displayname: " "
+      lore: []
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [13, 31]
+
+# ---------------------------------------------------------------- PODGLAD DROPU
+previewWinItem:
+  size: 45
+  title: "&8Podglad: {skrzynka}"
+  itemDecorations:
+  - item:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [0, 8, 36, 44]
+  - item:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [1, 7, 9, 17, 27, 35, 37, 43]
+  - item:
+      material: "WHITE_STAINED_GLASS_PANE"
+      lore: []
+      displayname: "&8"
+      unbreakable: false
+      glow: false
+      modelData: 0
+    slots: [2, 3, 5, 6, 18, 26, 38, 39, 41, 42]
+  # przyciski otwierania (tylko typ SKRZYNIA): wyglad w animationItem / noAnimationItem
+  animationSlots: [19, 20]
+  noAnimationSlots: [24, 25]
+  # slot z wirujacym podgladem dropu. -1 = wylacz. Nie uzywaj slotu z dropSlots.
+  slotWinItem: -1
+  rotateTicks: 20
+  # lista wszystkich dropow z szansami (usun / zostaw puste, zeby pokazac tylko wirujacy slot)
+  dropSlots: ["10-16", "28-34"]
+  dropLore:
+  - ""
+  - "&7Szansa: &e{szansa}%"
+  keyStatusHas: "&aMasz klucz"
+  keyStatusMissing: "&cNie masz klucza"
+  previousPageItem:
+    slot: 39
+    material: ARROW
+    displayname: "&ePoprzednia strona &7({strona}/{stron})"
+  nextPageItem:
+    slot: 41
+    material: ARROW
+    displayname: "&eNastepna strona &7({strona}/{stron})"
+
+# przycisk "otworz BEZ animacji"
+noAnimationItem:
+  material: "TNT_MINECART"
+  displayname: "#DC0000Otworz skrzynke bez animacji"
+  lore:
+  - ""
+  - " #C90000! #FF4747Szansa na wszystkie przedmioty"
+  - " #FF4747jest rowna oraz nie mozna zwrocic"
+  - " #FF4747wydropionych przedmiotow ze skrzynki!"
+  - ""
+  - " &8- &fWymaga: #DC0000odpowiedniego klucza&f! {status-klucza}"
+  - ""
+  - " #84FF00Kliknij, aby otworzyc skrzynke."
+  unbreakable: false
+  glow: true
+  modelData: 0
+
+# przycisk "otworz Z animacja"
+animationItem:
+  material: "HOPPER_MINECART"
+  displayname: "#08FF00Otworz skrzynke z animacja"
+  lore:
+  - ""
+  - " #C90000! #FF4747Szansa na wszystkie przedmioty"
+  - " #FF4747jest rowna oraz nie mozna zwrocic"
+  - " #FF4747wydropionych przedmiotow ze skrzynki!"
+  - ""
+  - " &8- &fWymaga: #41DC02odpowiedniego klucza&f! {status-klucza}"
+  - ""
+  - " #84FF00Kliknij, aby otworzyc skrzynke."
+  unbreakable: false
+  glow: false
+  modelData: 0
+
+# ---------------------------------------------------------------- EDYTOR DROPU (/acase edytujdrop)
+edycja:
+  tytul: "&8Edycja dropu: {skrzynka}"
+  # false = przedmioty sa PRZENOSZONE (jak w zwyklym ekwipunku), true = dodawane jako kopie
+  kopiuj-przedmioty: false
+  lore-dropu:
+    - ""
+    - "&7Waga: &e{waga} &8(&7szansa &e{szansa}%&8)"
+    - "&7Ogloszenie na czacie: {ogloszenie}"
+    - ""
+    - "&eLPM &7- wez przedmiot na kursor"
+    - "&ePPM &7- zmien wage"
+    - "&eShift+LPM &7- przelacz ogloszenie"
+    - "&eQ &7- usun drop"
+  # wysylane na czat po otwarciu edytora
+  pomoc:
+    - "&8[&6Skrzynki&8] &7Edytor dropu &e{skrzynka} &8(&7{drop-ilosc}/{max}&8)"
+    - "&7Dodaj: poloz przedmiot na slocie tak, jak ma wygladac w skrzynce (np. 21 i 32 zostaja na 21 i 32)."
+
+# ---------------------------------------------------------------- WIADOMOSCI
+# Placeholdery: {gracz} {skrzynka} {przedmiot} {ilosc} {klucz}
+wiadomosci:
+  prefix: "&8[&6Skrzynki&8] "
+  otwarcie-gracz: "&7Otworzyles {skrzynka}&7 i wylosowales: &r{przedmiot} &7x{ilosc}"
+  otwarcie-broadcast: "&e{gracz} &7otworzyl {skrzynka}&7 i wylosowal: &r{przedmiot} &7x{ilosc}&7!"
+  brak-klucza: "&cMusisz miec w ekwipunku klucz: &r{klucz}&c."
+  brak-dropu: "&cTa skrzynka nie ma jeszcze zadnego dropu."
+  wylaczona: "&cTa skrzynka jest obecnie wylaczona."
+  zajety: "&cJuz trwa losowanie!"
+  przepelnienie: "&eEkwipunek pelny - czesc nagrody lezy pod toba."

@@ -1,0 +1,25 @@
+transactions:
+- date: 1791027268516
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: skibidi21377
+  type: PURCHASE
+- date: 1791027268099
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1791027019534
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: skibidi21377
+  type: PURCHASE
+- date: 1791026908110
+  amount: 22.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

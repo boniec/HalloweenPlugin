@@ -1,0 +1,25 @@
+transactions:
+- date: 1789935995787
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Kacpzz2oo9Life
+  type: PURCHASE
+- date: 1789935811836
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Kacpzz2oo9Life
+  type: PURCHASE
+- date: 1789935797436
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: Kacpzz2oo9Life
+  type: PURCHASE
+- date: 1789935738821
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

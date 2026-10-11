@@ -1,0 +1,565 @@
+# ==========================================================
+#                 KLANY - konfiguracja
+# ==========================================================
+
+ustawienia:
+  min-dlugosc-tagu: 2
+  max-dlugosc-tagu: 6
+  min-dlugosc-nazwy: 3
+  max-dlugosc-nazwy: 16
+  max-czlonkow: 5
+  # Twardy strop - perk limit-graczy dodaje +1 na poziom, nigdy powyzej tej liczby.
+  max-czlonkow-absolutny: 10
+  # Koszt zalozenia klanu w "smoczych odlamkach" (materiale z ponizej).
+  # Ustaw na 0, zeby zalozenie klanu bylo CALKOWICIE DARMOWE (nic nie trzeba
+  # trzymac w rece) - domyslnie jest to wlasnie wylaczone (0).
+  koszt-zalozenia-odlamki: 0
+  # Material uzywany jako "smocze odlamki" (waluta klanowa) - dotyczy tylko
+  # skarbca/ulepszen, nie zalozenia klanu (patrz koszt-zalozenia-odlamki wyzej).
+  waluta-material: DRAGON_BREATH
+
+wiadomosci:
+  prefix: "&8[&bKLAN&8] &r"
+  brak-uprawnien: "&cNie masz uprawnien do tej akcji."
+  gracz-offline: "&cTen gracz nigdy nie byl na serwerze."
+  tylko-gracz: "&cTa komenda jest dostepna tylko dla graczy."
+  brak-klanu: "&cNie nalezysz do zadnego klanu."
+  juz-w-klanie: "&cJuz nalezysz do klanu &e%klan%&c."
+  klan-nie-istnieje: "&cKlan o tagu &e%tag% &cnie istnieje."
+  tag-zajety: "&cTag &e%tag% &cjest juz zajety."
+  nazwa-zajeta: "&cNazwa &e%nazwa% &cjest juz zajeta."
+  zla-dlugosc-tagu: "&cTag musi miec od %min% do %max% znakow."
+  zla-dlugosc-nazwy: "&cNazwa musi miec od %min% do %max% znakow."
+  niewystarczajace-srodki: "&cPotrzebujesz &e%ilosc% &c%material% &caby to zrobic."
+  opuszczono-klan: "&eOpusciles klan &c%klan%&e."
+  lider-nie-moze-opuscic: "&cJako lider musisz najpierw przekazac przywodztwo albo usunac klan (&e/klan usun&c)."
+  dolaczono: "&aDolaczyles do klanu &e%klan%&a!"
+  wyrzucony: "&cZostales wyrzucony z klanu &e%klan%&c."
+  wyrzucony-limit: "&cZostales usuniety z klanu &e%klan% &c- klan przekroczyl limit czlonkow (%limit%)."
+  wyrzucono-gracza: "&eWyrzucono &c%gracz% &ez klanu."
+  gracz-nie-w-klanie: "&cTen gracz nie nalezy do twojego klanu."
+  zaproszono: "&aWyslano zaproszenie do &e%gracz%&a."
+  # Wiadomosc zaproszenia wyslana DO ZAPRASZANEGO GRACZA - moze miec dowolna liczbe linii,
+  # kazda linia to osobny wpis listy. Placeholdery: %nadawca%, %klan%, %tag%.
+  otrzymano-zaproszenie:
+    - "&e%nadawca% &azaprasza cie do klanu &e%klan% &7[&f%tag%&7]&a!"
+    - "&aWpisz &b/klan akceptuj %tag% &aaby dolaczyc."
+  brak-zaproszenia: "&cNie masz zaproszenia od tego klanu."
+  zaproszenie-wygaslo: "&cTo zaproszenie juz wygaslo."
+  gracz-juz-zaproszony: "&cTen gracz juz ma aktywne zaproszenie."
+  nowy-lider: "&e%gracz% &ajest teraz liderem klanu!"
+  nowy-zastepca: "&e%gracz% &azostal zastepca lidera."
+  odebrano-zastepce: "&e%gracz% &cstracil range zastepcy."
+  pvp-wlaczone: "&cPvP wewnatrz klanu zostalo &awlaczone&c."
+  pvp-wylaczone: "&aPvP wewnatrz klanu zostalo &cwylaczone&a."
+  # Ulepszenia klanu (/klan ulepszenia). Placeholdery sukcesu: %perk%, %poziom%, %wartosc%
+  ulepszenie-sukces: "&aUlepszono &e%perk% &ana poziom &e%poziom% &a(+%wartosc%%)!"
+  ulepszenie-sukces-limit: "&aUlepszono limit graczy na poziom &e%poziom% &a(limit &e%limit% &aosob, +1 miejsce)!"
+  ulepszenie-max: "&cTo ulepszenie ma juz maksymalny poziom!"
+  gracz-nie-znaleziony: "&cNie znaleziono gracza &e%gracz%&c."
+  nie-mozna-siebie: "&cNie mozesz wykonac tej akcji na sobie."
+
+  # ── Skarbiec klanu - wplata/wyplata (/klan skarbiec, patrz SkarbiecChatListener) ──
+  # Placeholdery: %ilosc% (podana ilosc odlamkow), %stan% (nowy stan skarbca po operacji)
+  skarbiec-pytanie-wplata: "&aWpisz na czacie ilosc odlamkow, ktora chcesz wplacic do skarbca. Wpisz &canuluj&a, aby przerwac."
+  skarbiec-pytanie-wyplata: "&aWpisz na czacie ilosc odlamkow, ktora chcesz wyplacic ze skarbca. Wpisz &canuluj&a, aby przerwac."
+  skarbiec-anulowano: "&cAnulowano."
+  skarbiec-zla-liczba: "&cTo nie jest liczba calkowita! Wpisz ilosc jeszcze raz albo &canuluj&c."
+  skarbiec-liczba-ujemna: "&cIlosc musi byc wieksza od zera. Wpisz ilosc jeszcze raz albo &canuluj&c."
+  skarbiec-brak-odlamkow-eq: "&cNie masz w ekwipunku &e%ilosc% &csmoczych odlamkow."
+  skarbiec-brak-odlamkow-skarbiec: "&cW skarbcu klanu nie ma &e%ilosc% &codlamkow. Aktualny stan: &e%stan%&c."
+  skarbiec-wplacono: "&aWplacono &e%ilosc% &aodlamkow do skarbca klanu. Nowy stan: &e%stan%&a."
+  skarbiec-wyplacono: "&aWyplacono &e%ilosc% &aodlamkow ze skarbca klanu. Nowy stan: &e%stan%&a."
+
+# ==========================================================
+#   /klan i /klan pomoc - pelny blok tekstu wysylany na czacie
+# ==========================================================
+# Wyswietlany gdy gracz wpisze samo "/klan" (bez argumentow) albo "/klan pomoc".
+# "linie" to lista - kazdy wpis to jedna linia na czacie, w kolejnosci z configu
+# (dokladnie tak jak "otrzymano-zaproszenie" czy "linie" w broadcastach powyzej).
+# Obsluguje kody koloru (&) oraz kolory hex (&#rrggbb) do robienia gradientow
+# litera-po-literze. Brak placeholderow dynamicznych - to czysto staty tekst.
+pomoc:
+  linie:
+    - "&6⭐ &#B30A0A&lᴋ&#B40C0C&lᴏ&#B40E0E&lᴍ&#B51010&lᴇ&#B51111&lɴ&#B61313&lᴅ&#B71515&lʏ &#B81919&lᴋ&#B81B1B&lʟ&#B91D1D&lᴀ&#BA1E1E&lɴ&#BA2020&lᴏ&#BB2222&lᴡ &#BC2626&lᴘ&#BD2828&lᴏ&#BD2929&lᴍ&#BE2B2B&lᴏ&#BE2D2D&lᴄ&#BF2F2F&lʏ &6⭐"
+    - ""
+    - "&8» &#F8BA12/klan stworz &#F8DF12<tag> &8- &7Zaklada nowy klan."
+    - "&8» &#F8BA12/klan dolacz &#F8DF12<tag> &8- &7Dolacza do klanu."
+    - "&8» &#F8BA12/klan opusc &8- &7Opuszcza twoj klan."
+    - "&8» &#F8BA12/klan info &#F8DF12[tag] &8- &7Pokazuje informacje o klanie."
+    - ""
+    - "&a✈ &#3CE577&lᴢᴀʀᴢᴀᴅᴢᴀɴɪᴇ ᴋʟᴀɴᴇᴍ"
+    - "&8» &#0FAE4D/klan zapros &#3CE57E<nick> &8- &7Zaprasza gracza do klanu."
+    - "&8» &#0FAE4D/klan wyrzuc &#3CE57E<nick> &8- &7Wyrzuca gracza z klanu."
+    - "&8» &#0FAE4D/klan usun &8- &7Rozwiazuje klan (tylko lider)."
+    - "&8» &#0FAE4D/klan lider &#3CE57E<nick> &8- &7Przekazuje liderowanie klanu."
+    - "&8» &#0FAE4D/klan zastepca &#3CE57E<nick> &8- &7Ustawia/zdejmuje zastepce klanu."
+    - "&8» &#0FAE4D/klan pvp &8- &7Wlacza/wylacza PvP w klanie."
+    - "&8» &#0FAE4D/klan ulepszenia &8- &7Ulepsza drop i ranking klanu za smocze odlamki."
+    - "&8» &#0FAE4D/klan skarbiec &8- &7Wplaca/wyplaca smocze odlamki ze skarbca klanu."
+
+gui:
+  tytul-czlonkowie: "&8» &bCzlonkowie klanu &8«"
+  tytul-ulepszenia: "&8» &5Ulepszenia klanu &8«"
+  # Tytul GUI /klan skarbiec (45 slotow, item na srodku). W pelni edytowalny -
+  # zmien i uzyj /adminklan reload, zeby wczytac zmiane bez restartu serwera.
+  tytul-skarbiec: "&8» &6Skarbiec klanu &8«"
+  # Fallback dla tytulu /topki - uzywany TYLKO jesli sekcja "topki-gui" (nizej w
+  # tym pliku) zostanie usunieta z configu. Normalnie tytul /topki ustawia sie
+  # w "topki-gui.tytul".
+  tytul-topki: "&#F5EA50☀ &#F5EA50&lTOPKI SYSTEMOWE"
+
+# ==========================================================
+#   /klan skarbiec - item na srodku 45-slotowego GUI
+# ==========================================================
+# material - typ przedmiotu wyswietlanego na srodku (domyslnie SUNFLOWER)
+# nazwa - nazwa wyswietlana itemu (obsluguje & oraz hex &#rrggbb litera-po-literze)
+# lore - lista linii lore. Placeholder %ilejestodlamkow% podstawia aktualna
+#        zawartosc skarbca klanu (Klan#getSkarbiec()).
+# custom-model-data - opcjonalny numer CustomModelData z resource packa (0 = wylaczone)
+#
+# Lewy klik w item = wplata do skarbca (gracz wpisuje ilosc na czacie).
+# Prawy klik w item = wyplata ze skarbca (wymaga uprawnien lidera/zastepcy,
+#        gracz rowniez wpisuje ilosc na czacie).
+skarbiec-gui:
+  material: SUNFLOWER
+  nazwa: "&#C6E373&ls&#C7DA65&lᴋ&#C7D258&lᴀ&#C8C94A&lʀ&#C8C03D&lʙ&#C9B72F&lɪ&#C9AF21&lᴇ&#CAA614&lᴄ &#C9A716&lᴋ&#C9B125&lʟ&#C8BB35&lᴀ&#C8C544&lɴ&#C7CF54&lᴏ&#C7D963&lᴡ&#C6E373&lʏ"
+  lore:
+    - ""
+    - "&fᴋʟɪᴋɴɪᴊ &aʟᴘᴍ&f, ᴀʙʏ ᴡᴘʟᴀᴄɪᴄ"
+    - "&fᴋʟɪᴋɴɪᴊ &cᴘᴘᴍ&f, ᴀʙʏ ᴡʏᴘʟᴀᴄɪᴄ"
+    - ""
+    - "&fᴡ sᴋᴀʀʙᴄᴜ ᴢɴᴀᴊᴅᴜᴊᴇ sɪᴇ: &e%ilejestodlamkow% &5&lSmoczych Odlamkow"
+  custom-model-data: 0
+
+# ==========================================================
+#   BROADCASTY - wiadomosci wysylane do CALEGO SERWERA
+# ==========================================================
+# Kazdy broadcast ma:
+#   wlaczony: true/false     - czy w ogole ma byc wysylany
+#   linie:                   - lista linii (dowolna dlugosc, min. 1 linia)
+#   dzwiek:                  - nazwa dzwieku Bukkit/Spigot (Sound enum), np. ENTITY_PLAYER_LEVELUP
+#                               ustaw na "NONE" albo usun linie, zeby wylaczyc dzwiek
+#   glosnosc / pitch         - opcjonalne, domyslnie 1.0 / 1.0
+#
+# Dostepne placeholdery zaleza od zdarzenia - patrz komentarz nad kazda sekcja.
+broadcasty:
+
+  # Gracz zaklada nowy klan. Placeholdery: %gracz%, %klan%, %tag%
+  utworzenie:
+    wlaczony: true
+    linie:
+      - "&8&m--------------------------------------"
+      - "&e%gracz% &azalozyl nowy klan &e%klan% &7[&f%tag%&7]&a!"
+      - "&8&m--------------------------------------"
+    dzwiek: "ENTITY_PLAYER_LEVELUP"
+    glosnosc: 1.0
+    pitch: 1.0
+
+  # Klan zostaje rozwiazany/usuniety. Placeholdery: %gracz%, %klan%, %tag%
+  usuniecie:
+    wlaczony: true
+    linie:
+      - "&8&m--------------------------------------"
+      - "&cKlan &e%klan% &7[&f%tag%&7] &czostal rozwiazany przez &e%gracz%&c."
+      - "&8&m--------------------------------------"
+    dzwiek: "ENTITY_WITHER_DEATH"
+    glosnosc: 1.0
+    pitch: 1.0
+
+  # Nowa osoba dolacza do klanu (po akceptacji zaproszenia). Mozesz podac tyle linii
+  # ile chcesz, np. tak jak ponizej ("Gracz boniec" / "Dolaczyl do klanu"):
+  # Placeholdery: %gracz%, %klan%, %tag%
+  dolaczenie:
+    wlaczony: true
+    linie:
+      - "&8[&bKLAN&8] &e%gracz%"
+      - "&adolaczyl do klanu &e%klan% &7[&f%tag%&7]&a!"
+    dzwiek: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    glosnosc: 1.0
+    pitch: 1.2
+
+  # Gracz opuscil klan dobrowolnie (/klan opusc). Placeholdery: %gracz%, %klan%, %tag%
+  opuszczenie:
+    wlaczony: true
+    linie:
+      - "&8[&bKLAN&8] &e%gracz% &7opuscil klan &e%klan%&7."
+    dzwiek: "ENTITY_VILLAGER_NO"
+    glosnosc: 0.7
+    pitch: 1.0
+
+  # Gracz zostal wyrzucony z klanu przez lidera/zastepce.
+  # Placeholdery: %gracz% (wyrzucony), %wyrzucajacy%, %klan%, %tag%
+  wyrzucenie:
+    wlaczony: true
+    linie:
+      - "&8[&bKLAN&8] &e%gracz% &czostal wyrzucony z klanu &e%klan% &7przez &c%wyrzucajacy%&7."
+    dzwiek: "ENTITY_VILLAGER_NO"
+    glosnosc: 1.0
+    pitch: 0.7
+
+  # Zabojstwo PvP - wysylane na czat CALEGO SERWERA (killfeed) przy kazdym zabiciu
+  # gracza przez innego gracza. Mozesz dodac dowolna liczbe linii (zwykle 1 wystarczy).
+  # Placeholdery: %zabojca%, %zabojca-tag% (puste jesli brak klanu), %ofiara%,
+  #   %ofiara-tag% (puste jesli brak klanu), %zabojstwa% (laczne zabojstwa zabojcy),
+  #   %smierci% (laczne smierci zabojcy), %kd% (K/D zabojcy),
+  #   %zmiana% (zmiana rankingu zabojcy, np. +25 lub -18),
+  #   %ranking-zabojcy% (nowy ranking zabojcy), %ranking-ofiary% (nowy ranking ofiary)
+  zabojstwo:
+    wlaczony: true
+    linie:
+      - "&4☠ &8| %klan_zabojca% &4%zabojca% &8(&4+%pktplus%&8) &czabil &8(&4-%pktminus%&8) %klan_ofiara% &4%ofiara%"
+    # NONE = broadcast na czat bez dzwieku (dzwiek zabojstwa - UI_TOAST_CHALLENGE_COMPLETE - gra tylko
+    # zabojcy, patrz tytuly.zabojstwo.dzwiek nizej). Wczesniej ten dzwiek slyszeli WSZYSCY na serwerze.
+    dzwiek: "NONE"
+    glosnosc: 0.6
+    pitch: 1.0
+
+# ==========================================================
+#   TYTULY (title/subtitle) - wyswietlane graczom na ekranie
+# ==========================================================
+# Kazdy wpis ma:
+#   wlaczony: true/false
+#   title / subtitle          - obsluguja kody kolorow (&) i placeholdery
+#   fade-in / stay / fade-out - czas w tickach (20 tickow = 1 sekunda)
+#   dzwiek / glosnosc / pitch - opcjonalny dzwiek odtwarzany kazdemu odbiorcy
+tytuly:
+
+  # Wyswietlane WSZYSTKIM AKTUALNIE ZALOGOWANYM CZLONKOM KLANU (bez nowej osoby,
+  # ktora dostaje zwykla wiadomosc czatu "dolaczono") gdy ktos nowy dolacza do klanu.
+  # Placeholdery: %gracz% (nowa osoba), %klan%, %tag%
+  nowy-czlonek:
+    wlaczony: true
+    title: "&a&l+ NOWY CZLONEK"
+    subtitle: "&e%gracz% &7dolaczyl do klanu!"
+    fade-in: 10
+    stay: 50
+    fade-out: 10
+    dzwiek: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    glosnosc: 1.0
+    pitch: 1.4
+
+  # Wyswietlane WYLACZNIE ZABOJCY po zabiciu innego gracza w PvP (ofiara NIE dostaje
+  # zadnego title - tylko zabojca). Animacja: title pojawia sie od razu, subtitle
+  # po 200ms z efektem rozszerzania od srodka na boki (~150ms).
+  #
+  # Placeholdery dostepne w title/subtitle:
+  #   %ofiara%          - nick zabitego gracza
+  #   %ofiara-klan%     - nazwa klanu ofiary (puste, jesli ofiara nie ma klanu)
+  #   %ofiara-tag%      - tag klanu ofiary (puste, jesli ofiara nie ma klanu)
+  #   %zabojca%         - nick zabojcy
+  #   %zabojca-klan%    - nazwa klanu zabojcy (puste, jesli zabojca nie ma klanu)
+  #   %zabojca-tag%     - tag klanu zabojcy (puste, jesli zabojca nie ma klanu)
+  #   %zabojstwa%       - laczna liczba zabojstw PvP zabojcy
+  #   %smierci%         - laczna liczba smierci PvP zabojcy
+  #   %kd%              - stosunek zabojstwa/smierci zabojcy (np. "2.50")
+  #   %zmiana%          - zmiana rankingu (BEZ plusa, np. "25" lub "-18")
+  #   %otrzymanyranking%    - zmiana ELO zabojcy jako liczba BEZWZGLEDNA (bez znaku,
+  #                           mysl "ile ELO wlasnie zdobyles"), np. "25"
+  #   %zmianawtopcepozycja% - o ile miejsc w globalnym topie ELO awansowal zabojca
+  #                           (liczba bezwzgledna, bez znaku), np. "3"
+  #   %pozycja%             - aktualne miejsce zabojcy w globalnym topie ELO po
+  #                           tym zabojstwie (1 = najlepszy gracz na serwerze)
+  #   %ranking-zabojcy% - nowy ranking zabojcy po zmianie
+  #   %ranking-ofiary%  - nowy ranking ofiary po zmianie
+  zabojstwo:
+    wlaczony: true
+    title: "&#FF4800&lᴢ&#FF6212&lᴀ&#FF7C24&lʙ&#FF9635&ló&#FFB047&lᴊ&#FF9B35&lꜱ&#FE8624&lᴛ&#FE7112&lᴡ&#FD5C00&lᴏ"
+    subtitle: "&c%ofiara%&e! &6+%otrzymanyranking% &8(&c%ranking-zabojcy%&8 | &6🡩%zmianawtopcepozycja% &8| &fPozycja: &c#%pozycja%&8)"
+    fade-in: 5
+    stay: 40
+    fade-out: 10
+    dzwiek: "UI_TOAST_CHALLENGE_COMPLETE"
+    glosnosc: 1.0
+    pitch: 1.0
+
+# ==========================================================
+#   DZWIEKI - dla akcji bez wlasnego broadcastu/title (np. otrzymanie zaproszenia)
+# ==========================================================
+# Kazdy wpis: dzwiek / glosnosc / pitch (glosnosc i pitch opcjonalne, domyslnie 1.0 / 1.0)
+dzwieki:
+  # Gracz otrzymuje zaproszenie do klanu
+  otrzymano-zaproszenie:
+    dzwiek: "BLOCK_NOTE_BLOCK_PLING"
+    glosnosc: 1.0
+    pitch: 1.0
+
+# ==========================================================
+#   GUI ULEPSZEN KLANU (/klan ulepszenia) - 54-slotowe okno.
+# ==========================================================
+# Dwa ulepszenia kupowane poziom po poziomie za smocze odlamki z ekwipunku lidera/zastepcy:
+#   drop    - +% dropu z generatorow dla KAZDEGO czlonka klanu (dolicza sie do Boostu Dropu Szamana)
+#   ranking - +% rankingu (ELO) zdobywanego za zabojstwo PvP przez czlonkow klanu
+# "poziomy" to lista wpisow { koszt: <odlamki>, wartosc: <laczny bonus %> } - wartosc jest LACZNA
+# (nie przyrostem), np. poziom 3 z wartosc: 30 = +30% w sumie. Liczba wpisow = maksymalny poziom.
+# Placeholdery lore: %poziom% %max% %bonus% %nastepny% %koszt% %skarbiec%; linie z %koszt%/%nastepny%/
+# %klik% znikaja na maksymalnym poziomie, a linia z %max-poziom% pokazuje sie TYLKO na nim.
+# custom-model-data: 0 = wylaczone (zwykly item).
+ulepszenia-gui:
+  tlo:
+    zolte: [0, 8, 44, 53]
+    pomaranczowe: [1, 7, 9, 17, 36, 44, 46, 52]
+    biale: [2, 3, 5, 6, 18, 26, 27, 35, 47, 48, 50, 51]
+
+  perki:
+    drop:
+      slot: 21
+      material: NETHERITE_SHOVEL
+      custom-model-data: 0
+      nazwa: "ꔓ Drop z generatorów"
+      gradient-od: "#b2c0e5"
+      gradient-do: "#adf3fd"
+      poziomy:
+        - { koszt: 30, wartosc: 10 }
+        - { koszt: 60, wartosc: 20 }
+        - { koszt: 90, wartosc: 30 }
+        - { koszt: 120, wartosc: 40 }
+        - { koszt: 150, wartosc: 50 }
+      lore:
+        - ""
+        - "&7ꔱ ᴢᴡɪᴇᴋꜱᴀ ᴅʀᴏᴘ ᴢ ɢᴇɴᴇʀᴀᴛᴏʀᴏᴡ"
+        - "&7ꔱ ᴅʟᴀ ꜰᴡꜱʏᴛᴋɪᴄʜ ᴄᴢʟᴏɴᴋᴏᴡ ᴋʟᴀɴᴜ."
+        - ""
+        - "&7ꔱ ᴘᴏᴢɪᴏᴍ: &a%poziom%&7/&f%max%"
+        - "&7ꔱ ᴀᴋᴛᴜᴀʟɴʏ ʙᴏɴᴜꜱ: &a+%bonus%%"
+        - ""
+        - "&7ꔱ ɴᴀꜱᴛᴇᴘɴʏ ᴘᴏᴢɪᴏᴍ: &a+%nastepny%%"
+        - "&7ꔱ ᴋᴏꜱzᴛ: &f%koszt% &5ꜱᴍᴏᴄᴢʏᴄʜ ᴏᴅʟᴀᴍᴋᴏᴡ"
+        - "&aꔱ ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜʟᴇᴘꜱᴢʏᴄ!%klik%"
+        - "&cꔱ ᴍᴀᴋꜱʏᴍᴀʟɴʏ ᴘᴏᴢɪᴏᴍ%max-poziom%"
+
+    ranking:
+      slot: 23
+      material: NETHERITE_SWORD
+      custom-model-data: 0
+      nazwa: "ꔹ Zwiększony ranking za zabójstwo"
+      gradient-od: "#ff1500"
+      gradient-do: "#ff9a00"
+      poziomy:
+        - { koszt: 30, wartosc: 10 }
+        - { koszt: 60, wartosc: 20 }
+        - { koszt: 90, wartosc: 30 }
+        - { koszt: 120, wartosc: 40 }
+        - { koszt: 150, wartosc: 50 }
+      lore:
+        - ""
+        - "&7ꔖ ᴢᴡɪᴇᴋꜱᴀ ʀᴀɴᴋɪɴɢ ᴢᴅᴏʙʏᴡᴀɴʏ"
+        - "&7ꔖ ᴢᴀ ᴢᴀʙᴏᴊꜱᴛᴡᴏ ᴘʀᴢᴇᴢ ᴄᴢʟᴏɴᴋᴏᴡ ᴋʟᴀɴᴜ."
+        - ""
+        - "&7ꔖ ᴘᴏᴢɪᴏᴍ: &a%poziom%&7/&f%max%"
+        - "&7ꔖ ᴀᴋᴛᴜᴀʟɴʏ ʙᴏɴᴜꜱ: &a+%bonus%%"
+        - ""
+        - "&7ꔖ ɴᴀꜱᴛᴇᴘɴʏ ᴘᴏᴢɪᴏᴍ: &a+%nastepny%%"
+        - "&7ꔖ ᴋᴏꜱzᴛ: &f%koszt% &5ꜱᴍᴏᴄᴢʏᴄʜ ᴏᴅʟᴀᴍᴋᴏᴡ"
+        - "&aꔖ ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜʟᴇᴘꜱᴢʏᴄ!%klik%"
+        - "&cꔖ ᴍᴀᴋꜱʏᴍᴀʟɴʏ ᴘᴏᴢɪᴏᴍ%max-poziom%"
+
+    limit-graczy:
+      slot: 25
+      material: PLAYER_HEAD
+      custom-model-data: 0
+      nazwa: "ꔔ Zwiększony limit graczy"
+      gradient-od: "#ff6600"
+      gradient-do: "#ffaa00"
+      poziomy:
+        - { koszt: 100, wartosc: 1 }
+        - { koszt: 200, wartosc: 2 }
+        - { koszt: 400, wartosc: 3 }
+        - { koszt: 800, wartosc: 4 }
+        - { koszt: 1600, wartosc: 5 }
+      lore:
+        - ""
+        - "&7ꔮ ᴢᴡɪᴇᴋꜱᴀ ᴍᴀᴋꜱʏᴍᴀʟɴᴀ ʟɪᴄᴢʙᴇ"
+        - "&7ꔮ ᴄᴢʟᴏɴᴋᴏᴡ ᴡ ᴋʟᴀɴɪᴇ."
+        - ""
+        - "&7ꔮ ᴘᴏᴢɪᴏᴍ: &a%poziom%&7/&f%max%"
+        - "&7ꔮ ᴀᴋᴛᴜᴀʟɴʏ ʟɪᴍɪᴛ: &a%limit% &7ᴏꜱᴏʙ"
+        - ""
+        - "&7ꔮ ɴᴀꜱᴛᴇᴘɴʏ ʟɪᴍɪᴛ: &a%limit-nastepny% &7ᴏꜱᴏʙ"
+        - "&7ꔮ ᴋᴏꜱzᴛ: &f%koszt% &5ꜱᴍᴏᴄᴢʏᴄʜ ᴏᴅʟᴀᴍᴋᴏᴡ"
+        - "&aꔮ ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜʟᴇᴘꜱᴢʏᴄ!%klik%"
+        - "&cꔮ ᴍᴀᴋꜱʏᴍᴀʟɴʏ ᴘᴏᴢɪᴏᴍ%max-poziom%"
+
+  powrot:
+    slot: 49
+    material: ARROW
+    nazwa: "Powrót"
+    gradient-od: "#ff2323"
+    gradient-do: "#ff5151"
+
+# ==========================================================
+#   /topki - GUI ze wszystkimi rankingami w jednym miejscu
+# ==========================================================
+# Caly wyglad tego GUI jest w 100% konfigurowalny - rozmiar, tytul, tlo,
+# kazdy item (material albo glowa z custom textura), sloty, nazwy, lore,
+# ilosc sztuk w stosie. WSZYSTKIE teksty (nazwa/lore/tytul) to zwykle stringi
+# kolorowane tak jak wszedzie indziej w tym pliku - kody & (np. &a, &l) oraz
+# hex &#rrggbb litera-po-literze recznie wpisany w tekscie. Mozna wiec wpisac
+# doslownie cokolwiek, np. "&#71F3B4#1 GRACZ BONIEC". Po zmianach uzyj
+# /adminklan reload.
+topki-gui:
+  # Rozmiar okna - wielokrotnosc 9, od 9 do 54.
+  rozmiar: 54
+  tytul: "&#F5EA50☀ &#F5EA50&lTOPKI SYSTEMOWE"
+
+  # Sloty wypelnione dekoracyjnym szklem. Klucz = material (np. gray_stained_glass_pane),
+  # wartosc = lista slotow. Mozna dodac dowolna liczbe kolorow.
+  tlo:
+    gray_stained_glass_pane: [45, 46, 47, 48, 50, 51, 52, 53]
+
+  # Style numerow pozycji uzywane przez placeholder %numer-styl% w "wzor-pozycji" ponizej.
+  # Indeks 0 = pozycja #1, indeks 1 = pozycja #2, itd. Kazda linia to zwykly, dowolnie
+  # kolorowany tekst (& oraz &#rrggbb) - mozna wpisac cokolwiek. Jesli lista jest krotsza
+  # niz aktualna pozycja (np. masz tylko 3 style a topka ma 15 pozycji), dalsze pozycje
+  # dostana prosty fallback "&8#<numer>".
+  style-numerow:
+    - "&#EF4141&l#1 &6🥇"
+    - "&#F14851&l#2 &8🥈"
+    - "&#F44F61&l#3 &c🥉"
+    - "&#F65671&l#4"
+    - "&#F85D81&l#5"
+    - "&#FD6BA1&l#6"
+    - "&#FF72B1&l#7"
+    - "&#FC6A9E&l#8"
+    - "&#FA628C&l#9"
+    - "&#FB5D78&l#10"
+    - "&#F85264&l#11"
+    - "&#F54750&l#12"
+    - "&#F23C3C&l#13"
+    - "&#EF3128&l#14"
+    - "&#EC2614&l#15"
+
+  # Kazdy wpis ponizej to jedna "kostka" topki w GUI. Klucz (np. "pieniadze") jest
+  # tylko identyfikatorem wewnetrznym - "pieniadze" i "ranking-klanu" maja realne
+  # dane z systemu klanow (skarbiec / ELO), reszta ponizej to gotowe miejsca pod
+  # przyszle topki (czas gry, bloki, ranking graczy, zabojstwa) - obecnie pokazuja
+  # tekst z "lore-brak-danych", dopoki nie zostana podpiete pod baze danych.
+  #
+  # Pola dostepne dla kazdej topki:
+  #   slot              - pozycja w GUI (0-53, zalezne od "rozmiar")
+  #   material          - typ przedmiotu (np. SUNFLOWER, DIAMOND_SWORD, PLAYER_HEAD...)
+  #   glowa-tekstura    - (opcjonalne) base64 tekstury glowy gracza (np. z minecraft-heads.com) -
+  #                       jesli ustawione, NADPISUJE "material" i uzywa glowy z ta textura
+  #   ilosc             - ile sztuk w stosie (domyslnie 1)
+  #   custom-model-data - CustomModelData dla resource packow (0 = wylaczone)
+  #   nazwa             - nazwa wyswietlana itemu - zwykly tekst z kolorami & / &#rrggbb
+  #   naglowek          - lista linii lore wstawiana NA POCZATKU (np. linia oddzielajaca)
+  #   wzor-pozycji      - wzor pojedynczej linii rankingu - wpisz dowolny tekst z wlasnymi
+  #                       kolorami, uzywajac ponizszych placeholderow:
+  #                         %numer%      - numer pozycji (1, 2, 3...)
+  #                         %numer-styl% - gotowy "#1/#2/#3..." z medalami ze "style-numerow" wyzej
+  #                         %nazwa%      - nazwa klanu/gracza na tej pozycji
+  #                         %wartosc%    - wartosc (np. ilosc odlamkow, ELO)
+  #                       przyklad: "&#71F3B4#%numer% GRACZ %nazwa% &8- &a%wartosc%"
+  #   limit             - ile pozycji pokazac (domyslnie 15)
+  #   lore-pusta-lista  - lore uzywane gdy topka jest pusta (np. brak jeszcze klanow)
+  #   lore-brak-danych  - lore uzywane dla topek bez podlaczonego zrodla danych
+  #                       (np. czas gry/bloki/zabojstwa - wymagaja bazy danych)
+  #   stopka            - lista linii lore wstawiana NA KONCU
+  topki:
+    pieniadze:
+      slot: 0
+      material: SUNFLOWER
+      nazwa: "&#71F3B4☁ &fTOPKA PIENIĘDZY"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      wzor-pozycji: "%numer-styl% %nazwa% &8- &#71F3B4%wartosc%"
+      limit: 15
+      lore-pusta-lista:
+        - "&7Brak klanow do wyswietlenia."
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+    ranking-klanu:
+      slot: 1
+      material: COMPARATOR
+      nazwa: "&#A771F3★ &fTOPKA RANKINGU KLANÓW"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      wzor-pozycji: "%numer-styl% %nazwa% &8- &#A771F3%wartosc% ELO"
+      limit: 15
+      lore-pusta-lista:
+        - "&7Brak klanow do wyswietlenia."
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+    czas-gry:
+      slot: 2
+      material: CLOCK
+      nazwa: "&#F1935D✎ &fTOPKA CZASU GRY"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      lore-brak-danych:
+        - "&#F1935D✎ Czasy gry TOP 15"
+        - "&8(Wymaga konfiguracji bazy danych)"
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+    bloki:
+      slot: 3
+      material: DIAMOND_PICKAXE
+      nazwa: "&#F5EA50☀ &fTOPKA BLOKÓW"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      lore-brak-danych:
+        - "&#F5EA50☀ Bloki TOP 15"
+        - "&8(Wymaga konfiguracji bazy danych)"
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+    ranking-graczy:
+      slot: 4
+      material: PLAYER_HEAD
+      # Przyklad uzycia wlasnej glowy z textura zamiast zwyklej PLAYER_HEAD - odkomentuj
+      # i wklej base64 (np. z minecraft-heads.com), zeby uzyc customowej ikony:
+      # glowa-tekstura: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLy4uLiJ9fX0="
+      nazwa: "&#B7F550☂ &fTOPKA RANKINGU GRACZY"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      lore-brak-danych:
+        - "&#B7F550☂ Ranking graczy TOP 15"
+        - "&8(Wymaga konfiguracji bazy danych)"
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+    zabojstwa:
+      slot: 5
+      material: DIAMOND_SWORD
+      nazwa: "&#F33C5A♔ &fTOPKA ZABÓJSTW"
+      naglowek:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+      lore-brak-danych:
+        - "&#F33C5A♔ Zabójstwa TOP 15"
+        - "&8(Wymaga konfiguracji bazy danych)"
+      stopka:
+        - "&8━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+  przycisk-zamkniecia:
+    slot: 49
+    material: BARRIER
+    nazwa: "&c&lZAMKNIJ"
+
+# ==========================================================
+#   SKINY NPC Z TOPEK (Citizens / FancyNPCs)
+#   NPC dostaje skin gracza zwroconego przez placeholder.
+#   Odswiezane co interwal-sekundy, zmiana configu: /adminklan reload
+# ==========================================================
+top-npc:
+  wlaczone: true
+  # CITIZENS albo FANCYNPCS
+  plugin: FANCYNPCS
+  # Co ile sekund sprawdzac topki (min. 30 - pobieranie skina z Mojanga chwile trwa)
+  interwal-sekundy: 300
+  log: true
+  komenda-citizens: "npc skin {nick} --id {npc}"
+  # FancyNPCs: {npc} = NAZWA NPC (ta z /npc list), nie numer
+  komenda-fancynpcs: "npc skin {npc} {nick}"
+  # id = nazwa NPC w FancyNPCs (litery, cyfry, _ i -)
+  # %klany_top_ekonomia_<N>_nick% = topka kasy graczy (Vault)
+  npc:
+    - id: "topkasa1"
+      placeholder: "%klany_top_ekonomia_1_nick%"
+    - id: "topkasa2"
+      placeholder: "%klany_top_ekonomia_2_nick%"
+    - id: "topkasa3"
+      placeholder: "%klany_top_ekonomia_3_nick%"

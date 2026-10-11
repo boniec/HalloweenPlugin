@@ -1,0 +1,174 @@
+# =========================================================
+#  /eventy - GUI eventow serwera
+#  Ikony Nexo wklejasz po "&f". Small caps + hex &#RRGGBB.
+#  Po zmianie: /eventy reload (uprawnienie eventy.admin)
+#
+#  GODZINY STARTU (Europe/Warsaw) — jedyne zrodlo prawdy.
+#  eventy.<nazwa>.godziny steruje KOTH, Sercem, meteorytami, bossami i Szalem.
+#  Harmonogramy w koth.yml / eventodlamki.yml / meteorites.yml / boss yml
+#  (respawn.czas-sekund, co-sekund, respawnIntervalHours) sa IGNOROWANE.
+# =========================================================
+
+gui:
+  wersja: 1
+  tytul: "&f乤 &#FFC34D&lᴇᴠᴇɴᴛʏ"
+  wielkosc: 54
+  ramka: BLACK_STAINED_GLASS_PANE
+  zamknij:
+    slot: 49
+    material: BARRIER
+    nazwa: "&f个 &cᴢᴀᴍᴋɴɪᴊ"
+    lore:
+      - ""
+      - "&7  丶 ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴢᴀᴍᴋɴᴀᴄ"
+      - ""
+
+# Szablony statusu (live) — placeholders: %czas% %ilosc%
+status:
+  trwa: "&f両 &aᴛʀᴡᴀ &8| &f丩 &f%czas%"
+  odliczanie: "&f亢 &eꜱᴛᴀʀᴛ ᴢᴀ &8| &f五 &f%czas%"
+  koniec: "&f东 &6ᴢᴀᴋᴏɴᴄᴢᴏɴʏ"
+  za: "&f丩 &7ᴢᴀ &e%czas%"
+  nieaktywny: "&f与 &8ɴɪᴇᴀᴋᴛʏᴡɴʏ"
+  zyje: "&f両 &aᴢʏᴊᴇ"
+  martwy: "&f亐 &cᴍᴀʀᴛᴡʏ"
+  brak-spawnu: "&f丫 &8ʙʀᴀᴋ ꜱᴘᴀᴡɴᴜ"
+  meteoryty-trwaja: "&f両 &aᴛʀᴡᴀ &8| &f丷 &f%ilosc% &7ᴀᴋᴛʏᴡɴʏᴄʜ"
+
+eventy:
+  koth:
+    slot: 19
+    material: RED_BANNER
+    ikona: "乹"
+    nazwa: "&#FF4D4D&lᴋᴏᴛʜ"
+    godziny:
+      - "15:00"
+      - "18:00"
+      - "21:00"
+    lore:
+      - ""
+      - "&7  专 ᴘʀᴢᴇᴊᴍɪᴊ ʀᴇɢɪᴏɴ ɪ ᴢʙɪᴇʀᴀᴊ ᴘᴜɴᴋᴛʏ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D15:00 &8· &#FFC34D18:00 &8· &#FFC34D21:00"
+      - "&f 五 ᴛʀᴡᴀ: &#FFC34D%czas-trwania%"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  serce:
+    slot: 20
+    material: HEART_OF_THE_SEA
+    ikona: "ꕣ"
+    nazwa: "&#d016f7&lꜱᴇʀᴄᴇ ᴋᴏꜱᴍᴏꜱᴜ"
+    godziny:
+      - "16:00"
+      - "19:00"
+    lore:
+      - ""
+      - "&7  乜 ɴɪꜱᴢᴄᴢ ꜱᴇʀᴄᴇ, ᴢɢᴀʀɴɪᴀᴊ ᴅʀᴏᴘ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D16:00 &8· &#FFC34D19:00"
+      - "&f 五 ᴛʀᴡᴀ: &#FFC34D%czas-trwania%"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  meteoryty:
+    slot: 21
+    material: FIRE_CHARGE
+    ikona: "丷"
+    nazwa: "&#FFC34D&lᴍᴇᴛᴇᴏʀʏᴛʏ"
+    godziny:
+      - "14:00"
+      - "20:00"
+    lore:
+      - ""
+      - "&7  丝 ꜱᴘᴀᴅᴀᴊᴀ ɴᴀ ᴍᴀᴘᴇ, ᴋᴏᴘ ᴢᴀ ᴅʀᴏᴘᴇᴍ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D14:00 &8· &#FFC34D20:00"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  minotaur:
+    slot: 22
+    material: IRON_AXE
+    ikona: "丆"
+    nazwa: "&#E2933A&lᴍɪɴᴏᴛᴀᴜʀ"
+    godziny:
+      - "12:00"
+      - "20:00"
+    lore:
+      - ""
+      - "&7  乐 ʙᴏꜱꜱ ꜱᴡɪᴀᴛᴀ — ᴢᴀʙɪᴊ ᴢᴀ ɴᴀɢʀᴏᴅʏ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D12:00 &8· &#FFC34D20:00"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  zeus:
+    slot: 23
+    material: LIGHTNING_ROD
+    ikona: "乞"
+    nazwa: "&#FDD835&lᴢᴇᴜꜱ"
+    godziny:
+      - "13:00"
+      - "21:00"
+    lore:
+      - ""
+      - "&7  乞 ʙᴏꜱꜱ ᴘɪᴏʀᴜɴᴏᴡ — ᴢᴀʙɪᴊ ᴢᴀ ɴᴀɢʀᴏᴅʏ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D13:00 &8· &#FFC34D21:00"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  goblin:
+    slot: 24
+    material: EMERALD
+    ikona: "亝"
+    nazwa: "&#55FF55&lɢᴏʙʟɪɴ"
+    godziny:
+      - "17:00"
+      - "22:00"
+    lore:
+      - ""
+      - "&7  中 ʙᴏꜱꜱ ꜱᴋᴀʀʙᴜ — ᴢᴀʙɪᴊ ᴢᴀ ɴᴀɢʀᴏᴅʏ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D17:00 &8· &#FFC34D22:00"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+  szal:
+    slot: 25
+    material: AMETHYST_SHARD
+    ikona: "乴"
+    nazwa: "&#C02FD4&lꜱᴢᴀʟ ᴏᴅʟᴀᴍᴋᴏᴡ"
+    godziny:
+      - "16:00"
+      - "19:00"
+      - "22:00"
+    lore:
+      - ""
+      - "&7  串 ᴅʀᴏᴘ ᴏᴅʟᴀᴍᴋᴏᴡ ᴢ ɢᴇɴᴇʀᴀᴛᴏʀᴏᴡ"
+      - "&f 东 ꜱᴛᴀʀᴛ: &#FFC34D16:00 &8· &#FFC34D19:00 &8· &#FFC34D22:00"
+      - "&f 五 ᴛʀᴡᴀ: &#FFC34D%czas-trwania%"
+      - ""
+      - "&f 両 ꜱᴛᴀᴛᴜꜱ: %status%"
+      - ""
+
+# Teksty gdy harmonogram jest pusty / reczny
+kiedy:
+  koth-puste: "ʙʀᴀᴋ ɢᴏᴅᴢɪɴ ᴡ ᴋᴏᴛʜ.ʏᴍʟ · /adkoth start"
+  serce: "ᴀᴅᴍɪɴ · /aserce spawn"
+  meteoryty: "ᴄᴏ %czas%"
+  boss: "ᴘᴏ ꜱᴍɪᴇʀᴄɪ · ʀᴇꜱᴘᴀᴡɴ %czas%"
+  szal: "ᴄᴏ %interwal%"
+  szal-wylaczony: "ᴡʏʟᴀᴄᴢᴏɴʏ · /eventodlamki start"
+
+naglowek:
+  - ""
+  - "&8&m                                    "
+  - "&f 乤 &#FFC34D&lᴇᴠᴇɴᴛʏ ꜱᴇʀᴡᴇʀᴀ"
+  - "&8&m                                    "
+  - ""
+
+stopka:
+  - ""
+  - "&8&m                                    "
+
+linia: "&f 丶 &f%ikona% %nazwa% &8» %status%"
+
+tylko-gracz: "&8[&f乤&8] &f亢 &cᴛᴀ ᴋᴏᴍᴇɴᴅᴀ ᴏᴛᴡɪᴇʀᴀ ɢᴜɪ — ᴜᴢʏᴊ ᴊᴇᴊ ᴡ ɢʀᴢᴇ."
+brak-uprawnien: "&8[&f乤&8] &f亢 &cɴɪᴇ ᴍᴀꜱᴢ ᴜᴘʀᴀᴡɴɪᴇɴ."
+przeladowano: "&8[&f乤&8] &f両 &aᴘʀᴢᴇʟᴀᴅᴏᴡᴀɴᴏ ᴇᴠᴇɴᴛʏ.ʏᴍʟ"

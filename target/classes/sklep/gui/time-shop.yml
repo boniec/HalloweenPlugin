@@ -1,0 +1,103 @@
+timeShop:
+  rows: 5
+  shopItemLoreAppend:
+  - '&7'
+  - ' &8» &7ᴄᴇɴᴀ: &f{czas}'
+  - '&7'
+  - ' &8» &aᴋʟɪᴋɴɪᴊ &2ʟᴇᴡʏᴍ&a, ᴀʙʏ ᴢᴀᴋᴜᴘɪᴄ!'
+  items:
+    back:
+      enabled: true
+      lore: []
+      amount: 1
+      slots: []
+      slot: 40
+      action: BACK
+      name: '&#FF9393ᴘᴏᴡʀᴏᴛ!'
+      customModelData: 0
+      material: BARRIER
+    border1:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 0
+      - 8
+      - 36
+      - 44
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: GREEN_STAINED_GLASS_PANE
+    border2:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 1
+      - 7
+      - 9
+      - 17
+      - 27
+      - 35
+      - 37
+      - 43
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_STAINED_GLASS_PANE
+    border3:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 2
+      - 6
+      - 38
+      - 42
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: WHITE_STAINED_GLASS_PANE
+    border4:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 3
+      - 5
+      - 39
+      - 41
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_BANNER
+    border5:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 4
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_CANDLE
+    border6:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 18
+      - 26
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: IRON_BARS
+  auction_slots: []
+  title: '&8          ꜱᴋʟᴇᴘ ᴢᴀ ᴄᴢᴀꜱ'

@@ -1,0 +1,25 @@
+transactions:
+- date: 1790524250468
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: StopSpam
+  type: PURCHASE
+- date: 1790523063194
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: StopSpam
+  type: PURCHASE
+- date: 1790517764744
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: StopSpam
+  type: PURCHASE
+- date: 1790517728137
+  amount: 60.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

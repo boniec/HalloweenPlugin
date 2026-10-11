@@ -1,0 +1,31 @@
+transactions:
+- date: 1790963963783
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790473308567
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: Kali__2
+  type: PURCHASE
+- date: 1790359561691
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Kali__2
+  type: PURCHASE
+- date: 1790359551592
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: Kali__2
+  type: PURCHASE
+- date: 1790359536011
+  amount: 45.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,114 @@
+blood_sword:
+  itemname: <white>Blood Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/blood_sword
+    custom_model_data:
+blood_sword_noanim:
+  itemname: <white>Blood Sword (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/blood_sword_noanim
+    custom_model_data:
+bloodhound:
+  itemname: <white>Bloodhound
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/bloodhound
+    custom_model_data: 
+bloodhound_noanim:
+  itemname: <white>Bloodhound (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/bloodhound_noanim
+    custom_model_data:
+euphoria:
+  itemname: <white>Euphoria
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/euphoria
+    custom_model_data: 
+euphoria_noanim:
+  itemname: <white>Euphoria (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/euphoria_noanim
+    custom_model_data: 
+golem_greatbow:
+  itemname: <white>Golem Greatbow
+  material: BOW
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/golem_greatbow
+    pulling_models:
+      - nazgul_forge:nazgul_weaponry_vol_6/golem_greatbow_pulling_0
+      - nazgul_forge:nazgul_weaponry_vol_6/golem_greatbow_pulling_1
+      - nazgul_forge:nazgul_weaponry_vol_6/golem_greatbow_pulling_2
+    custom_model_data:
+great_sword:
+  itemname: <white>Great Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/great_sword
+    custom_model_data:
+great_sword_noanim:
+  itemname: <white>Great Sword (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/great_sword_noanim
+    custom_model_data: 
+ice_axe:
+  itemname: <white>Ice Axe
+  material: NETHERITE_AXE
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/ice_axe
+    custom_model_data: 
+ice_axe_noanim:
+  itemname: <white>Ice Axe (No Anim)
+  material: NETHERITE_AXE
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/ice_axe_noanim
+    custom_model_data:
+mohgwyn_spear:
+  itemname: <white>Mohgwyn Spear
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/mohgwyn_spear
+    custom_model_data:
+mohgwyn_spear_noanim:
+  itemname: <white>Mohgwyn Spear (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/mohgwyn_spear_noanim
+    custom_model_data:
+red_lightning:
+  itemname: <white>Red Lightning
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/red_lighning
+    custom_model_data:    
+straight_sword:
+  itemname: <white>Straight Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/straght_sword
+    custom_model_data:
+straight_sword_noanim:
+  itemname: <white>Straight Sword (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/straght_sword_noanim
+    custom_model_data:
+winged_scythe:
+  itemname: <white>Winged Scythe
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/winged_scythe
+    custom_model_data:
+winged_scythe_noanim:
+  itemname: <white>Winged Scythe (No Anim)
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_6/winged_scythe_noanim
+    custom_model_data:
+
+# 11960ESBQF

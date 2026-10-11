@@ -1,0 +1,35 @@
+# Strefa AFK - region WorldGuard (stworz go: /rg define afk).
+# Wyjscie z regionu zeruje licznik czasu. Przeladowanie: /aafk
+region: afk
+
+pieniadze:
+  co-sekund: 60
+  kwota: 0.5
+
+klucz:
+  co-sekund: 900
+  szansa-procent: 50
+  # ID skrzynki z /acase lista
+  skrzynka: rzadka
+  ilosc: 1
+
+# 2 bossbary w strefie: klucz (gora) i kasa (dol).
+# Tekst tytulow jest automatycznie zamieniany na smalltext (kody & zostaja).
+# Glify Nexo: 乁 zloty klucz, 價 worek kasy, 五 stoper - &f przed glifem = oryginalne kolory.
+# Placeholdery: {czas} do nagrody, {szansa} (klucz), {kwota} (kasa).
+# Kolory: PINK BLUE RED GREEN YELLOW PURPLE WHITE | style: SOLID SEGMENTED_6 SEGMENTED_10 SEGMENTED_12 SEGMENTED_20
+bossbar:
+  enabled: true
+  styl: SOLID
+  klucz:
+    tytul: "&f乁 &6&lklucz rzadki &8» &e{szansa}% &7szansy &8| &f五 &e{czas}"
+    kolor: YELLOW
+  kasa:
+    tytul: "&f價 &a&lkasa &8» &a+{kwota}$ &8| &f五 &a{czas}"
+    kolor: GREEN
+
+# Wiadomosci na czat (pisz od razu smalltextem).
+wiadomosci:
+  kasa: "&f價 &8» &7ᴏᴛʀᴢʏᴍᴀʟᴇꜱ &a{kwota}$ &7ᴢᴀ ᴀꜰᴋ"
+  klucz: "&f乁 &8» &7ᴡʏʟᴏꜱᴏᴡᴀʟᴇꜱ &r{klucz}&7!"
+  pech: "&f乁 &8» &7ᴛʏᴍ ʀᴀᴢᴇᴍ ʙᴇᴢ ᴋʟᴜᴄᴢᴀ, ᴋᴏʟᴇᴊɴᴀ ꜱᴢᴀɴꜱᴀ ᴢᴀ &f15ᴍ"

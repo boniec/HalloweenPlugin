@@ -1,0 +1,13 @@
+transactions:
+- date: 1790104312682
+  amount: 50.0
+  item: '&7ʀᴀɴɢᴀ &f希'
+  description: Zakup produktu
+  source: WloskiFarmazon
+  type: PURCHASE
+- date: 1790101785210
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

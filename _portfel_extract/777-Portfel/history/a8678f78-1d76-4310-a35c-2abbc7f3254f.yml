@@ -1,0 +1,43 @@
+transactions:
+- date: 1790790995196
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790513765744
+  amount: 75.0
+  item: '&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ'
+  description: Zakup produktu
+  source: kebabdealer68
+  type: PURCHASE
+- date: 1790513756481
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD
+- date: 1790501895167
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: kebabdealer68
+  type: PURCHASE
+- date: 1790184263184
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789932866046
+  amount: 12.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: kebabdealer68
+  type: PURCHASE
+- date: 1789932861290
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

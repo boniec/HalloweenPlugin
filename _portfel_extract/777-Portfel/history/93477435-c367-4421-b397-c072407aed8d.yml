@@ -1,0 +1,19 @@
+transactions:
+- date: 1790442180217
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Krab_Nitro
+  type: PURCHASE
+- date: 1790353101363
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: Krab_Nitro
+  type: PURCHASE
+- date: 1790353058447
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

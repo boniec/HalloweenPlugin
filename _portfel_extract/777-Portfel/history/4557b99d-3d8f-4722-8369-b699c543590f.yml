@@ -1,0 +1,14 @@
+transactions:
+- date: 1790450818767
+  amount: 20.0
+  item: '&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ
+    &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)'
+  description: Zakup produktu
+  source: Nest1_
+  type: PURCHASE
+- date: 1790443243944
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

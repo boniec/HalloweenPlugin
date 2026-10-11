@@ -1,0 +1,19 @@
+transactions:
+- date: 1790981774766
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: friztenodmaji_
+  type: PURCHASE
+- date: 1790981767916
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: friztenodmaji_
+  type: PURCHASE
+- date: 1790981698393
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

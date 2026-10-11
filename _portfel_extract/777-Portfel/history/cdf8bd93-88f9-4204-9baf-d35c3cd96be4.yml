@@ -1,0 +1,14 @@
+transactions:
+- date: 1790088048594
+  amount: 20.0
+  item: '&#FF7200&lꜱ&#FF7B0D&lᴋ&#FF841B&lʀ&#FF8C28&lᴢ&#FF9535&lʏ&#FF9E42&lɴ&#FFA750&lɪ&#FFAF5D&lᴀ
+    &#FFBE76&lꜱ&#FFC382&lᴢ&#FFC98E&ló&#FFCF9A&lꜱ&#FFD5A6&lᴛ&#FFDAB2&lᴋ&#FFE0BE&lɪ'
+  description: Zakup produktu
+  source: Itzz_bambolebo
+  type: PURCHASE
+- date: 1790087397595
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

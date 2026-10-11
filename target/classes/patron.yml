@@ -1,0 +1,392 @@
+# =========================================================
+#  System Patronów Gwiezdnych Wojen
+#  Kolory: '&' oraz hex '&#RRGGBB'
+#  5 Patronów z pasywnymi umiejętnościami i godzinami bogów
+# =========================================================
+
+# ═══════════════════════════════════════════════════════════
+# NAZWY I STATUS PATRONÓW
+# ═══════════════════════════════════════════════════════════
+chewbaccaName: '&#555555&lᴄʜᴇᴡʙᴀᴄᴄᴀ'
+bobaFettName: '&#38A204&lʙᴏʙᴀ ꜰᴇᴛᴛ'
+hanSoloName: '&#5FE2C5&lʜᴀɴ ꜱᴏʟᴏ'
+darthVaderName: '&#747171&lᴅᴀʀᴛʜ ᴠᴀᴅᴇʀ'
+yodaName: '&#40FF00&lʏᴏᴅᴀ'
+
+chewbaccaStatus: true
+bobaFettStatus: true
+hanSoloStatus: true
+darthVaderStatus: true
+yodaStatus: true
+
+# Waga w losowaniu /mistrz (100 = rowne szanse miedzy aktywnymi; 0 = nigdy nie wypada mimo Status)
+chewbaccaDrawWeight: 100
+bobaFettDrawWeight: 100
+hanSoloDrawWeight: 100
+darthVaderDrawWeight: 100
+yodaDrawWeight: 100
+
+nullPatron: '&c&lʙʀᴀᴋ'
+
+# ═══════════════════════════════════════════════════════════
+# USTAWIENIA LOSOWANIA
+# ═══════════════════════════════════════════════════════════
+drawingTitle: '&5&lʟᴏꜱᴏᴡᴀɴɪᴇ ᴘᴀᴛʀᴏɴᴀ'
+drawingSubtitle: '%patron%'
+timerDrawing: 20
+cooldownDraw: 5
+drawingTitleSuccess: '&b&lWYLOSOWAŁEŚ...'
+drawingSubtitleSuccess: '%patron%'
+drawingSound: UI_BUTTON_CLICK
+successSound: ENTITY_PLAYER_LEVELUP
+newPatronBroadcast: '&5⭐ &8| &7Gracz &f{PLAYER} &7wylosował patrona {PATRON} &8| &f/mistrz'
+patronDuration: 30d
+# Co ile gracz moze losowac patrona za darmo (kod domyslnie dawal 7d, a opis w menu mowi 3 dni)
+freeReset: 3d
+hourDurationSeconds: 3600
+godzinaBogaTitle: '&5Godzina Patrona'
+
+# ═══════════════════════════════════════════════════════════
+# CHEWBACCA - Wookiee Warrior
+# Pasywnie: 10% więcej zadawanych obrażeń
+# Godzina Patrona: Efekt Siły I dla wszystkich
+# ═══════════════════════════════════════════════════════════
+chewbaccaBonusDamage: 0.10
+chewbaccaHour: 13
+chewbaccaTime: 1h
+chewbaccaEffectGod:
+  amplifier: 0
+  duration: 40
+  type: STRENGTH
+chewbaccaBossbar:
+  title: '&5⭐ &8| &fGodzina Patrona: &#555555&lᴄʜᴇᴡʙᴀᴄᴄᴀ &8| &fKażdy gracz posiada &#555555Siłę I &8(&f{TIME}&8)'
+  barColor: WHITE
+  barStyle: SOLID
+
+# ═══════════════════════════════════════════════════════════
+# BOBA FETT - Bounty Hunter
+# Pasywnie: +25% kasy z generatorów
+# Godzina Patrona: Drop x1.5 z generatorów dla wszystkich
+# ═══════════════════════════════════════════════════════════
+bobaFettBonus: 1.25
+bobaFettBonusGod: 1.5
+bobaFettGeneratorMaterials:
+  - COAL
+  - RAW_IRON
+  - RAW_GOLD
+  - RAW_COPPER
+  - DIAMOND
+  - EMERALD
+  - LAPIS_LAZULI
+  - REDSTONE
+  - ANCIENT_DEBRIS
+  - NETHERITE_SCRAP
+  - GOLD_INGOT
+  - IRON_INGOT
+  - COPPER_INGOT
+bobaFettHour: 14
+bobaFettTime: 1h
+bobaFettBossbar:
+  title: '&5⭐ &8| &fGodzina Patrona: &#38A204&lʙᴏʙᴀ ꜰᴇᴛᴛ &8| &fKażdy gracz posiada zwiększony &#38A204drop x1.5 &8(&f{TIME}&8)'
+  barColor: YELLOW
+  barStyle: SOLID
+
+# ═══════════════════════════════════════════════════════════
+# HAN SOLO - Smuggler
+# Pasywnie: Szansa na postawienie pajęczyny po uderzeniu
+# Godzina Patrona: Szansa na usunięcie efektu ochrony przed ogniem
+# ═══════════════════════════════════════════════════════════
+hanSoloCobwebChance: 15
+hanSoloFireResistanceRemovalChance: 0.25
+hanSoloFireResistanceRemovalChanceGod: 0.50
+hanSoloFireRemovalTitleVictim: '&#5FE2C5&lꜰɪʀᴇ ʀᴇᴍᴏᴠᴇᴅ'
+hanSoloFireRemovalSubtitleVictim: '&fTwoja ochrona odeszła'
+hanSoloHour: 15
+hanSoloTime: 1h
+hanSoloBossbar:
+  title: '&5⭐ &8| &fGodzina Patrona: &#5FE2C5&lʜᴀɴ ꜱᴏʟᴏ &8| &fSzansa na usunięcie ochrony przed ogniem &8(&f{TIME}&8)'
+  barColor: BLUE
+  barStyle: SOLID
+
+# ═══════════════════════════════════════════════════════════
+# DARTH VADER - Dark Lord
+# Pasywnie: Szansa na nadanie osłabienia
+# Godzina Patrona: Zwiększony ranking po zabójstwie
+# ═══════════════════════════════════════════════════════════
+darthVaderWeaknessChance: 0.20
+darthVaderWeaknessEffect:
+  amplifier: 0
+  duration: 60
+  type: WEAKNESS
+darthVaderRankingBonusGod: 1.25
+darthVaderHour: 16
+darthVaderTime: 1h
+darthVaderEffectGod:
+  amplifier: 0
+  duration: 40
+  type: WEAKNESS
+darthVaderBossbar:
+  title: '&5⭐ &8| &fGodzina Patrona: &#747171&lᴅᴀʀᴛʜ ᴠᴀᴅᴇʀ &8| &fZwiększony &#747171ranking &f+25% &8(&f{TIME}&8)'
+  barColor: PURPLE
+  barStyle: SOLID
+
+# ═══════════════════════════════════════════════════════════
+# YODA - Jedi Master
+# Pasywnie: 15% mniej otrzymywanych obrażeń
+# Godzina Patrona: Szansa na nadanie oślepienia
+# ═══════════════════════════════════════════════════════════
+yodaResistance: 0.15
+yodaBlindnessChance: 0.30
+yodaBlindnessEffect:
+  amplifier: 0
+  duration: 50
+  type: BLINDNESS
+yodaHour: 17
+yodaTime: 1h
+yodaBossbar:
+  title: '&5⭐ &8| &fGodzina Patrona: &#40FF00&lʏᴏᴅᴀ &8| &fSzansa na &#40FF00oślepienie &f+30% &8(&f{TIME}&8)'
+  barColor: GREEN
+  barStyle: SOLID
+
+# ═══════════════════════════════════════════════════════════
+# KONFIGURACJA ODŁAMKÓW
+# ═══════════════════════════════════════════════════════════
+odlamek:
+  material: PRISMARINE_CRYSTALS
+  amount: 10
+  item-meta:
+    display-name: '&x&7&2&E&1&F&6&lꜰ&x&6&C&D&D&F&5&lʀ&x&6&6&D&A&F&4&lᴀ&x&6&1&D&6&F&3&lɢ&x&5&B&D&3&F&2&lᴍ&x&5&5&C&F&F&0&lᴇ&x&4&F&C&C&E&F&lɴ&x&4&A&C&8&E&E&lᴛ &x&3&E&C&1&E&C&lɢ&x&3&E&C&1&E&C&lᴀ&x&3&E&C&1&E&C&lʟ&x&3&E&C&1&E&C&lᴀ&x&3&E&C&1&E&C&lᴋ&x&3&E&C&1&E&C&lᴛ&x&3&E&C&1&E&C&lʏ&x&3&E&C&1&E&C&lᴋ&x&3&E&C&1&E&C&lɪ'
+    lore:
+      - ''
+      - '&f ᴄᴇɴɴʏ ᴋʀʏsᴢᴛᴀʟ sʟᴜᴢᴀᴄʏ ᴅᴏ &fᴜʟᴇᴘsᴢᴇɴɪᴀ'
+      - '&f sᴡᴏɪᴄʜ ᴜᴍɪᴇᴊᴇᴛɴᴏsᴄɪ &7(/ᴘᴇʀᴋɪ)'
+
+noAmount:
+  wiadomosc: '&cNie posiadasz wystarczająco przedmiotów! &7(potrzebujesz &f{AMOUNT}x&7)'
+
+# ═══════════════════════════════════════════════════════════
+# KONFIGURACJA MENU (GUI)
+# ═══════════════════════════════════════════════════════════
+menuName: '&8ʟᴏꜱᴏᴡᴀɴɪᴇ ᴘᴀᴛʀᴏɴᴀ'
+menuRows: 6
+
+menu:
+  - slot: 1
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 2
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 3
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 4
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 6
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 7
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 8
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 9
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 10
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 18
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 19
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 27
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 28
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 36
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 37
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 45
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 46
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 47
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 48
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 49
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 51
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 52
+    item:
+      material: PURPLE_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 53
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+  - slot: 54
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      item-meta:
+        display-name: ' '
+
+draw:
+  slot: 5
+  texture: 'cc80e5e99ec3487b2a4e10dfdf6224f64515d4bc3c2fd045db96c45d2f9af6f1'
+  itemName: '&6⭐ &8| &a&lWYLOSUJ PATRONA'
+  itemLore:
+    - ' '
+    - '&8 &fPatrona możesz za darmo losować co 3 dni'
+    - ' '
+    - '&8 &fDarmowe losowanie za: &6{TIME}'
+    - ' '
+
+infoSlot: 50
+info:
+  itemName: '&bɪɴꜰᴏʀᴍᴀᴄᴊᴇ'
+  itemLore:
+    - ' '
+    - '&8 &fTwój obecny patron: {PATRON}'
+    - '&8 &fWygasa za: &d{EXPIRE}'
+    - ' '
+
+# ═══════════════════════════════════════════════════════════
+# IKONY PATRONÓW W GUI
+# ═══════════════════════════════════════════════════════════
+
+chewbacca:
+  texture: '4335115b23a1cf4daff69b54b27132f10fa5f348bfd62b0ef3d8c51ab894b'
+  itemName: '&#555555&lᴄ&#4F4E4C&lʜ&#484742&lᴇ&#423F39&lᴡ&#3B382F&lʙ&#423F39&lᴀ&#484742&lᴄ&#4F4E4C&lᴄ&#555555&lᴀ'
+  itemLore:
+    - ' '
+    - '&f &8▶ &fPasywne umiejętności:'
+    - '&f &f &#55555510% &fwięcej zadawanych obrażeń'
+    - ''
+    - '&f &8▶ &fPodczas godziny mistrza:'
+    - '&f &f Efekt &#555555siły 1 &fdla wszystkich graczy'
+    - ''
+  slot: 20
+  hide: false
+  enchanted: false
+
+bobafett:
+  texture: 'a34d5590d6dbfd750bdc0c485a9b249f139e4f82b682d6370dbdcea751c5b8a2'
+  itemName: '&#38A204&lʙ&#44B00F&lᴏ&#50BE1B&lʙ&#5CCC26&lᴀ&#68DA31&l &#5CCC26&lꜰ&#50BE1B&lᴇ&#44B00F&lᴛ&#38A204&lᴛ'
+  itemLore:
+    - ' '
+    - '&f &8▶ &fPasywne umiejętności:'
+    - '&f &f &#38A204+25% &fdropu z generatorów'
+    - ''
+    - '&f &8▶ &fPodczas godziny mistrza:'
+    - '&f &f &#38A204Drop x1.5 &fz generatorów &fdla wszystkich graczy'
+    - ''
+  slot: 21
+  hide: false
+  enchanted: false
+
+hansolo:
+  texture: 'df64bc927d5a7cc4ce33455993f3f9367a0cbfee5822d5529f2d8475411f3'
+  itemName: '&#5FE2C5&lʜ&#7AE3CB&lᴀ&#94E3D2&lɴ&#AFE4D8&l &#C9E4DE&lꜱ&#A6E3D6&lᴏ&#82E3CD&lʟ&#5FE2C5&lᴏ'
+  itemLore:
+    - ' '
+    - '&f &8▶ &fPasywne umiejętności:'
+    - '&f &f &#5FE2C5Szansa &fna postawienie pajęczyny przeciwnikowi po uderzeniu'
+    - ''
+    - '&f &8▶ &fPodczas godziny mistrza:'
+    - '&f &f Po uderzeniu szansa na &#5FE2C5usunięcie &fefektu ochrony przed ogniem'
+    - ''
+  slot: 22
+  hide: false
+  enchanted: false
+
+darthvader:
+  texture: '9a5f0f16e71ab33cfe9cfce04b4bb84ad989306b564176f11ef5d4ed5a3be34f'
+  itemName: '&#747171&lᴅ&#838080&lᴀ&#928E8E&lʀ&#A09D9D&lᴛ&#AFABAB&lʜ&#BEBABA&l &#AFABAB&lᴠ&#A09D9D&lᴀ&#928E8E&lᴅ&#838080&lᴇ&#747171&lʀ'
+  itemLore:
+    - ' '
+    - '&f &8▶ &fPasywne umiejętności:'
+    - '&f &f &#747171Szansa &fna nadanie przeciwnikowi osłabienia'
+    - ''
+    - '&f &8▶ &fPodczas godziny mistrza:'
+    - '&f &f &#747171Zwiększony &franking po zabójstwie dla wszystkich'
+    - ''
+  slot: 23
+  hide: false
+  enchanted: false
+
+yoda:
+  texture: '9a5f0f16e71ab33cfe9cfce04b4bb84ad989306b564176f11ef5d4ed5a3be34f'
+  itemName: '&#40FF00&lʏ&#3BDD05&lᴏ&#36BB09&lᴅ&#40FF00&lᴀ'
+  itemLore:
+    - ' '
+    - '&f &8▶ &fPasywne umiejętności:'
+    - '&f &f &#40FF0015% &fmniej otrzymywanych obrażeń '
+    - ''
+    - '&f &8▶ &fPodczas godziny mistrza:'
+    - '&f &f Szansa na nadanie &#40FF00oślepienia&f po uderzeniu'
+    - ''
+  slot: 24
+  hide: false
+  enchanted: false

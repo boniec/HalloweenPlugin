@@ -1,0 +1,31 @@
+transactions:
+- date: 1790360418142
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: 23bby
+  type: PURCHASE
+- date: 1790360413142
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 23bby
+  type: PURCHASE
+- date: 1790360360387
+  amount: 9.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790004859315
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: 23bby
+  type: PURCHASE
+- date: 1790004833177
+  amount: 11.0
+  item: VPLN
+  description: Dodanie środków
+  source: szakirek
+  type: ADD

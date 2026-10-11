@@ -1,0 +1,13 @@
+transactions:
+- date: 1790443923718
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: p0gromca_kili
+  type: PURCHASE
+- date: 1790443889269
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

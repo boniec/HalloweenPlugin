@@ -1,0 +1,13 @@
+transactions:
+- date: 1790430015211
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: lysy1_
+  type: PURCHASE
+- date: 1790429765751
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

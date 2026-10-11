@@ -1,0 +1,13 @@
+transactions:
+- date: 1790513017994
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: magicznyrafal
+  type: PURCHASE
+- date: 1790513002147
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,13 @@
+transactions:
+- date: 1789914250702
+  amount: 10.0
+  item: '&2ʀᴀɴɢᴀ &f龜'
+  description: Zakup produktu
+  source: SeroweChrupki71
+  type: PURCHASE
+- date: 1789914236336
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

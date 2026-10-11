@@ -1,0 +1,37 @@
+transactions:
+- date: 1789994820186
+  amount: 50.0
+  item: '&7ʀᴀɴɢᴀ &f希'
+  description: Zakup produktu
+  source: SzybkiAndrew
+  type: PURCHASE
+- date: 1789994807432
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789931896146
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: SzybkiAndrew
+  type: PURCHASE
+- date: 1789927751296
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: SzybkiAndrew
+  type: PURCHASE
+- date: 1789927747497
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: SzybkiAndrew
+  type: PURCHASE
+- date: 1789927676421
+  amount: 22.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

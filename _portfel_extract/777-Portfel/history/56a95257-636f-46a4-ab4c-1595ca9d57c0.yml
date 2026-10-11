@@ -1,0 +1,13 @@
+transactions:
+- date: 1789241007500
+  amount: 0.0
+  item: VPLN
+  description: Ustawienie salda
+  source: pilot_rollsroyca
+  type: SET
+- date: 1789240978662
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

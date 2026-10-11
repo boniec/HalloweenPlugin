@@ -1,0 +1,19 @@
+transactions:
+- date: 1790890306288
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: TeksasMaster
+  type: PURCHASE
+- date: 1790884948588
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: TeksasMaster
+  type: PURCHASE
+- date: 1790880212598
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

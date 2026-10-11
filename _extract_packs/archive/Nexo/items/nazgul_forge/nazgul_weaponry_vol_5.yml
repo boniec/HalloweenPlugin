@@ -1,0 +1,66 @@
+cursed_sword:
+  itemname: <white>Cursed Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/cursed_sword
+    custom_model_data:
+dark_sword:
+  itemname: <white>Dark Sword
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/dark_sword
+    custom_model_data: 
+demonic_blade:
+  itemname: <white>Demonic Blade
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/demonic_blade
+    custom_model_data:
+holy_spear:
+  itemname: <white>Holy Spear
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/holy_spear
+    custom_model_data: 
+kaz_sc:
+  itemname: <white>Kaz Sc
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/kaz_sc
+    custom_model_data: 
+obsidian_bow:
+  itemname: <white>Obsidian Bow
+  material: BOW
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/obsidian_bow
+    pulling_models:
+      - nazgul_forge:nazgul_weaponry_vol_5/obsidian_bow_pulling_0
+      - nazgul_forge:nazgul_weaponry_vol_5/obsidian_bow_pulling_1
+      - nazgul_forge:nazgul_weaponry_vol_5/obsidian_bow_pulling_2
+    custom_model_data:
+magnetic_blade:
+  itemname: <white>Magnetic Blade
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/magnetic_blade
+    custom_model_data:
+mana_axe:
+  itemname: <white>Mana Axe
+  material: NETHERITE_AXE
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/mana_axe
+    custom_model_data: 
+pox_spreader:
+  itemname: <white>Pox Spreader
+  material: NETHERITE_SWORD
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/pox_spreader
+    custom_model_data: 
+red_hammer:
+  itemname: <white>Red Hammer
+  material: MACE
+  Pack:
+    model: nazgul_forge:nazgul_weaponry_vol_5/red_hammer
+    custom_model_data: 
+
+# 42540HLZO

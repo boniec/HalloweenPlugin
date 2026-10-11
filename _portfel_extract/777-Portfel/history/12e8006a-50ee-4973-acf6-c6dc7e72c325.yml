@@ -1,0 +1,19 @@
+transactions:
+- date: 1790864576388
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: SpustDominimajka
+  type: PURCHASE
+- date: 1790864573438
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: SpustDominimajka
+  type: PURCHASE
+- date: 1790864565046
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,169 @@
+transactions:
+- date: 1787537783107
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787537770281
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787526489961
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787526476389
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787521134442
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787521131392
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787521121663
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787516951718
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787516948983
+  amount: 100.0
+  item: VPLN
+  description: Ustawienie salda
+  source: pilot_rollsroyca
+  type: SET
+- date: 1787516941451
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787516939468
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787516933927
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787433050593
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787433048543
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787433033746
+  amount: 200.0
+  item: VPLN
+  description: Ustawienie salda
+  source: pilot_rollsroyca
+  type: SET
+- date: 1787433021049
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787415166070
+  amount: 500.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787373024906
+  amount: 10000.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787372910504
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787372909054
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787372906654
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787372904554
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787372902954
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pilot_rollsroyca
+  type: PURCHASE
+- date: 1787372888974
+  amount: 350.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787371336251
+  amount: 60.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787370970221
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787370524203
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787370500438
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

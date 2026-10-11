@@ -1,0 +1,13 @@
+﻿{
+ "custom.headless.headlessdeath": { "sounds": ["custom/headless/headlessdeath"] },
+ "custom.headless.headlessdecap": { "sounds": ["custom/headless/headlessdecap"] },
+ "custom.headless.headlessdouble": { "sounds": ["custom/headless/headlessdouble"] },
+ "custom.headless.headlessjump": { "sounds": ["custom/headless/headlessjump"] },
+ "custom.headless.headlesskick": { "sounds": ["custom/headless/headlesskick"] },
+ "custom.headless.headlessmelee": { "sounds": ["custom/headless/headlessmelee"] },
+ "custom.headless.headlessparal": { "sounds": ["custom/headless/headlessparal"] },
+ "custom.headless.headlessslash": { "sounds": ["custom/headless/headlessslash"] },
+ "custom.headless.headlessthrow": { "sounds": ["custom/headless/headlessthrow"] },
+ "custom.headless.headlessfear": { "sounds": ["custom/headless/headlessfear"] },
+ "custom.headless.headlesswalk": { "sounds": ["custom/headless/headlesswalk"] }
+}

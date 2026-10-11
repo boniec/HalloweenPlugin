@@ -1,0 +1,113 @@
+
+
+Minotaur:
+  Type: IRON_GOLEM
+  Display: 'Minotaur'
+  Health: 1024
+  Damage: 0
+  KillMessages:
+  - '<target.name> was trampled by the <caster.name>'
+  Faction: Minotaur
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  - lookatplayers
+  - breakdoors
+  - float
+  AITargetSelectors:
+  - clear
+  - attacker
+  - players
+  - OtherFaction
+  BossBar:
+    Enabled: false
+    Title: '⛛'
+    Range: 60
+    Color: RED
+    Style: SEGMENTED_6
+  Options:
+    Despawn: NEVER
+    FollowRange: 60
+    MovementSpeed: 0.22
+    KnockbackResistance: 0.75
+    PreventOtherDrops: true
+    MaxCombatDistance: 256
+    PreventTransformation: true
+    PreventRandomEquipment: true
+    PreventVanillaDamage: false
+    UseThreatTable: true
+    ReinforcementsChance: 0
+    Silent: true
+    ApplyInvisibility: false
+  Modules:
+    ThreatTable: true  
+  Skills:
+  - delay 1
+  - model{mid=minotaur;n=false} @self ~onSpawn
+  - model{mid=minotaur;n=false} @self ~onLoad
+  - skill{s=CancelAttack;sync=true} ~onAttack
+  - cullconfig{vc=false;bkc=false;blc=false} @self ~onSpawn
+  - cullconfig{vc=false;bkc=false;blc=false} @self ~onLoad
+#  - partvis{p=ground_with_roots;v=false} @self ~onSpawn
+  - settarget{cd=2} @trigger ~onDamaged
+
+  - randomskill{skills=attack_horns,minotaur_impact,throws_the_ground,double_attack,minotaur_rush} ~onTimer:5
+  - skill{s=minotaur_stun} @modelpart{pid=block_check_point;offset=GLOBAL} ~onTimer:1
+  - setvar{var=caster.rush;val=false;type=STRING} @self ~onSpawn
+  - setvar{var=caster.rush;val=false;type=STRING} @self ~onLoad
+
+  - randomskill{s=minotaur_hurt_1,minotaur_hurt_2;sync=true} ~onDamaged
+  - skill{s=Minotaur_Run} @self ~onEnterCombat
+  - skill{s=Minotaur_Walk} @self ~onDropCombat
+
+  - effect:sound{s=minecraft:minotaur.hurt;v=1;p=1} @self ~onDamaged 
+  - effect:sound{s=minecraft:minotaur.death;v=3;p=1} @self ~onDeath 
+  - effect:sound{s=minecraft:minotaur.ambient;v=1;p=1} @self ~onSpawn
+  - effect:sound{s=minecraft:minotaur.ambient;v=1;p=1} @self ~onLoad
+  - effect:sound{s=minecraft:minotaur.idle;v=1;p=1} @self ~onTimer:200
+
+
+
+Sleeping_Minotaur:
+  Type: IRON_GOLEM
+  Display: 'Sleeping Minotaur'
+  Health: 400
+  Faction: Minotaur
+  AIGoalSelectors:
+  - clear
+  - float
+  AITargetSelectors:
+  - clear
+  - players
+  Options:
+   Despawn: NEVER
+   Silent: true
+   KnockbackResistance: 1
+   PreventOtherDrops: true
+   NoAI: false
+   Collidable: false
+   MaxCombatDistance: 0
+   PreventLeashing: false
+   PreventTransformation: true
+   PreventRandomEquipment: true
+   PreventVanillaDamage: false
+  Skills:
+  - model{mid=sleeping_minotaur;n=false} @self ~onSpawn
+  - model{mid=sleeping_minotaur;n=false} @self ~onLoad
+  - setAI{ai=true} @self ~onSpawn
+  - skill{s=minotaur_awakening} ~onTimer:5
+
+
+
+
+Ground_with_Roots:
+  Type: ARMOR_STAND
+  Display: 'Ground with Roots'
+  Options:
+   Interactable: false
+  Skills:
+  - model{usestatemachine=true;mid=ground_with_roots} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=fly;p=1;speed=0.8} @self ~onSpawn
+# 1861YGW9

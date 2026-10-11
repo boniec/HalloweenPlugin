@@ -1,0 +1,262 @@
+###################################################################################################################
+################################################Dulahan The Headless Horseman######################################
+###################################################################################################################
+########################################################
+DulahanChest:
+  Type: zombie
+  Display: '&6Dulahan Chest'
+  Health: 500
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    LockPitch: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    FollowRange: 32
+    MaxCombatDistance: 64
+    MovementSpeed: 0.35
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    PreventSunburn: true
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true
+  DamageModifiers:
+  - MAGIC 0.1
+  - SUFFOCATION 0
+  Faction: Dulahan 
+  BossBar:
+    Enabled: true
+    Title: '&1Dulahan Chest'
+    Range: 10
+    Color: GOLD
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:     
+  - cancelevent{sync=true} @Self ~onAttack
+  - customentity{model=headless:dulahan_chest} @self ~onSpawn
+  #
+  - Aura{auraName=IdleAura;onTick=DulahanChestIdle;interval=1;duration=20000} @self ~onSpawn
+  - skill{s=DulahanChestOpen} @Self ~onInteract 1
+  #
+  - potion{type=DAMAGE_RESISTANCE;duration=999999;lvl=10;hasParticles=false} @self ~onSpawn 1
+  LevelModifiers:
+     Health: 0.0
+######################################################## 
+DulahanTheHeadlessHorseman:
+  Type: zombie
+  Display: '&4Dulahan The Headless Horseman'
+  Health: 1000
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    LockPitch: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    FollowRange: 32
+    MaxCombatDistance: 64
+    MovementSpeed: 0.38
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    PreventSunburn: true
+  Modules:
+    ImmunityTable: true
+    ThreatTable: true
+  KillMessages:
+  - 'Your head is mine <target.name> Muhaaa'
+  - 'Try harder <target.name> :-D'
+  - 'Your head is mine <target.name> Muhaaa'
+  - '<target.name> lost the head'
+  - '<target.name> got tramped to death'
+  - 'I smell your fear <target.name>!'
+  DamageModifiers:
+  - MAGIC 0
+  - SUFFOCATION 0
+  Faction: Dulahan 
+  BossBar:
+    Enabled: true
+    Title: '&4Dulahan The Headless Horseman'
+    Range: 50
+    Color: RED
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 MeleeAttack
+  - 2 RandomStroll 
+  - 3 Float 
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  - 3 OtherFaction
+  Skills:     
+  - cancelevent{sync=true} @Self ~onAttack
+  - customentity{model=headless:dulahan} @self ~onSpawn
+  #
+  - Aura{auraName=MobAura;onTick=DulahanMechanics;interval=1;duration=999999} @self ~onSpawn
+  #
+  - summon{type=DulahanTheHeadlessHorsemanDeathSummon;amount=1;radius=0} @SelfLocation ~onDeath 1
+  - potion{type=DAMAGE_RESISTANCE;duration=999999;lvl=1;hasParticles=false} @self ~onSpawn 1
+  - dropitem{i=DulahanKey} @SelfLocation ~onDeath 1
+  LevelModifiers:
+     Health: 0.0
+  Drops:
+  #- YourLootTable
+DulahanTheHeadlessHorsemanDeathSummon:
+  Type: zombie
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    ApplyInvisibility: true
+    PreventOtherDrops: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+  Faction: Dulahan
+  Modules:
+    ThreatTable: false
+    ShowName: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:   
+  - customentity{model=headless:dulahan} @self ~onSpawn
+  - potion{type=SLOW;duration=1200;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=DulahanDeath} @Self ~onSpawn 1
+  #- skill{s=DungeonLizardKingDrop} @Self ~onInteract 1
+  - summon{type=DulahanChest;amount=1;radius=5} @SelfLocation ~onSpawn 1
+########################################################  
+#Dummy 
+########################################################
+DulahanDummyHead:
+  Type: zombie
+  Display: ''
+  Health: 500
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    LockPitch: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    FollowRange: 32
+    MaxCombatDistance: 64
+    MovementSpeed: 0
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    PreventSunburn: true
+  DamageModifiers:
+  - MAGIC 0.1
+  - FALL 0
+  Faction: Dulahan
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 MeleeAttack
+  - 2 Float 
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 OtherFaction
+  Skills:     
+  - cancelevent{sync=true} @Self ~onAttack
+  - customentity{model=headless:headmob} @self ~onSpawn
+  - remove{delay=300} @self ~onSpawn 
+  - Aura{auraName=MobAura;onTick=DulahanHeadMechanics;interval=1;duration=999999} @self ~onSpawn
+########################################################  
+#Slashes 
+########################################################
+DulahanDummySlash1:
+  Type: armor_stand
+  Display: ''
+  Health: 1000
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    Invisible: true
+    Marker: true
+    Silent: true
+    NoGravity: true
+  DamageModifiers:
+  - MAGIC 0.1
+  - FALL 0
+  Faction: Dulahan
+  AIGoalSelectors:
+  - 0 Clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - remove{delay=15} @self ~onSpawn 
+  - equip{item=DulahanSlash1:4} @self ~onSpawn
+#
+DulahanDummySlash2:
+  Type: armor_stand
+  Display: ''
+  Health: 1000
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    Invisible: true
+    Marker: true
+    Silent: true
+    NoGravity: true
+  DamageModifiers:
+  - MAGIC 0.1
+  - FALL 0
+  Faction: Dulahan
+  AIGoalSelectors:
+  - 0 Clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - remove{delay=15} @self ~onSpawn 
+  - equip{item=DulahanSlash2:4} @self ~onSpawn
+#
+DulahanDummyDulahanPortal:
+  Type: armor_stand
+  Display: ''
+  Health: 1000
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    Invisible: true
+    Marker: true
+    Silent: true
+    NoGravity: true
+  DamageModifiers:
+  - MAGIC 0.1
+  - FALL 0
+  Faction: Dulahan
+  AIGoalSelectors:
+  - 0 Clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - remove{delay=150} @self ~onSpawn 
+  - equip{item=DulahanPortal:4} @self ~onSpawn
+#################################################

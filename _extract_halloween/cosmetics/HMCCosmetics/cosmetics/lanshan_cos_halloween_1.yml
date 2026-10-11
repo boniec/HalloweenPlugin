@@ -1,0 +1,136 @@
+candy_pumpkin_beret:
+  slot: HELMET
+  permission: "hmccosmetics.candy_pumpkin_beret"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241801
+    name: "Candy Pumpkin Beret"
+    amount: 1
+
+candy_pumpkin_backpack:
+  slot: BACKPACK
+  permission: "hmccosmetics.candy_pumpkin_backpack"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241802
+    name: "Candy Pumpkin Backpack"
+    amount: 1
+  firstperson-item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241803
+    name: "Candy Pumpkin Backpack"
+    amount: 1
+
+candy_pumpkin_basket:
+  slot: OFFHAND
+  permission: "hmccosmetics.candy_pumpkin_basket"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241804
+    name: "Candy Pumpkin Basket"
+    amount: 1
+
+candy_pumpkin_balloon:
+  slot: BALLOON
+  permission: "hmccosmetics.candy_pumpkin_balloon"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241805
+    name: "Candy Pumpkin Balloon"
+    amount: 1
+
+spooky_pumpkin_hat:
+  slot: HELMET
+  permission: "hmccosmetics.spooky_pumpkin_hat"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241806
+    name: "Spooky Pumpkin Hat"
+    amount: 1
+
+spooky_pumpkin_wings:
+  slot: BACKPACK
+  permission: "hmccosmetics.spooky_pumpkin_wings"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241807
+    name: "Spooky Pumpkin Wings"
+    amount: 1
+  firstperson-item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241808
+    name: "Spooky Pumpkin Wings"
+    amount: 1
+
+spooky_pumpkin_staff:
+  slot: OFFHAND
+  permission: "hmccosmetics.spooky_pumpkin_staff"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241809
+    name: "Spooky Pumpkin Staff"
+    amount: 1
+
+spooky_pumpkin_balloon:
+  slot: BALLOON
+  permission: "hmccosmetics.spooky_pumpkin_balloon"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241810
+    name: "Spooky Pumpkin Balloon"
+    amount: 1
+
+halloween_witch_hat:
+  slot: HELMET
+  permission: "hmccosmetics.halloween_witch_hat"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241811
+    name: "Halloween Witch Hat"
+    amount: 1
+
+halloween_witch_cauldron:
+  slot: BACKPACK
+  permission: "hmccosmetics.halloween_witch_cauldron"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241812
+    name: "Halloween Witch Cauldron"
+    amount: 1
+  firstperson-item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241813
+    name: "Halloween Witch Cauldron"
+    amount: 1
+
+halloween_witch_broom:
+  slot: OFFHAND
+  permission: "hmccosmetics.halloween_witch_broom"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241814
+    name: "Halloween Witch Broom"
+    amount: 1
+
+halloween_ghost_balloon:
+  slot: BALLOON
+  permission: "hmccosmetics.halloween_ghost_balloon"
+  dyeable: true
+  item:
+    material: LEATHER_HORSE_ARMOR
+    model-data: 241815
+    name: "Halloween Ghost Balloon"
+    amount: 1
+
+# 36590K9Z3UWV4NJCBU1N718A2

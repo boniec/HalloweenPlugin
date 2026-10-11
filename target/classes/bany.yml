@@ -1,0 +1,90 @@
+# ═══════════════════════════════════════════════════════════════════════════
+#  ALTS  (/alts <gracz>  |  /alts reload)
+#
+#  Kolory: &a &c ... oraz hex w formacie &#RRGGBB.
+#  Ikony (glify Nexo) wklejasz po prostu jako znak.
+# ═══════════════════════════════════════════════════════════════════════════
+
+ogolne:
+  format-daty: "dd.MM.yyyy HH:mm"
+  strefa-czasowa: "Europe/Warsaw"
+  permisja-powiadomien: "bany.powiadomienia"
+
+wiadomosci:
+  prefix: "&8[&e乏&8] "
+  brak-uprawnien: "&c亢 Nie masz uprawnień do tej komendy."
+  nie-znaleziono: "&c与 Nie znaleziono gracza &f%gracz%&c (musi kiedyś wejść na serwer)."
+  przeladowano: "&a両 Przeładowano konfigurację /alts."
+  uzycie-alts: "&7Użycie: &f/alts <gracz>"
+
+gui:
+  sloty-zawartosci: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  wypelniacz:
+    wlaczony: true
+    material: BLACK_STAINED_GLASS_PANE
+    nazwa: " "
+  dzwieki:
+    klik: "ui.button.click"
+  przyciski:
+    poprzednia:
+      slot: 45
+      material: ARROW
+      nazwa: "&e丂 &ePoprzednia strona"
+      lore:
+        - "&7Strona &f%strona%&8/&f%stron%"
+    nastepna:
+      slot: 53
+      material: ARROW
+      nazwa: "&eNastępna strona 七"
+      lore:
+        - "&7Strona &f%strona%&8/&f%stron%"
+    zamknij:
+      slot: 49
+      material: BARRIER
+      nazwa: "&c个 &cZamknij"
+      lore:
+        - "&7Kliknij, aby zamknąć menu."
+  statusy:
+    online: "&a両 Online"
+    offline: "&7Offline"
+
+alts:
+  tytul: "&8乏 &7Alts &8» &f%gracz%"
+  # ostatnio = wg ostatniego wejscia, nick = alfabetycznie
+  sortowanie: "ostatnio"
+  permisja-ip: "bany.alts.ip"
+  info:
+    slot: 4
+    nazwa: "&f乔 &f&l%gracz%"
+    lore:
+      - ""
+      - "&7Status: %status%"
+      - ""
+      - "&7乏 Znalezione konta alt: &f%ile%"
+  brak:
+    slot: 22
+    material: EMERALD
+    nazwa: "&a両 Brak kont alt"
+    lore:
+      - "&7Nie znaleziono innych kont z tym samym IP"
+      - "&7co gracz &f%gracz%&7."
+  wpis:
+    nazwa: "&f乱 &f%nick%"
+    lore:
+      - ""
+      - "&7Status: %status%"
+      - ""
+      - "&7东 Pierwsze wejście: &f%pierwsze%"
+      - "&7五 Ostatnie wejście: &f%ostatnie%"
+      - "&7乡 Wspólnych IP: &f%wspolne-ip%"
+      - ""
+      - "&e▶ LPM &7- sprawdź alty tego konta"
+    lore-ip:
+      - ""
+      - "&7乡 IP: &f%ip%"
+  alert:
+    wlaczony: true
+    wiadomosc: "&e亢 Gracz &f%gracz% &7ma &e%ile% &7kont alt: %lista% &8(&7/alts %gracz%&8)"
+  konsola:
+    naglowek: "&7乏 Alty gracza &f%gracz% &8(&f%ile%&8):"
+    wpis: "&7 - &f%nick% &8| &7IP: &f%ip% &8| &7ostatnio: &f%ostatnie%"

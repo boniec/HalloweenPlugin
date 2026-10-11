@@ -1,0 +1,13 @@
+transactions:
+- date: 1790016433931
+  amount: 1.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: vhge
+  type: PURCHASE
+- date: 1790015926826
+  amount: 1.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

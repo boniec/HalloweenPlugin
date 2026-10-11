@@ -1,0 +1,92 @@
+# Skrzynie 3D (Chests Pack) - do stawiania jako meble Nexo + klucze
+# Modele: plugins/Nexo/pack/assets/chests_pack/models/*.json
+
+crate_normal:
+  itemname: '&f&lSkrzynia Zwykła'
+  material: PAPER
+  Pack:
+    model: chests_pack:normal_chest
+    custom_model_data: 1000
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+      properties:
+        display_transform: NONE
+
+crate_medium:
+  itemname: '&e&lSkrzynia Średnia'
+  material: PAPER
+  Pack:
+    model: chests_pack:medium_chest
+    custom_model_data: 1001
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+      properties:
+        display_transform: NONE
+
+crate_premium:
+  itemname: '&6&lSkrzynia Premium'
+  material: PAPER
+  Pack:
+    model: chests_pack:premium_chest
+    custom_model_data: 1002
+  Mechanics:
+    furniture:
+      rotatable: false
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      restricted_rotation: STRICT
+      block_sounds:
+        place_sound: block.wood.place
+        break_sound: block.wood.break
+      hitbox:
+        barriers:
+        - 0,0,0
+      properties:
+        display_transform: NONE
+
+crate_key_normal:
+  itemname: '&f&lKlucz Zwykły'
+  material: PAPER
+  Pack:
+    model: chests_pack:normal_key
+    custom_model_data: 1003
+
+crate_key_medium:
+  itemname: '&e&lKlucz Średni'
+  material: PAPER
+  Pack:
+    model: chests_pack:medium_key
+    custom_model_data: 1004
+
+crate_key_premium:
+  itemname: '&6&lKlucz Premium'
+  material: PAPER
+  Pack:
+    model: chests_pack:premium_key
+    custom_model_data: 1005

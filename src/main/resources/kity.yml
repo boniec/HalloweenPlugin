@@ -1,0 +1,95 @@
+# =========================================================
+#  kity.yml - definiowanie i nadpisywanie kitów.
+#
+#  Każdy wpis pod "kits:", którego NAZWY NIE MA jeszcze w bazie danych
+#  (kity.db), zostaje automatycznie utworzony w bazie przy starcie serwera
+#  oraz przy /adminkit reload - ze slotem/cooldownem/permisją/ikoną z tego
+#  pliku i ZAWSZE zaczynając od 0 przedmiotów.
+#
+#  Przedmioty dorzucasz PÓŹNIEJ w grze:
+#    /adminkit -> kliknij kit -> "Aktualizuj Przedmioty i Ikonę"
+#    (trzymając docelowy ekwipunek w ekwipunku) - tak możesz dawać
+#    zaklęcia, nazwy, NBT itd., czego samym tekstem w tym pliku się nie da.
+#
+#  Jeśli kit o danej nazwie JUŻ ISTNIEJE w bazie (bo już mu ustawiłeś
+#  przedmioty przez panel), ten plik go NIE RUSZA / nie nadpisuje jego
+#  przedmiotów - dalej działa tylko jako nadpisanie WYGLĄDU w GUI
+#  (slot/material/display_name/lore/cooldown).
+#
+#  Po edycji użyj komendy: /adminkit reload
+#
+#  Dostępne pola dla każdego kitu:
+#    slot          - numer slotu w GUI /kit (0-44)
+#    material      - typ bloku/przedmiotu użytego jako ikona (np. DIAMOND_SWORD)
+#    display_name  - nazwa wyświetlana w GUI, z kodami kolorów '&'
+#    cooldown      - cooldown w sekundach
+#    permission    - permisja wymagana do odebrania kitu, albo "none" jeśli dla każdego
+#                    (używana TYLKO przy tworzeniu nowego kitu - zmiana później działa
+#                    przez /adminkit -> "Zmień Permisję")
+#    lore          - lista linii opisu pod nazwą, z kodami kolorów '&'
+#    items         - OPCJONALNE, tylko dla prostych przedmiotów bez enchantów/NBT,
+#                    używane WYŁĄCZNIE przy pierwszym tworzeniu kitu.
+#                    Format: "MATERIAL" albo "MATERIAL:ILOŚĆ", np. "GOLDEN_APPLE:4".
+#                    Jeśli pominięte - kit startuje z 0 przedmiotów.
+# =========================================================
+
+kits:
+  gracz:
+    slot: 20
+    cooldown: 30
+    permission: "none"
+    material: LEATHER_HELMET
+    display_name: '&fᴢᴇsᴛᴀᴡ: &7ɢʀᴀᴄᴢ'
+    lore:
+      - "&8● &fᴅᴏsᴛᴇᴘɴʏ ᴅʟᴀ ʀᴀɴɢɪ: &8[&7ɢʀᴀᴄᴢ&8]"
+      - "&8● &fᴄᴏᴏʟᴅᴏᴡɴ: &730s"
+      - ""
+      - "&aKliknij &2LPM&a, aby odebrać!"
+
+  vip:
+    slot: 21
+    cooldown: 86400
+    permission: "grupa.vip"
+    material: CHAINMAIL_HELMET
+    display_name: '&fᴢᴇsᴛᴀᴡ: &eᴠɪᴘ'
+    lore:
+      - "&8● &fᴅᴏsᴛᴇᴘɴʏ ᴅʟᴀ ʀᴀɴɢɪ: &8[&eᴠɪᴘ&8]"
+      - "&8● &fᴄᴏᴏʟᴅᴏᴡɴ: &71d"
+      - ""
+      - "&aKliknij &2LPM&a, aby odebrać!"
+
+  svip:
+    slot: 22
+    cooldown: 86400
+    permission: "grupa.svip"
+    material: GOLDEN_HELMET
+    display_name: '&fᴢᴇsᴛᴀᴡ: &6sᴠɪᴘ'
+    lore:
+      - "&8● &fᴅᴏsᴛᴇᴘɴʏ ᴅʟᴀ ʀᴀɴɢɪ: &8[&6sᴠɪᴘ&8]"
+      - "&8● &fᴄᴏᴏʟᴅᴏᴡɴ: &71d"
+      - ""
+      - "&aKliknij &2LPM&a, aby odebrać!"
+
+  gzib:
+    slot: 23
+    cooldown: 86400
+    permission: "grupa.gzib"
+    material: DIAMOND_HELMET
+    display_name: '&fᴢᴇsᴛᴀᴡ: &6ɢᴢɪʙ'
+    lore:
+      - "&8● &fᴅᴏsᴛᴇᴘɴʏ ᴅʟᴀ ʀᴀɴɢɪ: &8[&6ɢᴢɪʙ&8]"
+      - "&8● &fᴄᴏᴏʟᴅᴏᴡɴ: &71d"
+      - ""
+      - "&aKliknij &2LPM&a, aby odebrać!"
+
+  og:
+    slot: 24
+    cooldown: 86400
+    permission: "grupa.og"
+    material: NETHERITE_HELMET
+    display_name: '&fᴢᴇsᴛᴀᴡ: &f腦'
+    lore:
+      - "&8● &fᴅᴏsᴛᴇᴘɴʏ ᴅʟᴀ ʀᴀɴɢɪ: &8[&f腦&8]"
+      - "&8● &fᴄᴏᴏʟᴅᴏᴡɴ: &71d"
+      - ""
+      - "&aKliknij &2LPM&a, aby odebrać!"

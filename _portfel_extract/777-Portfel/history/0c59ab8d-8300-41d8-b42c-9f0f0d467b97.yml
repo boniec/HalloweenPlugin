@@ -1,0 +1,13 @@
+transactions:
+- date: 1790162516863
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Bartex_Killer_2
+  type: PURCHASE
+- date: 1790162450491
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

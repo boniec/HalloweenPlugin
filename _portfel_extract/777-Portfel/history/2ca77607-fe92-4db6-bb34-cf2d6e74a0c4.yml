@@ -1,0 +1,13 @@
+transactions:
+- date: 1790534118612
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: WandaMaximoff43
+  type: PURCHASE
+- date: 1790534104740
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

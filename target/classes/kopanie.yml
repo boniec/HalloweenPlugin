@@ -1,0 +1,134 @@
+# =========================================================
+#  System Gornika - kopanie blokow za kase
+#  Wymaga: Vault + plugin ekonomii (EssentialsX, CMI, itp.)
+#  Kolory HEX: format &#RRGGBB (wymaga MC 1.16+)
+#  Po zmianach uzyj: /gornik reload (lub restart serwera)
+#  Admin: trzymaj blok w rece i /gornik dodaj [cena]  albo  /gornik usun
+# =========================================================
+
+# --- Ustawienia ogolne ---
+settings:
+  enabled: true
+  # Czy pokazywac actionbar po kopaniu
+  actionbar: true
+  # Ile sekund pamietac zarobki do liczenia $/min
+  statystyki-okno-sekund: 60
+  # Co ile sekund wyplacac zebrane zarobki graczom zbiorczo (zamiast przy
+  # kazdym wykopanym bloku). Wieksza wartosc = mniej obciazenia dla pluginu
+  # ekonomii (np. EssentialsX zapisuje/serializuje dane gracza przy kazdej
+  # wyplacie), ale opoznia widoczna kwote na saldzie gracza.
+  wyplata-co-sekund: 2
+  # Premia do kasy za kazdy poziom Fortune na narzedziu (0.5 = +50% za poziom).
+  # Fortune I = 1.5x, II = 2.0x, III = 2.5x, wyzsze poziomy liczona tak samo.
+  fortune-bonus-na-poziom: 0.5
+
+# Od 24:00 do 10:00 drop z generatorow na regionie WorldGuard "pvp" jest mniejszy.
+# 0.7 = -30%. Dziala na kase z kopania, extra itemy (buty smoka) i szal odlamkow.
+nocny-nerf-pvp:
+  enabled: true
+  region: pvp
+  od-godziny: 0
+  do-godziny: 10
+  mnoznik: 0.7
+  strefa-czasowa: Europe/Warsaw
+
+# --- TurboDrop ---
+# /gornik turbodrop <mnoznik> <sekundy> - wlacza turbo drop dla calego serwera
+# /gornik turbodrop off - wylacza
+# Boss bar wyswietla status turbodropu
+turbodrop:
+  # Domylny mnoznik (np. 2.0 = 2x wiecej kasy)
+  domyslny-mnoznik: 2.0
+  # Domylny czas trwania w sekundach
+  domyslny-czas: 300
+  # Boss bar - styl: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  bossbar-styl: SOLID
+  # Boss bar - kolor: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  bossbar-kolor: YELLOW
+  # TurboDrop boss bar - jeden wiersz
+  # %x% = mnoznik, %czas% = pozostaly czas (np. 5m 30s)
+  tytul: "&6⛏ &8| &fɴᴀ sᴇʀᴡᴇʀᴢᴇ ᴛʀᴡᴀ ᴀᴋᴛᴜᴀʟɴɪᴇ &6ᴛᴜʀʙᴏᴅʀᴏᴘ &8(&e%x%&8) &fɴᴀ &e%czas%"
+  wlaczone: "&aTurboDrop wlaczony! Mnoznik: &e%x% &7na &e%czas%s"
+  wylaczone: "&cTurboDrop wylaczony!"
+  brak-uprawnien: "&cBrak uprawnien!"
+  uzycie: "&cUzycie: /gornik turbodrop <mnoznik> <sekundy> | off"
+
+# --- Wiadomosci ---
+messages:
+  prefix: "&8[&6Gornik&8] &r"
+  # Actionbar: %zarobki% = kasa, %poziom-actionbar% = caly pasek z /poziom
+  actionbar: "&a+&e%zarobki%$ &8| %poziom-actionbar%"
+  # /gornik reload
+  reload: "&aPrzeladowano kopanie.yml!"
+  brak-economy: "&cBrak pluginu ekonomii! Zainstaluj Vault + EssentialsX/CMI."
+  regiona-wylaczona: "&cEkonomia kopania jest wylaczona w configu!"
+
+# --- GUI /gornik (lista blokow z sekcji "bloki" + ceny) ---
+#  %strona%, %stron% - numer strony | %blok% - nazwa bloku | %cena% - cena za blok
+#  %f1% %f2% %f3% - cena z Fortune I/II/III | %turbo% - linia turbodropu (znika gdy turbo wylaczone)
+gui:
+  tytul: "&f丮 &#FFC34D&lɢᴏʀɴɪᴋ &8(%strona%/%stron%)"
+  ramka: BLACK_STAINED_GLASS_PANE
+  blok-nazwa: "&f丮 &#FFC34D&l%blok%"
+  blok-lore:
+    - "&f"
+    - "&f 丶 ᴄᴇɴᴀ ᴢᴀ ʙʟᴏᴋ: &#FFC34D%cena%$"
+    - "&f"
+    - "&f 亝 ᴢ ꜰᴏʀᴛᴜɴᴇ:"
+    - "&8x &fꜰᴏʀᴛᴜɴᴇ I &8- &#FFC34D%f1%$"
+    - "&8x &fꜰᴏʀᴛᴜɴᴇ II &8- &#FFC34D%f2%$"
+    - "&8x &fꜰᴏʀᴛᴜɴᴇ III &8- &#FFC34D%f3%$"
+    - "%turbo%"
+    - "&f"
+  # %x% = mnoznik, %turbo-cena% = cena bazowa * mnoznik
+  blok-turbo: "&f 乂 ᴛᴜʀʙᴏᴅʀᴏᴘ &8(&#FFC34Dx%x%&8) &8- &#FFC34D%turbo-cena%$"
+  info-ikona: GOLDEN_PICKAXE
+  info-nazwa: "&f丮 &#FFC34D&lɪɴꜰᴏʀᴍᴀᴄᴊᴇ"
+  # %turbo% = status turbodropu, %na-minute% = zarobek gracza na minute
+  info-lore:
+    - "&f"
+    - "&f 丶 ᴋᴏᴘɪᴇꜱᴢ ʙʟᴏᴋɪ ᴢ ʟɪꜱᴛʏ, ᴀ ᴋᴀꜱᴀ"
+    - "&f ᴡᴘᴀᴅᴀ &#FFC34Dᴀᴜᴛᴏᴍᴀᴛʏᴄᴢɴɪᴇ &fɴᴀ ᴛᴡᴏᴊᴇ ᴋᴏɴᴛᴏ"
+    - "&f"
+    - "&f 亝 ꜰᴏʀᴛᴜɴᴇ: &#FFC34D+%fortune-pct%% &fᴢᴀ ᴋᴀᴢᴅʏ ᴘᴏᴢɪᴏᴍ"
+    - "&f 乂 ᴛᴜʀʙᴏᴅʀᴏᴘ: %turbo%"
+    - "&f 丮 ᴛᴡᴏᴊ ᴢᴀʀᴏʙᴇᴋ/ᴍɪɴ: &#FFC34D%na-minute%$"
+    - "&f"
+  info-turbo-on: "&aᴀᴋᴛʏᴡɴʏ &8(&#FFC34Dx%x% &8| &f%czas%s&8)"
+  info-turbo-off: "&cᴡʏʟᴀᴄᴢᴏɴʏ"
+  poprzednia: "&f乁 &#FFC34Dᴘᴏᴘʀᴢᴇᴅɴɪᴀ ꜱᴛʀᴏɴᴀ"
+  nastepna: "&f乁 &#FFC34Dɴᴀꜱᴛᴇᴘɴᴀ ꜱᴛʀᴏɴᴀ"
+  # Wlasne nazwy blokow w GUI (opcjonalne). Bez wpisu = nazwa materialu malymi kapitalikami.
+  nazwy:
+    STONE: "ᴋᴀᴍɪᴇɴ"
+
+# --- Ceny blokow ---
+# Formuj: STONE: 1.0  (material: cena za blok)
+# Fortune: settings.fortune-bonus-na-poziom (domyslnie +50% za poziom).
+# TurboDrop mnozy cene juz po Fortune.
+# Materialy: https://jd.papermc.io/paper/1.21/org/bukkit/Material.html
+bloki:
+  GRAY_CONCRETE_POWDER: 0.073933
+  BLACK_CONCRETE_POWDER: 0.22176
+  YELLOW_CONCRETE_POWDER: 0.369587
+  ORANGE_CONCRETE_POWDER: 0.517453
+  RED_CONCRETE_POWDER: 0.739213
+  PURPLE_CONCRETE_POWDER: 1.005325
+  WHITE_WOOL: 1.98
+  GREEN_WOOL: 2.97
+  RED_WOOL: 10.89
+  PURPLE_WOOL: 17.82
+
+# Exp do /poziom za wykopany blok (osobno od kasy).
+# Format: MATERIAL: ilosc (moze byc ulamek, np. 0.05).
+# /gornik reload po zmianie.
+exp-bloki:
+  GRAY_CONCRETE_POWDER: 0.05
+  BLACK_CONCRETE_POWDER: 0.07
+  YELLOW_CONCRETE_POWDER: 0.09
+  ORANGE_CONCRETE_POWDER: 0.11
+  RED_CONCRETE_POWDER: 0.13
+  WHITE_WOOL: 0.90
+  GREEN_WOOL: 1.10
+  RED_WOOL: 1.40
+  PURPLE_WOOL: 2.0

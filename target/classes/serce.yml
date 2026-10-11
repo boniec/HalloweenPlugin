@@ -1,0 +1,128 @@
+# ==========================================================
+#   SERCE KOSMOSU - konfiguracja
+#   Komendy (permisja serce.admin):
+#     /aserce spawn     - startuje event (bloki zaczynaja sie respic w regionie)
+#     /aserce despawn   - przerywa event, usuwa bloki, bez nagrod i bez tytulow
+#     /aserce editdrop  - GUI z nagrodami za TOP 1, 2, 3
+#     /aserce status | reload
+#
+#   Zasady: w PUSTEJ przestrzeni regionu losowo pojawiaja sie bloki (sekcja "bloki" nizej).
+#   Kazde uderzenie w taki blok (proba zniszczenia) = 1 punkt, -1 HP bloku i -1 HP serca.
+#   Event konczy sie, gdy HP serca spadnie do 0 (wszystkie bloki zniszczone) albo po uplywie czasu.
+# ==========================================================
+
+# ID regionu WorldGuard, w ktorym respia sie bloki
+region: serce
+
+# Pula HP serca = suma HP wszystkich blokow. Przy "wypelnij-caly-region: true" jest dzielona rowno na wszystkie bloki.
+serce-hp: 10000
+
+# Czas trwania eventu, jesli nikt nie zniszczy serca (1200 s = 20 minut)
+# UWAGA: 10000 HP w 20 min to ok. 8 trafien/s lacznie wszystkich graczy - przy malej liczbie graczy zwieksz czas lub zmniejsz serce-hp.
+czas-trwania-sekundy: 1200
+
+# Jak dlugo po zakonczeniu scoreboard zostaje na ekranach
+scoreboard-po-zakonczeniu-sekundy: 10
+
+# Bloki, ktore sie respia: MATERIAL: MAKSYMALNE HP bloku. Typ jest losowany rowno.
+# HP kazdego bloku jest losowane od "hp-bloku-min" do tej wartosci (100-150). Ostatni blok ma tyle HP,
+# ile zostalo w sercu (jesli mniej). hp-bloku-min = tyle samo co max -> wszystkie bloki maja stale HP.
+hp-bloku-min: 100
+bloki:
+  WHITE_WOOL: 150
+  GLOWSTONE: 150
+  GLASS: 150
+
+# true  = przy starcie KAZDE wolne miejsce (powietrze) w regionie dostaje blok, a cale serce-hp jest rozdzielone
+#         rowno miedzy wszystkie bloki (np. 10000 HP na 229 blokow = ok. 44 HP na blok). Ustawienia HP blokow,
+#         "poczatkowa-ilosc-blokow", "max-blokow-naraz" i "odstep-respawnu-sekundy" nie maja wtedy znaczenia.
+# false = bloki pojawiaja sie stopniowo wg ustawien nizej (losowe HP od hp-bloku-min do wartosci z sekcji "bloki")
+wypelnij-caly-region: true
+
+# Ile blokow pojawia sie od razu na starcie, ile maksymalnie naraz i co ile sekund pojawia sie kolejny.
+# Blokow nie pojawi sie wiecej niz jest wolnych miejsc w regionie.
+poczatkowa-ilosc-blokow: 229
+max-blokow-naraz: 229
+odstep-respawnu-sekundy: 5
+
+# false = blok moze pojawic sie w KAZDYM wolnym miejscu regionu (takze przy scianie/podlodze i obok innych blokow)
+# true  = blok pojawia sie tylko tam, gdzie wszystkie 6 sasiednich blokow to powietrze albo inny blok serca (nie sciana)
+wymagaj-pustych-sasiadow: false
+
+# Region jest skanowany w poszukiwaniu wolnych miejsc. Powyzej tej objetosci (w blokach) skan jest pomijany
+# i miejsca sa losowane w prostopadloscianie regionu.
+max-objetosc-skanu: 3000000
+
+# Ile punktow daje jedno uderzenie
+punkty-za-trafienie: 1
+
+# Czy uderzenia w trybie creative licza sie do punktow (false = blok jest chroniony, ale bez punktow)
+liczy-tryb-creative: false
+
+# Czy TOP 3 dostaje nagrody, gdy serce NIE zostalo zniszczone (minal czas)
+nagrody-przy-timeout: true
+
+# Dzwiek przy uderzeniu (pusty = brak) i actionbar nad hotbarem (pusty = brak)
+# Placeholdery actionbaru: %blok_hp% %blok_max% %hp% %hp_max% %twoje_punkty%
+dzwiek-trafienia: 'block.amethyst_block.hit'
+actionbar: '&dBlok: &f%blok_hp%&7/&f%blok_max% &8| &dSerce: &c%hp%&7/&c%hp_max% &8| &dTwoje pkt: &f%twoje_punkty%'
+
+# Bossbar z HP serca (widoczny dla wszystkich graczy w trakcie eventu)
+# Kolory: PINK BLUE RED GREEN YELLOW PURPLE WHITE | Style: SOLID SEGMENTED_6 SEGMENTED_10 SEGMENTED_12 SEGMENTED_20
+# Placeholdery: %hp% %hp_max% %proc%
+bossbar:
+  tytul: '&#9B5DE5&lꜱᴇʀᴄᴇ ᴋᴏꜱᴍᴏꜱᴜ &8- &c%hp%&7/&c%hp_max% ʜᴘ &8(&f%proc%%&8)'
+  kolor: PURPLE
+  styl: SOLID
+
+# Title/subtitle (jedyne komunikaty tekstowe - NA CZAT NIC SIE NIE WYSYLA)
+title:
+  fade-in-ticks: 10
+  stay-ticks: 60
+  fade-out-ticks: 20
+  start:
+    tytul: '&#9B5DE5&lꜱ&#B57BEE&lᴇ&#C99BF2&lʀ&#B57BEE&lᴄ&#9B5DE5&lᴇ &#B57BEE&lᴋ&#C99BF2&lᴏ&#B57BEE&lꜱ&#9B5DE5&lᴍ&#B57BEE&lᴏ&#C99BF2&lꜱ&#B57BEE&lᴜ'
+    podtytul: '&fWystartowalo! Niszcz bloki!'
+  koniec-zniszczone:
+    tytul: '&#9B5DE5&lꜱ&#B57BEE&lᴇ&#C99BF2&lʀ&#B57BEE&lᴄ&#9B5DE5&lᴇ &#B57BEE&lᴋ&#C99BF2&lᴏ&#B57BEE&lꜱ&#9B5DE5&lᴍ&#B57BEE&lᴏ&#C99BF2&lꜱ&#B57BEE&lᴜ'
+    podtytul: '&aSerce zostalo zniszczone!'
+  koniec-czas:
+    tytul: '&#9B5DE5&lꜱ&#B57BEE&lᴇ&#C99BF2&lʀ&#B57BEE&lᴄ&#9B5DE5&lᴇ &#B57BEE&lᴋ&#C99BF2&lᴏ&#B57BEE&lꜱ&#9B5DE5&lᴍ&#B57BEE&lᴏ&#C99BF2&lꜱ&#B57BEE&lᴜ'
+    podtytul: '&cCzas minal - serce przetrwalo!'
+
+# Scoreboard (podmienia zwykly scoreboard wszystkim graczom na czas eventu, tak jak KOTH).
+# Placeholdery: %nick_1% %nick_2% %nick_3%, %punkty_1% %punkty_2% %punkty_3%, %twoje_punkty%,
+#               %hp% %hp_max% %proc% %bloki% (ile blokow stoi teraz),
+#               %czas% (mm:ss) oraz %czas_linia% (jedna z linii "czas-..." nizej).
+# Jesli rownoczesnie trwa KOTH, to on ma pierwszenstwo na scoreboardzie.
+scoreboard:
+  tytul: '&#9B5DE5&lꜱ&#B57BEE&lᴇ&#C99BF2&lʀ&#B57BEE&lᴄ&#9B5DE5&lᴇ &#B57BEE&lᴋ&#C99BF2&lᴏ&#B57BEE&lꜱ&#9B5DE5&lᴍ&#B57BEE&lᴏ&#C99BF2&lꜱ&#B57BEE&lᴜ'
+  linie:
+    - ''
+    - 'ꕋ &f%nick_1% &8- &a%punkty_1%pkt'
+    - 'ꕌ &f%nick_2% &8- &a%punkty_2%pkt'
+    - 'ꕍ &f%nick_3% &8- &a%punkty_3%pkt'
+    - ''
+    - '&c❤ &fʜᴘ ꜱᴇʀᴄᴀ: &c%hp%&7/&c%hp_max%'
+    - '%czas_linia%'
+    - ''
+    - '&fᴛᴡᴏᴊᴇ ᴘᴋᴛ: &d%twoje_punkty%'
+    - ''
+  czas-trwa: '劍 &fᴋᴏɴɪᴇᴄ ᴢᴀ: &a%czas%'
+  czas-po-zniszczone: '&aꜱᴇʀᴄᴇ ᴢɴɪꜱᴢᴄᴢᴏɴᴇ!'
+  czas-po-czas: '&cᴄᴢᴀꜱ ᴍɪɴᴀʟ!'
+  brak-gracza: '&8-'
+
+# Odpowiedzi na komendy /aserce (widzi je tylko osoba wpisujaca komende)
+wiadomosci:
+  uzycie: "&cUzycie: /aserce <spawn|despawn|editdrop|status|reload>"
+  spawn-ok: "&aSerce Kosmosu zostalo uruchomione."
+  despawn-ok: "&aSerce Kosmosu zostalo przerwane (bez nagrod)."
+  nic-nie-trwa: "&cSerce Kosmosu aktualnie nie trwa."
+  juz-trwa: "&cSerce Kosmosu juz trwa."
+  brak-wg: "&cWorldGuard nie jest zainstalowany - Serce Kosmosu nie moze dzialac."
+  brak-regionu: "&cRegion WorldGuard &e%region% &cnie istnieje - Serce Kosmosu nie moze wystartowac."
+  reload-ok: "&aPrzeladowano konfiguracje Serca Kosmosu."
+  nagrody-zapisane: "&aNagrody Serca Kosmosu zostaly zapisane."
+  tylko-gracz: "&cTa komenda jest dostepna tylko dla graczy."
+  brak-uprawnien: "&cNie masz uprawnien do tej komendy."

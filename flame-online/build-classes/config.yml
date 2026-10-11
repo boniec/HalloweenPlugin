@@ -1,0 +1,28 @@
+# Mnoznik "slotow" (5 graczy -> 15) TYLKO dla serwerow z mnoznik: true.
+mnoznik: 3
+
+# Ktory to serwer. Na SkyPvP: skypvp. TAB: %online_skypvp% albo %online_this%
+# (ping publicznego IP z tej samej maszyny zwykle nie dziala).
+this-server: skypvp
+
+# local: true = liczy graczy na TEJ instancji. host+port = ping (np. lobby czyta SkyPvP).
+serwery:
+  skypvp:
+    local: true
+    mnoznik: true
+  lobby:
+    local: false
+    mnoznik: false
+
+# Co ile sekund odswiezac ping zdalnych serwerow.
+ping-sekundy: 3
+
+motd:
+  enabled: false
+  # true = w liscie serwerow (15/xxx) pokazuje liczbe * mnoznik
+  fake-count: true
+  fake-max: true
+  # Pusta linia = nie nadpisuj MOTD, tylko liczby graczy (jesli fake-count).
+  # Placeholdery: {online_skypvp} {online_all} {online_skypvp_real} {online_all_real} {mnoznik}
+  linia1: "&eSkyPvP &8| &f{online_skypvp} &7graczy"
+  linia2: "&8x{mnoznik} sloty"

@@ -1,0 +1,55 @@
+transactions:
+- date: 1787516958418
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787516930003
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787433374043
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433362943
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433352343
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433291293
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433286643
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433048693
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: maciekkowadlo
+  type: PURCHASE
+- date: 1787433016349
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

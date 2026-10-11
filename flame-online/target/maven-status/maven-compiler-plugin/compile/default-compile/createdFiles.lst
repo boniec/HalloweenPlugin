@@ -1,0 +1,7 @@
+boniec\online\FlameOnlinePlugin.class
+boniec\online\ChatLock.class
+boniec\online\MotdListener.class
+boniec\online\OnlineExpansion.class
+boniec\online\OsobyExpansion.class
+boniec\online\OnlineCounts.class
+boniec\online\ServerPinger.class

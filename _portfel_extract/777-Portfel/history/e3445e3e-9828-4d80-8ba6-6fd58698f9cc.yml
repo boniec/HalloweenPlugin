@@ -1,0 +1,19 @@
+transactions:
+- date: 1791037366021
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: afafafhh55
+  type: PURCHASE
+- date: 1791037185021
+  amount: 30.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: afafafhh55
+  type: PURCHASE
+- date: 1791037149708
+  amount: 45.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

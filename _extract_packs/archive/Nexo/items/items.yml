@@ -1,0 +1,514 @@
+prismarineshard:
+  material: PRISMARINE_SHARD
+  model: 1010
+  Pack:
+    parent_model: item/generated
+    texture: item/prismarine_shard.png
+    custom_model_data: 1000
+  itemname: smoczy
+skrzynie-puchar:
+  material: GOLD_INGOT
+  model: 1003
+  Pack:
+    parent_model: item/generated
+    texture: item/crate-puchar.png
+    custom_model_data: 1000
+  itemname: puchar
+coco:
+  material: ENCHANTED_GOLDEN_APPLE
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/kokos.png
+    custom_model_data: 1000
+  itemname: kokos
+plazowicz1:
+  material: LEATHER_CHESTPLATE
+  model: 1530
+  Pack:
+    parent_model: item/generated
+    texture: item/plazowicz.png
+    custom_model_data: 1000
+  itemname: plazowicz
+og:
+  material: LEATHER_CHESTPLATE
+  model: 1002
+  Pack:
+    parent_model: item/generated
+    texture: item/og.png
+    custom_model_data: 1001
+  itemname: og
+kostka:
+  material: LEATHER_CHESTPLATE
+  model: 1003
+  Pack:
+    parent_model: item/generated
+    texture: item/kostka.png
+    custom_model_data: 1002
+  itemname: kostka
+zamek:
+  material: HONEYCOMB
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/zamek.png
+    custom_model_data: 1000
+  itemname: zamek
+popsicle:
+  material: STICK
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/lodzik.png
+    custom_model_data: 1000
+  itemname: lodzik
+kostiumplaza:
+  material: LEATHER_CHESTPLATE
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/plazowicza.png
+    custom_model_data: 1003
+  itemname: kostium
+bigwin:
+  material: GOLD_INGOT
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/bigwin.png
+    custom_model_data: 1001
+  itemname: bigwin
+ryzykant:
+  material: REDSTONE_BLOCK
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/paper.png
+    custom_model_data: 1000
+  itemname: ryzykant
+eventowa:
+  material: YELLOW_GLAZED_TERRACOTTA
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/eventowa.png
+    custom_model_data: 1000
+  itemname: eventowa
+rzadka:
+  material: TRIPWIRE_HOOK
+  model: 1000
+  Pack:
+    parent_model: item/generated
+    texture: item/rzadka.png
+    custom_model_data: 1000
+  itemname: rzadka
+epicka:
+  material: TRIPWIRE_HOOK
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/epicka.png
+    custom_model_data: 1001
+  itemname: epicka
+legendarna:
+  material: TRIPWIRE_HOOK
+  model: 1002
+  Pack:
+    parent_model: item/generated
+    texture: item/legendarna.png
+    custom_model_data: 1002
+  itemname: lege
+boski:
+  material: TRIPWIRE_HOOK
+  model: 1003
+  Pack:
+    parent_model: item/generated
+    texture: item/lodowy.png
+    custom_model_data: 1003
+  itemname: boska
+perki:
+  material: RABBIT_FOOT
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/perki.png
+    custom_model_data: 1000
+  itemname: perki
+odpornosc:
+  material: LIGHT_BLUE_CONCRETE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/rune_blue.png
+    custom_model_data: 1000
+  itemname: perksd
+zrecznosc:
+  material: YELLOW_CONCRETE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/rune_yellow.png
+    custom_model_data: 1000
+  itemname: zrecznosc
+sila:
+  material: RED_CONCRETE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/rune_red.png
+    custom_model_data: 1000
+  itemname: sila
+inteligencja:
+  material: LIME_CONCRETE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/rune_green.png
+    custom_model_data: 1000
+  itemname: inteligencja
+money:
+  material: PRISMARINE_SHARD
+  model: 1001
+  Pack:
+    parent_model: item/generated
+    texture: item/fragment.png
+    custom_model_data: 1001
+  itemname: fragment
+miecz13:
+  material: STRING
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/miecz13.png
+    custom_model_data: 1000
+  itemname: miecz13
+pole:
+  material: FERMENTED_SPIDER_EYE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/pole_smierci.png
+    custom_model_data: 1000
+  itemname: pole
+usuwacz3:
+  material: BLAZE_ROD
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/usuwacz.png
+    custom_model_data: 1000
+  itemname: usuwacz
+
+miecz_hist_diamond_claymore:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/diamond_claymore
+    custom_model_data: 1000
+  itemname: Claymore Diamentowy
+  Enchantments:
+    sharpness: 25
+
+miecz_hist_diamond_kris:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/diamond_kris
+    custom_model_data: 1001
+  itemname: Kris Diamentowy
+  Enchantments:
+    sharpness: 27
+
+miecz_hist_diamond_flambard:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/diamond_flambard
+    custom_model_data: 1002
+  itemname: Flambard Diamentowy
+  Enchantments:
+    sharpness: 29
+
+miecz_hist_diamond_cutlass:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/diamond_cutlass
+    custom_model_data: 1003
+  itemname: Cutlass Diamentowy
+  Enchantments:
+    sharpness: 31
+
+miecz_hist_netherite_ninjato:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/netherite_ninjato
+    custom_model_data: 1004
+  itemname: Ninjato Netherytowe
+  Enchantments:
+    sharpness: 33
+
+miecz_hist_netherite_claymore:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/netherite_claymore
+    custom_model_data: 1005
+  itemname: Claymore Netherytowy
+  Enchantments:
+    sharpness: 35
+
+miecz_hist_netherite_kris:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/netherite_kris
+    custom_model_data: 1006
+  itemname: Kris Netherytowy
+  Enchantments:
+    sharpness: 37
+gift1:
+  material: RED_WOOL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/gift_drugi.png
+    custom_model_data: 1000
+  itemname: gift
+gift2:
+  material: RED_WOOL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/gift_pierwszy.png
+    custom_model_data: 1001
+  itemname: gift2
+lampka:
+  material: LANTERN
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/lampion.png
+    custom_model_data: 1000
+  itemname: lampa
+perkdropu:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/perkdropu.png
+    custom_model_data: 1006
+  itemname: dropu
+koszyczek:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/koszyczek.png
+    custom_model_data: 1007
+  itemname: koszyk
+
+
+zeus_jolt:
+  material: NETHERITE_SWORD
+  Pack:
+    model: zeus/zeus_jolt
+    custom_model_data: 1007
+  itemname: '&e&lZeus Jolt'
+
+zeus_jolt_blue:
+  material: NETHERITE_SWORD
+  Pack:
+    model: zeus/zeus_jolt_blue
+    custom_model_data: 1008
+  itemname: '&b&lZeus Jolt Blue'
+
+miecz_hist_netherite_flambard:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/netherite_flambard
+    custom_model_data: 1009
+  itemname: Flambard Netherytowy
+  Enchantments:
+    sharpness: 39
+
+miecz_hist_netherite_cutlass:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/netherite_cutlass
+    custom_model_data: 1010
+  itemname: Cutlass Netherytowy
+  Enchantments:
+    sharpness: 41
+
+miecz_hist_gold_ninjato:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/gold_ninjato
+    custom_model_data: 1011
+  itemname: Ninjato Złote
+  Enchantments:
+    sharpness: 43
+
+gryf:
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/hist/1
+    custom_model_data: 1012
+  itemname: Krisek
+  Enchantments:
+    sharpness: 43
+
+'22':
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/22
+    custom_model_data: 1013
+  itemname: Krisek1
+  Enchantments:
+    sharpness: 45
+
+'23':
+  Enchantments:
+    sharpness: 47
+  
+  material: SLIME_BALL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/glut.png
+    custom_model_data: 1000
+  itemname: glut
+
+'24':
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/24
+    custom_model_data: 1014
+  itemname: Krisek3
+  Enchantments:
+    sharpness: 49
+
+'25':
+  material: NETHERITE_SWORD
+  Pack:
+    model: item/skypvp/miecze/25
+    custom_model_data: 1015
+  itemname: Krisek4
+  Enchantments:
+    sharpness: 51
+
+bomba:
+  material: FIRE_CHARGE
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/bomba.png
+    custom_model_data: 1000
+  itemname: bomba
+dzwonek:
+  material: GOLD_INGOT
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/dzwonek.png
+    custom_model_data: 1002
+  itemname: bomba
+pileczka:
+  material: SNOWBALL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/pileczka.png
+    custom_model_data: 1000
+  itemname: pilabomba
+torba:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/torba.png
+    custom_model_data: 1008
+  itemname: torba
+plecakzolty:
+  material: YELLOW_WOOL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/plecakzolty.png
+    custom_model_data: 1000
+  itemname: dedeede
+plecakzielony:
+  material: LIME_WOOL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/plecakzielony.png
+    custom_model_data: 1000
+  itemname: dedeede
+plecakczerwony:
+  material: RED_WOOL
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/plecakczerwony.png
+    custom_model_data: 1002
+  itemname: dedeede
+czekotubka:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/czekotubka.png
+    custom_model_data: 1009
+  itemname: dedeede
+kolekcja:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/kolekcjaeventowa.png
+    custom_model_data: 1010
+  itemname: dedeede
+linija:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/linija.png
+    custom_model_data: 1011
+  itemname: dedeede
+dlugopis:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/dlugopis.png
+    custom_model_data: 1012
+  itemname: dedeede
+kalkulator:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/kalkulator.png
+    custom_model_data: 1013
+  itemname: dedeede
+piornik:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/piornik.png
+    custom_model_data: 1014
+  itemname: dedeede
+zeszyt:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/zeszyt.png
+    custom_model_data: 1015
+  itemname: dedeede
+sprawdzian:
+  material: PAPER
+  model: 0
+  Pack:
+    parent_model: item/generated
+    texture: item/sprawdzian.png
+    custom_model_data: 1016
+  itemname: dedeede

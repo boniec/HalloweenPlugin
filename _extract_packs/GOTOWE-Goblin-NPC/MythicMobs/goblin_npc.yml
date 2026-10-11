@@ -1,0 +1,25 @@
+# /mm m spawn goblin_npc
+goblin_npc:
+  Type: ZOMBIE
+  Display: '&2Goblin'
+  Health: 24
+  Damage: 0
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    KnockbackResistance: 0.5
+    Collidable: true
+    AlwaysShowName: false
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  - randomstroll
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=goblin;step=1;hitbox=true} @self ~onSpawn
+  - state{s=idle;li=3;lo=3} @self ~onSpawn
+  - state{s=walk;li=2;lo=2} @self ~onMove
+  - state{s=attack;li=0;lo=0} @self ~onAttack

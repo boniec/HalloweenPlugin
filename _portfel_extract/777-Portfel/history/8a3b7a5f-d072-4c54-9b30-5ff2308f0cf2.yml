@@ -1,0 +1,74 @@
+transactions:
+- date: 1790000897650
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1790000714486
+  amount: 100.0
+  item: '&#0079FF&lᴍ&#0B82FF&lᴀ&#158AFF&lʟ&#2093FF&lʏ &#35A4FF&lᴘ&#40ADFF&lᴀ&#4AB5FF&lᴋ&#55BEFF&lɪ&#5FC6FF&lᴇ&#6ACFFF&lᴛ
+    &#88D9FF&lꜱ&#97DDFF&lᴢ&#A6E2FF&lᴄ&#B5E7FF&lᴢ&#C3ECFF&lę&#D2F1FF&lś&#E1F5FF&lᴄ&#F0FAFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1790000565351
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787841123434
+  amount: 100.0
+  item: VPLN
+  description: Ustawienie salda
+  source: pilot_rollsroyca
+  type: SET
+- date: 1787841111022
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787841099517
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1787841091338
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787582273012
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &lɢᴢɪʙ'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1787582252012
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1787582181969
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1787581774612
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: pedigrigamer2099
+  type: PURCHASE
+- date: 1787581758148
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

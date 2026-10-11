@@ -1,0 +1,13 @@
+transactions:
+- date: 1791043834958
+  amount: 30.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: DU4Y_NAL37NIK
+  type: PURCHASE
+- date: 1791040324594
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

@@ -1,0 +1,13 @@
+transactions:
+- date: 1790193952020
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: czArNy_sAmOLot
+  type: PURCHASE
+- date: 1790193926428
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

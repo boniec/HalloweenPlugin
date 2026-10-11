@@ -1,0 +1,7 @@
+goblin_marker:
+  itemname: <green>Goblin (NPC)
+  material: EMERALD
+  Pack:
+    generate_model: false
+    model: item/generated
+    custom_model_data: 3003

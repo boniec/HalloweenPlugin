@@ -1,0 +1,13 @@
+transactions:
+- date: 1790502901967
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: psga
+  type: PURCHASE
+- date: 1790502897260
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

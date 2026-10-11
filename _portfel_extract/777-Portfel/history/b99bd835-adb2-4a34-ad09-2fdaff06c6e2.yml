@@ -1,0 +1,31 @@
+transactions:
+- date: 1790506651467
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: GlodomorekPixxo
+  type: PURCHASE
+- date: 1790506569420
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: GlodomorekPixxo
+  type: PURCHASE
+- date: 1790506030567
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f實'
+  description: Zakup produktu
+  source: GlodomorekPixxo
+  type: PURCHASE
+- date: 1790505843017
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: GlodomorekPixxo
+  type: PURCHASE
+- date: 1790505697189
+  amount: 75.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

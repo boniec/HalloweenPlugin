@@ -1,0 +1,31 @@
+transactions:
+- date: 1790112377463
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: Hirokitooo
+  type: PURCHASE
+- date: 1790112375063
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: Hirokitooo
+  type: PURCHASE
+- date: 1790112372163
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Hirokitooo
+  type: PURCHASE
+- date: 1790112368713
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: Hirokitooo
+  type: PURCHASE
+- date: 1790095877744
+  amount: 22.5
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

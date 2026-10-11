@@ -1,0 +1,19 @@
+transactions:
+- date: 1791020579866
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: kedaro2
+  type: PURCHASE
+- date: 1791020550516
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: kedaro2
+  type: PURCHASE
+- date: 1791020518137
+  amount: 7.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

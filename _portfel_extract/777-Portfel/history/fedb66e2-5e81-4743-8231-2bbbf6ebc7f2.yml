@@ -1,0 +1,7 @@
+transactions:
+- date: 1790790459901
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

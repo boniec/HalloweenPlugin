@@ -1,0 +1,20 @@
+info:
+  namespace: nazgul_weaponry_vol_5
+categories:
+    nazgul_weaponry_vol_5:
+      enabled: true
+      skip_if_already: false
+      icon: nazgul_weaponry_vol_5:cursed_sword
+      name: '&2Nazguls Weaponry Vol5'
+      permission: ia.menu
+      items:
+      - "nazgul_weaponry_vol_5:cursed_sword"
+      - "nazgul_weaponry_vol_5:dark_sword"
+      - "nazgul_weaponry_vol_5:demonic_blade"
+      - "nazgul_weaponry_vol_5:holy_spear"
+      - "nazgul_weaponry_vol_5:kaz_sc"
+      - "nazgul_weaponry_vol_5:magnetic_blade"
+      - "nazgul_weaponry_vol_5:mana_axe"
+      - "nazgul_weaponry_vol_5:obsidian_bow"
+      - "nazgul_weaponry_vol_5:pox_spreader"
+      - "nazgul_weaponry_vol_5:red_hammer"

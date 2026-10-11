@@ -1,0 +1,13 @@
+transactions:
+- date: 1790786525762
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: Zivuu036
+  type: PURCHASE
+- date: 1790786438163
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

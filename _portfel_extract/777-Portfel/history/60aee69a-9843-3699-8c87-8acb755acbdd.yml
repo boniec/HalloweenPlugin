@@ -1,0 +1,43 @@
+transactions:
+- date: 1787433391843
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433380643
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433378543
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433288593
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433286543
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433281043
+  amount: 20.0
+  item: '&eꜱᴋʀᴢʏɴɪᴀ ᴡᴀᴋᴀᴄʏᴊɴᴀ'
+  description: Zakup produktu
+  source: _Chi3fKeef
+  type: PURCHASE
+- date: 1787433100133
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

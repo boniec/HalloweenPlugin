@@ -1,0 +1,26 @@
+transactions:
+- date: 1790949196038
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: Vexsi666
+  type: PURCHASE
+- date: 1790949191438
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Vexsi666
+  type: PURCHASE
+- date: 1790949168188
+  amount: 20.0
+  item: '&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ
+    &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)'
+  description: Zakup produktu
+  source: Vexsi666
+  type: PURCHASE
+- date: 1790949087437
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

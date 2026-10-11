@@ -1,0 +1,61 @@
+transactions:
+- date: 1790626399821
+  amount: 0.0
+  item: VPLN
+  description: Ustawienie salda
+  source: szakirek
+  type: SET
+- date: 1790626397550
+  amount: 1.0E40
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790515074145
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: lequtki
+  type: PURCHASE
+- date: 1790515062296
+  amount: 3.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462663017
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: lequtki
+  type: PURCHASE
+- date: 1790462652451
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462471186
+  amount: 3.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790457581417
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: lequtki
+  type: PURCHASE
+- date: 1790457144896
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790457080878
+  amount: 4.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

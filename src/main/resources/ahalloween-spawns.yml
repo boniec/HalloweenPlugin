@@ -1,0 +1,8 @@
+# Punkty spawnu AHalloween — uzupełniane przez /ahalloween candy setspawn oraz <mob> setspawn.
+# Możesz edytować ręcznie (wymagane: type, world, x, y, z).
+# Po zmianie: /ahalloween reload
+
+candy: {}
+mob: {}
+# Domy trick-or-treat (/ahalloween dom dodaj) — PPM na drzwi
+dom: {}

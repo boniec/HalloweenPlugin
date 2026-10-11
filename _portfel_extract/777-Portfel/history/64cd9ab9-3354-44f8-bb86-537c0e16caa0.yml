@@ -1,0 +1,13 @@
+transactions:
+- date: 1789839607056
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: Better_Bartus
+  type: PURCHASE
+- date: 1789839581222
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

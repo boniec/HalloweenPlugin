@@ -1,0 +1,13 @@
+transactions:
+- date: 1790001717236
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: minetk4aa__
+  type: PURCHASE
+- date: 1790001641756
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD

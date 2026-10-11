@@ -1,0 +1,13 @@
+transactions:
+- date: 1790873261388
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: StasiaSmurf
+  type: PURCHASE
+- date: 1790873110974
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

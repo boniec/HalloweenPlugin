@@ -1,0 +1,414 @@
+EliteMountVol16Watcher:
+  Type: zombie
+  Display: '&5Watcher'
+  Health: 50
+  Options:
+    Silent: true
+    ApplyInvisibility: true
+    Despawn: true
+    ShowHealth: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    MovementSpeed: 0.15
+    PreventSunburn: true
+    FollowRange: 0
+  Faction: Mounts
+  DamageModifiers:
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - CONTACT 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - WITHER 0
+  - DROWNING 0
+  - MELTING 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - POISON 0
+  - THORNS 0
+  - SONIC_BOOM 0
+  - BLOCK_EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Title: '&6Watcher'
+    Range: 6
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 gotoowner 10
+  AITargetSelectors: 
+  - 0 clear
+  Skills:    
+  - cancelevent{sync=true} @Self ~onAttack     
+  - model{mid=ecwatcher;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true;step=1} @self ~onSpawn
+  - bodyclamp{m=ecwatcher;c=50} @self ~onSpawn
+  - Aura{auraName=EliteMountVol16WatcherMechanicsAura;onTick=EliteMountVol16WatcherMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol16WatcherAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol16WatcherMount} @trigger ~onInteract
+  - skill{s=EliteMountVol16WatcherPetting} @Self ~onInteract
+  - summon{type=EliteMountVol16WatcherDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol16WatcherDeath:
+  Type: DROWNED
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  Faction: body
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=ecwatcher;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol16WatcherDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+EliteMountVol16Broomstick:
+  Type: zombie
+  Display: '&5Broomstick'
+  Health: 50
+  Options:
+    Silent: true
+    ApplyInvisibility: true
+    Despawn: true
+    ShowHealth: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    MovementSpeed: 0.15
+    PreventSunburn: true
+    FollowRange: 0
+  Faction: Mounts
+  DamageModifiers:
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - CONTACT 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - WITHER 0
+  - DROWNING 0
+  - MELTING 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - POISON 0
+  - THORNS 0
+  - SONIC_BOOM 0
+  - BLOCK_EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Title: '&6Broomstick'
+    Range: 2
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 gotoowner 10
+  AITargetSelectors: 
+  - 0 clear
+  Skills:    
+  - cancelevent{sync=true} @Self ~onAttack     
+  - model{mid=ecbroomstick;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true;step=1} @self ~onSpawn
+  - bodyclamp{m=ecbroomstick;c=50} @self ~onSpawn
+  - Aura{auraName=EliteMountVol16BroomstickMechanicsAura;onTick=EliteMountVol16BroomstickMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol16BroomstickAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol16BroomstickMount} @trigger ~onInteract
+  - skill{s=EliteMountVol16BroomstickPetting} @Self ~onInteract
+  - summon{type=EliteMountVol16BroomstickDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol16BroomstickDeath:
+  Type: DROWNED
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  Faction: body
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=ecbroomstick;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol16BroomstickDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+EliteMountVol16DeadHorse:
+  Type: zombie
+  Display: '&5Dead Horse'
+  Health: 50
+  Options:
+    Silent: true
+    ApplyInvisibility: true
+    Despawn: true
+    ShowHealth: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    MovementSpeed: 0.15
+    PreventSunburn: true
+    FollowRange: 0
+  Faction: Mounts
+  DamageModifiers:
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - CONTACT 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - WITHER 0
+  - DROWNING 0
+  - MELTING 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - POISON 0
+  - THORNS 0
+  - SONIC_BOOM 0
+  - BLOCK_EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Title: '&6Dead Horse'
+    Range: 2
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 gotoowner 10
+  AITargetSelectors: 
+  - 0 clear
+  Skills:    
+  - cancelevent{sync=true} @Self ~onAttack     
+  - model{mid=ecdeadhorse;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true;step=1} @self ~onSpawn
+  - bodyclamp{m=ecdeadhorse;c=50} @self ~onSpawn
+  - Aura{auraName=EliteMountVol16DeadHorseMechanicsAura;onTick=EliteMountVol16DeadHorseMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol16DeadHorseAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol16DeadHorseMount} @trigger ~onInteract
+  - skill{s=EliteMountVol16DeadHorsePetting} @Self ~onInteract
+  - summon{type=EliteMountVol16DeadHorseDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol16DeadHorseDeath:
+  Type: DROWNED
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  Faction: body
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=ecdeadhorse;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol16DeadHorseDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+EliteMountVol16Skeleptor:
+  Type: zombie
+  Display: '&5Skeleptor'
+  Health: 50
+  Options:
+    Silent: true
+    ApplyInvisibility: true
+    Despawn: true
+    ShowHealth: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    MovementSpeed: 0.15
+    PreventSunburn: true
+    FollowRange: 0
+  Faction: Mounts
+  DamageModifiers:
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - CONTACT 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - WITHER 0
+  - DROWNING 0
+  - MELTING 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - POISON 0
+  - THORNS 0
+  - SONIC_BOOM 0
+  - BLOCK_EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Title: '&6Skeleptor'
+    Range: 2
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 gotoowner 10
+  AITargetSelectors: 
+  - 0 clear
+  Skills:    
+  - cancelevent{sync=true} @Self ~onAttack     
+  - model{mid=ecskeleptor;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true;step=1} @self ~onSpawn
+  - bodyclamp{m=ecskeleptor;c=50} @self ~onSpawn
+  - Aura{auraName=EliteMountVol16SkeleptorMechanicsAura;onTick=EliteMountVol16SkeleptorMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol16SkeleptorAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol16SkeleptorMount} @trigger ~onInteract
+  - skill{s=EliteMountVol16SkeleptorPetting} @Self ~onInteract
+  - summon{type=EliteMountVol16SkeleptorDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol16SkeleptorDeath:
+  Type: DROWNED
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  Faction: body
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=ecskeleptor;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol16SkeleptorDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+EliteMountVol16Ghostship:
+  Type: zombie
+  Display: '&5Ghostship'
+  Health: 50
+  Options:
+    Silent: true
+    ApplyInvisibility: true
+    Despawn: true
+    ShowHealth: true
+    KnockbackResistance: 1
+    PreventOtherDrops: true
+    MovementSpeed: 0.15
+    PreventSunburn: true
+    FollowRange: 0
+  Faction: Mounts
+  DamageModifiers:
+  - FALL 0
+  - PROJECTILE 0
+  - ENTITY_ATTACK 0
+  - CONTACT 0
+  - SUFFOCATION 0
+  - MAGIC 0
+  - WITHER 0
+  - DROWNING 0
+  - MELTING 0
+  - ENTITY_SWEEP_ATTACK 0
+  - FIRE 0
+  - FIRE_TICK 0
+  - POISON 0
+  - THORNS 0
+  - SONIC_BOOM 0
+  - BLOCK_EXPLOSION 0
+  BossBar:
+    Enabled: true
+    Title: '&6Ghostship'
+    Range: 2
+    Color: BLUE
+    Style: SOLID
+  AIGoalSelectors:
+  - 0 Clear
+  - 1 gotoowner 10
+  - 2 Float 
+  AITargetSelectors: 
+  - 0 clear
+  Skills:    
+  - cancelevent{sync=true} @Self ~onAttack     
+  - model{mid=ecghostship;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true;step=1} @self ~onSpawn
+  - bodyclamp{m=ecghostship;c=50} @self ~onSpawn
+  - Aura{auraName=EliteMountVol16GhostshipMechanicsAura;onTick=EliteMountVol16GhostshipMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol16GhostshipAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol16GhostshipMount} @trigger ~onInteract
+  - skill{s=EliteMountVol16GhostshipPetting} @Self ~onInteract
+  - summon{type=EliteMountVol16GhostshipDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol16GhostshipDeath:
+  Type: DROWNED
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  Faction: body
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=ecghostship;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol16GhostshipDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1

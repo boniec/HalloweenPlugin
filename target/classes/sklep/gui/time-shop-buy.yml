@@ -1,0 +1,185 @@
+timeShopBuy:
+  rows: 5
+  walletLore:
+  - '&8∙ &7ᴛᴡᴏᴊ ᴄᴢᴀꜱ: &f{czas_gracza}'
+  title: '&8          ᴘᴏᴛᴡɪᴇʀᴅᴢ ᴢᴀᴋᴜᴘ'
+  previewSlot: 22
+  items:
+    potwierdz:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ɪʟᴏꜱᴄ ᴘʀᴏᴅᴜᴋᴛᴜ: &f{ilosc} ꜱᴢᴛᴜᴋ'
+      - '&8∙ &7ᴋᴏꜱᴢᴛ ᴢᴀᴋᴜᴘᴜ: &#FFF6AD{czas}'
+      - '&7'
+      - '&8∙ &aᴋʟɪᴋɴɪᴊ, ᴀʙʏ &2ᴢᴀᴛᴡɪᴇʀᴅᴢɪᴄ&a ᴛᴇɴ ᴢᴀᴋᴜᴘ!'
+      amount: 1
+      slots: []
+      slot: 31
+      action: CONFIRM
+      name: '&7→ &#7CE798ᴢᴀᴛᴡɪᴇʀᴅᴢ ᴢᴀᴋᴜᴘ'
+      customModelData: 0
+      material: LIME_DYE
+    anuluj:
+      enabled: true
+      lore: []
+      amount: 1
+      slots: []
+      slot: 40
+      action: BACK
+      name: '&#FF9393ᴘᴏᴡʀᴏᴛ!'
+      customModelData: 0
+      material: BARRIER
+    preview:
+      enabled: true
+      lore: []
+      amount: 1
+      slots: []
+      slot: 22
+      action: PREVIEW
+      name: ''
+      customModelData: 0
+      material: AIR
+    szkielko:
+      enabled: false
+      lore: []
+      amount: 1
+      slots: []
+      slot: 9
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_DYE
+    add1:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴅᴏᴅᴀᴄ &f1 ꜱᴢᴛᴜᴋᴇ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 32
+      action: ADD_1
+      name: '&#7CE798ᴅᴏᴅᴀᴊ 1 ꜱᴢᴛᴜᴋᴇ'
+      customModelData: 0
+      material: LIME_DYE
+    add10:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴅᴏᴅᴀᴄ &f10 ꜱᴢᴛᴜᴋ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 23
+      action: ADD_10
+      name: '&#7CE798ᴅᴏᴅᴀᴊ 10 ꜱᴢᴛᴜᴋ'
+      customModelData: 0
+      material: LIME_DYE
+    set64:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜꜱᴛᴀᴡɪᴄ ɴᴀ &f64 ꜱᴢᴛᴜᴋɪ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 14
+      action: SET_64
+      name: '&#7CE798ᴜꜱᴛᴀᴡ 64 ꜱᴢᴛᴜᴋɪ'
+      customModelData: 0
+      material: LIME_DYE
+    remove1:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜꜱᴜɴᴀᴄ &f1 ꜱᴢᴛᴜᴋᴇ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 30
+      action: REMOVE_1
+      name: '&#F35959ᴜꜱᴜɴ 1 ꜱᴢᴛᴜᴋᴇ'
+      customModelData: 0
+      material: RED_DYE
+    remove10:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜꜱᴜɴᴀᴄ &f10 ꜱᴢᴛᴜᴋ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 21
+      action: REMOVE_10
+      name: '&#F35959ᴜꜱᴜɴ 10 ꜱᴢᴛᴜᴋ'
+      customModelData: 0
+      material: RED_DYE
+    set1:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜꜱᴛᴀᴡɪᴄ &f1 ꜱᴢᴛᴜᴋᴇ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 12
+      action: SET_1
+      name: '&#F35959ᴜꜱᴛᴀᴡ 1 ꜱᴢᴛᴜᴋᴇ'
+      customModelData: 0
+      material: RED_DYE
+    wallet:
+      enabled: true
+      lore:
+      - '&8∙ &7ᴛᴡᴏᴊ ᴄᴢᴀꜱ: &f{czas_gracza}'
+      amount: 1
+      slots: []
+      slot: 36
+      action: WALLET
+      name: '&#F3C959{gracz}'
+      customModelData: 0
+      material: OAK_SIGN
+    ns_add1:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴅᴏᴅᴀᴄ &f1 ꜱᴢᴛᴜᴋᴇ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 23
+      action: NS_ADD_1
+      name: '&#7CE798+1 ꜱᴢᴛᴜᴋᴀ'
+      customModelData: 0
+      material: LIME_DYE
+    ns_remove1:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ ᴜꜱᴜɴᴀᴄ &f1 ꜱᴢᴛᴜᴋᴇ'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 21
+      action: NS_REMOVE_1
+      name: '&#F35959-1 ꜱᴢᴛᴜᴋᴀ'
+      customModelData: 0
+      material: RED_DYE
+  pickerSlots:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  nonStackablePickerLore:
+  - '&8∙ &7ɪʟᴏꜱᴄ: &f{ilosc} ꜱᴢᴛ.'
+  - '&8∙ &7Koszt: &f{czas}'
+  previewLoreAppend:
+  - '&7'
+  - '&8∙ &7ɪʟᴏꜱᴄ: &f{ilosc} ꜱᴢᴛ.'
+  - '&8∙ &7Koszt: &f{czas}'
+  pickerSelectedLore: '&a>> &lWybrano'

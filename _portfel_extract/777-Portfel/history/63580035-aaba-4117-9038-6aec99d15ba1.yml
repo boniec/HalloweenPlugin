@@ -1,0 +1,43 @@
+transactions:
+- date: 1791030000766
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: xad_kl7mpus
+  type: PURCHASE
+- date: 1791029911183
+  amount: 16.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789948765736
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: xad_kl7mpus
+  type: PURCHASE
+- date: 1789948209486
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: xad_kl7mpus
+  type: PURCHASE
+- date: 1789948163864
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789921785296
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: xad_kl7mpus
+  type: PURCHASE
+- date: 1789921753777
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

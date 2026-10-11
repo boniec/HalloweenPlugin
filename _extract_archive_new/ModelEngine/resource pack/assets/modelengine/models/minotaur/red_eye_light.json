@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/models/minotaur","particle":"#0"},"elements":[{"from":[3.0,3.5,8.025],"to":[13.0,12.5,8.025],"faces":{"south":{"uv":[4.625,7.75,5.875,8.875],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[3.375,7.75,4.625,8.875],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[-150.0,-45.0,180.0]}}}

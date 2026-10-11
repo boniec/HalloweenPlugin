@@ -1,0 +1,37 @@
+transactions:
+- date: 1789926098496
+  amount: 50.0
+  item: '&7ʀᴀɴɢᴀ &f希'
+  description: Zakup produktu
+  source: opoznienie_4
+  type: PURCHASE
+- date: 1789926083965
+  amount: 52.5
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD
+- date: 1789919237801
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: opoznienie_4
+  type: PURCHASE
+- date: 1789919234636
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: opoznienie_4
+  type: PURCHASE
+- date: 1789919231056
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: opoznienie_4
+  type: PURCHASE
+- date: 1789919203834
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

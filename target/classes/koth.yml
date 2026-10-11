@@ -1,0 +1,81 @@
+# ==========================================================
+#   KOTH - konfiguracja
+#   Komendy (permisja koth.admin):
+#     /adkoth start [sekundy]  - zapowiedz + start (0 = start od razu; domyslnie wg ponizszego ustawienia)
+#     /adkoth stop             - przerywa KOTH bez nagrod i bez tytulow
+#     /adkoth editdrop         - GUI z nagrodami za TOP 1, 2, 3
+#     /adkoth status | reload
+# ==========================================================
+
+# ID regionu WorldGuard, na ktorym liczy sie KOTH
+region: koth
+
+# Jak dlugo trwa KOTH (300 s = 5 minut)
+czas-trwania-sekundy: 300
+
+# Ile punktow dostaje gracz za kazda sekunde spedzona w regionie
+punkty-na-sekunde: 1
+
+# Odliczanie przed startem dla /adkoth start bez argumentu (scoreboard "start za")
+domyslne-odliczanie-sekundy: 60
+
+# Jak dlugo po zakonczeniu scoreboard zostaje na ekranach
+scoreboard-po-zakonczeniu-sekundy: 10
+
+# Lista godzin nizej jest IGNOROWANA. Starty KOTH sa w eventy.yml (eventy.koth.godziny).
+# Na ile sekund przed godzina startu pojawia sie scoreboard z odliczaniem (min. 5).
+harmonogram:
+  - "15:00"
+  - "18:00"
+  - "21:00"
+zapowiedz-przed-startem-sekundy: 300
+
+# Title/subtitle (jedyne komunikaty dla graczy - NA CZAT NIC SIE NIE WYSYLA)
+title:
+  fade-in-ticks: 10
+  stay-ticks: 60
+  fade-out-ticks: 20
+  start:
+    tytul: '&#940707&lᴋ&#B72C2C&lᴏ&#D95050&lᴛ&#940707&lʜ'
+    podtytul: '&fWystartowal!'
+  koniec:
+    tytul: '&#940707&lᴋ&#B72C2C&lᴏ&#D95050&lᴛ&#940707&lʜ'
+    podtytul: '&fSie zakonczyl!'
+
+# Scoreboard KOTH (podmienia zwykly scoreboard wszystkim graczom na czas KOTH-a).
+# Placeholdery: %nick_1% %nick_2% %nick_3%, %punkty_1% %punkty_2% %punkty_3%,
+#               %czas% (mm:ss) oraz %czas_linia% (jedna z trzech linii "czas-..." nizej).
+# Zwykle placeholdery PlaceholderAPI i kolory (&a, &#RRGGBB) tez dzialaja.
+scoreboard:
+  tytul: '&#940707&lᴋ&#B72C2C&lᴏ&#D95050&lᴛ&#940707&lʜ'
+  linie:
+    - ''
+    - 'ꕋ &f%nick_1% &8- &a%punkty_1%pkt'
+    - 'ꕌ &f%nick_2% &8- &a%punkty_2%pkt'
+    - 'ꕍ &f%nick_3% &8- &a%punkty_3%pkt'
+    - ''
+    - '%czas_linia%'
+    - ''
+    - '&#940707&lᴋ&#B72C2C&lᴏ&#D95050&lᴛ&#940707&lʜ &fᴢɴᴀᴊᴅᴜᴊᴇ sɪᴇ'
+    - ' &fɴᴀ ᴘʀᴀᴡᴇᴊ &7ᴡʏsᴘɪᴇ'
+    - ''
+  # Linia z czasem: przed startem / w trakcie / w 10 sekundach po zakonczeniu
+  czas-przed: '劍 &fsᴛᴀʀᴛ ᴢᴀ: &a%czas%'
+  czas-trwa: '劍 &fᴋᴏɴɪᴇᴄ ᴢᴀ: &a%czas%'
+  czas-po: '劍 &fᴋᴏɴɪᴇᴄ ᴢᴀ: &a%czas%'
+  # Co pokazac, gdy na danym miejscu nikogo jeszcze nie ma
+  brak-gracza: '&8-'
+
+# Odpowiedzi na komendy /adkoth (widzi je tylko osoba wpisujaca komende)
+wiadomosci:
+  uzycie: "&cUzycie: /adkoth <start [sekundy]|stop|editdrop|status|reload>"
+  start-ok: "&aKOTH zostal uruchomiony."
+  stop-ok: "&aKOTH zostal przerwany (bez nagrod)."
+  nic-nie-trwa: "&cKOTH aktualnie nie trwa."
+  juz-trwa: "&cKOTH juz trwa albo jest zapowiedziany."
+  brak-wg: "&cWorldGuard nie jest zainstalowany - KOTH nie moze dzialac."
+  brak-regionu: "&cRegion WorldGuard &e%region% &cnie istnieje - KOTH nie moze liczyc punktow."
+  reload-ok: "&aPrzeladowano konfiguracje KOTH."
+  nagrody-zapisane: "&aNagrody KOTH zostaly zapisane."
+  tylko-gracz: "&cTa komenda jest dostepna tylko dla graczy."
+  brak-uprawnien: "&cNie masz uprawnien do tej komendy."

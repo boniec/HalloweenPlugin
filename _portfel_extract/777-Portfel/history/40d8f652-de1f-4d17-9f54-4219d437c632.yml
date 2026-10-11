@@ -1,0 +1,31 @@
+transactions:
+- date: 1789930535296
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: ArabTopaSvko
+  type: PURCHASE
+- date: 1789930531046
+  amount: 2.5
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: ArabTopaSvko
+  type: PURCHASE
+- date: 1789930526846
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: ArabTopaSvko
+  type: PURCHASE
+- date: 1789930522146
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: ArabTopaSvko
+  type: PURCHASE
+- date: 1789930219297
+  amount: 25.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

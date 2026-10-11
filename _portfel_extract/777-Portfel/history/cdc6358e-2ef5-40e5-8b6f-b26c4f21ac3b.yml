@@ -1,0 +1,19 @@
+transactions:
+- date: 1790532564462
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Ezercik_
+  type: PURCHASE
+- date: 1790529884419
+  amount: 3.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790528927300
+  amount: 4.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

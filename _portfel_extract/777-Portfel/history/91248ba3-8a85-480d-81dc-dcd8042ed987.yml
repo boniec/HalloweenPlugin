@@ -1,0 +1,43 @@
+transactions:
+- date: 1790093109225
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093106908
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093104444
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093101906
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093097994
+  amount: 2.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &d&lꜱᴛᴀʀʙᴏx'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093085346
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f實'
+  description: Zakup produktu
+  source: GeneralB0mba
+  type: PURCHASE
+- date: 1790093077675
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

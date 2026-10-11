@@ -1,0 +1,31 @@
+transactions:
+- date: 1790092830442
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: MarekDurczok
+  type: PURCHASE
+- date: 1790092826527
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: MarekDurczok
+  type: PURCHASE
+- date: 1790092819544
+  amount: 16.0
+  item: '&b64x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: MarekDurczok
+  type: PURCHASE
+- date: 1790092814694
+  amount: 16.0
+  item: '&b64x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: MarekDurczok
+  type: PURCHASE
+- date: 1790092623764
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: pilot_rollsroyca
+  type: ADD

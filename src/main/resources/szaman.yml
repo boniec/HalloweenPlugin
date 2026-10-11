@@ -1,0 +1,327 @@
+# =========================================================
+#  Konfiguracja systemu Szamana (artefakty)
+#  Wszystkie perki sa w JEDNYM GUI (/szaman) i kupuje sie je za
+#  Fragmenty Galaktyki (przedmiot: /aszaman ustawodlamek).
+#  Kolory: &a, &#RRGGBB oraz &x&R&R&G&G&B&B.
+# =========================================================
+
+gui:
+  szaman-title: "&7Sᴢᴀᴍᴀɴ"
+  rozmiar: 45
+# --- Perki. Kazdy ma: enable, slot, material, displayname, format (active/no-active), lore.
+# W lore: {info} = lista poziomow, {level} = aktualny poziom, {price-info} = koszt/MAX.
+# Poziomy, koszty i wartosci kazdego perku sa w sekcji "data" nizej.
+
+confinement:
+  # Szansa (%) na uwiezienie trafionego GRACZA od poziomu 1. Czas uwiezienia = data.confinement.<lvl>.value
+  chance: 5.0
+  enable: true
+  slot: 21
+  material: LEAD
+  displayname: '&x&6&6&C&3&D&B&lᴀ&x&6&B&C&4&D&C&lʀ&x&7&0&C&6&D&C&lᴛ&x&7&5&C&7&D&D&lᴇ&x&7&A&C&9&D&D&lꜰ&x&7&F&C&A&D&E&lᴀ&x&8&4&C&C&D&E&lᴋ&x&8&9&C&D&D&F&lᴛ &x&9&3&D&0&E&0&lᴜ&x&8&E&C&F&D&F&lᴡ&x&8&9&C&D&D&F&lɪ&x&8&4&C&C&D&E&lᴇ&x&7&F&C&A&D&E&lᴢ&x&7&A&C&9&D&D&lɪ&x&7&5&C&7&D&D&lᴇ&x&7&0&C&6&D&C&lɴ&x&6&B&C&4&D&C&lɪ&x&6&6&C&3&D&B&lᴀ'
+  format:
+    active: ' &8× &c &a{level} &8- &aCzas uwięzienia zwiększy się do &2{value} sekund '
+    no-active: ' &8× &c{level} &8- &cCzas uwięzienia zwiększy się do &4{value} sekund'
+  lore:
+  - ''
+  - '{info}'
+  - ''
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - ''
+
+health:
+  # Dodatkowe serca (data.health.*.value = liczba SERC, 1 = 2 HP).
+  enable: true
+  slot: 20
+  material: RED_DYE
+  displayname: '&x&F&8&1&E&7&F&lᴀ&x&F&8&2&8&8&5&lʀ&x&F&8&3&3&8&B&lᴛ&x&F&8&3&D&9&1&lᴇ&x&F&8&4&8&9&6&lꜰ&x&F&8&5&2&9&C&lᴀ&x&F&8&5&D&A&2&lᴋ&x&F&8&6&7&A&8&lᴛ &x&F&8&4&F&9&A&lż&x&F&8&4&3&9&4&lʏ&x&F&8&3&6&8&D&lᴄ&x&F&8&2&A&8&6&lɪ&x&F&8&1&E&7&F&lᴀ'
+  format:
+    active: ' &8× &a{level} &8- &aTwoje serca zwiększy się o &2{value}❤ '
+    no-active: ' &8× &c{level} &8- &cTwoje serca zwiększy się o &4{value}❤ '
+  lore:
+  - ''
+  - '{info}'
+  - ''
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - ''
+
+strength:
+  enable: true
+  slot: 22
+  material: POTION
+  displayname: '&x&A&0&0&F&4&4&lᴀ&x&A&B&1&0&4&8&lʀ&x&B&5&1&1&4&D&lᴛ&x&C&0&1&2&5&1&lᴇ&x&C&B&1&2&5&5&lꜰ&x&D&5&1&3&5&A&lᴀ&x&E&0&1&4&5&E&lᴋ&x&D&5&1&3&5&A&lᴛ &x&C&0&1&2&5&1&ls&x&B&5&1&1&4&D&lɪ&x&A&B&1&0&4&8&lʟ&x&A&0&0&F&4&4&lʏ'
+  format:
+    active: ' &8× &a{level} &8- &2{value}% &awiększy zadawany &2damage &aw przeciwników '
+    no-active: ' &8× &c{level} &8- &4{value}% &cwiększy zadawany &4damage &cw przeciwników '
+  lore:
+  - '&7'
+  - '{info}'
+  - '&7'
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - '&7'
+
+vampirism:
+  # Ile serc leczy jedno trafienie wampiryzmu (losowo min-max).
+  heal-min: 0.5
+  heal-max: 3.0
+  enable: true
+  slot: 23
+  material: NETHERITE_SWORD
+  displayname: '&x&8&0&0&0&0&0&lᴀ&x&8&4&0&4&0&4&lʀ&x&8&7&0&7&0&7&lᴛ&x&8&B&0&B&0&B&lᴇ&x&8&E&0&E&0&E&lꜰ&x&9&2&1&2&1&2&lᴀ&x&9&5&1&5&1&5&lᴋ&x&9&9&1&9&1&9&lᴛ &x&A&0&2&0&2&0&lᴡ&x&9&C&1&C&1&C&lᴀ&x&9&9&1&9&1&9&lᴍ&x&9&5&1&5&1&5&lᴘ&x&9&2&1&2&1&2&lɪ&x&8&E&0&E&0&E&lʀ&x&8&B&0&B&0&B&lɪ&x&8&7&0&7&0&7&lᴢ&x&8&4&0&4&0&4&lᴍ&x&8&0&0&0&0&0&lᴜ'
+  format:
+    active: ' &8× &a{level} &8- &aSzansa na wyleczenie zwiększy się do &2{value}% '
+    no-active: ' &8× &c{level} &8- &cSzansa na wyleczenie zwiększy się do &4{value}%'
+  lore:
+  - '&7'
+  - '{info}'
+  - '&7'
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - '&7'
+
+weakening:
+  # Glowing nakladany na trafionym przeciwniku (sekundy) i o ile % wiecej obrazen dostaje oznaczony cel.
+  duration-seconds: 5
+  damage-bonus: 7.5
+  enable: true
+  slot: 30
+  material: GLOWSTONE_DUST
+  displayname: '&x&F&5&D&7&4&2&lᴀ&x&F&6&D&9&4&8&lʀ&x&F&6&D&A&4&D&lᴛ&x&F&7&D&C&5&3&lᴇ&x&F&7&D&E&5&8&lꜰ&x&F&8&D&F&5&E&lᴀ&x&F&9&E&1&6&3&lᴋ&x&F&9&E&3&6&9&lᴛ &x&F&A&E&4&6&E&lᴏ&x&F&A&E&6&7&4&ls&x&F&B&E&7&7&9&lł&x&F&B&E&9&7&F&lᴀ&x&F&C&E&B&8&4&lʙ&x&F&D&E&C&8&A&lɪ&x&F&D&E&E&8&F&lᴇ&x&F&E&F&0&9&5&lɴ&x&F&E&F&1&9&A&lɪ&x&F&F&F&3&A&0&lᴀ'
+  format:
+    active: ' &8× &a{level} &8- &aSzansa na osłabienie przeciwnika zwiększy się do &2{value}% '
+    no-active: ' &8× &c{level} &8- &cSzansa na osłabienie przeciwnika zwiększy się do &4{value}% '
+  lore:
+  - ''
+  - ' &8× &7Trafiony przeciwnik dostaje &eglowing'
+  - ' &8× &7i otrzymuje o &e7.5% &7większe obrażenia'
+  - ''
+  - '{info}'
+  - ''
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - ''
+
+block:
+  enable: true
+  slot: 32
+  material: SHIELD
+  displayname: '&x&4&F&C&3&F&7&lᴀ&x&5&6&C&5&F&7&lʀ&x&5&D&C&8&F&8&lᴛ&x&6&4&C&A&F&8&lᴇ&x&6&C&C&D&F&8&lꜰ&x&7&3&C&F&F&9&lᴀ&x&7&A&D&2&F&9&lᴋ&x&8&1&D&4&F&A&lᴛ &x&8&8&D&6&F&A&lʙ&x&8&F&D&9&F&A&lʟ&x&9&6&D&B&F&B&lᴏ&x&9&E&D&E&F&B&lᴋ&x&A&5&E&0&F&B&lᴀ&x&A&C&E&3&F&C&lᴅ&x&B&3&E&5&F&C&lʏ'
+  format:
+    active: ' &8× &a{level} &8- &aSzansa na zablokowanie ciosu zwiększy się do &2{value}% '
+    no-active: ' &8× &c{level} &8- &cSzansa na zablokowanie ciosu zwiększy się do &4{value}% '
+  lore:
+  - ''
+  - ' &8× &7Pozwala &bcałkowicie zablokować &7cios przeciwnika'
+  - ''
+  - '{info}'
+  - ''
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - ''
+
+backstab:
+  enable: true
+  slot: 31
+  material: DARK_OAK_LEAVES
+  displayname: '&x&8&B&2&8&0&0&lᴀ&x&8&C&2&B&0&0&lʀ&x&8&E&2&E&0&0&lᴛ&x&9&0&3&1&0&0&lᴇ&x&9&1&3&4&0&0&lꜰ&x&9&3&3&7&0&0&lᴀ&x&9&5&3&A&0&0&lᴋ&x&9&6&3&D&0&0&lᴛ &x&9&8&3&F&0&0&lѕ&x&9&A&4&2&0&0&lᴋ&x&9&B&4&5&0&0&lʀ&x&9&D&4&8&0&0&lʏ&x&9&F&4&B&0&0&lᴛ&x&A&0&4&E&0&0&lᴏ&x&A&2&5&0&0&0&lʙ&x&A&4&5&3&0&0&lᴏ&x&A&5&5&6&0&0&lᴊ&x&A&7&5&9&0&0&lᴄ&x&A&9&5&C&0&0&lʏ'
+  format:
+    active: ' &8× &a{level} &8- &aPierwsze trafienie na gracza zwiększy obrażenia o &2{value}% '
+    no-active: ' &8× &c{level} &8- &cPierwsze trafienie na gracza zwiększy obrażenia o &4{value}% '
+  lore:
+  - ''
+  - ' &8× &7Pierwsze trafienie w danego gracza zadaje więcej obrażeń'
+  - ' &8× &7Po wylogowaniu (antylogout) tego gracza bonus znowu działa'
+  - ''
+  - '{info}'
+  - ''
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - ''
+
+boostdrop:
+  enable: true
+  slot: 13
+  material: NETHERITE_SHOVEL
+  displayname: '&x&B&2&C&0&E&5&lᴀ&x&B&1&C&7&E&8&lʀ&x&B&1&C&F&E&C&lᴛ&x&B&0&D&6&E&F&lᴇ&x&A&F&D&D&F&3&lꜰ&x&A&E&E&4&F&6&lᴀ&x&A&E&E&C&F&A&lᴋ&x&A&D&F&3&F&D&lᴛ &x&A&F&E&2&F&5&lᴅ&x&B&0&D&A&F&1&lʀ&x&B&0&D&1&E&D&lᴏ&x&B&1&C&9&E&9&lᴘ&x&B&2&C&0&E&5&lᴜ'
+  format:
+    active: ' &8× &a{level} &8- &aWiększy &2drop &az generatorów o &2{value}% '
+    no-active: ' &8× &c{level} &8- &cWiększy &4drop &cz generatorów o &4{value}% '
+  # Dodatkowe linie pod {info}: zakres losowania i bonus klanu (tylko gdy klan ma perk dropu).
+  range-info: ' &8× &7Kazde ulepszenie dolosowuje od &f{min}% &7do &f{max}%'
+  clan-info: ' &8× &7Bonus klanowy: &b+{value}% &7(lacznie: &a{total}%&7)'
+  lore:
+  - '&7'
+  - '{info}'
+  - '&7'
+  - '&f &8▶ &7Aktualny poziom: &a{level}'
+  - '{price-info}'
+  - '&7'
+
+# --- Boost Dropu: losowanie procentu (jak dotychczasowy Perk Dropu) ---
+# Kazde ulepszenie dodaje losowy % (min-max) do zarobku z kopania generatorow.
+# Koszt rosnie z liczba losowan (progi-kosztow); powyzej progu-wysokiego-kosztu % stala cena.
+# Globalny cap poziomow perkow (confinement/health/strength/...). 0 = bez dodatkowego limitu (poziomy z data).
+# /aszaman max 1  -> nikt nie ulepszy powyzej 1.  /aszaman max 0 -> znow bez capu.
+limity:
+  max-poziom: 0
+
+perk-dropu:
+  wartosc-min: 3.0
+  wartosc-max: 10.0
+  # Max % Boostu Dropu. /aszaman maxdrop 50
+  limit: 200.0
+  prog-wysokiego-kosztu: 70.0
+  koszt-powyzej-progu: 50
+  progi-kosztow:
+    - { do: 4, koszt: 10 }
+    - { do: 9, koszt: 20 }
+    - { do: 13, koszt: 30 }
+    - { do: -1, koszt: 30 }
+
+# --- Poziomy: koszt (Fragmenty Galaktyki) i wartosc kazdego poziomu ---
+# value: strength = +% damage, vampirism = % szansy na leczenie,
+#        weakening = % szansy na glowing, block = % szansy na zablokowanie ciosu,
+#        confinement = sekundy uwiezienia, health = dodatkowe SERCA (1 = 2 HP).
+data:
+  health:
+    '1':
+      cost: 50
+      value: 0.5
+    '2':
+      cost: 100
+      value: 1
+    '3':
+      cost: 150
+      value: 1.5
+    '4':
+      cost: 200
+      value: 2
+  strength:
+    '1':
+      cost: 50
+      value: 5
+    '2':
+      cost: 150
+      value: 10
+    '3':
+      cost: 200
+      value: 15
+    '4':
+      cost: 250
+      value: 20
+  vampirism:
+    '1':
+      cost: 50
+      value: 1
+    '2':
+      cost: 100
+      value: 2
+    '3':
+      cost: 150
+      value: 3
+    '4':
+      cost: 200
+      value: 4
+  confinement:
+    '1':
+      cost: 100
+      value: 2
+    '2':
+      cost: 150
+      value: 3
+    '3':
+      cost: 200
+      value: 4
+  weakening:
+    '1':
+      cost: 50
+      value: 1
+    '2':
+      cost: 100
+      value: 2
+    '3':
+      cost: 150
+      value: 3
+    '4':
+      cost: 200
+      value: 4
+  block:
+    '1':
+      cost: 50
+      value: 1
+    '2':
+      cost: 100
+      value: 2
+    '3':
+      cost: 150
+      value: 3
+    '4':
+      cost: 200
+      value: 4
+  backstab:
+    '1':
+      cost: 100
+      value: 10
+    '2':
+      cost: 150
+      value: 20
+    '3':
+      cost: 200
+      value: 30
+    '4':
+      cost: 300
+      value: 40
+
+# --- Nazwy perkow uzywane w lore aur (nazwa + kolor) ---
+perki-nazwy:
+  confinement:
+    name: "Uwięzienie"
+    hex: "#66C3DB"
+  health:
+    name: "Życie"
+    hex: "#F81E7F"
+  strength:
+    name: "Siła"
+    hex: "#C01251"
+  vampirism:
+    name: "Wampiryzm"
+    hex: "#A02020"
+  weakening:
+    name: "Osłabienie"
+    hex: "#F5D742"
+  block:
+    name: "Blokada"
+    hex: "#4FC3F7"
+  backstab:
+    name: "Skrytobójca"
+    hex: "#8B2800"
+
+# --- Wiadomosci ---
+lang:
+  success-upgrade: '&aPomyslnie ulepszono!'
+  no-points: '&cNie posiadasz tylu Fragmentów Galaktyki!'
+  no-currency-set: '&cAdmin nie ustawil jeszcze waluty (Fragmentu Galaktyki)!'
+  max-level: '&cPosiadasz najwyzszy poziom!'
+  boostdrop-max: '&cMasz juz maksymalny Boost Dropu ({limit}%)!'
+  boostdrop-success: '&aTwoj Boost Dropu wzrosl o &e+{value}% &a(teraz: &e{total}%&a)'
+  weakening-attacker: '&e&lOsłabienie &8» &fOznaczyłeś przeciwnika! Otrzymuje o &e{bonus}% &fwiększe obrażenia &e({time}s)'
+  weakening-victim: '&e&lOsłabienie &8» &fGracz &e{player}&f oznaczył cię! Otrzymujesz większe obrażenia.'
+  block-attacker: '&b&lBlokada &8» &fTwój cios został zablokowany przez &b{player}&f!'
+  block-victim: '&b&lBlokada &8» &fZablokowałeś cios gracza &b{player}&f!'
+  confinement-cooldown: '&a&lUwięzienie &8» &fNie możesz używać fajerwerk!'
+  get-confinement: '&a&lUwięzienie &8» &fGracz &a{player}&f zablokował ci fajerwerki! &a({time} sekund)'
+  put-in-confinement: '&a&lUwięzienie &8» &fZablokowano fajerwerki atakowanego gracza! &a({time} sekund)'
+  backstab-attacker: '&c&lSkrytobójca &8» &fPierwsze trafienie na &c{player}&f! Otrzymałeś bonus &c+{bonus}% &fobrażeń!'
+  backstab-victim: '&c&lSkrytobójca &8» &fGracz &c{player}&f zaatakował cię ze &cSkrytobójcy&f!'
+
+music:
+  victim: BLOCK_ANVIL_DESTROY
+  player: BLOCK_ANVIL_PLACE
+
+max-level: '&cMAX POZIOM'
+price-info: '&f &8▶ &7Koszt ulepszenia: &f&lx{price} &x&7&2&E&1&F&6&lꜰ&x&6&C&D&D&F&5&lʀ&x&6&6&D&A&F&4&lᴀ&x&6&1&D&6&F&3&lɢ&x&5&B&D&3&F&2&lᴍ&x&5&5&C&F&F&0&lᴇ&x&4&F&C&C&E&F&lɴ&x&4&A&C&8&E&E&lᴛ &x&3&E&C&1&E&C&lɢ&x&3&E&C&1&E&C&lᴀ&x&3&E&C&1&E&C&lʟ&x&3&E&C&1&E&C&lᴀ&x&3&E&C&1&E&C&lᴋ&x&3&E&C&1&E&C&lᴛ&x&3&E&C&1&E&C&lʏ&x&3&E&C&1&E&C&lᴋ&x&3&E&C&1&E&C&lɪ'
+extra-line-buy: '&eKliknij tutaj, aby ulepszyć!'
+

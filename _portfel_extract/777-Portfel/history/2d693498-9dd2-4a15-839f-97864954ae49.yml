@@ -1,0 +1,25 @@
+transactions:
+- date: 1790626958034
+  amount: 0.0
+  item: VPLN
+  description: Ustawienie salda
+  source: szakirek
+  type: SET
+- date: 1790626956269
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790626953185
+  amount: 0.0
+  item: VPLN
+  description: Ustawienie salda
+  source: szakirek
+  type: SET
+- date: 1790626478117
+  amount: 0.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

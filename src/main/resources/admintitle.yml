@@ -1,0 +1,19 @@
+# /admintitle i /bc — wygląd ogłoszeń (hex &#RRGGBB)
+title:
+  tytul: "&8[&6⚠&8] &#FFD700&lᴏɢʟᴏꜱᴢᴇɴɪᴇ &8[&6⚠&8]"
+  fade-in: 20
+  stay: 100
+  fade-out: 20
+  dzwiek: ENTITY_ENDER_DRAGON_GROWL
+  glosnosc: 1.0
+  ton: 1.0
+
+chat:
+  linie:
+    - ""
+    - "  &#55CCFF&lɢᴢɪʙᴍᴄ.ᴘʟ &8» &#FFD700&lᴏɢʟᴏꜱᴢᴇɴɪᴇ"
+    - "  &f%tresc%"
+    - ""
+
+potwierdzenie-title: "&#55FF88&l✔ &fᴡʏꜱłᴀɴᴏ &7title&f."
+potwierdzenie-chat: "&#55FF88&l✔ &fᴡʏꜱłᴀɴᴏ &7chat&f."

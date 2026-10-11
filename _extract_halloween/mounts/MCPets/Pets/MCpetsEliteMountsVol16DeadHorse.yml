@@ -1,0 +1,30 @@
+Id: EliteMountVol16DeadHorse
+MythicMob: EliteMountVol16DeadHorse
+Permission: mcpets.elitemountvol16DeadHorse
+Mountable: true
+MountType: walking
+DespawnSkill: EliteMountVol16DeadHorseDespawn
+Distance: 0
+SpawnRange: 0
+ComingBackRange: 10
+Icon:
+  Name: §5DeadHorse
+  Material: RABBIT_HIDE
+  CustomModelData: 1000122
+  Description:
+  - §9**Stats**
+  - §fHealth - §250 §fHP
+  - §fAbility - §2Sprint
+  - §fPetting - §2right + crouch
+Signals:
+  Values:
+  - ABILITY
+  Item:
+    Name: §5Whistle
+    Material: FEATHER
+    CustomModelData: 1000001
+    Description:
+    - §9**Stats**
+    - §fHealth - §250 §fHP
+    - §fAbility - §2Sprint
+    - §fPetting - §2right + crouch

@@ -1,0 +1,127 @@
+virtualShopBuy:
+  auction_slots: []
+  rows: 5
+  title: '&8         ᴢᴀᴋᴜᴘ ᴘʀᴢᴇᴅᴍɪᴏᴛᴏᴡ'
+  items:
+    tab_kupno:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &aᴊᴇꜱᴛᴇꜱ ᴛᴜᴛᴀᴊ!'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 39
+      action: TAB_BUY
+      name: '&#7BFD7A&lᴋᴜᴘɴᴏ'
+      customModelData: 0
+      material: LIME_DYE
+    tab_sprzedaz:
+      enabled: true
+      lore:
+      - '&7'
+      - '&8∙ &7ᴋʟɪᴋɴɪᴊ, ᴀʙʏ &fᴏᴛᴡᴏʀᴢʏᴄ!'
+      - '&7'
+      amount: 1
+      slots: []
+      slot: 41
+      action: TAB_SELL
+      name: '&#F87D7D&lꜱᴘʀᴢᴇᴅᴀᴢ'
+      customModelData: 0
+      material: RED_DYE
+    back:
+      enabled: true
+      lore: []
+      amount: 1
+      slots: []
+      slot: 40
+      action: BACK
+      name: '&#FF9393ᴘᴏᴡʀᴏᴛ!'
+      customModelData: 0
+      material: BARRIER
+    border1:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 0
+      - 8
+      - 36
+      - 44
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: PURPLE_STAINED_GLASS_PANE
+    border2:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 1
+      - 7
+      - 9
+      - 17
+      - 27
+      - 35
+      - 37
+      - 43
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: BLUE_STAINED_GLASS_PANE
+    border3:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 2
+      - 6
+      - 38
+      - 42
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: PURPLE_STAINED_GLASS_PANE
+    border4:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 3
+      - 5
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_BANNER
+    border5:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 4
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: LIME_CANDLE
+    border6:
+      enabled: false
+      lore: []
+      amount: 1
+      slots:
+      - 18
+      - 26
+      slot: null
+      action: NONE
+      name: '&7'
+      customModelData: 0
+      material: IRON_BARS
+  shopItemLoreAppend:
+  - '&7'
+  - ' &8» &7ᴄᴇɴᴀ ᴢᴀᴋᴜᴘᴜ: &f{cena}$'
+  - '&7'
+  - ' &8» &aᴋʟɪᴋɴɪᴊ &2ʟᴇᴡʏᴍ&a, ᴀʙʏ ᴢᴀᴋᴜᴘɪᴄ!'

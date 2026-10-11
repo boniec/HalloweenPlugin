@@ -1,0 +1,11 @@
+info:
+  namespace: headless
+entities:
+  headmob:
+    display_name: "Head"
+    type: ZOMBIE
+    model_folder: entity/headmob
+    speed:
+      movement: 0.25
+      flying: 0.25
+    mount_on_interact: false

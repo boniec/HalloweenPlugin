@@ -1,0 +1,13 @@
+transactions:
+- date: 1789915390552
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: SzalonyCzosnek
+  type: PURCHASE
+- date: 1789834812222
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

@@ -1,0 +1,14 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/rabbit_hide"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1000121}, "model": "custom/elitecreatures/ecmountshallow/broomstick"},
+		{"predicate": {"custom_model_data":1000122}, "model": "custom/elitecreatures/ecmountshallow/frightmare"},
+		{"predicate": {"custom_model_data":1000123}, "model": "custom/elitecreatures/ecmountshallow/ghostship"},
+		{"predicate": {"custom_model_data":1000124}, "model": "custom/elitecreatures/ecmountshallow/skeleptor"},
+		{"predicate": {"custom_model_data":1000125}, "model": "custom/elitecreatures/ecmountshallow/watcher"}
+	]
+}

@@ -1,0 +1,278 @@
+ranga_ceo:
+  texture: minecraft:rangi/ranga_ceo.png
+  ascent: 8
+  height: 8
+  char: 뀄
+  font: minecraft:default
+ranga_admin:
+  texture: minecraft:rangi/ranga_admin.png
+  ascent: 8
+  height: 8
+  char: 買
+  font: minecraft:default
+ranga_headadmin:
+  texture: minecraft:rangi/ranga_hadm.png
+  ascent: 8
+  height: 8
+  char: 無
+  font: minecraft:default
+aura:
+  texture: minecraft:ikony/aura.png
+  ascent: 16
+  height: 24
+  char: ם
+  font: minecraft:default
+ranga_mod:
+  texture: minecraft:rangi/ranga_mod.png
+  ascent: 8
+  height: 8
+  char: 風
+  font: minecraft:default
+ranga_pom:
+  texture: minecraft:rangi/ranga_pomocnik.png
+  ascent: 8
+  height: 8
+  char: 時
+  font: minecraft:default
+ranga_helper:
+  texture: minecraft:rangi/ranga_helper.png
+  ascent: 8
+  height: 8
+  char: 光
+  font: minecraft:default
+ranga_mvip:
+  texture: minecraft:rangi/ranga_mvip.png
+  ascent: 8
+  height: 8
+  char: 星
+  font: minecraft:default
+ranga_thelper:
+  texture: minecraft:rangi/ranga_thelper.png
+  ascent: 8
+  height: 8
+  char: 雪
+  font: minecraft:default
+ranga_srmod:
+  texture: minecraft:rangi/ranga_srmod.png
+  ascent: 8
+  height: 8
+  char: 雷
+  font: minecraft:default
+
+ranga_jrmod:
+  texture: minecraft:rangi/ranga_jrmod.png
+  ascent: 8
+  height: 8
+  char: 月
+  font: minecraft:default
+
+ranga_jradm:
+  texture: minecraft:rangi/ranga_jradm.png
+  ascent: 8
+  height: 8
+  char: 火
+  font: minecraft:default
+ranga_gzib:
+  texture: minecraft:rangi/ranga_szak.png
+  ascent: 8
+  height: 8
+  char: 實
+  font: minecraft:default
+ranga_media:
+  texture: minecraft:rangi/ranga_media.png
+  ascent: 8
+  height: 8
+  char: 妒
+  font: minecraft:default
+ranga_svip:
+  texture: minecraft:rangi/ranga_svip.png
+  ascent: 8
+  height: 8
+  char: 賣
+  font: minecraft:default
+ranga_vip:
+  texture: minecraft:rangi/ranga_vip.png
+  ascent: 8
+  height: 8
+  char: 龜
+  font: minecraft:default
+ikony_klan:
+  texture: minecraft:ikony/ikony_klan.png
+  ascent: 8
+  height: 8
+  char: 轉
+  font: minecraft:default
+ikony_kasa:
+  texture: minecraft:ikony/ikony_kasa.png
+  ascent: 8
+  height: 8
+  char: 價
+  font: minecraft:default
+ikony_zegar:
+  texture: minecraft:ikony/ikony_zegar.png
+  ascent: 8
+  height: 8
+  char: 劍
+  font: minecraft:default
+ikony_ranking:
+  texture: minecraft:ikony/ikony_ranking.png
+  ascent: 8
+  height: 8
+  char: 澀
+  font: minecraft:default
+ikony_smierci:
+  texture: minecraft:ikony/ikony_smierci.png
+  ascent: 8
+  height: 8
+  char: 歲
+  font: minecraft:default
+ikony_gracz:
+  texture: minecraft:ikony/ikony_gracz.png
+  ascent: 8
+  height: 8
+  char: 圍
+  font: minecraft:default
+gui_crate:
+  texture: minecraft:gui/gui_crate.png
+  ascent: 24
+  height: 256
+  char: 觀
+  font: minecraft:default
+gui_listy:
+  texture: minecraft:gui/gui_listy.png
+  ascent: 39
+  height: 258
+  char: 學
+  font: minecraft:default
+gziblogo:
+  texture: minecraft:ikony/gzib_logo.png
+  ascent: 32
+  height: 28
+  char: 兩
+  font: minecraft:default
+gui_lb:
+  texture: minecraft:gui/gui_lb.png
+  ascent: 30
+  height: 256
+  char: 萬
+  font: minecraft:default
+shift:
+  texture: minecraft:item/shift.png
+  ascent: 11
+  height: 16
+  char: 扎
+  font: minecraft:default
+left:
+  texture: minecraft:item/left.png
+  ascent: 8
+  height: 8
+  char: 嗨
+  font: minecraft:default
+patron:
+  texture: minecraft:item/patron.png
+  ascent: 8
+  height: 8
+  char: 媽
+  font: minecraft:default
+miecz:
+  texture: minecraft:item/miecz.png
+  ascent: 8
+  height: 8
+  char: 婊
+  font: minecraft:default
+czaszka:
+  texture: minecraft:item/czaszka.png
+  ascent: 8
+  height: 8
+  char: 子
+  font: minecraft:default
+ranga_kostka:
+  texture: minecraft:rangi/rangi_kostka.png
+  ascent: 8
+  height: 8
+  char: 希
+  font: minecraft:default
+ranga_gracz:
+  texture: minecraft:rangi/ranga_gracz.png
+  ascent: 8
+  height: 8
+  char: 廣
+  font: minecraft:default
+ranga_tsupport:
+  texture: minecraft:rangi/ranga_tsupport.png
+  ascent: 8
+  height: 8
+  char: 氣
+  font: minecraft:default
+gui_portfelik:
+  texture: minecraft:gui/gui_portfel.png
+  ascent: 23
+  height: 214
+  char: 当
+  font: minecraft:default
+gui_ulepszanie:
+  texture: minecraft:gui/gui_ulepsz.png
+  ascent: 20
+  height: 229
+  char: 都
+  font: minecraft:default
+gui_event:
+  texture: minecraft:gui/gui_event.png
+  ascent: 22
+  height: 220
+  char: 为
+  font: minecraft:default
+gui_patroni:
+  texture: minecraft:gui/gui_patroni.png
+  ascent: 20
+  height: 229
+  char: 雙
+  font: minecraft:default
+gui_sklep:
+  texture: minecraft:gui/gui_sklep.png
+  ascent: 20
+  height: 193
+  char: 點
+  font: minecraft:default
+gui_szaman:
+  texture: minecraft:gui/gui_szaman.png
+  ascent: 20
+  height: 211
+  char: 畫
+  font: minecraft:default
+gui_rynek:
+  texture: minecraft:gui/gui_rynek.png
+  ascent: 20
+  height: 229
+  char: 发
+  font: minecraft:default
+gui_twojeperki:
+  texture: minecraft:gui/twojeperki.png
+  ascent: 23
+  height: 232
+  char: 生
+  font: minecraft:default
+ranga_og:
+  texture: minecraft:rangi/ranga_og.png
+  ascent: 8
+  height: 8
+  char: 腦
+  font: minecraft:default
+gui_skarbiec:
+  texture: minecraft:gui/skarbiec.png
+  ascent: 20
+  height: 211
+  char: 樂
+  font: minecraft:default
+ranga_minimedia:
+  texture: minecraft:rangi/ranga_mmedia.png
+  ascent: 8
+  height: 8
+  char: 猫
+  font: minecraft:default
+ranga_tworca:
+  texture: minecraft:rangi/ranga_tworca.png
+  ascent: 8
+  height: 8
+  char: 上
+  font: minecraft:default

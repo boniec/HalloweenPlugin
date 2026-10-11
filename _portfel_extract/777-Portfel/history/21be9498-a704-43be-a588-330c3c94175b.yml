@@ -1,0 +1,7 @@
+transactions:
+- date: 1790093173260
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

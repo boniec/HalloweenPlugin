@@ -1,0 +1,7 @@
+# Konfiguracja meteorytow. Plik jest tworzony automatycznie - edytuj przez /adminmeteoryt.
+# respawnIntervalHours jest IGNOROWANE. Godziny: eventy.yml -> eventy.meteoryty.godziny
+respawnIntervalHours: 6
+nextSpawnTime: 0
+locations: []
+drops: []
+activeMeteorites: []

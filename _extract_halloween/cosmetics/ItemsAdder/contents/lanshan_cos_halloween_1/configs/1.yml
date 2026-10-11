@@ -1,0 +1,140 @@
+categories:
+  Halloween Cosmetics 1:
+    enabled: true
+    skip_if_already: false
+    icon: "lanshan_cos_halloween_1:spooky_pumpkin_balloon"
+    name: Halloween Cosmetics 1
+    items:
+      - 'lanshan_cos_halloween_1:candy_pumpkin_beret'
+      - 'lanshan_cos_halloween_1:candy_pumpkin_backpack'
+      - 'lanshan_cos_halloween_1:candy_pumpkin_basket'
+      - 'lanshan_cos_halloween_1:candy_pumpkin_balloon'
+      - 'lanshan_cos_halloween_1:spooky_pumpkin_hat'
+      - 'lanshan_cos_halloween_1:spooky_pumpkin_wings'
+      - 'lanshan_cos_halloween_1:spooky_pumpkin_staff'
+      - 'lanshan_cos_halloween_1:spooky_pumpkin_balloon'
+      - 'lanshan_cos_halloween_1:halloween_witch_hat'
+      - 'lanshan_cos_halloween_1:halloween_witch_cauldron'
+      - 'lanshan_cos_halloween_1:halloween_witch_broom'
+      - 'lanshan_cos_halloween_1:halloween_ghost_balloon'
+
+
+info:
+  namespace: lanshan_cos_halloween_1
+items:
+  candy_pumpkin_beret:
+    display_name: Candy Pumpkin Beret
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241801
+      generate: false
+      model_path: item/candy_pumpkin_beret
+
+  candy_pumpkin_backpack:
+    display_name: Candy Pumpkin Backpack
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241802
+      generate: false
+      model_path: item/candy_pumpkin_backpack
+  candy_pumpkin_backpack_thirdperson:
+    display_name: Candy Pumpkin Backpack Thirdperson
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241803
+      generate: false
+      model_path: item/candy_pumpkin_backpack_thirdperson
+
+  candy_pumpkin_basket:
+    display_name: Candy Pumpkin Basket
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241804
+      generate: false
+      model_path: item/candy_pumpkin_basket
+
+  candy_pumpkin_balloon:
+    display_name: Candy Pumpkin Balloon
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241805
+      generate: false
+      model_path: item/candy_pumpkin_balloon
+
+  spooky_pumpkin_hat:
+    display_name: Spooky Pumpkin Hat
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241806
+      generate: false
+      model_path: item/spooky_pumpkin_hat
+
+  spooky_pumpkin_wings:
+    display_name: Spooky Pumpkin Wings
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241807
+      generate: false
+      model_path: item/spooky_pumpkin_wings
+  spooky_pumpkin_wings_thirdperson:
+    display_name: Spooky Pumpkin Wings Thirdperson
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241808
+      generate: false
+      model_path: item/spooky_pumpkin_wings_thirdperson
+
+  spooky_pumpkin_staff:
+    display_name: Spooky Pumpkin Staff
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241809
+      generate: false
+      model_path: item/spooky_pumpkin_staff
+
+  spooky_pumpkin_balloon:
+    display_name: Spooky Pumpkin Balloon
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241810
+      generate: false
+      model_path: item/spooky_pumpkin_balloon
+
+  halloween_witch_hat:
+    display_name: Halloween Witch Hat
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241811
+      generate: false
+      model_path: item/halloween_witch_hat
+
+  halloween_witch_cauldron:
+    display_name: Halloween Witch Cauldron
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241812
+      generate: false
+      model_path: item/halloween_witch_cauldron
+  halloween_witch_cauldron_thirdperson:
+    display_name: Halloween Witch Cauldron Thirdperson
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241813
+      generate: false
+      model_path: item/halloween_witch_cauldron_thirdperson
+
+  halloween_witch_broom:
+    display_name: Halloween Witch Broom
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241814
+      generate: false
+      model_path: item/halloween_witch_broom
+
+  halloween_ghost_balloon:
+    display_name: Halloween Ghost Balloon
+    resource:
+      material: LEATHER_HORSE_ARMOR
+      model_id: 241815
+      generate: false
+      model_path: item/halloween_ghost_balloon

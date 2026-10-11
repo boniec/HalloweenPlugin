@@ -1,0 +1,13 @@
+transactions:
+- date: 1789944994186
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: Niel0tkiDlaCw3la
+  type: PURCHASE
+- date: 1789944919932
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD

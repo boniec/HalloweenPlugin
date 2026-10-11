@@ -1,0 +1,249 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "custom/elitecreatures/ecmounts/mountwhistle",
+		"particle": "custom/elitecreatures/ecmounts/mountwhistle"
+	},
+	"elements": [
+		{
+			"from": [7.5, 0, 7.5],
+			"to": [8.5, 9, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4.5, 8]},
+			"faces": {
+				"north": {"uv": [3, 5, 3.5, 9.5], "texture": "#0"},
+				"east": {"uv": [3.5, 5, 4, 9.5], "texture": "#0"},
+				"south": {"uv": [5.5, 2.5, 6, 7], "texture": "#0"},
+				"west": {"uv": [4, 5.5, 4.5, 10], "texture": "#0"},
+				"up": {"uv": [9.5, 10.5, 9, 10], "texture": "#0"},
+				"down": {"uv": [10.5, 9, 10, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0.25, 3.5, 1.5],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0.25, 3.5, 1.5],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 15],
+			"translation": [1.13, 6.7, 1.13],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -90, 15],
+			"translation": [1.13, 6.7, 1.13],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"rotation": [90, 0, 90],
+			"translation": [-5.25, -1.5, 0],
+			"scale": [1.5, 1.5, 1.49]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [3.75, 3.75, -0.25],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"translation": [0, 26.75, 0]
+		},
+		"fixed": {
+			"rotation": [0, 0, 45],
+			"translation": [-5, 5.25, -0.25],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		0,
+		{
+			"name": "group",
+			"origin": [10.5, 2, 7],
+			"color": 0,
+			"boneType": "",
+			"children": [
+				{
+					"name": "group",
+					"origin": [5.5, 1, 7],
+					"color": 0,
+					"boneType": "",
+					"children": [
+						{
+							"name": "group",
+							"origin": [5.5, -2, 7],
+							"color": 0,
+							"boneType": "",
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "group",
+					"origin": [10, 4, 7],
+					"color": 0,
+					"boneType": "",
+					"children": [
+						{
+							"name": "group",
+							"origin": [11, 17, 7],
+							"color": 0,
+							"boneType": "",
+							"children": [
+								{
+									"name": "group",
+									"origin": [11, 17, 7],
+									"color": 0,
+									"boneType": "",
+									"children": [
+										{
+											"name": "group",
+											"origin": [11, 17, 7],
+											"color": 0,
+											"boneType": "",
+											"children": [
+												{
+													"name": "group",
+													"origin": [11, 17, 7],
+													"color": 0,
+													"boneType": "",
+													"children": [
+														{
+															"name": "group",
+															"origin": [11, 17, 7],
+															"color": 0,
+															"boneType": "",
+															"children": [
+																{
+																	"name": "group",
+																	"origin": [11, 17, 7],
+																	"color": 0,
+																	"boneType": "",
+																	"children": []
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "group",
+			"origin": [10.5, 2, 7],
+			"color": 0,
+			"boneType": "",
+			"children": [
+				{
+					"name": "group",
+					"origin": [5.5, 1, 7],
+					"color": 0,
+					"boneType": "",
+					"children": [
+						{
+							"name": "group",
+							"origin": [5.5, -2, 7],
+							"color": 0,
+							"boneType": "",
+							"children": []
+						}
+					]
+				},
+				{
+					"name": "group",
+					"origin": [10, 4, 7],
+					"color": 0,
+					"boneType": "",
+					"children": [
+						{
+							"name": "group",
+							"origin": [11, 17, 7],
+							"color": 0,
+							"boneType": "",
+							"children": [
+								{
+									"name": "group",
+									"origin": [11, 17, 7],
+									"color": 0,
+									"boneType": "",
+									"children": [
+										{
+											"name": "group",
+											"origin": [11, 17, 7],
+											"color": 0,
+											"boneType": "",
+											"children": [
+												{
+													"name": "group",
+													"origin": [11, 17, 7],
+													"color": 0,
+													"boneType": "",
+													"children": [
+														{
+															"name": "group",
+															"origin": [11, 17, 7],
+															"color": 0,
+															"boneType": "",
+															"children": [
+																{
+																	"name": "group",
+																	"origin": [11, 17, 7],
+																	"color": 0,
+																	"boneType": "",
+																	"children": []
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "group",
+			"origin": [16, 0, 0],
+			"color": 0,
+			"boneType": "",
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [16, 0, 0],
+			"color": 0,
+			"boneType": "",
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [16, 0, 0],
+			"color": 0,
+			"boneType": "",
+			"children": []
+		},
+		{
+			"name": "group",
+			"origin": [16, 0, 0],
+			"color": 0,
+			"boneType": "",
+			"children": []
+		}
+	]
+}

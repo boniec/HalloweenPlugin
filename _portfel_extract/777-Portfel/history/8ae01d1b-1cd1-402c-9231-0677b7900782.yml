@@ -1,0 +1,13 @@
+transactions:
+- date: 1790974999164
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: 42KREWETA
+  type: PURCHASE
+- date: 1790968332453
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

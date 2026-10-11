@@ -1,0 +1,491 @@
+transactions:
+- date: 1791032478893
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1791030267511
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790975326072
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790974198701
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790969384779
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962687802
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962665351
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962664948
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962664657
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962664169
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790962645963
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790960169514
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790959562464
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790959557615
+  amount: 75.0
+  item: '&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790959551814
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790959545815
+  amount: 75.0
+  item: '&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790952769072
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790952278666
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790891008939
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790890535949
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790886765015
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790886305690
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790885032154
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790884921579
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790884843089
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790884559137
+  amount: 67.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790884443933
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790882868673
+  amount: 1.0301203213E10
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790882558539
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790801929720
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790795392362
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790699692992
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790623130312
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623127112
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623123662
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623121462
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623119162
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623116062
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790623113012
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790532392262
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790532385912
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790532383212
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790532380362
+  amount: 75.0
+  item: '&6ʀᴀɴɢᴀ &f腦 &f+ &fᴋᴏsᴛɪᴜᴍ &#7C41EF&lsᴛɪᴠᴋᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790532374762
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790514157294
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1790471758577
+  amount: 1.0E-33
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790471752676
+  amount: 0.1
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790471734724
+  amount: 1.0E9
+  item: VPLN
+  description: Dodanie środków
+  source: xKapec
+  type: ADD
+- date: 1790465694169
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790465686453
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462586041
+  amount: 1.0E10
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462581995
+  amount: 101.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462574356
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462571402
+  amount: 90.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462567804
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790462552759
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790275909131
+  amount: 0.001
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790275887524
+  amount: 1.0E7
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789909488226
+  amount: 20.0
+  item: '&#FF7200&lꜱ&#FF7B0D&lᴋ&#FF841B&lʀ&#FF8C28&lᴢ&#FF9535&lʏ&#FF9E42&lɴ&#FFA750&lɪ&#FFAF5D&lᴀ
+    &#FFBE76&lꜱ&#FFC382&lᴢ&#FFC98E&ló&#FFCF9A&lꜱ&#FFD5A6&lᴛ&#FFDAB2&lᴋ&#FFE0BE&lɪ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789909483826
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789862939226
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789853762069
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789853753969
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789853739370
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789847801320
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789847794230
+  amount: 1000.0
+  item: VPLN
+  description: Dodanie środków
+  source: szakirek
+  type: ADD
+- date: 1789833400705
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789832992705
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789832964205
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789822882022
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789822655173
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789822591009
+  amount: 1000.0
+  item: VPLN
+  description: Dodanie środków
+  source: szakirek
+  type: ADD
+- date: 1789244156068
+  amount: 50.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789244152868
+  amount: 50.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789244136719
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789242202018
+  amount: 50.0
+  item: '&bVoucher na Karnet bojowy'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789242197559
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789242179418
+  amount: 100.0
+  item: '&6&lᴘᴀᴋɪᴇᴛ ʙᴏɢᴀᴄᴢᴀ'
+  description: Zakup produktu
+  source: szakirek
+  type: PURCHASE
+- date: 1789242154916
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

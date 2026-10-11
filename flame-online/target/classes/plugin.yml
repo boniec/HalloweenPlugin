@@ -1,0 +1,24 @@
+name: FlameOnline
+version: "1.0"
+main: boniec.online.FlameOnlinePlugin
+api-version: "1.21"
+author: Boniec
+softdepend: [PlaceholderAPI]
+commands:
+  flameonline:
+    description: Przeladowanie FlameOnline.
+    usage: /flameonline reload
+    permission: flameonline.admin
+  chat:
+    description: Wlaczanie i wylaczanie czatu.
+    usage: /chat on | /chat off
+    aliases: [czat]
+permissions:
+  flameonline.admin:
+    default: op
+  flameonline.chat:
+    description: /chat on | /chat off
+    default: op
+  flameonline.chat.bypass:
+    description: Pisanie na czacie gdy jest wylaczony.
+    default: op

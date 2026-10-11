@@ -1,0 +1,37 @@
+transactions:
+- date: 1790104803185
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: wursttmain
+  type: PURCHASE
+- date: 1790040076202
+  amount: 2.0
+  item: VPLN
+  description: Dodanie środków
+  source: wursttmain
+  type: ADD
+- date: 1789948203936
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: wursttmain
+  type: PURCHASE
+- date: 1789948177847
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789931420646
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: wursttmain
+  type: PURCHASE
+- date: 1789931377651
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD

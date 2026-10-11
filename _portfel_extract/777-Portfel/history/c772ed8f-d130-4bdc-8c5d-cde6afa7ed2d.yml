@@ -1,0 +1,49 @@
+transactions:
+- date: 1790006418041
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790006410082
+  amount: 37.0
+  item: '&b150x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790006389042
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790001413786
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790001407636
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790001404240
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790001368137
+  amount: 75.0
+  item: '&b300x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 0dajeszR3nt3
+  type: PURCHASE
+- date: 1790001353615
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

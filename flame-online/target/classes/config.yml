@@ -1,0 +1,39 @@
+# Mnoznik "slotow" (5 graczy -> 15) TYLKO dla serwerow z mnoznik: true.
+mnoznik: 3
+
+# Ktory to serwer. Na GLOWNYM TRYBIE / SkyPvP MUSI byc skypvp.
+# Wtedy %online_all% i %online_this% = gracze na tej instancji x mnoznik (2 osoby = 6).
+this-server: skypvp
+
+# local: true = liczy graczy na TEJ instancji. host+port = ping (np. lobby czyta SkyPvP).
+serwery:
+  skypvp:
+    local: true
+    mnoznik: true
+  lobby:
+    local: false
+    mnoznik: false
+
+# Co ile sekund odswiezac ping zdalnych serwerow.
+ping-sekundy: 3
+
+motd:
+  enabled: false
+  # true = w liscie serwerow (15/xxx) pokazuje liczbe * mnoznik
+  fake-count: true
+  fake-max: true
+  # Pusta linia = nie nadpisuj MOTD, tylko liczby graczy (jesli fake-count).
+  # Placeholdery: {online_skypvp} {online_all} {online_skypvp_real} {online_all_real} {mnoznik}
+  linia1: "&eSkyPvP &8| &f{online_skypvp} &7graczy"
+  linia2: "&8x{mnoznik} sloty"
+
+# /chat on | /chat off  (permisja flameonline.chat albo flameonline.admin)
+# flameonline.chat.bypass — pisze mimo wylaczonego czatu
+chat:
+  uzycie: "&7Uzycie: &f/chat on &7| &f/chat off"
+  brak-permisji: "&cBrak permisji."
+  wylaczony-info: "&cCzat jest obecnie wylaczony."
+  wylaczono: "&cCzat zostal wylaczony przez &f%gracz%&c."
+  wlaczono: "&aCzat zostal wlaczony przez &f%gracz%&a."
+  juz-wylaczony: "&eCzat jest juz wylaczony."
+  juz-wlaczony: "&eCzat jest juz wlaczony."

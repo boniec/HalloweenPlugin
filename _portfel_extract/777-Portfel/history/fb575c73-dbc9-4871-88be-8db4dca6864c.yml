@@ -1,0 +1,135 @@
+transactions:
+- date: 1790524274694
+  amount: 20.0
+  item: '&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ
+    &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790524270976
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790457026475
+  amount: 1.0E-5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790361550342
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790361540348
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790361521038
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790195299570
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790195294877
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790181950120
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790178916913
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790178895833
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790178396478
+  amount: 24.0
+  item: VPLN
+  description: Ustawienie salda
+  source: NieJaraMnieT02
+  type: SET
+- date: 1790178334768
+  amount: 24.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD
+- date: 1790162372271
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790162365580
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790159854663
+  amount: 200.0
+  item: '&#0079FF&lɢ&#087FFF&lɪ&#0F85FF&lɢ&#178BFF&lᴀ&#1E92FF&lɴ&#2698FF&lᴛ&#2D9EFF&lʏ&#35A4FF&lᴄ&#3DAAFF&lᴢ&#44B0FF&lɴ&#4CB6FF&lʏ
+    &#5BC3FF&lᴘ&#62C9FF&lᴀ&#6ACFFF&lᴋ&#75D3FF&lɪ&#81D6FF&lᴇ&#8CDAFF&lᴛ &#A3E1FF&lꜱ&#AFE5FF&lᴢ&#BAE9FF&lᴄ&#C6EDFF&lᴢ&#D1F0FF&lę&#DDF4FF&lś&#E8F8FF&lᴄ&#F4FBFF&lɪ&#FFFFFF&lᴀ'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790159851152
+  amount: 200.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790159831242
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790159822447
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790159149263
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: NieJaraMnieT02
+  type: PURCHASE
+- date: 1790159143074
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD
+- date: 1790159120655
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD

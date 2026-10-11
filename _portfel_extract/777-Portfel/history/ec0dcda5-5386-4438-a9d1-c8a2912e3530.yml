@@ -1,0 +1,13 @@
+transactions:
+- date: 1790702802012
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: razedas
+  type: PURCHASE
+- date: 1790532008263
+  amount: 40.0
+  item: VPLN
+  description: Dodanie środków
+  source: NieJaraMnieT02
+  type: ADD

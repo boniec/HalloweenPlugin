@@ -1,0 +1,25 @@
+transactions:
+- date: 1790964312164
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Young_Slodziak
+  type: PURCHASE
+- date: 1790779489212
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: Young_Slodziak
+  type: PURCHASE
+- date: 1790352583344
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: Young_Slodziak
+  type: PURCHASE
+- date: 1790250102319
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

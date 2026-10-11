@@ -1,0 +1,65 @@
+
+info:
+  namespace: nazgul_weaponry_vol_5
+
+items:
+  cursed_sword:
+    display_name: Cursed Sword
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: cursed_sword
+  dark_sword:
+    display_name: Dark Sword
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: dark_sword
+  demonic_blade:
+    display_name: Demonic Blade
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: demonic_blade
+  holy_spear:
+    display_name: Holy Spear
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: holy_spear
+  kaz_sc:
+    display_name: Kaz Sc
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: kaz_sc
+  obsidian_bow:
+    display_name: Obsidian Bow
+    resource:
+      material: BOW
+      generate: false
+      model_path: obsidian_bow
+  magnetic_blade:
+    display_name: Magnetic Blade
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: magnetic_blade
+  mana_axe:
+    display_name: Mana Axe
+    resource:
+      material: NETHERITE_AXE
+      generate: false
+      model_path: mana_axe
+  pox_spreader:
+    display_name: Pox Spreader
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: pox_spreader
+  red_hammer:
+    display_name: Red Hammer
+    resource:
+      material: NETHERITE_SWORD
+      generate: false
+      model_path: red_hammer

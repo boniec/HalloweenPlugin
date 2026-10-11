@@ -1,0 +1,191 @@
+transactions:
+- date: 1790939477788
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790939474488
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790884569689
+  amount: 67.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790754467712
+  amount: 150.0
+  item: '&#FF9641&lᴅ&#FF9F49&lᴜ&#FFA851&lż&#FFB159&lʏ &#FFC36A&lᴘ&#FFCC72&lᴀ&#FFD57A&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790754460002
+  amount: 150.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1790190402020
+  amount: 8.0
+  item: '&b32x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790117711463
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790117708163
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790117705313
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1790117701209
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1790117669763
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789944787036
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789935055986
+  amount: 20.0
+  item: '&#FF7200&lꜱ&#FF7B0D&lᴋ&#FF841B&lʀ&#FF8C28&lᴢ&#FF9535&lʏ&#FF9E42&lɴ&#FFA750&lɪ&#FFAF5D&lᴀ
+    &#FFBE76&lꜱ&#FFC382&lᴢ&#FFC98E&ló&#FFCF9A&lꜱ&#FFD5A6&lᴛ&#FFDAB2&lᴋ&#FFE0BE&lɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789935046436
+  amount: 20.0
+  item: '&#FF7200&lꜱ&#FF7B0D&lᴋ&#FF841B&lʀ&#FF8C28&lᴢ&#FF9535&lʏ&#FF9E42&lɴ&#FFA750&lɪ&#FFAF5D&lᴀ
+    &#FFBE76&lꜱ&#FFC382&lᴢ&#FFC98E&ló&#FFCF9A&lꜱ&#FFD5A6&lᴛ&#FFDAB2&lᴋ&#FFE0BE&lɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789935024136
+  amount: 20.0
+  item: '&#FF7200&lꜱ&#FF7B0D&lᴋ&#FF841B&lʀ&#FF8C28&lᴢ&#FF9535&lʏ&#FF9E42&lɴ&#FFA750&lɪ&#FFAF5D&lᴀ
+    &#FFBE76&lꜱ&#FFC382&lᴢ&#FFC98E&ló&#FFCF9A&lꜱ&#FFD5A6&lᴛ&#FFDAB2&lᴋ&#FFE0BE&lɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789935018612
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789927134096
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789927128021
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789927127600
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789927124289
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789918087751
+  amount: 40.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789918076798
+  amount: 20.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789856210076
+  amount: 40.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789846034347
+  amount: 66.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789845904368
+  amount: 1.0
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1789836616005
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789836538705
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789836535405
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789836485255
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789836253255
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: sourburger_
+  type: PURCHASE
+- date: 1789835810604
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: kebabdealer68
+  type: ADD

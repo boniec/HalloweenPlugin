@@ -1,0 +1,25 @@
+transactions:
+- date: 1790516216644
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: addek20222
+  type: PURCHASE
+- date: 1790502837317
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: addek20222
+  type: PURCHASE
+- date: 1790502386767
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: addek20222
+  type: PURCHASE
+- date: 1790502313377
+  amount: 45.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

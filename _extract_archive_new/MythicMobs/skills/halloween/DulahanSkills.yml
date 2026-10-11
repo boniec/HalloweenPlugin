@@ -1,0 +1,603 @@
+###################################################################################################################
+################################################Dulahan The Headless Horseman######################################
+###################################################################################################################
+DulahanDrop:
+  Cooldown: 30 
+  Skills:
+  - dropitem{i=DulahanHead} @SelfLocation 0.5
+  - delay 10
+  - dropitem{i=DulahanAxe} @SelfLocation 0.5
+  - delay 40
+  - remove @self
+######################################  
+#Dulahan Chest  
+######################################
+DulahanChestIdle:
+  Conditions:
+  - hasaura idle false
+  - hasaura Open false
+  Skills:
+  - Aura{auraName=idle;interval=1;duration=20} @self
+  - state{mid=dulahan_chest;s=waiting;li=0;lo=0;r=false} @self
+  - effect:particlesphere{particle=end_rod;amount=1;radius=1.5;vd=64;y=0.3;repeat=20;repeatInterval=1} @self
+DulahanChestOpen:
+  Cooldown: 200
+  TriggerConditions:
+  - hasitem{i=DulahanKey;amount=>0} true
+  Skills:  
+  - takeitem{i=DulahanKey;a=1} @trigger
+  - Aura{auraName=Open;interval=1;duration=200} @self
+  - state{mid=dulahan_chest;s=openchest;li=0;lo=0;r=false} @self
+  - effect:particlering{particle=crit;radius=0.7;points=32;amount=1;hS=0;vS=0;repeat=100;repeatInterval=2} @Forward{f=0;y=0.2}
+  - delay 20
+  - state{mid=dulahan_chest;s=openwaiting;li=0;lo=0;r=false;repeat=20;repeatInterval=10} @self
+  - effect:particlesphere{particle=crit;amount=1;radius=0.9;vd=64;y=1.2;repeat=20;repeatInterval=1} @self 
+  - dropitem{i=DulahanHead} @Forward{f=-1;y=5;sideOffset=-0.5} 0.7
+  - delay 20
+  - effect:particlesphere{particle=crit;amount=1;radius=0.9;vd=64;y=1.2;repeat=20;repeatInterval=1} @self 
+  - dropitem{i=DulahanAxe} @Forward{f=-1;y=5;sideOffset=-0.5} 0.7
+  - delay 100
+  - remove @self
+######################################
+DulahanThreat:
+  Cooldown: 0.5
+  Conditions:
+  - hasaura Charge false
+  Skills: 
+  - threat{amount=1} @LivingEntitiesInRadius{r=50;ignore=samefaction;sort=NEAREST;limit=2} 
+  - delay 1
+  - threat{amount=20} @LivingEntitiesInRadius{r=50;ignore=samefaction;sort=RANDOM;limit=2} 0.5
+######################################
+#Dulahan the Headless Rider:
+######################################
+DulahanHeadMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills: 
+  - skill{s=DulahanHeadMove} @Self
+  - delay 1
+  - skill{s=DulahanHeadIdle} @Self
+######################################;sort=NEAREST;limit=2
+DulahanHeadIdle:
+  Conditions:
+  - moving{} false
+  - hasaura idle false
+  - hasaura Moving false
+  Skills:
+  - Aura{auraName=idle;interval=1;duration=20} @self
+  - state{mid=headmob;s=standing;li=0;lo=0;r=false} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=20;repeatInterval=1} @self
+  - sudoskill{s=DulahanHeadFearSudo;cat=true} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+  - effect:particlering{particle=flame;radius=5;points=32;amount=1;hS=1;vS=0;repeat=20;repeatInterval=1} @Forward{f=0;y=0.2}
+DulahanHeadFearSudo:
+  Cooldown: 1
+  Conditions:
+  - hasaura Head false
+  Skills:
+  - randomskill{skills=DulahanHeadFearTickZ,DulahanHeadFearTickZ-,DulahanHeadFearTickX-,DulahanHeadFearTickX;repeat=20;repeatInterval=1} @self
+DulahanHeadFearTickZ:
+  Cooldown: 1
+  Skills:
+  - velocity{m=set;x=0;y=-0.2;z=0.3;repeat=10;repeatInterval=1} @self
+  - effect:itemspray{item=DulahanFear;amount=1;velocity=0.1;d=1;repeat=10;repeatInterval=1} @Forward{f=0;y=2.5}
+DulahanHeadFearTickZ-:
+  Cooldown: 1
+  Skills:
+  - velocity{m=set;x=0;y=-0.2;z=-0.3;repeat=10;repeatInterval=1} @self
+  - effect:itemspray{item=DulahanFear;amount=1;velocity=0.1;d=1;repeat=10;repeatInterval=1} @Forward{f=0;y=2.5}
+DulahanHeadFearTickX-:
+  Cooldown: 1
+  Skills:
+  - velocity{m=set;x=-0.3;y=-0.2;z=0;repeat=10;repeatInterval=1} @self
+  - effect:itemspray{item=DulahanFear;amount=1;velocity=0.1;d=1;repeat=10;repeatInterval=1} @Forward{f=0;y=2.5}
+DulahanHeadFearTickX:
+  Cooldown: 1
+  Skills:
+  - velocity{m=set;x=0.3;y=-0.2;z=0;repeat=10;repeatInterval=1} @self
+  - effect:itemspray{item=DulahanFear;amount=1;velocity=0.1;d=1;repeat=10;repeatInterval=1} @Forward{f=0;y=2.5}
+#
+DulahanHeadMove:
+  Conditions:
+  - hasaura Moving false
+  - moving{} true
+  Skills:
+  - Aura{auraName=Moving;interval=1;duration=20} @self
+  - state{mid=headmob;s=rolling;li=0;lo=0;r=false} @self
+  - skill{s=DulahanHeadLunge} @self
+DulahanHeadLunge:
+  Cooldown: 200
+  Skills:
+  - Aura{auraName=Head;interval=1;duration=300} @self  
+  - lunge{velocity=0.45;velocityY=0.1;repeat=50;repeatInterval=2} @target
+######################################
+DulahanMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills: 
+  - skill{s=DulahanAttacks} @Self
+  - skill{s=DulahanIdle} @Self
+  - skill{s=DulahanMove} @Self
+  - skill{s=DulahanThreat} @Self
+  - skill{s=DulahanSpawnRage} @Self
+  - skill{s=DulahanBehindChecker} @Self
+  - skill{s=DulahanFrontChecker} @Forward{f=2.0;y=0.9;sideOffset=0}
+  #- effect:particles{p=flame;amount=15;speed=0;hS=0;vS=0;y=1} @Forward{f=3;y=0.9;sideOffset=0}
+DulahanSpawnRage:
+  Cooldown: 9999
+  Skills:
+  - Aura{auraName=Head;interval=1;duration=9000} @self
+DulahanBehindChecker:
+  Cooldown: 1
+  Skills:
+  - totem{ch=2;onStart=DulahanBehindCheckerTotem;int=10;hR=3;md=1} @Forward{f=-6;y=1}
+DulahanBehindCheckerTotem:
+  Cooldown: 0
+  Skills:
+  - skill{s=DulahanBehindCheckerTotemSkill} @EntitiesNearOrigin{r=5;ignore=samefaction}
+DulahanBehindCheckerTotemSkill:
+  TargetConditions:
+  - targets{a=1to20} true
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Behind;interval=5;duration=20} @self
+DulahanFrontChecker:
+  Cooldown: 1
+  TargetConditions:
+  - inblock{b=AIR} false
+  Conditions:
+  - hasaura Attack false
+  Skills: 
+ #- jump{velocity=0.2} @self
+  - leap{velocity=200} @Forward{f=1;y=0.9;sideOffset=0}
+######################################
+DulahanAttacks:
+  Cooldown: 0.1
+  Conditions:
+  #- targetwithin{d=32} true
+  - targetinlineofsight{} true
+  - hasaura Attack false
+  Skills: 
+  - randomskill{skills=DulahanMeleeAttack,DulahanJumpAttack,DulahanSlashAttack,DulahanHeadThrow,DulahanKick,DulahanSideSlash,DulahanFear,DulahanDecapitate,DulahanParalyze,DulahanCharge} @self
+  #- randomskill{skills=DulahanCharge} @self
+#meleehit 1s (dmg at 0.5s 3000003)
+DulahanMeleeAttack:
+  Cooldown: 2
+  Conditions:
+  - targetwithin{d=5} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessmelee;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=20} @self
+  - state{mid=dulahan;s=meleehit;li=0;lo=0;r=false;i=false} @self
+  - delay 10
+  - skill{s=DulahanMeleeAttackDamage} @target
+  - skill{s=DulahanMeleeAttackRagedDamage} @target
+  - skill{s=DulahanBlood;repeat=3;repeatInterval=1} @target
+  - summon{type=DulahanDummySlash2;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=0.5}
+DulahanMeleeAttackDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  - targetwithin{d=6} true
+  TargetConditions:
+  - blocking{} false
+  Skills:
+  - damage{amount=10;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+  - delay 1
+  - throw{velocity=3;velocityY=4} @target 
+DulahanMeleeAttackRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  - targetwithin{d=6} true
+  TargetConditions:
+  - blocking{} false
+  Skills:
+  - damage{amount=20;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+  - delay 1
+  - throw{velocity=3;velocityY=4} @target
+#jumptarget 2s (moves from 0.5 to 1.4s)
+DulahanJumpAttack:
+  Cooldown: 5
+  Conditions:
+  - targetnotwithin{d=5} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessjump;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=40} @self
+  - state{mid=dulahan;s=jumptarget;li=0;lo=0;r=false;i=false} @self
+  - delay 10
+  - jump{velocity=0.40} @self
+  - leap{velocity=350} @targetLocation
+  - delay 18
+  - skill{s=DulahanBlood;repeat=1;repeatInterval=1} @LivingInCone{a=150.0;r=4.0;rot=0.0;ignore=samefaction}
+  - skill{s=DulahanJumpAttackDamage} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+  - skill{s=DulahanJumpAttackRagedDamage} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+  #- summon{type=DungeonLizardsDummySlash1;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=0.5}
+DulahanJumpAttackDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  - targetwithin{d=6} true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=100} 
+  - blackscreen{d=15} 
+  - damage{amount=5;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+  - delay 1
+  - throw{velocity=6;velocityY=4} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+DulahanJumpAttackRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  - targetwithin{d=6} true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=200} 
+  - blackscreen{d=30} 
+  - damage{amount=10;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+  - delay 1
+  - throw{velocity=6;velocityY=4} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+#slash 2s (dmg at 1.4 3000003)
+DulahanSlashAttack:
+  Cooldown: 2
+  Conditions:
+  - targetwithin{d=5} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessslash;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=40} @self
+  - state{mid=dulahan;s=slash;li=0;lo=0;r=false;i=false} @self
+  - delay 28
+  - summon{type=DulahanDummySlash2;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=0.5}
+  - skill{s=DulahanBlood;repeat=1;repeatInterval=1} @LivingInCone{a=150.0;r=4.0;rot=0.0;ignore=samefaction}
+  - skill{s=DulahanSlashAttackDamage} @LivingInCone{a=150.0;r=6.0;rot=0.0;ignore=samefaction}
+  - skill{s=DulahanSlashAttackRagedDamage} @LivingInCone{a=150.0;r=6.0;rot=0.0;ignore=samefaction}
+DulahanSlashAttackDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  - targetwithin{d=6} true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=100} 
+  - blackscreen{d=15} 
+  - damage{amount=5;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+  - delay 1
+  - throw{velocity=5;velocityY=4} @LivingInCone{a=150.0;r=6.0;rot=0.0;ignore=samefaction}
+DulahanSlashAttackRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  - targetwithin{d=6} true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=200} 
+  - blackscreen{d=30} 
+  - damage{amount=10;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+  - delay 1
+  - throw{velocity=5;velocityY=4} @LivingInCone{a=150.0;r=6.0;rot=0.0;ignore=samefaction}
+###headthrow 1.5s (release headmob at 1s, hide bone "head2")
+DulahanHeadThrow:
+  Cooldown: 15
+  Conditions:
+  - targetwithin{d=20} true
+  - hasaura Attack false
+  - hasaura Head true
+  - hasaura Raged false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessthrow;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=30} @self
+  - state{mid=dulahan;s=headthrow;li=0;lo=0;r=false;i=false} @self
+  - partvisibility{m=dulahan;p=head2;v=false;em=false} @self
+  - auraremove{aura=Head;stacks=1} @self
+  - delay 10
+  - summon{type=DulahanDummyHead;amount=1;radius=0} @Forward{f=5.0;y=0.3;sideOffset=-1.5}
+#kick 1s (dmg at 0.3s)
+DulahanKick:
+  Cooldown: 10
+  Conditions:
+  #- targetnotwithin{d=8} true
+  - hasaura Attack false
+  - hasaura Behind true
+  Skills: 
+  - sound{s=headless:custom.headless.headlesskick;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=20} @self
+  - state{mid=dulahan;s=kick;li=0;lo=0;r=false;i=false} @self
+  - delay 6
+  - totem{ch=2;onStart=DulahanKickTotem;int=1;hR=2;vR=1.5;hp=true;hnp=true;md=2} @Forward{f=-3;y=1}
+DulahanKickTotem:
+  Cooldown: 0
+  Skills:
+  - skill{s=DulahanKickDamage} @EntitiesNearOrigin{r=3.5;ignore=samefaction} 
+  - skill{s=DulahanKickRagedDamage} @EntitiesNearOrigin{r=3.5;ignore=samefaction} 
+DulahanKickDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  #- shieldbreak{duration=50} 
+  - blackscreen{d=20} 
+  - damage{amount=10;pi=true;ignoreArmor=false} @EntitiesNearOrigin{r=3.0;ignore=samefaction}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1} @EntitiesNearOrigin{r=3.0;ignore=samefaction}
+  - delay 1
+  - throw{velocity=6;velocityY=4} @EntitiesNearOrigin{r=3.5;ignore=samefaction} 
+DulahanKickRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  #- shieldbreak{duration=100} 
+  - blackscreen{d=20} 
+  - damage{amount=20;pi=true;ignoreArmor=true} @EntitiesNearOrigin{r=3.0;ignore=samefaction}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1} @EntitiesNearOrigin{r=3.0;ignore=samefaction}
+  - delay 1
+  - throw{velocity=6;velocityY=4} @EntitiesNearOrigin{r=3.0;ignore=samefaction}
+#twosideslash 2s (dmg at 0.5 3000002 and 1s DulahanDummySlash2)
+DulahanSideSlash:
+  Cooldown: 2
+  Conditions:
+  - targetwithin{d=6} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessdouble;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=40} @self
+  - state{mid=dulahan;s=twosideslash;li=0;lo=0;r=false;i=false} @self
+  - delay 10
+  - summon{type=DulahanDummySlash2;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=2.5}
+  - totem{ch=1;onStart=DulahanSideSlashDamageTotem;int=1;hR=3;md=2} @Forward{f=0;y=1;sideOffset=2.5}
+  - delay 10
+  - summon{type=DulahanDummySlash2;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=-2.5}
+  - totem{ch=1;onStart=DulahanSideSlashDamageTotem;int=1;hR=3;md=2} @Forward{f=0;y=1;sideOffset=-2.5}
+DulahanSideSlashDamageTotem:
+  Cooldown: 0
+  Skills:
+  - skill{s=DulahanBlood;repeat=1;repeatInterval=1} @EntitiesNearOrigin{r=4.0;ignore=samefaction} 
+  - skill{s=DulahanSideSlashDamage} @EntitiesNearOrigin{r=4.0;ignore=samefaction} 
+  - skill{s=DulahanSideSlashRagedDamage} @EntitiesNearOrigin{r=4.0;ignore=samefaction} 
+DulahanSideSlashDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=100} 
+  #- blackscreen{d=15} 
+  - damage{amount=10;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+DulahanSideSlashRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=200} 
+  #- blackscreen{d=30} 
+  - damage{amount=20;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+#fear 2s (use for start of charge as well, 3000005 above players )
+DulahanFear:
+  Cooldown: 25
+  Conditions:
+  - hasaura Attack false
+  Skills: 
+  - velocity{m=set;x=0;y=0;z=0;repeat=30;repeatInterval=1} @self
+  - sound{s=headless:custom.headless.headlessfear;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=40} @self
+  - state{mid=dulahan;s=fear;li=0;lo=0;r=false} @self
+  - sudoskill{s=DulahanHeadFearSudo;cat=true;repeat=10;repeatInterval=10} @LivingEntitiesInRadius{r=15;ignore=samefaction}
+#decapitate 2s (dmg at 0.6 DulahanDummySlash1, chop head)
+DulahanDecapitate:
+  Cooldown: 2
+  Conditions:
+  - targetwithin{d=5} true
+  - hasaura Attack false
+  Skills:
+  - skill{s=DulahanDecapitateSkill} @target
+DulahanDecapitateSkill:
+  Cooldown: 2
+  TargetConditions:
+  - health{h=<10} true
+  Conditions:
+  - targetwithin{d=5} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessdecap;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Attack;interval=1;duration=40} @self
+  - state{mid=dulahan;s=decapitate;li=0;lo=0;r=false;i=false} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=40;repeatInterval=1} @self
+  - velocity{m=set;x=0;y=0.1;z=0;repeat=40;repeatInterval=1} @target
+  - skill{s=DulahanBlood;repeat=12;repeatInterval=1} @target
+  - delay 12
+  - skill{s=DulahanDecapitateDamage} @target
+  - summon{type=DulahanDummySlash1;amount=1;radius=0} @Forward{f=1.0;y=0.3;sideOffset=0.5}
+  - decapitate @target
+  - delay 20
+  - Aura{auraName=Head;interval=1;duration=9000} @self
+  - Aura{auraName=Raged;interval=1;duration=400} @self
+  - partvisibility{m=dulahan;p=head2;v=true;em=false} @self
+  - effect:particlebox{p=flame;amount=10;hS=0.5;vS=0.5;s=0;r=1.5;repeat=40;repeatInterval=10} @Forward{f=0;y=0.5;sideOffset=0}
+DulahanDecapitateDamage:
+  Cooldown: 0  
+  Conditions:
+  TargetConditions:
+  Skills:
+  - damagepercent{percent=110.0;ignoreArmor=true;pi=true}
+  #- damage{amount=100;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+#paralyze 2.5s  (rise up draining player, final damage at 1.7s)
+DulahanParalyze:
+  Cooldown: 15
+  Conditions:
+  - targetwithin{d=6} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessparal;v=3;p=1;sc=RECORDS} @Self
+  - velocity{m=set;x=0;y=0;z=0;repeat=50;repeatInterval=1} @self 
+  - Aura{auraName=Attack;interval=1;duration=50} @self
+  - state{mid=dulahan;s=paralyze;li=0;lo=0;r=false;i=false} @self
+  - potion{type=SLOW;duration=50;level=10;hasParticles=false} @self
+  - velocity{m=set;x=0;y=0.1;z=0;repeat=33;repeatInterval=1} @target
+  - healpercent{m=0.01;repeat=15;repeatInterval=2} @self 
+  - delay 12
+  - skill{s=DulahanBlood;repeat=12;repeatInterval=1} @target
+  - delay 22
+  - skill{s=DulahanParalyzeDamage} @target
+  - skill{s=DulahanParalyzeRagedDamage} @target
+DulahanParalyzeDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - potion{type=BLINDNESS;duration=150;level=10;hasParticles=false}
+  - shieldbreak{duration=100} 
+  - blackscreen{d=10} 
+  - damage{amount=5;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+DulahanParalyzeRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - potion{type=BLINDNESS;duration=150;level=10;hasParticles=false}
+  - shieldbreak{duration=200} 
+  - blackscreen{d=20} 
+  - damage{amount=15;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+#
+DulahanCharge:
+  Cooldown: 40
+  Conditions:
+  - targetwithin{d=10} true
+  - hasaura Attack false
+  Skills: 
+  - sound{s=headless:custom.headless.headlessjump;v=3;p=1;sc=WEATHER} @Self
+  - potion{type=SPEED;duration=200;level=1;hasParticles=false} @self
+  - Aura{auraName=Attack;interval=1;duration=200} @self
+  - Aura{auraName=Charge;interval=1;duration=200} @self
+  - state{mid=dulahan;s=walking;li=0;lo=0;r=false;i=false;repeat=10;repeatInterval=20} @self
+  - skill{s=DulahanChargeDamage;repeat=10;repeatInterval=20} @LivingInCone{a=150.0;r=5.0;rot=0.0;ignore=samefaction} #@LivingEntitiesInRadius{r=3;ignore=samefaction} 
+  - skill{s=DulahanChargeRagedDamage;repeat=10;repeatInterval=20} @LivingInCone{a=150.0;r=5.0;rot=0.0;ignore=samefaction}  #@LivingEntitiesInRadius{r=3;ignore=samefaction}
+  - skill{s=DulahanChargeLunge;repeat=10;repeatInterval=20} @self
+  - effect:particles{p=FLAME;amount=10;speed=0;hS=0.1;vS=0.3;y=1;repeat=40;repeatInterval=5} @Forward{f=-2;y=0.2;sideOffset=0.2}
+  - effect:particles{p=FLAME;amount=10;speed=0;hS=0.1;vS=0.3;y=1;repeat=40;repeatInterval=5} @Forward{f=-2;y=0.2;sideOffset=-0.2}
+  - delay 20
+  - sound{s=headless:custom.headless.headlesswalk;v=3;p=1;sc=WEATHER;repeat=9;repeatInterval=20} @Self
+  #- effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1;repeat=40;repeatInterval=5}
+DulahanChargeLunge:
+  Cooldown: 0  
+  Conditions:
+  #- onblock{m=AIR} false
+  Skills:
+  #- jump{velocity=0.2} @self
+  #- delay 5
+  - lunge{velocity=0.4;velocityY=0.2;repeat=10;repeatInterval=1} @self
+  #- leap{velocity=50} @target #@Forward{f=1;y=0;sideOffset=0}
+  - throw{velocity=6;velocityY=4;repeat=10;repeatInterval=2} @LivingInCone{a=170.0;r=6.0;rot=0.0;ignore=samefaction}
+  - throw{velocity=6;velocityY=4;repeat=10;repeatInterval=2} @LivingEntitiesInRadius{r=3.5;ignore=samefaction} 
+DulahanChargeDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged false
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=100} 
+  - blackscreen{d=10} 
+  - damage{amount=5;pi=true;ignoreArmor=false}
+  - effect:particles{p=block_crack;m=redstone_block;amount=15;speed=0;hS=0.3;vS=0.3;y=1}
+DulahanChargeRagedDamage:
+  Cooldown: 0  
+  Conditions:
+  - hasaura Raged true
+  TargetConditions:
+  #- blocking{} false
+  Skills:
+  - shieldbreak{duration=200} 
+  - blackscreen{d=20} 
+  - damage{amount=15;pi=true;ignoreArmor=true}
+  - effect:particles{p=block_crack;m=redstone_block;amount=30;speed=0;hS=0.2;vS=0.2;y=1}
+#
+######################################
+DulahanDeath:
+  Skills:
+  - sound{s=headless:custom.headless.headlessdeath;v=3;p=1;sc=RECORDS} @Self
+  - summon{type=DulahanDummyDulahanPortal;amount=1;radius=0} @Forward{f=0;y=0.2;sideOffset=0}
+  - state{mid=dulahan;s=dying;li=0;lo=0;r=false} @self
+  - velocity{m=set;x=0;y=0.0;z=0;repeat=120;repeatInterval=1} @self
+  - delay 120
+  - remove @self
+######################################
+DulahanIdle:
+  Conditions:
+  #- moving{} false
+  - hasaura Attack false
+  - hasaura idle false
+  - hasaura Moving false
+  Skills:
+  - Aura{auraName=idle;interval=1;duration=30} @self
+  - state{mid=dulahan;s=waiting;li=0;lo=0;r=false} @self
+#
+DulahanMove:
+  Conditions:
+  - hasaura Attack false
+  - hasaura Moving false
+  - moving{} true
+  Skills:
+  - sound{s=headless:custom.headless.headlesswalk;v=3;p=1;sc=RECORDS} @Self
+  - Aura{auraName=Moving;interval=1;duration=20} @self
+  - state{mid=dulahan;s=walking;li=0;lo=0;r=false} @self
+  - throw{velocity=5;velocityY=4;repeat=2;repeatInterval=10} @LivingEntitiesInRadius{r=5;ignore=samefaction} 
+######################################
+DulahanBlood:
+  Cooldown: 0
+  Skills:
+  - sudoskill{s=DulahanBloodSudo;cat=true}
+DulahanBloodSudo:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=DulahanBlood1,DulahanBlood2,DulahanBlood3,DulahanBlood4,DulahanBlood5,DulahanBlood6} @Self
+DulahanBlood1:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=1.5;g=1.0} @Forward{f=1;y=1;sideOffset=1.0}
+DulahanBlood2:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=1.0;g=1.0} @Forward{f=1;y=3;sideOffset=-0.5}
+DulahanBlood3:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=2.0;g=1.0} @Forward{f=-1;y=3;sideOffset=-1.0}
+DulahanBlood4:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=0.5;g=1.0} @Forward{f=1;y=3;sideOffset=-1.0}
+DulahanBlood5:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=2.3;g=1.0} @Forward{f=0.5;y=3;sideOffset=1.0}
+DulahanBlood6:
+  Skills:
+  - projectile{onTick=DulahanBlood-Tick;onEnd=DulahanBlood-End;v=10;d=300;mr=30;i=1;hR=0.5;vR=0.5;syo=0.2;sE=false;sB=true;hnp=true;vO=2.0;g=1.0} @Forward{f=-0.5;y=3;sideOffset=-1.0}
+DulahanBlood-Tick:
+  Skills:
+  - effect:particles{p=reddust;amount=15;speed=0;hS=0.05;vS=0.05;y=0.0} @origin
+DulahanBlood-End:
+  Skills:
+  - effect:blockmask{m=redstone_block;r=1.0;d=50} @origin

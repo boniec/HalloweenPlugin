@@ -1,0 +1,37 @@
+transactions:
+- date: 1790979544266
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: 27KotlEtt
+  type: PURCHASE
+- date: 1790964025507
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790473290217
+  amount: 1.0
+  item: '&f&lᴋʟᴜᴄᴢ ᴅᴏ ꜱᴋʀᴢʏɴɪ &9&lᴇᴘɪᴄʙᴏx'
+  description: Zakup produktu
+  source: 27KotlEtt
+  type: PURCHASE
+- date: 1790354572683
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: 27KotlEtt
+  type: PURCHASE
+- date: 1790354561492
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: 27KotlEtt
+  type: PURCHASE
+- date: 1790354552508
+  amount: 45.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

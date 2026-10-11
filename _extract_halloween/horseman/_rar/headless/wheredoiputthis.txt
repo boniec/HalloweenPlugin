@@ -1,0 +1,21 @@
+*****ITEMSADDER****
+1.open the ItemsAdder folder, drag and drop the data folder into your plugin (be careful about overwriting the minecraft/models/item 
+  In case you have any custommodeldata matching, you need to manually merge the files)
+
+
+2. /iazip
+  
+
+
+****MODELENGINE FILES folder****
+1. Merge skeletons2.zip with your own resourcepack, be careful about overwriting the minecraft/models/item 
+  In case you have any custommodeldata matching, you need to manually merge the files
+
+
+2.Drag and drop ModelEngine folder into your "plugins" folder
+3.Now reload the plugin using /meg reload
+4.Copy this folder: plugins/ModelEngine/resource pack/assets/modelengine
+And put it into your current Resource pack here: YourPack/assets/modelengine
+5.Then copy over the plugins/ModelEngine/resource pack/assets/minecraft/models/item/leather_horse_armor.json file
+And put it into your current Resource Pack here: YourPack/assets/minecraft/models/item/leather_horse_armor.json
+6. All done!

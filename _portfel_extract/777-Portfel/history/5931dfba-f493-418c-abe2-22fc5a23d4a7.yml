@@ -1,0 +1,69 @@
+transactions:
+- date: 1790441121584
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1790441109567
+  amount: 60.0
+  item: '&#FFBC7C&lᴍ&#FFC282&lᴀ&#FFC789&lʟ&#FFCD8F&lʏ &#FFD99C&lᴘ&#FFDEA3&lᴀ&#FFE4A9&lᴋ&lɪ&lᴇ&lᴛ
+    &lᴏ&lɢ'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1790441013685
+  amount: 75.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790357938511
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1790357932642
+  amount: 20.0
+  item: '&#FF4141&lᴘ&#FF4949&lʀ&#FF5151&lᴇ&#FF5959&lᴢ&#FF6262&lᴇ&#FF6A6A&lɴ&#FF7272&lᴛ
+    &#FF7A7A&l(&lᴘ&lᴏ&lᴢ&l.&l2&l)'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1790357913341
+  amount: 40.0
+  item: '&6ʀᴀɴɢᴀ &f腦'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1790357837460
+  amount: 75.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790006530535
+  amount: 50.0
+  item: '&7ʀᴀɴɢᴀ &f希'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1789834582540
+  amount: 50.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789239652618
+  amount: 100.0
+  item: '&bPakiet Wydarzeniowy'
+  description: Zakup produktu
+  source: DroppedBySleep
+  type: PURCHASE
+- date: 1789239623720
+  amount: 100.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

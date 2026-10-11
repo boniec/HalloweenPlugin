@@ -1,0 +1,1008 @@
+ikony_alert_diamond:
+  texture: minecraft:ikony/alert_diamond.png
+  ascent: 8
+  height: 8
+  char: 一
+  font: minecraft:default
+ikony_arrow_down:
+  texture: minecraft:ikony/arrow_down.png
+  ascent: 8
+  height: 8
+  char: 丁
+  font: minecraft:default
+ikony_arrow_left:
+  texture: minecraft:ikony/arrow_left.png
+  ascent: 8
+  height: 8
+  char: 丂
+  font: minecraft:default
+ikony_arrow_right:
+  texture: minecraft:ikony/arrow_right.png
+  ascent: 8
+  height: 8
+  char: 七
+  font: minecraft:default
+ikony_arrow_up:
+  texture: minecraft:ikony/arrow_up.png
+  ascent: 8
+  height: 8
+  char: 丄
+  font: minecraft:default
+ikony_ask:
+  texture: minecraft:ikony/ask.png
+  ascent: 8
+  height: 8
+  char: 丅
+  font: minecraft:default
+ikony_axe:
+  texture: minecraft:ikony/axe.png
+  ascent: 8
+  height: 8
+  char: 丆
+  font: minecraft:default
+ikony_backpack:
+  texture: minecraft:ikony/backpack.png
+  ascent: 8
+  height: 8
+  char: 万
+  font: minecraft:default
+ikony_bank_column:
+  texture: minecraft:ikony/bank_column.png
+  ascent: 8
+  height: 8
+  char: 丈
+  font: minecraft:default
+ikony_bar_chart:
+  texture: minecraft:ikony/bar_chart.png
+  ascent: 8
+  height: 8
+  char: 三
+  font: minecraft:default
+ikony_bed:
+  texture: minecraft:ikony/bed.png
+  ascent: 8
+  height: 8
+  char: 下
+  font: minecraft:default
+ikony_beer:
+  texture: minecraft:ikony/beer.png
+  ascent: 8
+  height: 8
+  char: 丌
+  font: minecraft:default
+ikony_bell_notification_dot:
+  texture: minecraft:ikony/bell_notification_dot.png
+  ascent: 8
+  height: 8
+  char: 不
+  font: minecraft:default
+ikony_blocked_circle:
+  texture: minecraft:ikony/blocked_circle.png
+  ascent: 8
+  height: 8
+  char: 与
+  font: minecraft:default
+ikony_blue_book:
+  texture: minecraft:ikony/blue_book.png
+  ascent: 8
+  height: 8
+  char: 丏
+  font: minecraft:default
+ikony_blue_crystal_cluster:
+  texture: minecraft:ikony/blue_crystal_cluster.png
+  ascent: 8
+  height: 8
+  char: 丐
+  font: minecraft:default
+ikony_blue_diamond:
+  texture: minecraft:ikony/blue_diamond.png
+  ascent: 8
+  height: 8
+  char: 丑
+  font: minecraft:default
+ikony_blue_gift_box:
+  texture: minecraft:ikony/blue_gift_box.png
+  ascent: 8
+  height: 8
+  char: 丒
+  font: minecraft:default
+ikony_blue_info_badge:
+  texture: minecraft:ikony/blue_info_badge.png
+  ascent: 8
+  height: 8
+  char: 专
+  font: minecraft:default
+ikony_blue_key:
+  texture: minecraft:ikony/blue_key.png
+  ascent: 8
+  height: 8
+  char: 且
+  font: minecraft:default
+ikony_blue_orb_core:
+  texture: minecraft:ikony/blue_orb_core.png
+  ascent: 8
+  height: 8
+  char: 丕
+  font: minecraft:default
+ikony_blue_shield_badge:
+  texture: minecraft:ikony/blue_shield_badge.png
+  ascent: 8
+  height: 8
+  char: 世
+  font: minecraft:default
+ikony_blue_ticket:
+  texture: minecraft:ikony/blue_ticket.png
+  ascent: 8
+  height: 8
+  char: 丗
+  font: minecraft:default
+ikony_book:
+  texture: minecraft:ikony/book.png
+  ascent: 8
+  height: 8
+  char: 丘
+  font: minecraft:default
+ikony_bow:
+  texture: minecraft:ikony/bow.png
+  ascent: 8
+  height: 8
+  char: 丙
+  font: minecraft:default
+ikony_bread:
+  texture: minecraft:ikony/bread.png
+  ascent: 8
+  height: 8
+  char: 业
+  font: minecraft:default
+ikony_bronze_trophy:
+  texture: minecraft:ikony/bronze_trophy.png
+  ascent: 8
+  height: 8
+  char: 丛
+  font: minecraft:default
+ikony_calendar:
+  texture: minecraft:ikony/calendar.png
+  ascent: 8
+  height: 8
+  char: 东
+  font: minecraft:default
+ikony_campfire:
+  texture: minecraft:ikony/campfire.png
+  ascent: 8
+  height: 8
+  char: 丝
+  font: minecraft:default
+ikony_cash_stack:
+  texture: minecraft:ikony/cash_stack.png
+  ascent: 8
+  height: 8
+  char: 丞
+  font: minecraft:default
+ikony_castle:
+  texture: minecraft:ikony/castle.png
+  ascent: 8
+  height: 8
+  char: 丟
+  font: minecraft:default
+ikony_chat_bubble_gray:
+  texture: minecraft:ikony/chat_bubble_gray.png
+  ascent: 8
+  height: 8
+  char: 丠
+  font: minecraft:default
+ikony_check_mark:
+  texture: minecraft:ikony/check_mark.png
+  ascent: 8
+  height: 8
+  char: 両
+  font: minecraft:default
+ikony_checker_tile:
+  texture: minecraft:ikony/checker_tile.png
+  ascent: 8
+  height: 8
+  char: 丢
+  font: minecraft:default
+ikony_checkmark:
+  texture: minecraft:ikony/checkmark.png
+  ascent: 8
+  height: 8
+  char: 丣
+  font: minecraft:default
+ikony_chestplate:
+  texture: minecraft:ikony/chestplate.png
+  ascent: 8
+  height: 8
+  char: 两
+  font: minecraft:default
+ikony_chevron_down:
+  texture: minecraft:ikony/chevron_down.png
+  ascent: 8
+  height: 8
+  char: 严
+  font: minecraft:default
+ikony_chevron_left:
+  texture: minecraft:ikony/chevron_left.png
+  ascent: 8
+  height: 8
+  char: 並
+  font: minecraft:default
+ikony_chevron_right:
+  texture: minecraft:ikony/chevron_right.png
+  ascent: 8
+  height: 8
+  char: 丧
+  font: minecraft:default
+ikony_chevron_up:
+  texture: minecraft:ikony/chevron_up.png
+  ascent: 8
+  height: 8
+  char: 丨
+  font: minecraft:default
+ikony_clock:
+  texture: minecraft:ikony/clock.png
+  ascent: 8
+  height: 8
+  char: 丩
+  font: minecraft:default
+ikony_close_x:
+  texture: minecraft:ikony/close_x.png
+  ascent: 8
+  height: 8
+  char: 个
+  font: minecraft:default
+ikony_closed:
+  texture: minecraft:ikony/closed.png
+  ascent: 8
+  height: 8
+  char: 丫
+  font: minecraft:default
+ikony_clover:
+  texture: minecraft:ikony/clover.png
+  ascent: 8
+  height: 8
+  char: 丬
+  font: minecraft:default
+ikony_coin:
+  texture: minecraft:ikony/coin.png
+  ascent: 8
+  height: 8
+  char: 中
+  font: minecraft:default
+ikony_coin_pile:
+  texture: minecraft:ikony/coin_pile.png
+  ascent: 8
+  height: 8
+  char: 丮
+  font: minecraft:default
+ikony_compass_badge:
+  texture: minecraft:ikony/compass_badge.png
+  ascent: 8
+  height: 8
+  char: 丯
+  font: minecraft:default
+ikony_crate_box:
+  texture: minecraft:ikony/crate_box.png
+  ascent: 8
+  height: 8
+  char: 丰
+  font: minecraft:default
+ikony_crossed_swords:
+  texture: minecraft:ikony/crossed_swords.png
+  ascent: 8
+  height: 8
+  char: 丱
+  font: minecraft:default
+ikony_crystal:
+  texture: minecraft:ikony/crystal.png
+  ascent: 8
+  height: 8
+  char: 串
+  font: minecraft:default
+ikony_decline_mark:
+  texture: minecraft:ikony/decline_mark.png
+  ascent: 8
+  height: 8
+  char: 丳
+  font: minecraft:default
+ikony_eye_view:
+  texture: minecraft:ikony/eye_view.png
+  ascent: 8
+  height: 8
+  char: 临
+  font: minecraft:default
+ikony_fish:
+  texture: minecraft:ikony/fish.png
+  ascent: 8
+  height: 8
+  char: 丵
+  font: minecraft:default
+ikony_flag:
+  texture: minecraft:ikony/flag.png
+  ascent: 8
+  height: 8
+  char: 丶
+  font: minecraft:default
+ikony_flame:
+  texture: minecraft:ikony/flame.png
+  ascent: 8
+  height: 8
+  char: 丷
+  font: minecraft:default
+ikony_gavel:
+  texture: minecraft:ikony/gavel.png
+  ascent: 8
+  height: 8
+  char: 丸
+  font: minecraft:default
+ikony_globe:
+  texture: minecraft:ikony/globe.png
+  ascent: 8
+  height: 8
+  char: 丹
+  font: minecraft:default
+ikony_gold_bar:
+  texture: minecraft:ikony/gold_bar.png
+  ascent: 8
+  height: 8
+  char: 主
+  font: minecraft:default
+ikony_gold_coin:
+  texture: minecraft:ikony/gold_coin.png
+  ascent: 8
+  height: 8
+  char: 丼
+  font: minecraft:default
+ikony_gold_crown:
+  texture: minecraft:ikony/gold_crown.png
+  ascent: 8
+  height: 8
+  char: 丽
+  font: minecraft:default
+ikony_gold_crystal:
+  texture: minecraft:ikony/gold_crystal.png
+  ascent: 8
+  height: 8
+  char: 举
+  font: minecraft:default
+ikony_gold_envelope:
+  texture: minecraft:ikony/gold_envelope.png
+  ascent: 8
+  height: 8
+  char: 丿
+  font: minecraft:default
+ikony_gold_info_badge:
+  texture: minecraft:ikony/gold_info_badge.png
+  ascent: 8
+  height: 8
+  char: 乀
+  font: minecraft:default
+ikony_gold_key:
+  texture: minecraft:ikony/gold_key.png
+  ascent: 8
+  height: 8
+  char: 乁
+  font: minecraft:default
+ikony_gold_star:
+  texture: minecraft:ikony/gold_star.png
+  ascent: 8
+  height: 8
+  char: 乂
+  font: minecraft:default
+ikony_gold_ticket:
+  texture: minecraft:ikony/gold_ticket.png
+  ascent: 8
+  height: 8
+  char: 乃
+  font: minecraft:default
+ikony_gold_trophy:
+  texture: minecraft:ikony/gold_trophy.png
+  ascent: 8
+  height: 8
+  char: 乄
+  font: minecraft:default
+ikony_gray_backpack:
+  texture: minecraft:ikony/gray_backpack.png
+  ascent: 8
+  height: 8
+  char: 久
+  font: minecraft:default
+ikony_gray_orb:
+  texture: minecraft:ikony/gray_orb.png
+  ascent: 8
+  height: 8
+  char: 乆
+  font: minecraft:default
+ikony_green_backpack:
+  texture: minecraft:ikony/green_backpack.png
+  ascent: 8
+  height: 8
+  char: 乇
+  font: minecraft:default
+ikony_green_banner:
+  texture: minecraft:ikony/green_banner.png
+  ascent: 8
+  height: 8
+  char: 么
+  font: minecraft:default
+ikony_green_check_token:
+  texture: minecraft:ikony/green_check_token.png
+  ascent: 8
+  height: 8
+  char: 义
+  font: minecraft:default
+ikony_green_crystal:
+  texture: minecraft:ikony/green_crystal.png
+  ascent: 8
+  height: 8
+  char: 乊
+  font: minecraft:default
+ikony_green_flag:
+  texture: minecraft:ikony/green_flag.png
+  ascent: 8
+  height: 8
+  char: 之
+  font: minecraft:default
+ikony_green_orb:
+  texture: minecraft:ikony/green_orb.png
+  ascent: 8
+  height: 8
+  char: 乌
+  font: minecraft:default
+ikony_green_supply_crate:
+  texture: minecraft:ikony/green_supply_crate.png
+  ascent: 8
+  height: 8
+  char: 乍
+  font: minecraft:default
+ikony_green_ticket:
+  texture: minecraft:ikony/green_ticket.png
+  ascent: 8
+  height: 8
+  char: 乎
+  font: minecraft:default
+ikony_group_users:
+  texture: minecraft:ikony/group_users.png
+  ascent: 8
+  height: 8
+  char: 乏
+  font: minecraft:default
+ikony_helmet:
+  texture: minecraft:ikony/helmet.png
+  ascent: 8
+  height: 8
+  char: 乐
+  font: minecraft:default
+ikony_home:
+  texture: minecraft:ikony/home.png
+  ascent: 8
+  height: 8
+  char: 乑
+  font: minecraft:default
+ikony_home_badge:
+  texture: minecraft:ikony/home_badge.png
+  ascent: 8
+  height: 8
+  char: 乒
+  font: minecraft:default
+ikony_house:
+  texture: minecraft:ikony/house.png
+  ascent: 8
+  height: 8
+  char: 乓
+  font: minecraft:default
+ikony_id_card:
+  texture: minecraft:ikony/id_card.png
+  ascent: 8
+  height: 8
+  char: 乔
+  font: minecraft:default
+ikony_info:
+  texture: minecraft:ikony/info.png
+  ascent: 8
+  height: 8
+  char: 乕
+  font: minecraft:default
+ikony_iron:
+  texture: minecraft:ikony/iron.png
+  ascent: 8
+  height: 8
+  char: 乖
+  font: minecraft:default
+ikony_island_marker:
+  texture: minecraft:ikony/island_marker.png
+  ascent: 8
+  height: 8
+  char: 乗
+  font: minecraft:default
+ikony_key1:
+  texture: minecraft:ikony/key1.png
+  ascent: 8
+  height: 8
+  char: 乘
+  font: minecraft:default
+ikony_key2:
+  texture: minecraft:ikony/key2.png
+  ascent: 8
+  height: 8
+  char: 乙
+  font: minecraft:default
+ikony_key3:
+  texture: minecraft:ikony/key3.png
+  ascent: 8
+  height: 8
+  char: 乚
+  font: minecraft:default
+ikony_leggings:
+  texture: minecraft:ikony/leggings.png
+  ascent: 8
+  height: 8
+  char: 乛
+  font: minecraft:default
+ikony_life_potion:
+  texture: minecraft:ikony/life_potion.png
+  ascent: 8
+  height: 8
+  char: 乜
+  font: minecraft:default
+ikony_life_ring:
+  texture: minecraft:ikony/life_ring.png
+  ascent: 8
+  height: 8
+  char: 九
+  font: minecraft:default
+ikony_lightning:
+  texture: minecraft:ikony/lightning.png
+  ascent: 8
+  height: 8
+  char: 乞
+  font: minecraft:default
+ikony_luck:
+  texture: minecraft:ikony/luck.png
+  ascent: 8
+  height: 8
+  char: 也
+  font: minecraft:default
+ikony_magic_wand:
+  texture: minecraft:ikony/magic_wand.png
+  ascent: 8
+  height: 8
+  char: 习
+  font: minecraft:default
+ikony_magnifying_glass:
+  texture: minecraft:ikony/magnifying_glass.png
+  ascent: 8
+  height: 8
+  char: 乡
+  font: minecraft:default
+ikony_mana_potion:
+  texture: minecraft:ikony/mana_potion.png
+  ascent: 8
+  height: 8
+  char: 乢
+  font: minecraft:default
+ikony_market:
+  texture: minecraft:ikony/market.png
+  ascent: 8
+  height: 8
+  char: 乣
+  font: minecraft:default
+ikony_megaphone:
+  texture: minecraft:ikony/megaphone.png
+  ascent: 8
+  height: 8
+  char: 乤
+  font: minecraft:default
+ikony_message_notification:
+  texture: minecraft:ikony/message_notification.png
+  ascent: 8
+  height: 8
+  char: 乥
+  font: minecraft:default
+ikony_money:
+  texture: minecraft:ikony/money.png
+  ascent: 8
+  height: 8
+  char: 书
+  font: minecraft:default
+ikony_mountain:
+  texture: minecraft:ikony/mountain.png
+  ascent: 8
+  height: 8
+  char: 乧
+  font: minecraft:default
+ikony_no_entry_badge:
+  texture: minecraft:ikony/no_entry_badge.png
+  ascent: 8
+  height: 8
+  char: 乨
+  font: minecraft:default
+ikony_notification_bell:
+  texture: minecraft:ikony/notification_bell.png
+  ascent: 8
+  height: 8
+  char: 乩
+  font: minecraft:default
+ikony_open:
+  texture: minecraft:ikony/open.png
+  ascent: 8
+  height: 8
+  char: 乪
+  font: minecraft:default
+ikony_padlock_alt:
+  texture: minecraft:ikony/padlock_alt.png
+  ascent: 8
+  height: 8
+  char: 乫
+  font: minecraft:default
+ikony_padlock_closed:
+  texture: minecraft:ikony/padlock_closed.png
+  ascent: 8
+  height: 8
+  char: 乬
+  font: minecraft:default
+ikony_pale_gem:
+  texture: minecraft:ikony/pale_gem.png
+  ascent: 8
+  height: 8
+  char: 乭
+  font: minecraft:default
+ikony_parchment_map:
+  texture: minecraft:ikony/parchment_map.png
+  ascent: 8
+  height: 8
+  char: 乮
+  font: minecraft:default
+ikony_pickaxe:
+  texture: minecraft:ikony/pickaxe.png
+  ascent: 8
+  height: 8
+  char: 乯
+  font: minecraft:default
+ikony_pink_star:
+  texture: minecraft:ikony/pink_star.png
+  ascent: 8
+  height: 8
+  char: 买
+  font: minecraft:default
+ikony_profile_avatar_gray:
+  texture: minecraft:ikony/profile_avatar_gray.png
+  ascent: 8
+  height: 8
+  char: 乱
+  font: minecraft:default
+ikony_profile_pair:
+  texture: minecraft:ikony/profile_pair.png
+  ascent: 8
+  height: 8
+  char: 乲
+  font: minecraft:default
+ikony_proposition:
+  texture: minecraft:ikony/proposition.png
+  ascent: 8
+  height: 8
+  char: 乳
+  font: minecraft:default
+ikony_purple_gem:
+  texture: minecraft:ikony/purple_gem.png
+  ascent: 8
+  height: 8
+  char: 乴
+  font: minecraft:default
+ikony_purple_medal:
+  texture: minecraft:ikony/purple_medal.png
+  ascent: 8
+  height: 8
+  char: 乵
+  font: minecraft:default
+ikony_purple_medal_alt:
+  texture: minecraft:ikony/purple_medal_alt.png
+  ascent: 8
+  height: 8
+  char: 乶
+  font: minecraft:default
+ikony_purple_portal:
+  texture: minecraft:ikony/purple_portal.png
+  ascent: 8
+  height: 8
+  char: 乷
+  font: minecraft:default
+ikony_red_backpack:
+  texture: minecraft:ikony/red_backpack.png
+  ascent: 8
+  height: 8
+  char: 乸
+  font: minecraft:default
+ikony_red_banner:
+  texture: minecraft:ikony/red_banner.png
+  ascent: 8
+  height: 8
+  char: 乹
+  font: minecraft:default
+ikony_red_bookmark_banner:
+  texture: minecraft:ikony/red_bookmark_banner.png
+  ascent: 8
+  height: 8
+  char: 乺
+  font: minecraft:default
+ikony_red_bug:
+  texture: minecraft:ikony/red_bug.png
+  ascent: 8
+  height: 8
+  char: 乻
+  font: minecraft:default
+ikony_red_cross_token:
+  texture: minecraft:ikony/red_cross_token.png
+  ascent: 8
+  height: 8
+  char: 乼
+  font: minecraft:default
+ikony_red_crystal:
+  texture: minecraft:ikony/red_crystal.png
+  ascent: 8
+  height: 8
+  char: 乽
+  font: minecraft:default
+ikony_red_gavel:
+  texture: minecraft:ikony/red_gavel.png
+  ascent: 8
+  height: 8
+  char: 乾
+  font: minecraft:default
+ikony_red_gem:
+  texture: minecraft:ikony/red_gem.png
+  ascent: 8
+  height: 8
+  char: 乿
+  font: minecraft:default
+ikony_red_orb:
+  texture: minecraft:ikony/red_orb.png
+  ascent: 8
+  height: 8
+  char: 亀
+  font: minecraft:default
+ikony_red_ticket:
+  texture: minecraft:ikony/red_ticket.png
+  ascent: 8
+  height: 8
+  char: 亁
+  font: minecraft:default
+ikony_red_token:
+  texture: minecraft:ikony/red_token.png
+  ascent: 8
+  height: 8
+  char: 亂
+  font: minecraft:default
+ikony_reward_chest:
+  texture: minecraft:ikony/reward_chest.png
+  ascent: 8
+  height: 8
+  char: 亃
+  font: minecraft:default
+ikony_scroll:
+  texture: minecraft:ikony/scroll.png
+  ascent: 8
+  height: 8
+  char: 亄
+  font: minecraft:default
+ikony_scroll_document:
+  texture: minecraft:ikony/scroll_document.png
+  ascent: 8
+  height: 8
+  char: 亅
+  font: minecraft:default
+ikony_sealed_letter:
+  texture: minecraft:ikony/sealed_letter.png
+  ascent: 8
+  height: 8
+  char: 了
+  font: minecraft:default
+ikony_search_magnifier:
+  texture: minecraft:ikony/search_magnifier.png
+  ascent: 8
+  height: 8
+  char: 亇
+  font: minecraft:default
+ikony_shield:
+  texture: minecraft:ikony/shield.png
+  ascent: 8
+  height: 8
+  char: 予
+  font: minecraft:default
+ikony_shoes:
+  texture: minecraft:ikony/shoes.png
+  ascent: 8
+  height: 8
+  char: 争
+  font: minecraft:default
+ikony_shovel:
+  texture: minecraft:ikony/shovel.png
+  ascent: 8
+  height: 8
+  char: 亊
+  font: minecraft:default
+ikony_silver_gear_badge:
+  texture: minecraft:ikony/silver_gear_badge.png
+  ascent: 8
+  height: 8
+  char: 事
+  font: minecraft:default
+ikony_silver_key:
+  texture: minecraft:ikony/silver_key.png
+  ascent: 8
+  height: 8
+  char: 二
+  font: minecraft:default
+ikony_silver_medal:
+  texture: minecraft:ikony/silver_medal.png
+  ascent: 8
+  height: 8
+  char: 亍
+  font: minecraft:default
+ikony_silver_shield:
+  texture: minecraft:ikony/silver_shield.png
+  ascent: 8
+  height: 8
+  char: 于
+  font: minecraft:default
+ikony_silver_trophy:
+  texture: minecraft:ikony/silver_trophy.png
+  ascent: 8
+  height: 8
+  char: 亏
+  font: minecraft:default
+ikony_skull:
+  texture: minecraft:ikony/skull.png
+  ascent: 8
+  height: 8
+  char: 亐
+  font: minecraft:default
+ikony_small_flame_stand:
+  texture: minecraft:ikony/small_flame_stand.png
+  ascent: 8
+  height: 8
+  char: 云
+  font: minecraft:default
+ikony_speed:
+  texture: minecraft:ikony/speed.png
+  ascent: 8
+  height: 8
+  char: 互
+  font: minecraft:default
+ikony_sprout_hand:
+  texture: minecraft:ikony/sprout_hand.png
+  ascent: 8
+  height: 8
+  char: 亓
+  font: minecraft:default
+ikony_stopwatch:
+  texture: minecraft:ikony/stopwatch.png
+  ascent: 8
+  height: 8
+  char: 五
+  font: minecraft:default
+ikony_storage_box:
+  texture: minecraft:ikony/storage_box.png
+  ascent: 8
+  height: 8
+  char: 井
+  font: minecraft:default
+ikony_swap_cycle_red_teal:
+  texture: minecraft:ikony/swap_cycle_red_teal.png
+  ascent: 8
+  height: 8
+  char: 亖
+  font: minecraft:default
+ikony_sword:
+  texture: minecraft:ikony/sword.png
+  ascent: 8
+  height: 8
+  char: 亗
+  font: minecraft:default
+ikony_sync_arrows:
+  texture: minecraft:ikony/sync_arrows.png
+  ascent: 8
+  height: 8
+  char: 亘
+  font: minecraft:default
+ikony_teal_token:
+  texture: minecraft:ikony/teal_token.png
+  ascent: 8
+  height: 8
+  char: 亙
+  font: minecraft:default
+ikony_thumbs_down:
+  texture: minecraft:ikony/thumbs_down.png
+  ascent: 8
+  height: 8
+  char: 亚
+  font: minecraft:default
+ikony_thumbs_up:
+  texture: minecraft:ikony/thumbs_up.png
+  ascent: 8
+  height: 8
+  char: 些
+  font: minecraft:default
+ikony_tooth:
+  texture: minecraft:ikony/tooth.png
+  ascent: 8
+  height: 8
+  char: 亜
+  font: minecraft:default
+ikony_treasure_chest:
+  texture: minecraft:ikony/treasure_chest.png
+  ascent: 8
+  height: 8
+  char: 亝
+  font: minecraft:default
+ikony_upgrade:
+  texture: minecraft:ikony/upgrade.png
+  ascent: 8
+  height: 8
+  char: 亞
+  font: minecraft:default
+ikony_volume_muted:
+  texture: minecraft:ikony/volume_muted.png
+  ascent: 8
+  height: 8
+  char: 亟
+  font: minecraft:default
+ikony_volume_on:
+  texture: minecraft:ikony/volume_on.png
+  ascent: 8
+  height: 8
+  char: 亠
+  font: minecraft:default
+ikony_wallet:
+  texture: minecraft:ikony/wallet.png
+  ascent: 8
+  height: 8
+  char: 亡
+  font: minecraft:default
+ikony_warning_triangle:
+  texture: minecraft:ikony/warning_triangle.png
+  ascent: 8
+  height: 8
+  char: 亢
+  font: minecraft:default
+ikony_water_drop:
+  texture: minecraft:ikony/water_drop.png
+  ascent: 8
+  height: 8
+  char: 亣
+  font: minecraft:default
+ikony_winged_gold_medal:
+  texture: minecraft:ikony/winged_gold_medal.png
+  ascent: 8
+  height: 8
+  char: 交
+  font: minecraft:default
+ikony_winged_red_medal:
+  texture: minecraft:ikony/winged_red_medal.png
+  ascent: 8
+  height: 8
+  char: 亥
+  font: minecraft:default
+ikony_wood:
+  texture: minecraft:ikony/wood.png
+  ascent: 8
+  height: 8
+  char: 亦
+  font: minecraft:default
+ikony_wood_plank:
+  texture: minecraft:ikony/wood_plank.png
+  ascent: 8
+  height: 8
+  char: 产
+  font: minecraft:default
+ikony_wooden_tag:
+  texture: minecraft:ikony/wooden_tag.png
+  ascent: 8
+  height: 8
+  char: 亨
+  font: minecraft:default
+ikony_wrench:
+  texture: minecraft:ikony/wrench.png
+  ascent: 8
+  height: 8
+  char: 亩
+  font: minecraft:default

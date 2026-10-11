@@ -1,0 +1,4 @@
+# Salda graczy (vPLN). Przy pierwszym starcie mozesz skopiowac stary
+# plugins/777-Portfel/data.yml -> plugins/<core>/777-Portfel/data.yml
+# aby automatycznie zaimportowac salda i historie.
+players: {}

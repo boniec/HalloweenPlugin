@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/models/am_goblin_boss","particle":"#0"},"elements":[{"from":[8.0,6.0,8.0],"to":[16.0,13.0,8.0],"faces":{"south":{"uv":[10.625,0.0,11.625,0.875],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[10.375,10.25,11.375,11.125],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[-150.0,-45.0,180.0]}}}

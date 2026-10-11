@@ -1,0 +1,146 @@
+hm5_enchantress_npc: 
+  Type: PIG
+  Display: ''
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+   - clear   
+   - goToSpawn{speed=20;max=0.1;min=0.1}
+  Options:
+    Despawn: persistent
+    KnockbackResistance: 10
+    Collidable: false
+    MovementSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventLeashing: true
+    AlwaysShowName: true
+  Skills:
+  #### model
+  - model{mid=hm5_enchantress_npc;save=true} @self ~onSpawn
+  - model{mid=hm5_enchantress_npc;save=true;delay=5} @self ~onLoad
+  #### skill greets each individual player, with a 5-second memory
+  - sudoskill{s=wave_npc} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} false ]} ~onTimer:20
+  - skill{s=realms_recheck_aura} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} true ]} ~onTimer:90
+  #### klikniecie w NPC (komenda w skills/.../Realms_npc_vol2_click.yml)
+  - skill{s=hm5_click_enchantress} @trigger ~onInteract
+  #### nie da sie bic
+  - cancelevent{sync=true} @self ~onDamaged
+
+hm5_king_npc: 
+  Type: PIG
+  Display: ''
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+   - clear   
+   - goToSpawn{speed=20;max=0.1;min=0.1}
+  Options:
+    Despawn: persistent
+    KnockbackResistance: 10
+    Collidable: false
+    MovementSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventLeashing: true
+    AlwaysShowName: true
+  Skills:
+  #### model
+  - model{mid=hm5_king_npc;save=true} @self ~onSpawn
+  - model{mid=hm5_king_npc;save=true;delay=5} @self ~onLoad
+  #### skill greets each individual player, with a 5-second memory
+  - sudoskill{s=wave_npc} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} false ]} ~onTimer:20
+  - skill{s=realms_recheck_aura} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} true ]} ~onTimer:90
+  #### klikniecie w NPC (komenda w skills/.../Realms_npc_vol2_click.yml)
+  - skill{s=hm5_click_king} @trigger ~onInteract
+  #### nie da sie bic
+  - cancelevent{sync=true} @self ~onDamaged
+
+hm5_jester_npc: 
+  Type: PIG
+  Display: ''
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+   - clear   
+   - goToSpawn{speed=20;max=0.1;min=0.1}
+  Options:
+    Despawn: persistent
+    KnockbackResistance: 10
+    Collidable: false
+    MovementSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventLeashing: true
+    AlwaysShowName: true
+  Skills:
+  #### model
+  - model{mid=hm5_jester_npc;save=true} @self ~onSpawn
+  - model{mid=hm5_jester_npc;save=true;delay=5} @self ~onLoad
+  #### skill greets each individual player, with a 5-second memory
+  - sudoskill{s=wave_npc} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} false ]} ~onTimer:20
+  - skill{s=realms_recheck_aura} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} true ]} ~onTimer:90
+  #### klikniecie w NPC (komenda w skills/.../Realms_npc_vol2_click.yml)
+  - skill{s=hm5_click_jester} @trigger ~onInteract
+  #### nie da sie bic
+  - cancelevent{sync=true} @self ~onDamaged
+
+hm5_knight_npc: 
+  Type: PIG
+  Display: ''
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+   - clear   
+   - goToSpawn{speed=20;max=0.1;min=0.1}
+  Options:
+    Despawn: persistent
+    KnockbackResistance: 10
+    Collidable: false
+    MovementSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventLeashing: true
+    AlwaysShowName: true
+  Skills:
+  #### model
+  - model{mid=hm5_knight_npc;save=true} @self ~onSpawn
+  - model{mid=hm5_knight_npc;save=true;delay=5} @self ~onLoad
+  #### skill greets each individual player, with a 5-second memory
+  - sudoskill{s=wave_npc} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} false ]} ~onTimer:20
+  - skill{s=realms_recheck_aura} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} true ]} ~onTimer:90
+  #### klikniecie w NPC (komenda w skills/.../Realms_npc_vol2_click.yml)
+  - skill{s=hm5_click_knight} @trigger ~onInteract
+  #### nie da sie bic
+  - cancelevent{sync=true} @self ~onDamaged
+
+hm5_tavern_npc: 
+  Type: PIG
+  Display: ''
+  Health: 5
+  Damage: 0
+  AIGoalSelectors:
+   - clear   
+   - goToSpawn{speed=20;max=0.1;min=0.1}
+  Options:
+    Despawn: persistent
+    KnockbackResistance: 10
+    Collidable: false
+    MovementSpeed: 0
+    Invincible: true
+    Silent: true
+    PreventLeashing: true
+    AlwaysShowName: true
+  Skills:
+  #### model
+  - model{mid=hm5_tavern_npc;save=true} @self ~onSpawn
+  - model{mid=hm5_tavern_npc;save=true;delay=5} @self ~onLoad
+  #### skill greets each individual player, with a 5-second memory
+  - sudoskill{s=wave_npc} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} false ]} ~onTimer:20
+  - skill{s=realms_recheck_aura} @PIR{r=6;TargetConditions=[  - hasaura{aura=homoxidwave} true ]} ~onTimer:90
+
+# 53826392Q
+  #### klikniecie w NPC (komenda w skills/.../Realms_npc_vol2_click.yml)
+  - skill{s=hm5_click_tavern} @trigger ~onInteract
+  #### nie da sie bic
+  - cancelevent{sync=true} @self ~onDamaged

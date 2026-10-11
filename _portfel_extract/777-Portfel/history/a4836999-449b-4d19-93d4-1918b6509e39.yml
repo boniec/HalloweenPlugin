@@ -1,0 +1,13 @@
+transactions:
+- date: 1790529299662
+  amount: 15.0
+  item: '&6 16x &6&lᴡᴏʀᴇᴋ ʙᴏɢóᴡ'
+  description: Zakup produktu
+  source: shotgun331
+  type: PURCHASE
+- date: 1790529280406
+  amount: 15.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD

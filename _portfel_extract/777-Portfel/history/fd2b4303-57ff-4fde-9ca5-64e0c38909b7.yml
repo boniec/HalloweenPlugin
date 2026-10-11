@@ -1,0 +1,73 @@
+transactions:
+- date: 1790506497317
+  amount: 4.0
+  item: '&b16x &d&lꜱᴍᴏᴄᴢʏ ᴏᴅʟᴀᴍᴇᴋ'
+  description: Zakup produktu
+  source: w1rq
+  type: PURCHASE
+- date: 1790506433025
+  amount: 5.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790189749220
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: w1rq
+  type: PURCHASE
+- date: 1790189731089
+  amount: 30.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790185354770
+  amount: 30.0
+  item: '&9&lGZIBBOX'
+  description: Zakup produktu
+  source: w1rq
+  type: PURCHASE
+- date: 1790185337508
+  amount: 1.5
+  item: VPLN
+  description: Dodanie środków
+  source: sourburger_
+  type: ADD
+- date: 1790184969041
+  amount: 25.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790015936458
+  amount: 2.5
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1790014994106
+  amount: 10.0
+  item: '&d&lꜱᴢᴄᴢęśʟɪᴡᴇ ᴋᴏꜱᴛᴋɪ'
+  description: Zakup produktu
+  source: w1rq
+  type: PURCHASE
+- date: 1790014897870
+  amount: 10.0
+  item: VPLN
+  description: Dodanie środków
+  source: CONSOLE
+  type: ADD
+- date: 1789929753996
+  amount: 10.0
+  item: '&#ff3c00ʟᴜᴄᴋʏʙʟᴏᴄᴋ'
+  description: Zakup produktu
+  source: wkowca
+  type: PURCHASE
+- date: 1789929350689
+  amount: 11.0
+  item: VPLN
+  description: Dodanie środków
+  source: szakirek
+  type: ADD
