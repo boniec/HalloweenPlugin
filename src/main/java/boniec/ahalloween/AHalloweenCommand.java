@@ -22,6 +22,14 @@ public final class AHalloweenCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (command.getName().equalsIgnoreCase("kociol")) {
+            kociol(sender, args);
+            return true;
+        }
+        if (args.length > 0 && args[0].equalsIgnoreCase("kociol")) {
+            kociol(sender, java.util.Arrays.copyOfRange(args, 1, args.length));
+            return true;
+        }
         if (args.length == 0) {
             if (!(sender instanceof Player p)) {
                 sender.sendMessage(manager.msg("tylko-gracz"));
@@ -126,6 +134,33 @@ public final class AHalloweenCommand implements CommandExecutor, TabCompleter {
             }
         }
         return true;
+    }
+
+    private void kociol(CommandSender sender, String[] args) {
+        if (!(sender instanceof Player player)) {
+            sender.sendMessage(manager.msg("tylko-gracz"));
+            return;
+        }
+        if (!sender.hasPermission("ahalloween.use")) {
+            sender.sendMessage(manager.msg("brak-uprawnien"));
+            return;
+        }
+        if (args.length == 0) {
+            HalloweenGuis.otworz(manager, player, HalloweenGuis.Typ.CAULDRON);
+            return;
+        }
+        if (args.length != 1) {
+            sender.sendMessage(HalloweenUtil.colorMsg("&cUżyj: /kociol [ilość|all]"));
+            return;
+        }
+        int amount;
+        try {
+            amount = args[0].equalsIgnoreCase("all") ? manager.dane(player).sumaCukierkow() : Integer.parseInt(args[0]);
+        } catch (NumberFormatException e) {
+            sender.sendMessage(HalloweenUtil.colorMsg("&cPodaj dodatnią liczbę cukierków lub all."));
+            return;
+        }
+        manager.kociol().deposit(player, amount);
     }
 
     private void dom(CommandSender sender, String[] args) {
@@ -249,6 +284,7 @@ public final class AHalloweenCommand implements CommandExecutor, TabCompleter {
         s.sendMessage(HalloweenUtil.colorMsg(HalloweenUtil.PREFIX + "&eKomendy:"));
         s.sendMessage(HalloweenUtil.colorMsg(" &8» &a/ahalloween &7- menu"));
         s.sendMessage(HalloweenUtil.colorMsg(" &8» &a/ahalloween worek &7- magazyn"));
+        s.sendMessage(HalloweenUtil.colorMsg(" &8» &a/kociol [ilość|all] &7- wspólny kocioł i bonus cukierków"));
         if (s.hasPermission("ahalloween.admin")) {
             s.sendMessage(HalloweenUtil.colorMsg(" &8» &e/ahalloween candy setspawn [typ]"));
             s.sendMessage(HalloweenUtil.colorMsg(" &8» &e/ahalloween dom dodaj [nazwa] &7— drzwi trick-or-treat"));
@@ -267,9 +303,15 @@ public final class AHalloweenCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
+        if (command.getName().equalsIgnoreCase("kociol")) {
+            return args.length == 1 && "all".startsWith(args[0].toLowerCase(Locale.ROOT)) ? List.of("all") : List.of();
+        }
+        if (args.length == 2 && args[0].equalsIgnoreCase("kociol")) {
+            return "all".startsWith(args[1].toLowerCase(Locale.ROOT)) ? List.of("all") : List.of();
+        }
         List<String> out = new ArrayList<>();
         if (args.length == 1) {
-            out.addAll(List.of("help", "worek", "stats"));
+            out.addAll(List.of("help", "worek", "stats", "kociol"));
             if (sender.hasPermission("ahalloween.admin")) {
                 out.addAll(List.of("reload", "start", "stop", "set", "give", "spawn", "candy", "dom"));
                 out.addAll(manager.mobIds());

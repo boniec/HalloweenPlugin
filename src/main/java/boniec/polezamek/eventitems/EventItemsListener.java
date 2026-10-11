@@ -56,6 +56,7 @@ public class EventItemsListener implements Listener {
     public void onConsume(PlayerItemConsumeEvent event) {
         ItemStack item = event.getItem();
         if (manager.isJablkoJedi(item)) {
+            if (event.isCancelled()) return;
             handleJablkoJedi(event);
             return;
         }
@@ -97,22 +98,21 @@ public class EventItemsListener implements Listener {
 
     private void handleJablkoJedi(PlayerItemConsumeEvent event) {
         Player player = event.getPlayer();
-        event.setCancelled(true);
+        if (plugin.isEventItemUseBlocked(player.getLocation())) {
+            event.setCancelled(true);
+            return;
+        }
 
-        if (plugin.isEventItemUseBlocked(player.getLocation())) return;
-
-        int regenDur = manager.getJablkoJediRegenDuration() * 20;
-        int absDur = manager.getJablkoJediAbsorptionDuration() * 20;
-        boolean bonus = ThreadLocalRandom.current().nextDouble() < manager.getJablkoJediBonusChance();
-        int absAmp = bonus
-                ? manager.getJablkoJediBonusAbsorptionAmplifier()
-                : manager.getJablkoJediAbsorptionAmplifier();
-
-        player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, regenDur, manager.getJablkoJediRegenAmplifier()));
-        player.addPotionEffect(new PotionEffect(PotionEffectType.ABSORPTION, absDur, absAmp));
-        player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_BURP, 1f, 1.15f);
-        if (bonus) {
-            player.playSound(player.getLocation(), Sound.ITEM_TOTEM_USE, 0.35f, 1.6f);
+        // Let Minecraft eat the golden apple normally, but restore the original stack afterwards.
+        // Paper handles the correct hand, vanilla food/effects and consumption cancellation.
+        event.setReplacement(event.getItem());
+        if (ThreadLocalRandom.current().nextDouble() < manager.getJablkoJediBonusChance()) {
+            Bukkit.getScheduler().runTask(plugin.getHost(), () -> {
+                if (event.isCancelled() || !player.isOnline() || player.isDead()) return;
+                player.addPotionEffect(new PotionEffect(PotionEffectType.ABSORPTION,
+                        manager.getJablkoJediAbsorptionDuration() * 20, manager.getJablkoJediBonusAbsorptionAmplifier()));
+                player.playSound(player.getLocation(), Sound.ITEM_TOTEM_USE, 0.35f, 1.6f);
+            });
         }
     }
 

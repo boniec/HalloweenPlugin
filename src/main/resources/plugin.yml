@@ -404,6 +404,10 @@ commands:
     usage: /aduel start <czas> | stop | ustawswiat | ustaw1 | ustaw2
     permission: polezamek.admin
 
+  kociol:
+    description: Wspólny kocioł Halloween — wpłać cukierki, aby uruchomić bonus dla serwera.
+    usage: /kociol [ilość|all]
+    permission: ahalloween.use
   ahalloween:
     description: Event Halloween — cukierki, worek, misje, sklep.
     usage: /ahalloween

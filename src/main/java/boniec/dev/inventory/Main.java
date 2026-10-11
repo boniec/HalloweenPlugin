@@ -888,6 +888,10 @@ public final class Main extends JavaPlugin implements Listener {
                 boniec.ahalloween.AHalloweenCommand ahCmd = new boniec.ahalloween.AHalloweenCommand(aHalloweenManager);
                 getCommand("ahalloween").setExecutor(ahCmd);
                 getCommand("ahalloween").setTabCompleter(ahCmd);
+                if (getCommand("kociol") != null) {
+                    getCommand("kociol").setExecutor(ahCmd);
+                    getCommand("kociol").setTabCompleter(ahCmd);
+                }
             }
             if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
                 new boniec.ahalloween.AHalloweenExpansion(aHalloweenManager).register();

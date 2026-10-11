@@ -132,6 +132,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
     private BukkitTask saveTask;
     private ItemStack worekSzablon;
     private HalloweenTrickOrTreat trickOrTreat;
+    private HalloweenCauldron kociol;
     private final Map<String, String> domNazwy = new ConcurrentHashMap<>();
     private volatile boolean blokujSkrzynieKrola;
     private boolean krolUsunSkrzyniePoSmierci = true;
@@ -178,6 +179,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
         wczytajConfig();
         wczytajSpawny();
         wczytajSzablonWorka();
+        kociol = new HalloweenCauldron(this);
         trickOrTreat = new HalloweenTrickOrTreat(this, plugin);
         trickOrTreat.reload();
         if (cfg.getBoolean("event.wlaczony", false)) {
@@ -206,6 +208,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
     public ShopDef produkt(String id) { return shop.get(id); }
     public MissionDef misja(String id) { return missions.get(id); }
     public HalloweenTrickOrTreat trickOrTreat() { return trickOrTreat; }
+    public HalloweenCauldron kociol() { return kociol; }
     public long pozostaloSekund() { return aktywny ? Math.max(0, (koniecEpoch - System.currentTimeMillis()) / 1000L) : -1; }
 
     public void wczytajConfig() {
@@ -442,6 +445,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
     }
 
     public void zamknij() {
+        kociol.close();
         if (tickTask != null) tickTask.cancel();
         if (saveTask != null) saveTask.cancel();
         resetDynamicEvents();
@@ -484,6 +488,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
 
     public void stop() {
         aktywny = false;
+        kociol.clearBoost();
         cfg.set("event.wlaczony", false);
         zapiszCfg();
         usunObiekty();
@@ -509,6 +514,7 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
     }
 
     private void tick() {
+        kociol.tick();
         if (aktywny && System.currentTimeMillis() >= koniecEpoch) {
             stop();
             return;
@@ -1598,7 +1604,8 @@ public final class AHalloweenManager implements SidebarManager.Nadpisanie {
             String z = zrodlo.toLowerCase(Locale.ROOT);
             if ("mob".equals(z) || "boss".equals(z)) m *= faleMnoznikDropMob;
         }
-        return m;
+        // The cauldron guarantees its multiplier without multiplying the timed events again.
+        return Math.max(m, kociol.multiplier(zrodlo));
     }
 
     private long sekundyRespawnCukierka(CandyDef def) {

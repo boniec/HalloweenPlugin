@@ -16,7 +16,7 @@ import java.util.Map;
 
 public final class HalloweenGuis {
 
-    public enum Typ { MENU, BAG, MISSIONS, UPGRADES, SHOP, RANK, STATS }
+    public enum Typ { MENU, BAG, MISSIONS, UPGRADES, SHOP, RANK, STATS, CAULDRON }
 
     public static final class Holder implements InventoryHolder {
         public final Typ typ;
@@ -35,6 +35,7 @@ public final class HalloweenGuis {
             case SHOP -> sklep(m, p);
             case RANK -> ranking(m, p);
             case STATS -> staty(m, p);
+            case CAULDRON -> kociol(m, p);
         };
         p.openInventory(inv);
         p.playSound(p.getLocation(), Sound.BLOCK_CHEST_OPEN, 0.5f, 1.3f);
@@ -106,6 +107,21 @@ public final class HalloweenGuis {
                 "&8⋮ &#FF36D1bossy &7" + d.statBossy,
                 "&8⋮ &#35105Eczas &7" + (m.aktywny() ? HalloweenUtil.formatCzas(m.pozostaloSekund()) : "off"))));
         inv.setItem(49, ikona(Material.BARRIER, "&f个 &7zamknij", List.of()));
+        if (m.kociol().enabled()) inv.setItem(40, ikona(Material.CAULDRON, "&6Wspólny kocioł", List.of(
+                m.kociol().status(), "&7Kliknij, aby wrzucić cukierki.")));
+        return inv;
+    }
+
+    private static Inventory kociol(AHalloweenManager m, Player p) {
+        Inventory inv = baza(m, Typ.CAULDRON, "&6Wspólny kocioł", 27);
+        inv.setItem(4, ikona(Material.CAULDRON, "&6Wspólny kocioł", List.of(
+                m.kociol().status(), "&7Twój worek: &f" + m.dane(p).sumaCukierkow() + " &7cukierków",
+                "&7Wpłacaj po zakończeniu aktywnego bonusu.", "&7Nadmiar ponad cel pozostaje w worku.")));
+        inv.setItem(10, ikona(Material.SUGAR, "&aWrzuć 10 cukierków", List.of("&7Kliknij, aby wpłacić.")));
+        inv.setItem(12, ikona(Material.SUGAR, "&aWrzuć 100 cukierków", List.of("&7Kliknij, aby wpłacić.")));
+        inv.setItem(14, ikona(Material.BUNDLE, "&aWrzuć wszystkie cukierki", List.of("&7Tylko tyle, ile brakuje do celu.")));
+        inv.setItem(16, ikona(Material.CLOCK, "&eOdśwież postęp", List.of("&7Kliknij, aby odświeżyć.")));
+        inv.setItem(22, ikona(Material.ARROW, "&7Wstecz", List.of()));
         return inv;
     }
 
@@ -310,6 +326,17 @@ public final class HalloweenGuis {
                 else if (slot == 29) otworz(m, p, Typ.SHOP);
                 else if (slot == 31) otworz(m, p, Typ.RANK);
                 else if (slot == 33) otworz(m, p, Typ.STATS);
+                else if (slot == 40) otworz(m, p, Typ.CAULDRON);
+            }
+            case CAULDRON -> {
+                int amount = switch (slot) {
+                    case 10 -> 10;
+                    case 12 -> 100;
+                    case 14 -> m.dane(p).sumaCukierkow();
+                    default -> 0;
+                };
+                if (slot == 10 || slot == 12 || slot == 14) m.kociol().deposit(p, amount);
+                otworz(m, p, Typ.CAULDRON);
             }
             case MISSIONS -> {
                 String id = HalloweenUtil.tag(it.getItemMeta().getPersistentDataContainer(), m.keyObject());

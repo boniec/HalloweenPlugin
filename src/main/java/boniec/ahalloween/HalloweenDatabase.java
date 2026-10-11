@@ -146,54 +146,81 @@ public final class HalloweenDatabase {
     }
 
     public void zapisz(HalloweenPlayer p) {
-        try {
-            try (PreparedStatement ps = conn().prepareStatement(
-                    "INSERT INTO ahalloween_players(uuid,nick,exp,poziom,pojemnosc) VALUES(?,?,?,?,?) "
-                            + "ON CONFLICT(uuid) DO UPDATE SET nick=excluded.nick, exp=excluded.exp, "
-                            + "poziom=excluded.poziom, pojemnosc=excluded.pojemnosc")) {
-                ps.setString(1, p.uuid.toString());
-                ps.setString(2, p.nick);
-                ps.setInt(3, p.exp);
-                ps.setInt(4, p.poziom);
-                ps.setInt(5, p.pojemnosc);
-                ps.executeUpdate();
+        synchronized (p) {
+            try {
+                boniec.code.core.CoreDatabase.runInTransaction(c -> zapiszGracza(p));
+            } catch (SQLException e) {
+                p.oznacz();
+                plugin.getLogger().log(Level.WARNING, "[AHalloween] Blad zapisu " + p.nick, e);
             }
-            zapiszMape("DELETE FROM ahalloween_candy WHERE uuid=?",
-                    "INSERT INTO ahalloween_candy(uuid,candy_id,ilosc) VALUES(?,?,?)", p.uuid, p.cukierki);
-            zapiszMape("DELETE FROM ahalloween_upgrades WHERE uuid=?",
-                    "INSERT INTO ahalloween_upgrades(uuid,upgrade_id,poziom) VALUES(?,?,?)", p.uuid, p.ulepszenia);
-            zapiszMape("DELETE FROM ahalloween_shop WHERE uuid=?",
-                    "INSERT INTO ahalloween_shop(uuid,item_id,bought) VALUES(?,?,?)", p.uuid, p.sklep);
-            try (PreparedStatement ps = conn().prepareStatement(
-                    "INSERT INTO ahalloween_stats(uuid,candies,mobs,missions,bosses) VALUES(?,?,?,?,?) "
-                            + "ON CONFLICT(uuid) DO UPDATE SET candies=excluded.candies, mobs=excluded.mobs, "
-                            + "missions=excluded.missions, bosses=excluded.bosses")) {
-                ps.setString(1, p.uuid.toString());
-                ps.setInt(2, p.statCukierki);
-                ps.setInt(3, p.statMoby);
-                ps.setInt(4, p.statMisje);
-                ps.setInt(5, p.statBossy);
-                ps.executeUpdate();
-            }
-            try (PreparedStatement del = conn().prepareStatement("DELETE FROM ahalloween_missions WHERE uuid=?")) {
-                del.setString(1, p.uuid.toString());
-                del.executeUpdate();
-            }
-            try (PreparedStatement ins = conn().prepareStatement(
-                    "INSERT INTO ahalloween_missions(uuid,mission_id,progress,claimed,period) VALUES(?,?,?,?,?)")) {
-                for (Map.Entry<String, Integer> e : p.misjeProgress.entrySet()) {
-                    ins.setString(1, p.uuid.toString());
-                    ins.setString(2, e.getKey());
-                    ins.setInt(3, e.getValue());
-                    ins.setInt(4, Boolean.TRUE.equals(p.misjeOdebrane.get(e.getKey())) ? 1 : 0);
-                    ins.setString(5, p.misjeOkres.getOrDefault(e.getKey(), ""));
-                    ins.addBatch();
-                }
-                ins.executeBatch();
-            }
-        } catch (SQLException e) {
-            plugin.getLogger().log(Level.WARNING, "[AHalloween] Blad zapisu " + p.nick, e);
         }
+    }
+
+    private void zapiszGracza(HalloweenPlayer p) throws SQLException {
+        try (PreparedStatement ps = conn().prepareStatement(
+                "INSERT INTO ahalloween_players(uuid,nick,exp,poziom,pojemnosc) VALUES(?,?,?,?,?) "
+                        + "ON CONFLICT(uuid) DO UPDATE SET nick=excluded.nick, exp=excluded.exp, "
+                        + "poziom=excluded.poziom, pojemnosc=excluded.pojemnosc")) {
+            ps.setString(1, p.uuid.toString());
+            ps.setString(2, p.nick);
+            ps.setInt(3, p.exp);
+            ps.setInt(4, p.poziom);
+            ps.setInt(5, p.pojemnosc);
+            ps.executeUpdate();
+        }
+        zapiszMape("DELETE FROM ahalloween_candy WHERE uuid=?",
+                "INSERT INTO ahalloween_candy(uuid,candy_id,ilosc) VALUES(?,?,?)", p.uuid, p.cukierki);
+        zapiszMape("DELETE FROM ahalloween_upgrades WHERE uuid=?",
+                "INSERT INTO ahalloween_upgrades(uuid,upgrade_id,poziom) VALUES(?,?,?)", p.uuid, p.ulepszenia);
+        zapiszMape("DELETE FROM ahalloween_shop WHERE uuid=?",
+                "INSERT INTO ahalloween_shop(uuid,item_id,bought) VALUES(?,?,?)", p.uuid, p.sklep);
+        try (PreparedStatement ps = conn().prepareStatement(
+                "INSERT INTO ahalloween_stats(uuid,candies,mobs,missions,bosses) VALUES(?,?,?,?,?) "
+                        + "ON CONFLICT(uuid) DO UPDATE SET candies=excluded.candies, mobs=excluded.mobs, "
+                        + "missions=excluded.missions, bosses=excluded.bosses")) {
+            ps.setString(1, p.uuid.toString());
+            ps.setInt(2, p.statCukierki);
+            ps.setInt(3, p.statMoby);
+            ps.setInt(4, p.statMisje);
+            ps.setInt(5, p.statBossy);
+            ps.executeUpdate();
+        }
+        try (PreparedStatement del = conn().prepareStatement("DELETE FROM ahalloween_missions WHERE uuid=?")) {
+            del.setString(1, p.uuid.toString());
+            del.executeUpdate();
+        }
+        try (PreparedStatement ins = conn().prepareStatement(
+                "INSERT INTO ahalloween_missions(uuid,mission_id,progress,claimed,period) VALUES(?,?,?,?,?)")) {
+            for (Map.Entry<String, Integer> e : p.misjeProgress.entrySet()) {
+                ins.setString(1, p.uuid.toString());
+                ins.setString(2, e.getKey());
+                ins.setInt(3, e.getValue());
+                ins.setInt(4, Boolean.TRUE.equals(p.misjeOdebrane.get(e.getKey())) ? 1 : 0);
+                ins.setString(5, p.misjeOkres.getOrDefault(e.getKey(), ""));
+                ins.addBatch();
+            }
+            ins.executeBatch();
+        }
+    }
+
+    /** Candy debit and shared cauldron state commit together, before updating the cache. */
+    public void zapiszWplateKotla(HalloweenPlayer p, Map<String, Integer> cukierki, String stan) throws SQLException {
+        boniec.code.core.CoreDatabase.runInTransaction(c -> {
+            zapiszMape("DELETE FROM ahalloween_candy WHERE uuid=?",
+                    "INSERT INTO ahalloween_candy(uuid,candy_id,ilosc) VALUES(?,?,?)", p.uuid, cukierki);
+            zapiszKociol(stan);
+        });
+    }
+
+    public void zapiszKociol(String stan) throws SQLException {
+        boniec.code.core.CoreDatabase.runInTransaction(c -> {
+            try (PreparedStatement ps = c.prepareStatement(
+                    "INSERT INTO ahalloween_kv(klucz,wartosc) VALUES('kociol.stan',?) "
+                            + "ON CONFLICT(klucz) DO UPDATE SET wartosc=excluded.wartosc")) {
+                ps.setString(1, stan);
+                ps.executeUpdate();
+            }
+        });
     }
 
     private void zapiszMape(String delete, String insert, UUID uuid, Map<String, Integer> mapa) throws SQLException {
