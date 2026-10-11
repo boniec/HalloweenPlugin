@@ -225,12 +225,13 @@ public final class UtilityCommands implements TabExecutor {
         }
     }
 
-    private boolean isIgnored(UUID target, UUID sender) {
-        return plugin.getConfig().getBoolean(ignorePath(target, sender));
+    private boolean isIgnored(UUID recipient, UUID sender) {
+        return plugin.getConfig().getBoolean(ignorePath(sender, recipient));
     }
 
-    private String ignorePath(UUID target, UUID sender) {
-        return "private-messages.ignore." + target + "." + sender;
+    private String ignorePath(UUID ignoredPlayer, UUID ignoringPlayer) {
+        // Keep the existing saved format: ignored player first, player who enabled /ignore second.
+        return "private-messages.ignore." + ignoredPlayer + "." + ignoringPlayer;
     }
 
     private String joinMessage(String[] args, int start) {
