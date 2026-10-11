@@ -10,6 +10,9 @@ libraries:
   - net.dv8tion:JDA:5.2.1
 
 commands:
+  siema:
+    description: Wyświetla nick wskazanego gracza na środku jego ekranu.
+    usage: /siema <nick>
   kosz:
     description: Otwiera prywatny kosz.
     usage: /kosz
@@ -430,6 +433,15 @@ commands:
     description: Włącza lub wyłącza niewidzialność (vanish).
     usage: /vanish [gracz]
     aliases: [v, vis]
+  tpa:
+    description: Wysyła prośbę o teleport do gracza (ważną przez 60 sekund).
+    usage: /tpa <gracz>
+  tpaccept:
+    description: Akceptuje prośbę o teleport (bez nicku najnowszą).
+    usage: /tpaccept [gracz]
+  tpdeny:
+    description: Odrzuca prośbę o teleport (bez nicku najnowszą).
+    usage: /tpdeny [gracz]
   tp:
     description: Teleport do gracza (lub gracza do gracza).
     usage: /tp <gracz> | /tp <kto> <do-kogo>

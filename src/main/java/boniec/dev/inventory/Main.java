@@ -252,6 +252,8 @@ public final class Main extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(adminUtilManager, this);
         new boniec.adminutil.AdminUtilCommands(this, adminUtilManager).register();
         new boniec.adminutil.TeleportCommands(this).register();
+        new boniec.tpa.TpaCommands(this).register();
+        new boniec.siema.SiemaCommand().register(this);
         sterujManager = new boniec.adminutil.SterujManager(this);
         new boniec.adminutil.SterujCommand(this, sterujManager).register();
         Bukkit.getPluginManager().registerEvents(new boniec.pvp.NoChestEquipListener(), this);
