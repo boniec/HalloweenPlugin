@@ -1,9 +1,0 @@
-# Opcjonalnie: marker w Nexo (spawn moba: /mm m spawn darth_vader_npc)
-# Uwaga: CMD 3002 — upewnij się, że nie koliduje z innymi itemami w packu.
-darth_vader_marker:
-  itemname: <dark_gray>Figurka — Lord Vader (NPC)
-  material: NETHER_STAR
-  Pack:
-    generate_model: false
-    model: item/generated
-    custom_model_data: 3002
